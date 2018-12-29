@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/github/</link>
+    <description>Recent content in Github on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Fri, 21 Jul 2017 08:27:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH key Akun Github</title>
+      <link>https://mfachrulrazy.github.io/post/github-ssh/</link>
+      <pubDate>Fri, 21 Jul 2017 08:27:55 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/github-ssh/</guid>
+      <description>Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya
+ Pastikan git sudah terinstall pada PC
+ Buat ssh key di cmd dengan
+&amp;gt; ssh-keygen Ssh key akan secara default masuk ke folder ~user/.ssh/*
+ Ada 2 file yang dibuat seperti di linux yaitu id_rsa dan id_rsa.pub
+ Copy isi file id_rsa.pub
+ Masuk ke menu Settings &amp;gt; SSH and GPG Keys pada akun github</description>
+    </item>
+    
+  </channel>
+</rss>

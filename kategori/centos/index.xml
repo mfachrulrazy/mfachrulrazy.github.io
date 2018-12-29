@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/centos/</link>
+    <description>Recent content in Centos on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Wed, 10 May 2017 13:40:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reset Password Centos7</title>
+      <link>https://mfachrulrazy.github.io/post/reset-pass-centos7/</link>
+      <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/reset-pass-centos7/</guid>
+      <description>Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
+:/# chroot /sysroot  kemudian reset password
+:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kategori on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/</link>
+    <description>Recent content in Kategori on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Wed, 10 May 2017 13:40:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Centos</title>
+      <link>https://mfachrulrazy.github.io/kategori/centos/</link>
+      <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://mfachrulrazy.github.io/kategori/github/</link>
+      <pubDate>Fri, 21 Jul 2017 08:27:55 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://mfachrulrazy.github.io/kategori/linux/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mesin Virtual</title>
+      <link>https://mfachrulrazy.github.io/kategori/mesin-virtual/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/mesin-virtual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>https://mfachrulrazy.github.io/kategori/networking/</link>
+      <pubDate>Fri, 28 Apr 2017 09:51:55 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://mfachrulrazy.github.io/kategori/open-source/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Box</title>
+      <link>https://mfachrulrazy.github.io/kategori/virtual-box/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/virtual-box/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://mfachrulrazy.github.io/kategori/windows/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/windows/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

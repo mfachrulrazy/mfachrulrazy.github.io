@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/windows/</link>
+    <description>Recent content in Windows on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Mon, 05 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VM Virtual Box Error</title>
+      <link>https://mfachrulrazy.github.io/post/vbox-error/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/vbox-error/</guid>
+      <description>Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off   Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V. Belum mencoba untuk menjalankan vm di virtualbox dengan docker secara bersamaan.</description>
+    </item>
+    
+    <item>
+      <title>Install Linux dari Windows Store</title>
+      <link>https://mfachrulrazy.github.io/post/linux-win-store/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/linux-win-store/</guid>
+      <description> Pertama harus mengaktifkan WSL atau Windows Subsystem for Linux
+ Caranya, buka powershell sebagai Administrator dan jalankan perintah berikut:
+&amp;gt; Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux Restart PC Kemudian install Linux dari Windows Store  </description>
+    </item>
+    
+    <item>
+      <title>Buat interface baru VirtualBox</title>
+      <link>https://mfachrulrazy.github.io/post/int-baru-vbox/</link>
+      <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/int-baru-vbox/</guid>
+      <description> Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui
+File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang sudah ada bisa memilih Properties   </description>
+    </item>
+    
+  </channel>
+</rss>

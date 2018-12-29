@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/networking/</link>
+    <description>Recent content in Networking on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Fri, 28 Apr 2017 09:51:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/networking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Maximum Transmission Unit</title>
+      <link>https://mfachrulrazy.github.io/post/maxtu/</link>
+      <pubDate>Fri, 28 Apr 2017 09:51:55 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/maxtu/</guid>
+      <description>Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
+Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
+ L3 MTU = 1500 (Data: 1480 + IP:20) L2.</description>
+    </item>
+    
+  </channel>
+</rss>
