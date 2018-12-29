@@ -25,6 +25,17 @@
     </item>
     
     <item>
+      <title>Install ChocoLatey di Windows</title>
+      <link>https://mfachrulrazy.github.io/post/install-choco/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-choco/</guid>
+      <description>Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
+CMD Untuk cmd dapat langsung menggunakan script berikut @&amp;#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&amp;#34; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &amp;#34;iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))&amp;#34; &amp;amp;&amp;amp; SET &amp;#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&amp;#34;
+Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.</description>
+    </item>
+    
+    <item>
       <title>SSH key Akun Github</title>
       <link>https://mfachrulrazy.github.io/post/github-ssh/</link>
       <pubDate>Fri, 21 Jul 2017 08:27:55 +0800</pubDate>
