@@ -51,12 +51,12 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/install-choco/</guid>
       <description>Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
-CMD Untuk cmd dapat langsung menggunakan script berikut @&amp;#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&amp;#34; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &amp;#34;iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))&amp;#34; &amp;amp;&amp;amp; SET &amp;#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&amp;#34;
-Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.</description>
+Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.
+ Cek keamanan powershell Get-ExecutionPolicy Jika kembali dengan Restricted, maka atur seperti berikut Set-ExecutionPolicy AllSigned Atau Set-ExecutionPolicy Bypass -Scope Process Kemudian jalankan script berikut Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.</description>
     </item>
     
     <item>
-      <title>Buat interface baru VirtualBox</title>
+      <title>Interface Network pada VirtualBox</title>
       <link>https://mfachrulrazy.github.io/post/int-baru-vbox/</link>
       <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>

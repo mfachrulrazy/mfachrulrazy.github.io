@@ -25,9 +25,18 @@
     <item>
       <title>Centos</title>
       <link>https://mfachrulrazy.github.io/kategori/centos/</link>
-      <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Editor</title>
+      <link>https://mfachrulrazy.github.io/kategori/code-editor/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/code-editor/</guid>
       <description></description>
     </item>
     
@@ -70,7 +79,7 @@
     <item>
       <title>Networking</title>
       <link>https://mfachrulrazy.github.io/kategori/networking/</link>
-      <pubDate>Fri, 28 Apr 2017 09:51:55 +0800</pubDate>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/networking/</guid>
       <description></description>
@@ -82,6 +91,33 @@
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxmox</title>
+      <link>https://mfachrulrazy.github.io/kategori/proxmox/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server</title>
+      <link>https://mfachrulrazy.github.io/kategori/server/</link>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/kategori/ubuntu/</link>
+      <pubDate>Wed, 27 May 2015 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/ubuntu/</guid>
       <description></description>
     </item>
     

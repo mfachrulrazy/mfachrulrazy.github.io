@@ -295,8 +295,8 @@
               <div class="post-entry">
                 
                   Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
-CMD Untuk cmd dapat langsung menggunakan script berikut @&#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&#34; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34; &amp;&amp; SET &#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;
 Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.
+ Cek keamanan powershell Get-ExecutionPolicy Jika kembali dengan Restricted, maka atur seperti berikut Set-ExecutionPolicy AllSigned Atau Set-ExecutionPolicy Bypass -Scope Process Kemudian jalankan script berikut Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.
                   <a href="https://mfachrulrazy.github.io/post/install-choco/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -409,6 +409,106 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
                     <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/belajar-vim/">
+                <h2 class="post-title">Belajar Vi dan Vim</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 10, 2016
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
+Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
+Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
+ i : untuk beralih ke mode insert atau memasukkan teks.
+                  <a href="https://mfachrulrazy.github.io/post/belajar-vim/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/code-editor/">code editor</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/linux-command1/">
+                <h2 class="post-title">Linux Command Part 1</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Beberapa Perintah dasar Linux Part 1
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 27, 2015
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
+ Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &#34;*.conf&#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.
+                  <a href="https://mfachrulrazy.github.io/post/linux-command1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
                   
                 </div>
               

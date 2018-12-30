@@ -51,12 +51,37 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/install-choco/</guid>
       <description>Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
-CMD Untuk cmd dapat langsung menggunakan script berikut @&amp;#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&amp;#34; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &amp;#34;iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))&amp;#34; &amp;amp;&amp;amp; SET &amp;#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&amp;#34;
-Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.</description>
+Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.
+ Cek keamanan powershell Get-ExecutionPolicy Jika kembali dengan Restricted, maka atur seperti berikut Set-ExecutionPolicy AllSigned Atau Set-ExecutionPolicy Bypass -Scope Process Kemudian jalankan script berikut Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.</description>
     </item>
     
     <item>
-      <title>Buat interface baru VirtualBox</title>
+      <title>Install Nodejs Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-nodejs-cent/</link>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-nodejs-cent/</guid>
+      <description>Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
+1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;amp;&amp;amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.</description>
+    </item>
+    
+    <item>
+      <title>Repository Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/repo-cent-7/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/repo-cent-7/</guid>
+      <description>Melihat repository yang aktif pada centos secara detail dapat menggunakan 3 perintah berikut
+# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
+# yum repolist enable # yum repolist disable # yum repolist all
+Melihat repository dengan nama ‘repoA-id’
+# yum --disablerepo=&amp;#34;*&amp;#34; --enablerepo=&amp;#34;repoA-id&amp;#34; list available
+Install dan aktifkan EPEL dan Remi repository
+# wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm # rpm -Uvh epel-release-6-8.noarch.rpm remi-release-6.</description>
+    </item>
+    
+    <item>
+      <title>Interface Network pada VirtualBox</title>
       <link>https://mfachrulrazy.github.io/post/int-baru-vbox/</link>
       <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
@@ -81,6 +106,17 @@ File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang
     </item>
     
     <item>
+      <title>All about Proxmox</title>
+      <link>https://mfachrulrazy.github.io/post/imp-proxmox/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/imp-proxmox/</guid>
+      <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
+Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
+ Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.</description>
+    </item>
+    
+    <item>
       <title>Reset Password Centos7</title>
       <link>https://mfachrulrazy.github.io/post/reset-pass-centos7/</link>
       <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
@@ -100,6 +136,28 @@ File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang
       <description>Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
 Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
  L3 MTU = 1500 (Data: 1480 + IP:20) L2.</description>
+    </item>
+    
+    <item>
+      <title>Belajar Vi dan Vim</title>
+      <link>https://mfachrulrazy.github.io/post/belajar-vim/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/belajar-vim/</guid>
+      <description>Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
+Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
+Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
+ i : untuk beralih ke mode insert atau memasukkan teks.</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 1</title>
+      <link>https://mfachrulrazy.github.io/post/linux-command1/</link>
+      <pubDate>Wed, 27 May 2015 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/linux-command1/</guid>
+      <description>Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
+ Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</description>
     </item>
     
     <item>

@@ -389,8 +389,8 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
               <div class="post-entry">
                 
                   Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
-CMD Untuk cmd dapat langsung menggunakan script berikut @&#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&#34; -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command &#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34; &amp;&amp; SET &#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;
 Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.
+ Cek keamanan powershell Get-ExecutionPolicy Jika kembali dengan Restricted, maka atur seperti berikut Set-ExecutionPolicy AllSigned Atau Set-ExecutionPolicy Bypass -Scope Process Kemudian jalankan script berikut Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.
                   <a href="https://mfachrulrazy.github.io/post/install-choco/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -407,8 +407,99 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/">
+                <h2 class="post-title">Install Nodejs Centos 7</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 30, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
+1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;&amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.
+                  <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/repo-cent-7/">
+                <h2 class="post-title">Repository Centos 7</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 21, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Melihat repository yang aktif pada centos secara detail dapat menggunakan 3 perintah berikut
+# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
+# yum repolist enable # yum repolist disable # yum repolist all
+Melihat repository dengan nama ‘repoA-id’
+# yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available
+Install dan aktifkan EPEL dan Remi repository
+# wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm # rpm -Uvh epel-release-6-8.noarch.rpm remi-release-6.
+                  <a href="https://mfachrulrazy.github.io/post/repo-cent-7/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/int-baru-vbox/">
-                <h2 class="post-title">Buat interface baru VirtualBox</h2>
+                <h2 class="post-title">Interface Network pada VirtualBox</h2>
                 
                 
               </a>
@@ -504,6 +595,55 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/imp-proxmox/">
+                <h2 class="post-title">All about Proxmox</h2>
+                
+                  <h3 class="post-subtitle">
+                  Implementasi Proxmox
+                  </h3>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 12, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
+Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
+ Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.
+                  <a href="https://mfachrulrazy.github.io/post/imp-proxmox/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/proxmox/">proxmox</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/">
                 <h2 class="post-title">Reset Password Centos7</h2>
                 
@@ -548,49 +688,17 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
               
             </article>
           
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/maxtu/">
-                <h2 class="post-title">Maximum Transmission Unit</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 28, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
-Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
- L3 MTU = 1500 (Data: 1480 + IP:20) L2.
-                  <a href="https://mfachrulrazy.github.io/post/maxtu/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
         </div>
 
+        
+          <ul class="pager main-pager">
+            
+            
+              <li class="next">
+                <a href="/page/2/">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
         
       </div>
     </div>
