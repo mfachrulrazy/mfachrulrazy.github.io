@@ -23,6 +23,17 @@
     </item>
     
     <item>
+      <title>Konfigurasi Nmtui Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/netmui-cent/</link>
+      <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/netmui-cent/</guid>
+      <description>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.
+Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan nmtui.
+ Jalankan nmtui dari terminal # nmtui  Pilih edit connection &amp;gt; kemudian pilih Wired connection 1 &amp;gt; pilih Edit  Kemudian ubah nama profil dan IPv4 configuration menjadi manual  Kemudian OK &amp;gt; Back &amp;gt; Quit Restart service network  </description>
+    </item>
+    
+    <item>
       <title>Interface Network pada VirtualBox</title>
       <link>https://mfachrulrazy.github.io/post/int-baru-vbox/</link>
       <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>
