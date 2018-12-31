@@ -7,9 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Zyra - Zyra</title>
-  <meta property="og:title" content="Zyra" />
-  <meta name="twitter:title" content="Zyra" />
+  <title>Networking pada Centos 7 - Zyra</title>
+  <meta property="og:title" content="Networking pada Centos 7" />
+  <meta name="twitter:title" content="Networking pada Centos 7" />
+  <meta name="description" content="Pengaturan Jaringan pada Centos 7">
+  <meta property="og:description" content="Pengaturan Jaringan pada Centos 7">
+  <meta name="twitter:description" content="Pengaturan Jaringan pada Centos 7">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -30,12 +33,63 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/net-centos7/",
+          "name": "Networking pada centos 7"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Networking pada Centos 7",
+  "description" : "Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
+ Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut 1IPADDR= 2NETMASK= 3GATEWAY= 4DNS1= 5DNS2= 6#onboot untuk mengatur interface aktif pada saat server baru dinyalakan 7ONBOOT=yes 8#bootproto untuk mengatur IP apakah dhcp atau static 9BOOTPROTO=dhcp/static Simpan file dan keluar.",
+  "inLanguage" : "en",
+  "wordCount": 181,
+  "datePublished" : "2017-10-13T00:00:00",
+  "dateModified" : "2017-10-13T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/net-centos7/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Zyra" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/" />
+<meta property="og:title" content="Networking pada Centos 7" />
+<meta property="og:description" content="Pengaturan Jaringan pada Centos 7">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/net-centos7/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Zyra" />
+  <meta name="twitter:title" content="Networking pada Centos 7" />
+  <meta name="twitter:description" content="Pengaturan Jaringan pada Centos 7">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -43,7 +97,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/net-centos7/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -180,18 +234,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
+            <div class="post-heading">
               
-                <h1>MFR Personal Note</h1>
+                <h1>Networking pada Centos 7</h1>
               
-              
-                <hr class="small">
               
               
                 
-                  <span class="page-subheading">Love to share thoughts in words</span>
+                  <h2 class="post-subheading">Pengaturan Jaringan pada Centos 7</h2>
                 
               
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on October 13, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
               
             </div>
           </div>
@@ -202,209 +271,148 @@
 
 
     
-  <div role="main" class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         
 
-        <div class="posts-list">
-          
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/">
-                <h2 class="post-title">Reset Password Centos7</h2>
-                
-                
-              </a>
+<p>Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.</p>
 
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 10, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
+<ol>
+<li>Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder <code>/etc/sysconfig/network-scripts/</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur)</span></code></pre></div></li>
+<li>Tambahkan baris berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="nv">IPADDR</span><span class="o">=</span>
+<span class="ln">2</span><span class="nv">NETMASK</span><span class="o">=</span>
+<span class="ln">3</span><span class="nv">GATEWAY</span><span class="o">=</span>
+<span class="ln">4</span><span class="nv">DNS1</span><span class="o">=</span>
+<span class="ln">5</span><span class="nv">DNS2</span><span class="o">=</span>
+<span class="ln">6</span><span class="c1">#onboot untuk mengatur interface aktif pada saat server baru dinyalakan</span>
+<span class="ln">7</span><span class="nv">ONBOOT</span><span class="o">=</span>yes
+<span class="ln">8</span><span class="c1">#bootproto untuk mengatur IP apakah dhcp atau static</span>
+<span class="ln">9</span><span class="nv">BOOTPROTO</span><span class="o">=</span>dhcp/static</code></pre></div></li>
+<li>Simpan file dan keluar.</li>
+<li>Kemudian tambahkan gateway pada file network yang berada di <code>/etc/sysconfig/network</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="nv">NETWORKING</span><span class="o">=</span>yes
+<span class="ln">2</span><span class="nv">HOSTNAME</span><span class="o">=</span>server_name
+<span class="ln">3</span><span class="nv">GATEWAY</span><span class="o">=</span><span class="m">172</span>.16.0.231</code></pre></div></li>
+<li>Atur DNS di <code>/etc/resolv.conf</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>nameserver <span class="m">172</span>.16.0.231
+<span class="ln">2</span>nameserver <span class="m">8</span>.8.8.8</code></pre></div></li>
+<li>Restart servis network
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl status network.service</span>
+<span class="c1"># systemctl restart network.service</span>
+<span class="c1"># systemctl start network.service</span></code></pre></div></li>
+<li>Cek ip address yang telah berubah
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ip addr</span></code></pre></div><br /></li>
+</ol>
 
+<h3 id="menambahkan-static-route">Menambahkan Static Route</h3>
 
-              <div class="post-entry">
-                
-                  Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
-:/# chroot /sysroot  kemudian reset password
-:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.
-                  <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
+<ol>
+<li>Cek ip route server
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ip route</span></code></pre></div></li>
+<li>Tambahkan file routing dalam folder <code>/etc/sysconfig/network-scripts</code> agar static route dapat dijalankan meskipun server telah direstart. Isikan file tersebut dengan baris berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">y.y.y.y via x.x.x.x dev interface</code></pre></div>
 
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/maxtu/">
-                <h2 class="post-title">Maximum Transmission Unit</h2>
-                
-                
-              </a>
+<ul>
+<li>y.y.y.y merupakan ip address tujuan</li>
+<li>x.x.x.x merupakan gateway</li>
+<li>interface merupakan nama interface yang akan dilewati<br /></li>
+</ul></li>
+</ol>
 
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 28, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
+<h3 id="menghapus-static-route">Menghapus Static Route</h3>
 
+<ol>
+<li>Untuk mengahpus salah satu rute default
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ip route del default via y.y.y.y</span></code></pre></div></li>
+</ol>
 
-              <div class="post-entry">
-                
-                  Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
-Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
- L3 MTU = 1500 (Data: 1480 + IP:20) L2.
-                  <a href="https://mfachrulrazy.github.io/post/maxtu/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/belajar-vim/">
-                <h2 class="post-title">Belajar Vi dan Vim</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 10, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
-Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
-Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
- i : untuk beralih ke mode insert atau memasukkan teks.
-                  <a href="https://mfachrulrazy.github.io/post/belajar-vim/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/code-editor/">code editor</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command1/">
-                <h2 class="post-title">Linux Command Part 1</h2>
-                
-                  <h3 class="post-subtitle">
-                  Beberapa Perintah dasar Linux Part 1
-                  </h3>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 27, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &#34;*.conf&#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.
-                  <a href="https://mfachrulrazy.github.io/post/linux-command1/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-        </div>
 
         
-          <ul class="pager main-pager">
+          <div class="blog-tags">
             
-              <li class="previous">
-                <a href="/page/1/">&larr; Newer Posts</a>
-              </li>
+              <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
             
+              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
             
-          </ul>
+          </div>
         
-      </div>
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fnet-centos7%2f&amp;text=Networking%20pada%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fnet-centos7%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fnet-centos7%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fnet-centos7%2f&amp;title=Networking%20pada%20Centos%207" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/" data-toggle="tooltip" data-placement="top" title="Install Nodejs Centos 7">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/install-choco/" data-toggle="tooltip" data-placement="top" title="Install ChocoLatey di Windows">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
