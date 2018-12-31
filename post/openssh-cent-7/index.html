@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Linux Command Part 1 - Zyra</title>
-  <meta property="og:title" content="Linux Command Part 1" />
-  <meta name="twitter:title" content="Linux Command Part 1" />
-  <meta name="description" content="Beberapa Perintah dasar Linux Part 1">
-  <meta property="og:description" content="Beberapa Perintah dasar Linux Part 1">
-  <meta name="twitter:description" content="Beberapa Perintah dasar Linux Part 1">
+  <title>Openssh Centos 7 - Zyra</title>
+  <meta property="og:title" content="Openssh Centos 7" />
+  <meta name="twitter:title" content="Openssh Centos 7" />
+  <meta name="description" content="Install dan konfigurasi Openssh Centos 7">
+  <meta property="og:description" content="Install dan konfigurasi Openssh Centos 7">
+  <meta name="twitter:description" content="Install dan konfigurasi Openssh Centos 7">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/linux-command1/",
-          "name": "Linux command part 1"
+          "@id": "https://mfachrulrazy.github.io/post/openssh-cent-7/",
+          "name": "Openssh centos 7"
         }
     }]
 }
@@ -60,16 +60,15 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Linux Command Part 1",
-  "description" : "Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.",
+  "headline": "Openssh Centos 7",
+  "description" : "Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart",
   "inLanguage" : "en",
-  "wordCount": 180,
-  "datePublished" : "2015-05-27T00:00:00",
-  "dateModified" : "2015-05-27T00:00:00",
+  "wordCount": 247,
+  "datePublished" : "2016-08-21T00:00:00",
+  "dateModified" : "2016-08-21T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/linux-command1/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/openssh-cent-7/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -83,13 +82,13 @@
 }
 </script>
 
-<meta property="og:title" content="Linux Command Part 1" />
-<meta property="og:description" content="Beberapa Perintah dasar Linux Part 1">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/linux-command1/" />
+<meta property="og:title" content="Openssh Centos 7" />
+<meta property="og:description" content="Install dan konfigurasi Openssh Centos 7">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/openssh-cent-7/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Linux Command Part 1" />
-  <meta name="twitter:description" content="Beberapa Perintah dasar Linux Part 1">
+  <meta name="twitter:title" content="Openssh Centos 7" />
+  <meta name="twitter:description" content="Install dan konfigurasi Openssh Centos 7">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -97,7 +96,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/linux-command1/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/openssh-cent-7/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -236,22 +235,22 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Linux Command Part 1</h1>
+                <h1>Openssh Centos 7</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Beberapa Perintah dasar Linux Part 1</h2>
+                  <h2 class="post-subheading">Install dan konfigurasi Openssh Centos 7</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 27, 2015
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 21, 2016
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -275,47 +274,64 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.</p>
+        
+
+<h3 id="install-openssh-server">Install Openssh Server</h3>
 
 <ol>
-<li>Mengganti owner dari direktori. Contoh direktori /tmp
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># chown -R apache:apache /tmp</span></code></pre></div></li>
-<li>keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache</li>
-<li>Mencari tipe file tertentu (dalam hal ini file <code>.conf</code>) dari folder root <code>/</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># find / -type f -name &#34;*.conf&#34;</span></code></pre></div></li>
-<li>Melihat ukuran file
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># du -h namafile</span></code></pre></div></li>
-<li>Melihat isi direktori disortir berdasarkan ukuran
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ls -lSh</span></code></pre></div></li>
-<li>Melihat ukuran isi suatu direktori
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># du -h --max-depth=1</span></code></pre></div>
-
-<ul>
-<li>&ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</li>
-</ul></li>
-<li>Melihat besar ukuran direktori saat ini
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># du sh</span></code></pre></div></li>
-<li>Melihat daftar partisi (bisa menggunakan salah satu perintah)
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># lsblk</span>
-<span class="c1"># df</span></code></pre></div></li>
-<li>Membuka port mysql pada centos 7 agar bisa digunakan oleh program remote mysql
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># iptables -I INPUT -p tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT</span>
-<span class="c1"># iptables -I OUTPUT -p tcp --sport 3306 -m state --state ESTABLISHED -j ACCEPT</span></code></pre></div></li>
-<li>Melihat Servis yang berjalan pada port 9000
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># lsof -i tcp:9000</span></code></pre></div></li>
+<li>Install paket openssh server dan client
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install openssh-server openssh-clients</span></code></pre></div></li>
+<li>Jalankan service-nya
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># chkconfig sshd on</span>
+<span class="c1"># service sshd start</span></code></pre></div></li>
+<li>Pastikan service-nya telah berjalan (install netstat terlebih dahulu)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># netstat -tulpn | grep :22</span></code></pre></div></li>
+<li>Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># vi /etc/ssh/sshd_config</span></code></pre></div></li>
+<li>Jika ada perubahan pada file konfigurasi, restart servis ssh
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart sshd.service</span>
+Atau
+<span class="c1"># service sshd restart</span></code></pre></div><br /></li>
 </ol>
+
+<h3 id="mengubah-port-ssh">Mengubah Port SSH</h3>
+
+<ol>
+<li>Backup file konfigurasi ssh
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak</span></code></pre></div></li>
+<li>Edit file sshd_config dan hapus komentar pada bagian port kemudian ganti dengan port yang diinginkan
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span>Port <span class="m">22</span> <span class="c1">#ubah menjadi port yang diinginkan</span>
+<span class="ln">3</span>...</code></pre></div></li>
+<li>Setelah itu, atur perizinan di SELinux karena SELinux secara default hanya mengizinkan port 22
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># semanage port -a -t ssh_port_t -p tcp #portnumber</span></code></pre></div></li>
+<li>Jika selinux belum terpasang, install paket berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install policycoreutils-python</span></code></pre></div></li>
+<li>Biasanya port yang ditentukan, telah dipakai oleh service lain, jadi pastikan dulu untuk mengecek port yang akan digunakan
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># semanage port -l | grep #portnumber</span></code></pre></div></li>
+<li>Atur firewall-cmd untuk mengizinkan port baru
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --permanent --zone=public --add-port=#portnumber/tcp</span></code></pre></div></li>
+<li>Restart firewall-cmd dan servis ssh
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --reload</span>
+<span class="c1"># systemctl restart sshd.service</span></code></pre></div></li>
+<li>Kemudian verifikasi ssh telah berjalan di port baru
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ss -tnlp | grep ssh</span></code></pre></div><br /></li>
+</ol>
+
+<h3 id="troubleshoot-ssh">Troubleshoot SSH</h3>
+
+<p>Jika mengganti port default dari ssh di Centos 7 akan mengakibatkan service ssh tidak berjalan dan terjadi error seperti gambar di bawah ini
+<img src="/img/ssh-cent1.png" alt="img1" />
+Hal ini dikarenakan adanya security di centos yang harus dikonfigurasi.<br />
+Baca referensi mengenai SE Linux di centos</p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-            
               <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
             
           </div>
         
@@ -330,28 +346,28 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command1%2f&amp;text=Linux%20Command%20Part%201&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f&amp;text=Openssh%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command1%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command1%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command1%2f&amp;title=Linux%20Command%20Part%201" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f&amp;title=Openssh%20Centos%207" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -371,9 +387,13 @@
       
         <ul class="pager blog-pager">
           
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/belajar-vim/" data-toggle="tooltip" data-placement="top" title="Belajar Vi dan Vim">&larr; Previous Post</a>
+            </li>
+          
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/linux-command2/" data-toggle="tooltip" data-placement="top" title="Linux Command Part 2">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/maxtu/" data-toggle="tooltip" data-placement="top" title="Maximum Transmission Unit">Next Post &rarr;</a>
             </li>
           
         </ul>

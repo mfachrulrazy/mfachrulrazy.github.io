@@ -169,6 +169,15 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
     </item>
     
     <item>
+      <title>Openssh Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/openssh-cent-7/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/openssh-cent-7/</guid>
+      <description>Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart</description>
+    </item>
+    
+    <item>
       <title>Belajar Vi dan Vim</title>
       <link>https://mfachrulrazy.github.io/post/belajar-vim/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
@@ -178,6 +187,15 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
 Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
 Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
  i : untuk beralih ke mode insert atau memasukkan teks.</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 2</title>
+      <link>https://mfachrulrazy.github.io/post/linux-command2/</link>
+      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/linux-command2/</guid>
+      <description>Konfigurasi IPTables Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;.....</description>
     </item>
     
     <item>
