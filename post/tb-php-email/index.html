@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>What is This? - Zyra</title>
-  <meta property="og:title" content="What is This?" />
-  <meta name="twitter:title" content="What is This?" />
-  <meta name="description" content="Catatan Pribadi seorang Pemerhati Dunia 1010">
-  <meta property="og:description" content="Catatan Pribadi seorang Pemerhati Dunia 1010">
-  <meta name="twitter:description" content="Catatan Pribadi seorang Pemerhati Dunia 1010">
+  <title>Troubleshoot Script Email PHP - Zyra</title>
+  <meta property="og:title" content="Troubleshoot Script Email PHP" />
+  <meta name="twitter:title" content="Troubleshoot Script Email PHP" />
+  <meta name="description" content="Script php tidak dapat mengirim email">
+  <meta property="og:description" content="Script php tidak dapat mengirim email">
+  <meta name="twitter:description" content="Script php tidak dapat mengirim email">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/page/about/",
-          "name": "What is this?"
+          "@id": "https://mfachrulrazy.github.io/post/tb-php-email/",
+          "name": "Troubleshoot script email p h p"
         }
     }]
 }
@@ -58,22 +58,19 @@
   "@context": "http://schema.org",
   "@type": "Article",
   "author": {
-    "name" : "Muhammad Fachrul Razy"
+    "name" : "MFR"
   },
-  "headline": "What is This?",
-  "description" : "Assalamualaikum,
-Halo All.. Perkenalkan saya Oji dari Makassar.
-Keseharian saya bergelut dalam dunia IT itu bisa dibilang hanya tukang install dan konfig server, biasa juga buat script2 dan aplikasi sederhana :)
-Saya juga masih aktif dalam beberapa organisasi dan komunitas IT dan open source.
-Lanjut, jadi halaman ini saya buat untuk menjelaskan beberapa hal mengenai blog ini. Berikut sedikit FAQ-nya
-Apa itu Zyra? Sebenarnya Z Y R A itu hanya singkatan random yang diambil dari salah satu suku kata nama saya dan istri saya, kami ambil yang paling bagus dan enak didengar menurut kami :D",
+  "headline": "Troubleshoot Script Email PHP",
+  "description" : "Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
+Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
+Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.",
   "inLanguage" : "en",
-  "wordCount": 211,
-  "datePublished" : "0001-01-01T00:00:00",
-  "dateModified" : "0001-01-01T00:00:00",
+  "wordCount": 127,
+  "datePublished" : "2017-09-15T00:00:00",
+  "dateModified" : "2017-09-15T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/page/about/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/tb-php-email/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -87,13 +84,13 @@ Apa itu Zyra? Sebenarnya Z Y R A itu hanya singkatan random yang diambil dari sa
 }
 </script>
 
-<meta property="og:title" content="What is This?" />
-<meta property="og:description" content="Catatan Pribadi seorang Pemerhati Dunia 1010">
-<meta property="og:url" content="https://mfachrulrazy.github.io/page/about/" />
+<meta property="og:title" content="Troubleshoot Script Email PHP" />
+<meta property="og:description" content="Script php tidak dapat mengirim email">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-php-email/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="What is This?" />
-  <meta name="twitter:description" content="Catatan Pribadi seorang Pemerhati Dunia 1010">
+  <meta name="twitter:title" content="Troubleshoot Script Email PHP" />
+  <meta name="twitter:description" content="Script php tidak dapat mengirim email">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -101,7 +98,7 @@ Apa itu Zyra? Sebenarnya Z Y R A itu hanya singkatan random yang diambil dari sa
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/page/about/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-php-email/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -238,18 +235,33 @@ Apa itu Zyra? Sebenarnya Z Y R A itu hanya singkatan random yang diambil dari sa
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
+            <div class="post-heading">
               
-                <h1>What is This?</h1>
+                <h1>Troubleshoot Script Email PHP</h1>
               
-              
-                <hr class="small">
               
               
                 
-                  <span class="page-subheading">Catatan Pribadi seorang Pemerhati Dunia 1010</span>
+                  <h2 class="post-subheading">Script php tidak dapat mengirim email</h2>
                 
               
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 15, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
               
             </div>
           </div>
@@ -264,37 +276,29 @@ Apa itu Zyra? Sebenarnya Z Y R A itu hanya singkatan random yang diambil dari sa
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
+        <p>Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.<br />
+Pesan error seperti ini <code>ERROR: Failed to connect to server: Permission denied (13)</code>, hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.<br />
+<strong>Getsebool</strong> dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.<br />
+Untuk mengizinkannya dapat melakukan langkah berikut<br />
+1. Cek terlebih dahulu status selinux
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># getsebool httpd_can_sendmail</span>
+<span class="c1"># getsebool httpd_can_network_connect</span></code></pre></div>
+2. Jika nilai yang keluar adalah 0 yang berarti off. Untuk mengaktifkannya dapat dilakukan dengan perintah berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># setsebool -P httpd_can_sendmail 1</span>
+<span class="c1"># setsebool -P httpd_can_network_connect 1</span></code></pre></div>
+Pastikan untuk paket getsebool telah terinstall di server</p>
+
+
         
-
-<p><strong>Assalamualaikum</strong>,<br />
-Halo All.. Perkenalkan saya <a href="https://www.linkedin.com/in/mfachrulrazy/">Oji</a> dari Makassar.<br />
-Keseharian saya bergelut dalam dunia IT itu bisa dibilang hanya tukang install dan konfig server, biasa juga buat script2 dan aplikasi sederhana :)<br />
-Saya juga masih aktif dalam beberapa organisasi dan komunitas IT dan open source.<br />
-Lanjut, jadi halaman ini saya buat untuk menjelaskan beberapa hal mengenai blog ini. Berikut sedikit FAQ-nya</p>
-
-<h3 id="apa-itu-zyra">Apa itu Zyra?</h3>
-
-<p>Sebenarnya <code>Z Y R A</code> itu hanya singkatan random yang diambil dari salah satu suku kata nama saya dan istri saya, kami ambil yang paling bagus dan enak didengar menurut kami :D</p>
-
-<h3 id="arti-dari-logo-zyra">Arti dari Logo Zyra?</h3>
-
-<p>Logo zyra sendiri terinspirasi dari bentuk di dalam angka 0, mungkin angka 0 yang berbentuk sedikit kotak :)<br />
-Filosofinya begini, ketika kita terlahir di dunia ini kita itu terlahir suci, fitrah, atau kalau direpresentasikan dengan angka yang paling cocok adalah 0 (menurut saya pribadi).
-<img src="/img/avatar-icon.png" alt="img1" /></p>
-
-<h3 id="kenapa-buat-blog-ini">Kenapa buat Blog ini?</h3>
-
-<ul>
-<li>Tujuannya sederhana saja, yaitu untuk <em>sharing</em> segala hal yang telah saya lakukan dan alami sendiri dalam dunia IT (mungkin lebih banyak dalam bidang jaringan dan sys admin) :)<br /></li>
-<li>Selain itu blog ini juga sebagai wadah saya dalam menuangkan ide-ide saya dalam tulisan.</li>
-</ul>
-
-<h3 id="ingin-berkolaborasi">Ingin berkolaborasi?</h3>
-
-<p>Ingin berkolaborasi demi memajukan dunia IT di Indonesia bersama-sama? Atau hanya ingin ngobrol2 ringan tentang apapun itu..<br />
-<strong>Just <a href="https://telegram.me/ojiii">tel me</a></strong></p>
-
-
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+            
+          </div>
         
 
         
@@ -307,28 +311,28 @@ Filosofinya begini, ketika kita terlahir di dunia ini kita itu terlahir suci, fi
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpage%2fabout%2f&amp;text=What%20is%20This%3f&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-php-email%2f&amp;text=Troubleshoot%20Script%20Email%20PHP&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpage%2fabout%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-php-email%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpage%2fabout%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-php-email%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpage%2fabout%2f&amp;title=What%20is%20This%3f" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-php-email%2f&amp;title=Troubleshoot%20Script%20Email%20PHP" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -345,6 +349,19 @@ Filosofinya begini, ketika kita terlahir di dunia ini kita itu terlahir suci, fi
         
       </article>
 
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/int-baru-vbox/" data-toggle="tooltip" data-placement="top" title="Interface Network pada VirtualBox">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/repo-cent-7/" data-toggle="tooltip" data-placement="top" title="Repository Centos 7">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
       
 
 

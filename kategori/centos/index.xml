@@ -69,6 +69,17 @@ Melihat repository dengan nama ‘repoA-id’
     </item>
     
     <item>
+      <title>Troubleshoot Script Email PHP</title>
+      <link>https://mfachrulrazy.github.io/post/tb-php-email/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/tb-php-email/</guid>
+      <description>Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
+Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
+Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.</description>
+    </item>
+    
+    <item>
       <title>Reset Password Centos7</title>
       <link>https://mfachrulrazy.github.io/post/reset-pass-centos7/</link>
       <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>

@@ -650,8 +650,12 @@ Melihat repository dengan nama ‘repoA-id’
             </article>
           
             <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/int-baru-vbox/">
-                <h2 class="post-title">Interface Network pada VirtualBox</h2>
+              <a href="https://mfachrulrazy.github.io/post/tb-php-email/">
+                <h2 class="post-title">Troubleshoot Script Email PHP</h2>
+                
+                  <h3 class="post-subtitle">
+                  Script php tidak dapat mengirim email
+                  </h3>
                 
                 
               </a>
@@ -659,7 +663,7 @@ Melihat repository dengan nama ‘repoA-id’
               <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 15, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 15, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -674,22 +678,21 @@ Melihat repository dengan nama ‘repoA-id’
 
               <div class="post-entry">
                 
-                  <ol>
-<li>Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui<br />
-<code>File &gt; Host Network Manager &gt; Create</code></li>
-<li>Untuk mengedit interface yang sudah ada bisa memilih <code>Properties</code>
-<img src="/img/vbox-newint.png" alt="img1" /></li>
-</ol>
-
+                  Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
+Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
+Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.
+                  <a href="https://mfachrulrazy.github.io/post/tb-php-email/" class="post-read-more">[Read More]</a>
                 
               </div>
 
               
                 <div class="blog-tags">
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/virtual-box/">virtual box</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
                   
                 </div>
               
