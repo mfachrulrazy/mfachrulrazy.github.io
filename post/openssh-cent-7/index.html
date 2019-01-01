@@ -63,7 +63,7 @@
   "headline": "Openssh Centos 7",
   "description" : "Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart",
   "inLanguage" : "en",
-  "wordCount": 247,
+  "wordCount": 295,
   "datePublished" : "2016-08-21T00:00:00",
   "dateModified" : "2016-08-21T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -324,6 +324,17 @@ Atau
 <img src="/img/ssh-cent1.png" alt="img1" />
 Hal ini dikarenakan adanya security di centos yang harus dikonfigurasi.<br />
 Baca referensi mengenai SE Linux di centos</p>
+
+<h3 id="troubleshoot-prompt-password-ssh">Troubleshoot Prompt Password SSH</h3>
+
+<p>Biasanya ketika login ssh, setelah memasukkan username, prompt untuk memasukkan password lumayan lama untuk muncul.<br />
+Penyebabnya adalah IP address tidak me-reverse pengaturan etc DNS. Berikut hal yang dapat dilakukan
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>GSSAPIAuthentication yes
+<span class="ln">2</span>menjadi: GSSAPIAuthentication no
+<span class="ln">3</span>dan
+<span class="ln">4</span>UseDNS yes
+<span class="ln">5</span>menjadi: UseDNS no</code></pre></div>
+Kemudian restart servis ssh.</p>
 
 
         

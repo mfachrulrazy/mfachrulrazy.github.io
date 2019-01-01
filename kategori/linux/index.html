@@ -264,6 +264,59 @@
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/">
+                <h2 class="post-title">Uninstall Paket Linux</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Menghapus paket yang terinstall secara keseluruhan pada Centos dan Ubuntu
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 20, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
+Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.
+                  <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/">
                 <h2 class="post-title">Install Nodejs Centos 7</h2>
 
@@ -491,17 +544,9 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
               </p>
               <div class="post-entry">
                 
-                  
-
-<h3 id="konfigurasi-iptables">Konfigurasi IPTables</h3>
-
-<p>Untuk melihat daftar semua <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -S</code></pre></div>
-Untuk menambah <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -A .....&lt;rule_iptable&gt;.....</code></pre></div>
-Untuk menghapus <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -D .....&lt;rule_iptable&gt;.....</code></pre></div></p>
-
+                  Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&lt;rule_iptable&gt;..... Untuk menghapus iptables $ sudo iptables -D .....&lt;rule_iptable&gt;.....
+Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &lt;namafile&gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall
+                  <a href="https://mfachrulrazy.github.io/post/linux-command2/" class="post-read-more">[Read More]</a>
                 
               </div>
 
