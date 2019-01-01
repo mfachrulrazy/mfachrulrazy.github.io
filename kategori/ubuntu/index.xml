@@ -40,7 +40,7 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/linux-command1/</guid>
       <description>Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</description>
+ Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</description>
     </item>
     
   </channel>
