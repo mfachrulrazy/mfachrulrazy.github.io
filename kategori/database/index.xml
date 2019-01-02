@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/database/</link>
+    <description>Recent content in Database on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Thu, 02 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Mysql Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-mysql-cent/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-mysql-cent/</guid>
+      <description>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
+ Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  </description>
+    </item>
+    
+  </channel>
+</rss>

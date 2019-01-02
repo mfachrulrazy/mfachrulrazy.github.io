@@ -196,7 +196,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 15, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 21, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;minutes
@@ -224,6 +224,56 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
         <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/repo-cent-7/">
+                <h2 class="post-title">Repository Centos 7</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 21, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Melihat repository yang aktif pada centos
+# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
+# yum repolist enable # yum repolist disable # yum repolist all
+Melihat repository dengan nama ‘repoA-id’
+# yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available Cek epel repository
+# yum repolist | grep &#34;^epel\|repo id&#34; Hapus repository
+# yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository
+                  <a href="https://mfachrulrazy.github.io/post/repo-cent-7/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
           
             <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/tb-php-email/">
@@ -374,58 +424,6 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
                     <a href="https://mfachrulrazy.github.io//kategori/github/">github</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/imp-proxmox/">
-                <h2 class="post-title">All about Proxmox</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Implementasi Proxmox
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 12, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-              <div class="post-entry">
-                
-                  Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
-Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.
-                  <a href="https://mfachrulrazy.github.io/post/imp-proxmox/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/proxmox/">proxmox</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
                   
                 </div>
               

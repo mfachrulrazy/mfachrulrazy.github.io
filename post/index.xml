@@ -86,6 +86,16 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
     </item>
     
     <item>
+      <title>Install Mysql Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-mysql-cent/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-mysql-cent/</guid>
+      <description>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
+ Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  </description>
+    </item>
+    
+    <item>
       <title>Networking pada Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/net-centos7/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
@@ -154,17 +164,6 @@ File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang
  Ada 2 file yang dibuat seperti di linux yaitu id_rsa dan id_rsa.pub
  Copy isi file id_rsa.pub
  Masuk ke menu Settings &amp;gt; SSH and GPG Keys pada akun github</description>
-    </item>
-    
-    <item>
-      <title>All about Proxmox</title>
-      <link>https://mfachrulrazy.github.io/post/imp-proxmox/</link>
-      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
-      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
-      <guid>https://mfachrulrazy.github.io/post/imp-proxmox/</guid>
-      <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
-Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.</description>
     </item>
     
     <item>

@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>All pages in the kategori #Networking - Zyra</title>
-  <meta property="og:title" content="All pages in the kategori #Networking" />
-  <meta name="twitter:title" content="All pages in the kategori #Networking" />
-  <meta name="description" content="All pages in the kategori #Networking, such as: Konfigurasi Nmtui Centos 7">
-  <meta property="og:description" content="All pages in the kategori #Networking, such as: Konfigurasi Nmtui Centos 7">
-  <meta name="twitter:description" content="All pages in the kategori #Networking, such as: Konfigurasi Nmtui Centos 7">
+  <title>All pages in the kategori #Database - Zyra</title>
+  <meta property="og:title" content="All pages in the kategori #Database" />
+  <meta name="twitter:title" content="All pages in the kategori #Database" />
+  <meta name="description" content="All pages in the kategori #Database, such as: Install Mysql Centos 7">
+  <meta property="og:description" content="All pages in the kategori #Database, such as: Install Mysql Centos 7">
+  <meta name="twitter:description" content="All pages in the kategori #Database, such as: Install Mysql Centos 7">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -34,11 +34,11 @@
 }
 </script>
 
-<meta property="og:title" content="Networking" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/kategori/networking/" />
+<meta property="og:title" content="Database" />
+<meta property="og:url" content="https://mfachrulrazy.github.io/kategori/database/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Networking" />
+  <meta name="twitter:title" content="Database" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -46,7 +46,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/kategori/networking/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/kategori/database/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -191,7 +191,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="kategori-heading">
               
-                <h1>Networking</h1>
+                <h1>Database</h1>
               
               
                 <hr class="small">
@@ -214,12 +214,12 @@
         <div class="posts-list">
           
             <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/netmui-cent/">
-                <h2 class="post-title">Konfigurasi Nmtui Centos 7</h2>
+              <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/">
+                <h2 class="post-title">Install Mysql Centos 7</h2>
 
                 
                   <h3 class="post-subtitle">
-                    Konfigurasi jaringan dengan Nmtui pada centos 7
+                    Install mysql versi community pada Centos 7
                   </h3>
                 
               </a>
@@ -228,7 +228,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 17, 2018
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 2, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -244,19 +244,18 @@
               </p>
               <div class="post-entry">
                 
-                  <p>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.<br />
-Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan <strong>nmtui</strong>.</p>
+                  <p>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.</p>
 
 <ol>
-<li>Jalankan nmtui dari terminal
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># nmtui</span></code></pre></div>
-<img src="/img/nmtui/nmtui1.png" alt="img1" /></li>
-<li>Pilih edit connection &gt; kemudian pilih Wired connection 1 &gt; pilih Edit
-<img src="/img/nmtui/nmtui2.png" alt="img2" /></li>
-<li>Kemudian ubah nama profil dan IPv4 configuration menjadi manual
-<img src="/img/nmtui/nmtui3.png" alt="img3" /></li>
-<li>Kemudian OK &gt; Back &gt; Quit</li>
-<li>Restart service network</li>
+<li>Download dan tambahkan repo.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm</span>
+<span class="c1"># sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm</span>
+<span class="c1"># yum update</span></code></pre></div></li>
+<li>Install mysql dan jalankan servisnya
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install mysql-server</span>
+<span class="c1"># systemctl start mysqld</span></code></pre></div></li>
+<li>Jalankan script <code>mysql_secure_installation</code> setelah selesai menginstall mysql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysql_secure_installation</span></code></pre></div></li>
 </ol>
 
                 
@@ -265,104 +264,11 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
               
                 <div class="blog-tags">
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/mysql/">mysql</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/virtual-box/">virtual box</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/net-centos7/">
-                <h2 class="post-title">Networking pada Centos 7</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Pengaturan Jaringan pada Centos 7
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 13, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-              <div class="post-entry">
-                
-                  Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
- Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut 1IPADDR= 2NETMASK= 3GATEWAY= 4DNS1= 5DNS2= 6#onboot untuk mengatur interface aktif pada saat server baru dinyalakan 7ONBOOT=yes 8#bootproto untuk mengatur IP apakah dhcp atau static 9BOOTPROTO=dhcp/static Simpan file dan keluar.
-                  <a href="https://mfachrulrazy.github.io/post/net-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/maxtu/">
-                <h2 class="post-title">Maximum Transmission Unit</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 28, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-              <div class="post-entry">
-                
-                  Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
-Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
- L3 MTU = 1500 (Data: 1480 + IP:20) L2.
-                  <a href="https://mfachrulrazy.github.io/post/maxtu/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
                   
                 </div>
               
@@ -432,7 +338,7 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/kategori/networking/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/kategori/database/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
