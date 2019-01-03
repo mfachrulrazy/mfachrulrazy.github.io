@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Mon, 05 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install WINS Windows Server 2003</title>
+      <link>https://mfachrulrazy.github.io/post/install-wins-2003/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-wins-2003/</guid>
+      <description>Dikutip dari Wikipedia
+ WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).</description>
+    </item>
     
     <item>
       <title>VM Virtual Box Error</title>
@@ -164,6 +174,17 @@ File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang
  Ada 2 file yang dibuat seperti di linux yaitu id_rsa dan id_rsa.pub
  Copy isi file id_rsa.pub
  Masuk ke menu Settings &amp;gt; SSH and GPG Keys pada akun github</description>
+    </item>
+    
+    <item>
+      <title>All about Proxmox</title>
+      <link>https://mfachrulrazy.github.io/post/imp-proxmox/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/imp-proxmox/</guid>
+      <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
+Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
+ Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.</description>
     </item>
     
     <item>

@@ -60,6 +60,17 @@ Melihat repository dengan nama ‘repoA-id’
     </item>
     
     <item>
+      <title>All about Proxmox</title>
+      <link>https://mfachrulrazy.github.io/post/imp-proxmox/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/imp-proxmox/</guid>
+      <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
+Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
+ Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.</description>
+    </item>
+    
+    <item>
       <title>Reset Password Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/reset-pass-centos7/</link>
       <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>

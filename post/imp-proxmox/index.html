@@ -63,9 +63,9 @@
   "headline": "All about Proxmox",
   "description" : "Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
 Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.",
+ Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.",
   "inLanguage" : "en",
-  "wordCount": 209,
+  "wordCount": 210,
   "datePublished" : "2017-07-12T00:00:00",
   "dateModified" : "2017-07-12T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -299,10 +299,10 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 <li>proxmox 5 foldernya di: <code>/usr/share/pve-manager/js</code></li>
 </ul></li>
 <li>Kemudian edit pada baris berikut
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="s1">&#39;Active&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span>
-<span class="c1">// ubah menjadi
-</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="kc">false</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span>
-</code></pre></div></li>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln">1</span><span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="s1">&#39;Active&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span>
+<span class="ln">2</span><span class="c1">// ubah menjadi
+</span><span class="ln">3</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="kc">false</span><span class="p">)</span> <span class="p">{</span> <span class="p">...</span>
+<span class="ln">4</span></code></pre></div></li>
 <li>Simpan perubahannya, dan pesan tersebut tidak akan muncul kembali.<br /></li>
 </ol>
 
@@ -324,7 +324,7 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 
 <ul>
 <li>Untuk VM di folder: qemu-server</li>
-<li>Untuk CT di folder: openvz</li>
+<li>Untuk CT di folder: openvz<br /></li>
 </ul></li>
 </ol>
 
