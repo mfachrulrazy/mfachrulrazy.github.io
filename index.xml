@@ -152,6 +152,16 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
     </item>
     
     <item>
+      <title>Troubleshoot Web Server I</title>
+      <link>https://mfachrulrazy.github.io/post/tb-web-server1/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/tb-web-server1/</guid>
+      <description>Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
+Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.</description>
+    </item>
+    
+    <item>
       <title>Interface Network pada VirtualBox</title>
       <link>https://mfachrulrazy.github.io/post/int-baru-vbox/</link>
       <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>

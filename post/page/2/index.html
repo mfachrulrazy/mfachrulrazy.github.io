@@ -375,6 +375,55 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/tb-web-server1/">
+                <h2 class="post-title">Troubleshoot Web Server I</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Troubleshoot error web server
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 13, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
+Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.
+                  <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/int-baru-vbox/">
                 <h2 class="post-title">Interface Network pada VirtualBox</h2>
 
@@ -663,53 +712,6 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
                     <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/belajar-vim/">
-                <h2 class="post-title">Belajar Vi dan Vim</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 10, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-              <div class="post-entry">
-                
-                  Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
-Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
-Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
- i : untuk beralih ke mode insert atau memasukkan teks.
-                  <a href="https://mfachrulrazy.github.io/post/belajar-vim/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/code-editor/">code editor</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
                   
                 </div>
               
