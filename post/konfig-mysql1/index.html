@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Linux Command Part 2 - Zyra</title>
-  <meta property="og:title" content="Linux Command Part 2" />
-  <meta name="twitter:title" content="Linux Command Part 2" />
-  <meta name="description" content="Beberapa Perintah dasar Linux Part 2">
-  <meta property="og:description" content="Beberapa Perintah dasar Linux Part 2">
-  <meta name="twitter:description" content="Beberapa Perintah dasar Linux Part 2">
+  <title>Belajar Mysql Part 1 - Zyra</title>
+  <meta property="og:title" content="Belajar Mysql Part 1" />
+  <meta name="twitter:title" content="Belajar Mysql Part 1" />
+  <meta name="description" content="Belajar mysql dasar Part 1">
+  <meta property="og:description" content="Belajar mysql dasar Part 1">
+  <meta name="twitter:description" content="Belajar mysql dasar Part 1">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/linux-command2/",
-          "name": "Linux command part 2"
+          "@id": "https://mfachrulrazy.github.io/post/konfig-mysql1/",
+          "name": "Belajar mysql part 1"
         }
     }]
 }
@@ -60,16 +60,15 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Linux Command Part 2",
-  "description" : "Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;.....
-Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall",
+  "headline": "Belajar Mysql Part 1",
+  "description" : "Login ke mysql dari terminal # mysql -u root -p Memilih database &amp;gt; USE MYSQL; Membuat user baru &amp;gt; CREATE USER &amp;#39;userbaru&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; Lihat nama user yang ingin diubah aksesnya &amp;gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &amp;gt; UPDATE USER SET HOST = &amp;#39;%&amp;#39; WHERE USER=&amp;#39;user&amp;#39;; Mengaktifkan perubahan &amp;gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &amp;gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &amp;gt; SET PASSWORD FOR &amp;#39;user&amp;#39;@&amp;#39;localhost&amp;#39; = PASSWORD(&amp;#39;password&amp;#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).",
   "inLanguage" : "en",
-  "wordCount": 122,
-  "datePublished" : "2015-08-31T00:00:00",
-  "dateModified" : "2015-08-31T00:00:00",
+  "wordCount": 197,
+  "datePublished" : "2015-03-07T00:00:00",
+  "dateModified" : "2015-03-07T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/linux-command2/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/konfig-mysql1/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -83,13 +82,13 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 }
 </script>
 
-<meta property="og:title" content="Linux Command Part 2" />
-<meta property="og:description" content="Beberapa Perintah dasar Linux Part 2">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/linux-command2/" />
+<meta property="og:title" content="Belajar Mysql Part 1" />
+<meta property="og:description" content="Belajar mysql dasar Part 1">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-mysql1/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Linux Command Part 2" />
-  <meta name="twitter:description" content="Beberapa Perintah dasar Linux Part 2">
+  <meta name="twitter:title" content="Belajar Mysql Part 1" />
+  <meta name="twitter:description" content="Belajar mysql dasar Part 1">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -97,7 +96,7 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/linux-command2/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-mysql1/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -242,19 +241,19 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Linux Command Part 2</h1>
+                <h1>Belajar Mysql Part 1</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Beberapa Perintah dasar Linux Part 2</h2>
+                  <h2 class="post-subheading">Belajar mysql dasar Part 1</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2015
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 7, 2015
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -281,47 +280,53 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
+        <ol>
+<li>Login ke mysql dari terminal
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysql -u root -p</span></code></pre></div></li>
+<li>Memilih database
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">USE</span> <span class="n">MYSQL</span><span class="p">;</span></code></pre></div></li>
+<li>Membuat user baru
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">CREATE</span> <span class="n">USER</span> <span class="s1">&#39;userbaru&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;password&#39;</span><span class="p">;</span></code></pre></div></li>
+<li>Lihat nama user yang ingin diubah aksesnya
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="n">USER</span><span class="p">,</span><span class="n">HOST</span> <span class="k">FROM</span> <span class="n">USER</span><span class="p">;</span></code></pre></div></li>
+<li>Update datanya menjadi yang diinginkan
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="n">USER</span> <span class="kt">SET</span> <span class="n">HOST</span> <span class="o">=</span> <span class="s1">&#39;%&#39;</span> <span class="k">WHERE</span> <span class="n">USER</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">;</span></code></pre></div></li>
+<li>Mengaktifkan perubahan
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">FLUSH</span> <span class="n">PRIVILEGES</span><span class="p">;</span></code></pre></div></li>
+<li>Cek database sekarang atau user sekarang (yang sedang aktif)
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="p">[</span> <span class="k">database</span><span class="p">()</span> <span class="p">];</span> <span class="p">[</span> <span class="nf">user</span><span class="p">()</span> <span class="p">]</span></code></pre></div></li>
+<li>Mengubah password user mysql
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="kt">SET</span> <span class="n">PASSWORD</span> <span class="k">FOR</span> <span class="s1">&#39;user&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="o">=</span> <span class="nf">PASSWORD</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">);</span></code></pre></div>
 
-<h3 id="konfigurasi-iptables">Konfigurasi IPTables</h3>
+<ul>
+<li>Tanda <code>%</code> memastikan bahwa user dapat mengakses database via remote (any ip address).</li>
+</ul></li>
+<li>Mengizinkan (grant) user untuk database tertentu
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">GRANT</span> <span class="k">ALL</span> <span class="n">PRIVILEGES</span> <span class="k">ON</span> <span class="n">namaDatabase</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;username&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span></code></pre></div>
 
-<p>IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -S</code></pre></div>
-Untuk menambah <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -A .....&lt;rule_iptable&gt;.....</code></pre></div>
-Untuk menghapus <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -D .....&lt;rule_iptable&gt;.....</code></pre></div></p>
-
-<h3 id="mengahpus-paket-instalasi">Mengahpus paket Instalasi</h3>
-
-<p>Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rm -i &lt;namafile&gt;</span></code></pre></div>
-Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum autoremove</span></code></pre></div>
-Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># package-cleanup --leaves</span></code></pre></div>
-Perintah di atas akan memperlihatkan daftar paket yang terinstall<br />
-Kemudian remove dengan perintah berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum remove `package-cleanup --leaves`</span></code></pre></div></p>
-
-<h3 id="melihat-user">Melihat User</h3>
-
-<p>Melihat segala jenis user pada linux
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cat /etc/passwd</span></code></pre></div>
-Hanya list nama user
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># awk -F&#39;:&#39; &#39;{ print $1}&#39; /etc/passwd</span></code></pre></div></p>
+<ul>
+<li>localhost bisa diganti dengan ip address atau % tergantung user tersebut akan mengakses database dari host mana.</li>
+<li>Untuk &lsquo;ALL PRIVILEGES&rsquo; bisa diganti dengan opsi select, create, delete dsb.</li>
+</ul></li>
+<li>Untuk melihat hasil privileges
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">SHOW</span> <span class="n">GRANTS</span> <span class="k">FOR</span> <span class="s1">&#39;user&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span></code></pre></div></li>
+<li>Export database (dump database)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysqldump -u (user) -p (nama_database) &gt; namafile.sql</span></code></pre></div></li>
+<li>Import database (.sql)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysql -u (username) -p (new_database) &lt; namafile.sql</span></code></pre></div></li>
+<li>Import database yang terkompres. File database yang terkompres biasanya dalam bentuk xxx.sql.gz, untuk mengimpornya gunakan perintah berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># zcat namadatabase.sql.gz | mysql -u root -p namaDatabase</span></code></pre></div></li>
+</ol>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/mysql/">mysql</a>&nbsp;
             
           </div>
         
@@ -336,28 +341,28 @@ Hanya list nama user
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f&amp;text=Linux%20Command%20Part%202&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-mysql1%2f&amp;text=Belajar%20Mysql%20Part%201&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-mysql1%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-mysql1%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f&amp;title=Linux%20Command%20Part%202" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-mysql1%2f&amp;title=Belajar%20Mysql%20Part%201" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -378,12 +383,12 @@ Hanya list nama user
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/" data-toggle="tooltip" data-placement="top" title="Belajar Mysql Part 1">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/linux-command1/" data-toggle="tooltip" data-placement="top" title="Linux Command Part 1">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/belajar-vim/" data-toggle="tooltip" data-placement="top" title="Belajar Vi dan Vim">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/linux-command2/" data-toggle="tooltip" data-placement="top" title="Linux Command Part 2">Next Post &rarr;</a>
             </li>
           
         </ul>
