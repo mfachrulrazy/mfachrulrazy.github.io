@@ -259,6 +259,76 @@
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-docker-win10h/">
+                <h2 class="post-title">Install Docker Windows 10 Home</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on December 4, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  
+
+<p>Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.</p>
+
+<p>Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:</p>
+
+<ol>
+<li>VirtualBox</li>
+<li>Git</li>
+<li>Kitematic<br /></li>
+</ol>
+
+<p>Yang semuanya diperlukan untuk menjalankan docker.</p>
+
+<h3 id="troubleshoot-1">Troubleshoot 1</h3>
+
+<ul>
+<li>Terdapat error baru pada saat setelah install docker-toolbox
+<img src="/img/ins-docker/install-docker1.png" alt="img1" /></li>
+<li>Jika masih terdapat error restart PC</li>
+<li>Kemudian jalankan: Docker Quickstart Terminal</li>
+<li>Jalankan Kitematic untuk melihat daftar container</li>
+<li>Contoh di bawah ini pada saat menjalankan container Nginx
+<img src="/img/ins-docker/install-docker2.png" alt="img2" /></li>
+</ul>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/docker/">docker</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/">
                 <h2 class="post-title">Uninstall Paket Linux</h2>
 
@@ -453,6 +523,121 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
                     <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/max-file-up/">
+                <h2 class="post-title">Menambahkan ukuran File Upload</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Menambahkan ukuran file yang dapat diupload ke website
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 12, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
+1. Edit file <code>/etc/php.ini</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
+<span class="ln">3</span>...</code></pre></div>
+2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
+<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">3</span><span class="o">}</span>
+<span class="ln">4</span>
+<span class="ln">5</span>...
+<span class="ln">6</span>
+<span class="ln">7</span>http <span class="o">{</span>
+<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/">
+                <h2 class="post-title">Attach dam Import Database SQL Server</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Perbedaan attach dan import Database
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 14, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
+Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.
+                  <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
                   
                 </div>
               

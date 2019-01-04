@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/docker/</link>
+    <description>Recent content in Docker on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Mon, 04 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Docker Windows 10 Home</title>
+      <link>https://mfachrulrazy.github.io/post/install-docker-win10h/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-docker-win10h/</guid>
+      <description> Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.
+Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:
+ VirtualBox Git Kitematic
+  Yang semuanya diperlukan untuk menjalankan docker.
+Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Jika masih terdapat error restart PC Kemudian jalankan: Docker Quickstart Terminal Jalankan Kitematic untuk melihat daftar container Contoh di bawah ini pada saat menjalankan container Nginx   </description>
+    </item>
+    
+  </channel>
+</rss>

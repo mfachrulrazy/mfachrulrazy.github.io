@@ -217,6 +217,52 @@
           
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/net-centos7/">
+                <h2 class="post-title">Networking pada Centos 7</h2>
+                
+                  <h3 class="post-subtitle">
+                  Pengaturan Jaringan pada Centos 7
+                  </h3>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on October 13, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
+ Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut 1IPADDR= 2NETMASK= 3GATEWAY= 4DNS1= 5DNS2= 6#onboot untuk mengatur interface aktif pada saat server baru dinyalakan 7ONBOOT=yes 8#bootproto untuk mengatur IP apakah dhcp atau static 9BOOTPROTO=dhcp/static Simpan file dan keluar.
+                  <a href="https://mfachrulrazy.github.io/post/net-centos7/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/">
                 <h2 class="post-title">Install Nodejs Centos 7</h2>
                 
@@ -302,6 +348,64 @@ Melihat repository dengan nama ‘repoA-id’
                     <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/remote-des-ubuntu/">
+                <h2 class="post-title">Install Remote Desktop Ubuntu</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 15, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <ol>
+<li>Update paket Ubuntu, kemudian install paket xrdp
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xrdp</code></pre></div></li>
+<li>Install paket xfce4
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xfce4</code></pre></div></li>
+<li>Modifikasi xrdp berjalan startup file di <code>~/.xsession</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> xfce4-session &gt;~/.xsession</code></pre></div></li>
+<li>Edit startup file xrdp untuk mengeksekusi xfce4 service pada saat startup
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo nano /etc/xrdp/startwm.sh</code></pre></div></li>
+<li>Tambahkan:
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span>startxfce4
+<span class="ln">3</span>. /etc/X11/Xsession</code></pre></div></li>
+<li>Sampai di sini, xrdp sudah bisa berjalan tetapi belum bisa login karena port 3350 belum “LISTENING”
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl <span class="nb">enable</span> xrdp</code></pre></div></li>
+<li>Kemudian reboot sistem
+<img src="/img/rem-des-ubuntu.png" alt="" /></li>
+</ol>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/remote/">remote</a>&nbsp;
                   
                 </div>
               
@@ -449,6 +553,67 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/max-file-up/">
+                <h2 class="post-title">Menambahkan ukuran File Upload</h2>
+                
+                  <h3 class="post-subtitle">
+                  Menambahkan ukuran file yang dapat diupload ke website
+                  </h3>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 12, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
+1. Edit file <code>/etc/php.ini</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
+<span class="ln">3</span>...</code></pre></div>
+2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
+<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">3</span><span class="o">}</span>
+<span class="ln">4</span>
+<span class="ln">5</span>...
+<span class="ln">6</span>
+<span class="ln">7</span>http <span class="o">{</span>
+<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/github-ssh/">
                 <h2 class="post-title">SSH key Akun Github</h2>
                 
@@ -500,11 +665,11 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
             </article>
           
             <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/imp-proxmox/">
-                <h2 class="post-title">All about Proxmox</h2>
+              <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/">
+                <h2 class="post-title">Attach dam Import Database SQL Server</h2>
                 
                   <h3 class="post-subtitle">
-                  Implementasi Proxmox
+                  Perbedaan attach dan import Database
                   </h3>
                 
                 
@@ -513,7 +678,7 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
               <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 12, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 14, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -528,150 +693,18 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 
               <div class="post-entry">
                 
-                  Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
-Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.
-                  <a href="https://mfachrulrazy.github.io/post/imp-proxmox/" class="post-read-more">[Read More]</a>
+                  Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
+Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.
+                  <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/" class="post-read-more">[Read More]</a>
                 
               </div>
 
               
                 <div class="blog-tags">
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/proxmox/">proxmox</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/">
-                <h2 class="post-title">Reset Password Centos 7</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 10, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
-:/# chroot /sysroot  kemudian reset password
-:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.
-                  <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/maxtu/">
-                <h2 class="post-title">Maximum Transmission Unit</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 28, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
-Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
- L3 MTU = 1500 (Data: 1480 + IP:20) L2.
-                  <a href="https://mfachrulrazy.github.io/post/maxtu/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/">
-                <h2 class="post-title">Openssh Centos 7</h2>
-                
-                  <h3 class="post-subtitle">
-                  Install dan konfigurasi Openssh Centos 7
-                  </h3>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 21, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart
-                  <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
                   

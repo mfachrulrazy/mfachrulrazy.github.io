@@ -265,6 +265,70 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
 
             </article>
           
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/max-file-up/">
+                <h2 class="post-title">Menambahkan ukuran File Upload</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Menambahkan ukuran file yang dapat diupload ke website
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 12, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
+1. Edit file <code>/etc/php.ini</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
+<span class="ln">3</span>...</code></pre></div>
+2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
+<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">3</span><span class="o">}</span>
+<span class="ln">4</span>
+<span class="ln">5</span>...
+<span class="ln">6</span>
+<span class="ln">7</span>http <span class="o">{</span>
+<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
         </div>
         
       </div>

@@ -24,6 +24,19 @@
     </item>
     
     <item>
+      <title>Install Docker Windows 10 Home</title>
+      <link>https://mfachrulrazy.github.io/post/install-docker-win10h/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-docker-win10h/</guid>
+      <description> Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.
+Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:
+ VirtualBox Git Kitematic
+  Yang semuanya diperlukan untuk menjalankan docker.
+Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Jika masih terdapat error restart PC Kemudian jalankan: Docker Quickstart Terminal Jalankan Kitematic untuk melihat daftar container Contoh di bawah ini pada saat menjalankan container Nginx   </description>
+    </item>
+    
+    <item>
       <title>Uninstall Paket Linux</title>
       <link>https://mfachrulrazy.github.io/post/uninst-paket-centos7/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
@@ -62,6 +75,26 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
       <guid>https://mfachrulrazy.github.io/post/tb-web-server1/</guid>
       <description>Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
 Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.</description>
+    </item>
+    
+    <item>
+      <title>Menambahkan ukuran File Upload</title>
+      <link>https://mfachrulrazy.github.io/post/max-file-up/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/max-file-up/</guid>
+      <description>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan lemp stack (linux, nginx, mysql, php).
+1. Edit file /etc/php.ini 1... 2upload_max_filesize = 100M 3... 2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http 1server { 2	client_max_body_size 100M; 3} 4 5... 6 7http { 8	client_max_body_size 100M; 9}</description>
+    </item>
+    
+    <item>
+      <title>Attach dam Import Database SQL Server</title>
+      <link>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</link>
+      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</guid>
+      <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
+Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
     </item>
     
     <item>

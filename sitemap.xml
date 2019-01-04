@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-docker-win10h/</loc>
+    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/tb-update-cent/</loc>
     <lastmod>2017-11-25T00:00:00+00:00</lastmod>
   </url>
@@ -63,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/remote-des-ubuntu/</loc>
+    <lastmod>2017-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/tb-php-email/</loc>
     <lastmod>2017-09-15T00:00:00+00:00</lastmod>
   </url>
@@ -78,8 +88,18 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/max-file-up/</loc>
+    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/github-ssh/</loc>
     <lastmod>2017-07-21T08:27:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</loc>
+    <lastmod>2017-07-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -147,6 +167,12 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/kategori/docker/</loc>
+    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/kategori/github/</loc>
     <lastmod>2017-07-21T08:27:55+08:00</lastmod>
     <priority>0</priority>
@@ -189,6 +215,12 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/kategori/nginx/</loc>
+    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/kategori/open-source/</loc>
     <lastmod>2018-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -222,8 +254,20 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/kategori/remote/</loc>
+    <lastmod>2017-09-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/kategori/server/</loc>
     <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/sql-server/</loc>
+    <lastmod>2017-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

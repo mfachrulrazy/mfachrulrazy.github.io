@@ -24,6 +24,15 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
     </item>
     
     <item>
+      <title>Install Remote Desktop Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/post/remote-des-ubuntu/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/remote-des-ubuntu/</guid>
+      <description> Update paket Ubuntu, kemudian install paket xrdp $ sudo apt-get install xrdp Install paket xfce4 $ sudo apt-get install xfce4 Modifikasi xrdp berjalan startup file di ~/.xsession $ echo xfce4-session &amp;gt;~/.xsession Edit startup file xrdp untuk mengeksekusi xfce4 service pada saat startup $ sudo nano /etc/xrdp/startwm.sh Tambahkan: 1... 2startxfce4 3. /etc/X11/Xsession Sampai di sini, xrdp sudah bisa berjalan tetapi belum bisa login karena port 3350 belum “LISTENING” $ sudo systemctl enable xrdp Kemudian reboot sistem   </description>
+    </item>
+    
+    <item>
       <title>Linux Command Part 2</title>
       <link>https://mfachrulrazy.github.io/post/linux-command2/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>

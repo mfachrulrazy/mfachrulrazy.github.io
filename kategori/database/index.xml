@@ -24,6 +24,16 @@
     </item>
     
     <item>
+      <title>Attach dam Import Database SQL Server</title>
+      <link>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</link>
+      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</guid>
+      <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
+Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
+    </item>
+    
+    <item>
       <title>Belajar Mysql Part 1</title>
       <link>https://mfachrulrazy.github.io/post/konfig-mysql1/</link>
       <pubDate>Sat, 07 Mar 2015 00:00:00 +0000</pubDate>

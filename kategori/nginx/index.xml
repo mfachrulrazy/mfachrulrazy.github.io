@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/nginx/</link>
+    <description>Recent content in Nginx on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Sat, 12 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Menambahkan ukuran File Upload</title>
+      <link>https://mfachrulrazy.github.io/post/max-file-up/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/max-file-up/</guid>
+      <description>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan lemp stack (linux, nginx, mysql, php).
+1. Edit file /etc/php.ini 1... 2upload_max_filesize = 100M 3... 2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http 1server { 2	client_max_body_size 100M; 3} 4 5... 6 7http { 8	client_max_body_size 100M; 9}</description>
+    </item>
+    
+  </channel>
+</rss>
