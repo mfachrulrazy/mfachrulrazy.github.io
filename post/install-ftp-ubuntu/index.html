@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Linux Command Part 2 - Zyra</title>
-  <meta property="og:title" content="Linux Command Part 2" />
-  <meta name="twitter:title" content="Linux Command Part 2" />
-  <meta name="description" content="Beberapa Perintah dasar Linux Part 2">
-  <meta property="og:description" content="Beberapa Perintah dasar Linux Part 2">
-  <meta name="twitter:description" content="Beberapa Perintah dasar Linux Part 2">
+  <title>Install Vsftp Ubuntu 16.04 - Zyra</title>
+  <meta property="og:title" content="Install Vsftp Ubuntu 16.04" />
+  <meta name="twitter:title" content="Install Vsftp Ubuntu 16.04" />
+  <meta name="description" content="Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.">
+  <meta property="og:description" content="Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.">
+  <meta name="twitter:description" content="Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall …">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/linux-command2/",
-          "name": "Linux command part 2"
+          "@id": "https://mfachrulrazy.github.io/post/install-ftp-ubuntu/",
+          "name": "Install vsftp ubuntu 16.04"
         }
     }]
 }
@@ -60,16 +60,15 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Linux Command Part 2",
-  "description" : "Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;.....
-Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall",
+  "headline": "Install Vsftp Ubuntu 16.04",
+  "description" : "Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.",
   "inLanguage" : "en",
-  "wordCount": 269,
-  "datePublished" : "2015-08-31T00:00:00",
-  "dateModified" : "2015-08-31T00:00:00",
+  "wordCount": 209,
+  "datePublished" : "2018-06-15T00:00:00",
+  "dateModified" : "2018-06-15T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/linux-command2/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-ftp-ubuntu/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -83,13 +82,13 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 }
 </script>
 
-<meta property="og:title" content="Linux Command Part 2" />
-<meta property="og:description" content="Beberapa Perintah dasar Linux Part 2">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/linux-command2/" />
+<meta property="og:title" content="Install Vsftp Ubuntu 16.04" />
+<meta property="og:description" content="Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-ftp-ubuntu/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Linux Command Part 2" />
-  <meta name="twitter:description" content="Beberapa Perintah dasar Linux Part 2">
+  <meta name="twitter:title" content="Install Vsftp Ubuntu 16.04" />
+  <meta name="twitter:description" content="Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -97,7 +96,7 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/linux-command2/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-ftp-ubuntu/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -242,22 +241,18 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Linux Command Part 2</h1>
+                <h1>Install Vsftp Ubuntu 16.04</h1>
               
               
-              
-                
-                  <h2 class="post-subheading">Beberapa Perintah dasar Linux Part 2</h2>
-                
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2015
+  <i class="fas fa-calendar"></i>&nbsp;Posted on June 15, 2018
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
   
   
   
@@ -281,80 +276,61 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<h3 id="konfigurasi-iptables">Konfigurasi IPTables</h3>
-
-<p>IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -S</code></pre></div>
-Untuk menambah <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -A .....&lt;rule_iptable&gt;.....</code></pre></div>
-Untuk menghapus <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -D .....&lt;rule_iptable&gt;.....</code></pre></div></p>
-
-<h3 id="mengahpus-paket-instalasi">Mengahpus paket Instalasi</h3>
-
-<p>Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rm -i &lt;namafile&gt;</span></code></pre></div>
-Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum autoremove</span></code></pre></div>
-Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># package-cleanup --leaves</span></code></pre></div>
-Perintah di atas akan memperlihatkan daftar paket yang terinstall<br />
-Kemudian remove dengan perintah berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum remove `package-cleanup --leaves`</span></code></pre></div></p>
-
-<h3 id="melihat-user">Melihat User</h3>
-
-<p>Melihat segala jenis user pada linux
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cat /etc/passwd</span></code></pre></div>
-Hanya list nama user
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># awk -F&#39;:&#39; &#39;{ print $1}&#39; /etc/passwd</span></code></pre></div></p>
-
-<h3 id="melihat-jumlah-ram">Melihat Jumlah RAM</h3>
-
-<p>Cek jumlah memory ram server berbasis linux dapat dilakukan dengan perintah-perintah berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># dmidecode -t memory</span>
-<span class="c1"># dmidecode -t 16</span>
-<span class="c1"># lshw -class memory</span></code></pre></div></p>
-
-<h3 id="ganti-keyboard-layout">Ganti Keyboard Layout</h3>
-
-<p>Install paket kbd
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install kbd</span></code></pre></div>
-Melihat list keyboard layout
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># localectl list-keymaps</span>
-<span class="c1"># localectl list-keymaps | grep ^us</span></code></pre></div>
-Ganti ke layout us
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># localectl set-keymap us</span></code></pre></div></p>
-
-<h3 id="restore-file-backup-web-server">Restore file backup web Server</h3>
-
-<p>Untuk restore, copy file web ke direktori root web server
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># tar -zxvf namafile.tar.gz /var/www/html/namafile</span></code></pre></div></p>
-
-<h3 id="melihat-service-tag-laptop-server">Melihat service-tag Laptop/Server</h3>
-
-<p>Untuk melihat servis tag dari laptop/server yang digunakan dapat menggunakan dmidecode. Tools ini menganalisa data BIOS DMI.</p>
-
-<p>Install paket dmidecode
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo yum -y install dmidecode</code></pre></div>
-Setelah terinstall, jalankan perintah berikut untuk melihat semua serial number yang terpasang pada server
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo dmidecode <span class="p">|</span> grep -i serial</code></pre></div>
-Untuk melihat sistem informasi
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo dmidecode -t <span class="m">1</span></code></pre></div>
-Untuk melihat hanya service tag
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo dmidecode -s system-serial-number</code></pre></div></p>
+        <ol>
+<li>Install ftp server menggunakan paket vsftpd
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+$ sudo apt-get install vsftpd</code></pre></div></li>
+<li>Backup file konfigurasi terlebih dahulu
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig</code></pre></div></li>
+<li>Cek firewall jika aktif bisa di disable atau allow port dari ftp
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo ufw status
+$ sudo ufw allow <span class="m">20</span>/tcp
+$ sudo ufw allow <span class="m">21</span>/tcp
+$ sudo ufw allow <span class="m">990</span>/tcp
+$ sudo ufw allow <span class="m">40000</span>:50000/tcp
+$ sudo ufw status</code></pre></div></li>
+<li>Tambahkan user ftp
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo adduser ftpuser</code></pre></div></li>
+<li>Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo mkdir /home/ftpuser/ftp
+$ sudo chown nobody:nogroup /home/ftpuser/ftp
+$ sudo chmod a-w /home/ ftpuser /ftp</code></pre></div></li>
+<li>Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo mkdir /home/ftpuser/ftp/files
+$ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files</code></pre></div></li>
+<li>Kemudian edit file /etc/vsftpd.conf
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span><span class="nv">anonymous_enable</span><span class="o">=</span>NO
+<span class="ln">3</span>...
+<span class="ln">4</span><span class="nv">local_enable</span><span class="o">=</span>YES
+<span class="ln">5</span>...
+<span class="ln">6</span><span class="nv">write_enable</span><span class="o">=</span>YES
+<span class="ln">7</span>...
+<span class="ln">8</span><span class="nv">chroot_local_user</span><span class="o">=</span>YES</code></pre></div></li>
+<li>Tambahkan user_sub_token untuk memasukkan username di lokal folder root ftp. Hal ini berlaku untuk user lainnya yang akan ditambahkan kedepannya
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span><span class="nv">user_sub_token</span><span class="o">=</span><span class="nv">$USER</span>
+<span class="ln">3</span><span class="nv">local_root</span><span class="o">=</span>/home/<span class="nv">$USER</span>/ftp
+<span class="ln">4</span><span class="nv">pasv_min_port</span><span class="o">=</span><span class="m">40000</span>
+<span class="ln">5</span><span class="nv">pasv_max_port</span><span class="o">=</span><span class="m">50000</span></code></pre></div></li>
+<li>Untuk 2 baris terakhir di atas untuk membatasi jarak port yang dapat digunakan oleh FTP</li>
+<li>Buat userlist yang akan mengizinkan akses ke ftp
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="nv">userlist_enable</span><span class="o">=</span>YES
+<span class="ln">2</span><span class="nv">userlist_file</span><span class="o">=</span>/etc/vsftpd.userlist
+<span class="ln">3</span><span class="nv">userlist_deny</span><span class="o">=</span>NO</code></pre></div></li>
+<li>Tambahkan nama user (ftpuser) pada file userlist
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;sammy&#34;</span> <span class="p">|</span> sudo tee -a /etc/vsftpd.userlist</code></pre></div></li>
+<li>Restart service vsftpd
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl restart vsftpd</code></pre></div></li>
+</ol>
 
 
         
           <div class="blog-tags">
             
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+            
               <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
             
               <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
             
@@ -371,28 +347,28 @@ Untuk melihat hanya service tag
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f&amp;text=Linux%20Command%20Part%202&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-ftp-ubuntu%2f&amp;text=Install%20Vsftp%20Ubuntu%2016.04&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-ftp-ubuntu%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-ftp-ubuntu%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flinux-command2%2f&amp;title=Linux%20Command%20Part%202" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-ftp-ubuntu%2f&amp;title=Install%20Vsftp%20Ubuntu%2016.04" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -413,12 +389,12 @@ Untuk melihat hanya service tag
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/" data-toggle="tooltip" data-placement="top" title="Belajar Mysql Part 1">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/linux-win-store/" data-toggle="tooltip" data-placement="top" title="Install Linux dari Windows Store">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/about-cron/" data-toggle="tooltip" data-placement="top" title="Berkenalan dengan Cron">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/install-hugo/" data-toggle="tooltip" data-placement="top" title="Install dan konfigurasi Hugo">Next Post &rarr;</a>
             </li>
           
         </ul>
