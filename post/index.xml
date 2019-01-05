@@ -283,6 +283,16 @@ Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut b
     </item>
     
     <item>
+      <title>Berkenalan dengan Cron</title>
+      <link>https://mfachrulrazy.github.io/post/about-cron/</link>
+      <pubDate>Fri, 05 Feb 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/about-cron/</guid>
+      <description>Apa itu cron? Jadi, cron adalah sebuah software utilitas di lingkungan linux/unix yang berfungsi sebagai pembuat jadwal pekerjaan berdasarkan waktu yang bisa ditentukan.
+Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap perintah yang dijalankan di cron, akan mengirim ke email secara default dan biasanya dalam terminal akan muncul You have new mail in /var/spool/mail/root Isi dari file /var/spool/mail/root adalah proses dari script yang dijalankan.</description>
+    </item>
+    
+    <item>
       <title>Linux Command Part 2</title>
       <link>https://mfachrulrazy.github.io/post/linux-command2/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
