@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/err-loopback/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/install-docker-win10h/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url>
@@ -75,6 +80,11 @@
   <url>
     <loc>https://mfachrulrazy.github.io/post/repo-cent-7/</loc>
     <lastmod>2017-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/err-backspace-vbox/</loc>
+    <lastmod>2017-09-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -135,6 +145,16 @@
   <url>
     <loc>https://mfachrulrazy.github.io/post/install-nginx-cent/</loc>
     <lastmod>2017-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/tb-wireless-win7/</loc>
+    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/err-gateway-to/</loc>
+    <lastmod>2017-03-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -245,6 +265,12 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/kategori/mikrotik/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/kategori/mysql/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -297,7 +323,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/remote/</loc>
-    <lastmod>2017-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -338,6 +364,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/windows/</loc>
     <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/wireless/</loc>
+    <lastmod>2017-03-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -86,6 +86,16 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
     </item>
     
     <item>
+      <title>Error Loopback Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/post/err-loopback/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-loopback/</guid>
+      <description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
+Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description>
+    </item>
+    
+    <item>
       <title>Install Docker Windows 10 Home</title>
       <link>https://mfachrulrazy.github.io/post/install-docker-win10h/</link>
       <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
@@ -172,6 +182,16 @@ Melihat repository dengan nama ‘repoA-id’
 # yum --disablerepo=&amp;#34;*&amp;#34; --enablerepo=&amp;#34;repoA-id&amp;#34; list available Cek epel repository
 # yum repolist | grep &amp;#34;^epel\|repo id&amp;#34; Hapus repository
 # yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository</description>
+    </item>
+    
+    <item>
+      <title>Backspace pada Virtual Box</title>
+      <link>https://mfachrulrazy.github.io/post/err-backspace-vbox/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-backspace-vbox/</guid>
+      <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
+Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
     </item>
     
     <item>
@@ -299,6 +319,28 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
       <guid>https://mfachrulrazy.github.io/post/install-nginx-cent/</guid>
       <description>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
  Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.</description>
+    </item>
+    
+    <item>
+      <title>Servis Wireless tidak berjalan pada Windows 7</title>
+      <link>https://mfachrulrazy.github.io/post/tb-wireless-win7/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/tb-wireless-win7/</guid>
+      <description>Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
+Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
+Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
+HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
+Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder</description>
+    </item>
+    
+    <item>
+      <title>Error Gateway Time Out</title>
+      <link>https://mfachrulrazy.github.io/post/err-gateway-to/</link>
+      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-gateway-to/</guid>
+      <description>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini. Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy Hilangkan tanda centangnya dan login kembali.</description>
     </item>
     
     <item>

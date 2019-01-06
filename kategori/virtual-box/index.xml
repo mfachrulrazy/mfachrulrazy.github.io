@@ -34,6 +34,16 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
     </item>
     
     <item>
+      <title>Backspace pada Virtual Box</title>
+      <link>https://mfachrulrazy.github.io/post/err-backspace-vbox/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-backspace-vbox/</guid>
+      <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
+Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
+    </item>
+    
+    <item>
       <title>Interface Network pada VirtualBox</title>
       <link>https://mfachrulrazy.github.io/post/int-baru-vbox/</link>
       <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>

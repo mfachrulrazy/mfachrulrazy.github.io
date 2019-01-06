@@ -88,5 +88,18 @@ Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Ji
 File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang sudah ada bisa memilih Properties   </description>
     </item>
     
+    <item>
+      <title>Servis Wireless tidak berjalan pada Windows 7</title>
+      <link>https://mfachrulrazy.github.io/post/tb-wireless-win7/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/tb-wireless-win7/</guid>
+      <description>Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
+Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
+Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
+HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
+Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder</description>
+    </item>
+    
   </channel>
 </rss>

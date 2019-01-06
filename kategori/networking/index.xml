@@ -25,6 +25,16 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
     </item>
     
     <item>
+      <title>Error Loopback Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/post/err-loopback/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-loopback/</guid>
+      <description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
+Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description>
+    </item>
+    
+    <item>
       <title>Networking pada Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/net-centos7/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
@@ -54,6 +64,28 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
       <description>Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
 Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
  L3 MTU = 1500 (Data: 1480 + IP:20) L2.</description>
+    </item>
+    
+    <item>
+      <title>Servis Wireless tidak berjalan pada Windows 7</title>
+      <link>https://mfachrulrazy.github.io/post/tb-wireless-win7/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/tb-wireless-win7/</guid>
+      <description>Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
+Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
+Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
+HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
+Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder</description>
+    </item>
+    
+    <item>
+      <title>Error Gateway Time Out</title>
+      <link>https://mfachrulrazy.github.io/post/err-gateway-to/</link>
+      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-gateway-to/</guid>
+      <description>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini. Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy Hilangkan tanda centangnya dan login kembali.</description>
     </item>
     
   </channel>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Zyra - Zyra</title>
+  <title> Personal Blog - Zyra</title>
   <meta property="og:title" content="Zyra" />
   <meta name="twitter:title" content="Zyra" />
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
@@ -96,7 +96,7 @@
         
           
             <li>
-              <a title="About This" href="/page/about/">About This</a>
+              <a title="About" href="/page/about/">About</a>
             </li>
           
         
@@ -215,6 +215,113 @@
 
         <div class="posts-list">
           
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/int-baru-vbox/">
+                <h2 class="post-title">Interface Network pada VirtualBox</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 15, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <ol>
+<li>Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui<br />
+<code>File &gt; Host Network Manager &gt; Create</code></li>
+<li>Untuk mengedit interface yang sudah ada bisa memilih <code>Properties</code>
+<img src="/img/vbox-newint.png" alt="img1" /></li>
+</ol>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/virtual-box/">virtual box</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/max-file-up/">
+                <h2 class="post-title">Menambahkan ukuran File Upload</h2>
+                
+                  <h3 class="post-subtitle">
+                  Menambahkan ukuran file yang dapat diupload ke website
+                  </h3>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 12, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
+1. Edit file <code>/etc/php.ini</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
+<span class="ln">3</span>...</code></pre></div>
+2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
+<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">3</span><span class="o">}</span>
+<span class="ln">4</span>
+<span class="ln">5</span>...
+<span class="ln">6</span>
+<span class="ln">7</span>http <span class="o">{</span>
+<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
+<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+                  
+                </div>
+              
+            </article>
           
             <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/github-ssh/">
@@ -555,8 +662,8 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
             </article>
           
             <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/del-notif-chrome/">
-                <h2 class="post-title">Menghapus Notifikasi Pop-Up Lidgrain pada Chrome</h2>
+              <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/">
+                <h2 class="post-title">Servis Wireless tidak berjalan pada Windows 7</h2>
                 
                 
               </a>
@@ -564,7 +671,7 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
               <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on December 6, 2016
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 12, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -579,111 +686,23 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
 
               <div class="post-entry">
                 
-                  <p>Jadi, waktu itu habis mengunjungi sebuah situs dan secara tidak sengaja (atau sengaja mungkin ya :D) saya mengizinkan notifikasi pada situs <strong>lidgrain.pro</strong>.<br />
-Secara otomatis setiap buka browser chrome, notifikasi tersebut selalu muncul. Untuk menghilangkannya bisa dengan cara berikut.
-1. Buka pengaturan pada chrome
-<img src="/img/chrome/notif1.png" alt="img" />
-2. Klik <strong>Advanced</strong> &gt; Pada bagian <strong>Privacy and security</strong> &gt; Pilih <strong>Content Settings</strong> &gt; Pilih <strong>Notifications</strong>
-<img src="/img/chrome/notif2.png" alt="img" />
-3. Cari <strong>lidgrain.pro</strong> dan Pilih menu di kanan &gt; Pilih <strong>Remove</strong>
-<img src="/img/chrome/notif3.png" alt="img" /></p>
-
+                  Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
+Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
+Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
+HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
+Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
+                  <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/" class="post-read-more">[Read More]</a>
                 
               </div>
 
               
                 <div class="blog-tags">
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/google-chrome/">google chrome</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
                   
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/">
-                <h2 class="post-title">Openssh Centos 7</h2>
-                
-                  <h3 class="post-subtitle">
-                  Install dan konfigurasi Openssh Centos 7
-                  </h3>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 21, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart
-                  <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
+                    <a href="https://mfachrulrazy.github.io//kategori/wireless/">wireless</a>&nbsp;
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/belajar-vim/">
-                <h2 class="post-title">Belajar Vi dan Vim</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 10, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
-Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
-Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
- i : untuk beralih ke mode insert atau memasukkan teks.
-                  <a href="https://mfachrulrazy.github.io/post/belajar-vim/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/code-editor/">code editor</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
                   
                 </div>
               
