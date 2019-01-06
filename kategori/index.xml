@@ -77,6 +77,15 @@
     </item>
     
     <item>
+      <title>Google Chrome</title>
+      <link>https://mfachrulrazy.github.io/kategori/google-chrome/</link>
+      <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/google-chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>https://mfachrulrazy.github.io/kategori/hugo/</link>
       <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
@@ -124,7 +133,7 @@
     <item>
       <title>Nginx</title>
       <link>https://mfachrulrazy.github.io/kategori/nginx/</link>
-      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/nginx/</guid>
       <description></description>
@@ -190,6 +199,15 @@
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Varnish</title>
+      <link>https://mfachrulrazy.github.io/kategori/varnish/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/varnish/</guid>
       <description></description>
     </item>
     

@@ -319,7 +319,7 @@ $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files</code></pre></div></li>
 <span class="ln">2</span><span class="nv">userlist_file</span><span class="o">=</span>/etc/vsftpd.userlist
 <span class="ln">3</span><span class="nv">userlist_deny</span><span class="o">=</span>NO</code></pre></div></li>
 <li>Tambahkan nama user (ftpuser) pada file userlist
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;sammy&#34;</span> <span class="p">|</span> sudo tee -a /etc/vsftpd.userlist</code></pre></div></li>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> <span class="s2">&#34;ftpuser&#34;</span> <span class="p">|</span> sudo tee -a /etc/vsftpd.userlist</code></pre></div></li>
 <li>Restart service vsftpd
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl restart vsftpd</code></pre></div></li>
 </ol>

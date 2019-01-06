@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Install Varnish di Centos - Zyra</title>
+  <meta property="og:title" content="Install Varnish di Centos" />
+  <meta name="twitter:title" content="Install Varnish di Centos" />
+  <meta name="description" content="Install Varnish untuk cache web server">
+  <meta property="og:description" content="Install Varnish untuk cache web server">
+  <meta name="twitter:description" content="Install Varnish untuk cache web server">
+  <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Zyra",
+    
+    "url": "https://mfachrulrazy.github.io/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://mfachrulrazy.github.io/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/install-varnish-cent/",
+          "name": "Install varnish di centos"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Install Varnish di Centos",
+  "description" : "Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
+Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
+Berikut langkah instalasi dan konfigurasi varnish.
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file /etc/yum.repos.d/varnishcache_varnish5.repo untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut 1[varnishcache_varnish5] 2name=varnishcache_varnish5 3baseurl=https://packagecloud.",
+  "inLanguage" : "en",
+  "wordCount": 329,
+  "datePublished" : "2017-11-28T00:00:00",
+  "dateModified" : "2017-11-28T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-varnish-cent/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Install Varnish di Centos" />
+<meta property="og:description" content="Install Varnish untuk cache web server">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-varnish-cent/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Zyra" />
+  <meta name="twitter:title" content="Install Varnish di Centos" />
+  <meta name="twitter:description" content="Install Varnish untuk cache web server">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@muhfachrulrazy" />
+  <meta name="twitter:creator" content="@muhfachrulrazy" />
+  <link href='https://mfachrulrazy.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@muhfachrulrazy" />
+  <meta name="twitter:creator" content="@muhfachrulrazy" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-varnish-cent/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zyra" />
+
+  <meta name="generator" content="Hugo 0.51" />
+  <link rel="alternate" href="https://mfachrulrazy.github.io/index.xml" type="application/rss+xml" title="Zyra">
+  
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/katex.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://mfachrulrazy.github.io/css/codeblock.css" />
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/default-skin.min.css" />
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/photoswipe.min.css" />
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-custom navbar-brand-logo">
+        <a href="https://mfachrulrazy.github.io/"><img src="/img/logo.png" alt="" srcset=""></a>
+      </div>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Categories" href="/kategori">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About This" href="/page/about/">About This</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="References" href="/page/ref/">References</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Install Varnish di Centos</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">Install Varnish untuk cache web server</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 28, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Varnish adalah salah satu aplikasi <em>cache</em> web server atau aplikasi akselerator website yang biasa dikenal dengan <em>a caching HTTP reverse proxy</em>.<br />
+Sebelumnya kita telah <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/">menginstall nginx</a> sebagai web server yang akan berjalan di belakang varnish.<br />
+Berikut langkah instalasi dan konfigurasi varnish.<br />
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk  menambahkan fungsi dari native yum
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install pygpgme yum-utils</span></code></pre></div>
+<img src="/img/varnish/ins-varnish1.png" alt="img1" />
+2. Buat file <code>/etc/yum.repos.d/varnishcache_varnish5.repo</code> untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span><span class="o">[</span>varnishcache_varnish5<span class="o">]</span>
+<span class="ln"> 2</span><span class="nv">name</span><span class="o">=</span>varnishcache_varnish5
+<span class="ln"> 3</span><span class="nv">baseurl</span><span class="o">=</span>https://packagecloud.io/varnishcache/varnish5/el/7/<span class="nv">$basearch</span>
+<span class="ln"> 4</span><span class="nv">repo_gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="ln"> 5</span><span class="nv">gpgcheck</span><span class="o">=</span><span class="m">0</span>
+<span class="ln"> 6</span><span class="nv">enabled</span><span class="o">=</span><span class="m">1</span>
+<span class="ln"> 7</span><span class="nv">gpgkey</span><span class="o">=</span>https://packagecloud.io/varnishcache/varnish5/gpgkey
+<span class="ln"> 8</span><span class="nv">sslverify</span><span class="o">=</span><span class="m">1</span>
+<span class="ln"> 9</span><span class="nv">sslcacert</span><span class="o">=</span>/etc/pki/tls/certs/ca-bundle.crt
+<span class="ln">10</span><span class="nv">metadata_expire</span><span class="o">=</span><span class="m">300</span>
+<span class="ln">11</span><span class="o">[</span>varnishcache_varnish5-source<span class="o">]</span>
+<span class="ln">12</span><span class="nv">name</span><span class="o">=</span>varnishcache_varnish5-source
+<span class="ln">13</span><span class="nv">baseurl</span><span class="o">=</span>https://packagecloud.io/varnishcache/varnish5/el/7/SRPMS
+<span class="ln">14</span><span class="nv">repo_gpgcheck</span><span class="o">=</span><span class="m">1</span>
+<span class="ln">15</span><span class="nv">gpgcheck</span><span class="o">=</span><span class="m">0</span>
+<span class="ln">16</span><span class="nv">enabled</span><span class="o">=</span><span class="m">1</span>
+<span class="ln">17</span><span class="nv">gpgkey</span><span class="o">=</span>https://packagecloud.io/varnishcache/varnish5/gpgkey
+<span class="ln">18</span><span class="nv">sslverify</span><span class="o">=</span><span class="m">1</span>
+<span class="ln">19</span><span class="nv">sslcacert</span><span class="o">=</span>/etc/pki/tls/certs/ca-bundle.crt
+<span class="ln">20</span><span class="nv">metadata_expire</span><span class="o">=</span><span class="m">300</span></code></pre></div>
+3. Update lokal yum cache dan install varnish cache 5
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -q makecache -y --disablerepo=&#39;*&#39; --enablerepo=&#39;varnishcache_varnish5&#39;</span></code></pre></div>
+<img src="/img/varnish/ins-varnish2.png" alt="img2" />
+4. Install varnish
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install varnish</span></code></pre></div>
+<img src="/img/varnish/ins-varnish3.png" alt="img3" /><br />
+5. Konfirmasi varnish telah terinstall dengan sukses
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># which varnishd</span>
+<span class="c1"># varnishd -V</span></code></pre></div>
+6. Konfigurasi Nginx untuk bisa bekerja dengan Varnish Cache.<br />
+7. Secara default nginx listen ke port 80, ubah menjadi 8080. Edit file <code>/etc/nginx/nginx.conf</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
+<span class="ln">2</span>    listen  <span class="m">8080</span><span class="p">;</span>
+<span class="ln">3</span>    ...
+<span class="ln">4</span><span class="o">}</span></code></pre></div>
+8. Kemudian buka file konfigurasi varnish environment dan temukan parameter <strong>VARNISH_LISTEN_PORT</strong> ubah port <strong>6081</strong> menjadi <strong>80</strong> karena varnish akan berada paling depan dalam melayani request HTTP. Edit file <code>/etc/varnish/varnish.params</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span><span class="nv">VARNISH_LISTEN_PORT</span><span class="o">=</span><span class="m">80</span>
+<span class="ln">3</span>...</code></pre></div>
+9. Setup nginx sebagai backend server untuk varnish proxy pada file <code>/etc/varnish/default.vcl</code><br />
+10. Cari bagian backend dan definiskan IP Host dan port.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>backend default <span class="o">{</span>
+<span class="ln">2</span>.host <span class="o">=</span> <span class="s2">&#34;127.0.0.1&#34;</span><span class="p">;</span>
+<span class="ln">3</span>.port <span class="o">=</span> <span class="s2">&#34;8080&#34;</span><span class="p">;</span>
+<span class="ln">4</span><span class="o">}</span></code></pre></div>
+11. Setelah konfigurasi selesai restart nginx dan jalankan varnish cache.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart nginx</span>
+<span class="c1"># systemctl start varnish</span>
+<span class="c1"># systemctl enable varnish</span>
+<span class="c1"># systemctl status varnish</span></code></pre></div>
+12. Lakukan pengecekan apakah varnish telah jalan menggunakan cURL
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># curl -I http://localhost</span></code></pre></div>
+<img src="/img/varnish/ins-varnish4.png" alt="img4" />
+13. Cek log varnish
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># varnishlog -q &#39;RespStatus == 503&#39; -g request</span>
+atau
+<span class="c1"># varnishncsa</span></code></pre></div>
+14. Menguji konfigurasi varnish, jika tidak ada error maka akan mengeluarkan file konfigurasi varnish
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># varnishd -Cf /etc/varnish/default.vcl</span></code></pre></div>
+15. Beberapa direktori penting pada varnish</p>
+
+<ul>
+<li>/usr/sbin/varnishd       : file utama executable</li>
+<li>/etc/varnish/varnish.params  : file konfigurasi environment varnish</li>
+<li>/etc/varnish/default.vcl     : file konfigurasi utama varnish (menggunakan VCL)</li>
+<li>/etc/varnish/secret      : file rahasia varnish</li>
+</ul>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/varnish/">varnish</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f&amp;text=Install%20Varnish%20di%20Centos&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f&amp;title=Install%20Varnish%20di%20Centos" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/tb-update-cent/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Update Repo Centos 7">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/install-docker-win10h/" data-toggle="tooltip" data-placement="top" title="Install Docker Windows 10 Home">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mfachrulrazy@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/fahrulchozy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/mfachrulrazy" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/muhfachrulrazy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/mfachrulrazy" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/mfachrulrazy" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="mfachrulrazy.github.io">Muhammad Fachrul Razy</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2018
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://mfachrulrazy.github.io/">Zyra</a>
+          
+        </p>
+        
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://mfachrulrazy.github.io/js/katex.min.js"></script>
+<script src="https://mfachrulrazy.github.io/js/auto-render.min.js"></script>
+
+
+<script src="https://mfachrulrazy.github.io/js/jquery-1.12.4.min.js"></script>
+<script src="https://mfachrulrazy.github.io/js/bootstrap.min.js"></script>
+
+<script src="https://mfachrulrazy.github.io/js/main.js"></script>
+<script src="https://mfachrulrazy.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://mfachrulrazy.github.io/js/photoswipe.min.js"></script>
+<script src="https://mfachrulrazy.github.io/js/photoswipe-ui-default.min.js"></script>
+
+
+<script src="https://mfachrulrazy.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

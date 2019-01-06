@@ -196,7 +196,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 2, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 20, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;minutes
@@ -226,12 +226,65 @@
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/">
+                <h2 class="post-title">Uninstall Paket Linux</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Menghapus paket yang terinstall secara keseluruhan pada Centos dan Ubuntu
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 20, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
+Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.
+                  <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/">
                 <h2 class="post-title">Install Mysql Centos 7</h2>
 
                 
                   <h3 class="post-subtitle">
-                    Install mysql versi community pada Centos 7
+                    Install dan uninstall mysql community pada Centos 7
                   </h3>
                 
               </a>
@@ -256,20 +309,9 @@
               </p>
               <div class="post-entry">
                 
-                  <p>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.</p>
-
-<ol>
-<li>Download dan tambahkan repo.
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm</span>
-<span class="c1"># sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm</span>
-<span class="c1"># yum update</span></code></pre></div></li>
-<li>Install mysql dan jalankan servisnya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install mysql-server</span>
-<span class="c1"># systemctl start mysqld</span></code></pre></div></li>
-<li>Jalankan script <code>mysql_secure_installation</code> setelah selesai menginstall mysql
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysql_secure_installation</span></code></pre></div></li>
-</ol>
-
+                  Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
+ Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.
+                  <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/" class="post-read-more">[Read More]</a>
                 
               </div>
 
@@ -702,60 +744,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
                     <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/github-ssh/">
-                <h2 class="post-title">SSH key Akun Github</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Menambahkan SSH Key ke Akun Github dari PC
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 21, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-              <div class="post-entry">
-                
-                  Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya
- Pastikan git sudah terinstall pada PC
- Buat ssh key di cmd dengan
-&gt; ssh-keygen Ssh key akan secara default masuk ke folder ~user/.ssh/*
- Ada 2 file yang dibuat seperti di linux yaitu id_rsa dan id_rsa.pub
- Copy isi file id_rsa.pub
- Masuk ke menu Settings &gt; SSH and GPG Keys pada akun github
-                  <a href="https://mfachrulrazy.github.io/post/github-ssh/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/github/">github</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
                   
                 </div>
               

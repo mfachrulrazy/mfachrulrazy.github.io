@@ -99,6 +99,18 @@ Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Ji
     </item>
     
     <item>
+      <title>Install Varnish di Centos</title>
+      <link>https://mfachrulrazy.github.io/post/install-varnish-cent/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-varnish-cent/</guid>
+      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
+Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
+Berikut langkah instalasi dan konfigurasi varnish.
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file /etc/yum.repos.d/varnishcache_varnish5.repo untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut 1[varnishcache_varnish5] 2name=varnishcache_varnish5 3baseurl=https://packagecloud.</description>
+    </item>
+    
+    <item>
       <title>Troubleshoot Update Repo Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/tb-update-cent/</link>
       <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
@@ -124,7 +136,7 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/install-mysql-cent/</guid>
       <description>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
- Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  </description>
+ Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.</description>
     </item>
     
     <item>
@@ -249,6 +261,15 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
     </item>
     
     <item>
+      <title>Install Php 5.4 Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-php5-cent/</link>
+      <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-php5-cent/</guid>
+      <description> Download paket repositori epel secara manual menggunakan wget # wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm Install menggunakan rpm # rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm Install yum-utils untuk mengatur repositori # yum install yum-utils Kemudian enable php 5.4 dan install paket php # #yum-config-manager --enable remi-php54 # yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo Setelah itu cek versi php-nya # php -v  </description>
+    </item>
+    
+    <item>
       <title>Reset Password Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/reset-pass-centos7/</link>
       <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
@@ -268,6 +289,26 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
       <description>Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
 Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
  L3 MTU = 1500 (Data: 1480 + IP:20) L2.</description>
+    </item>
+    
+    <item>
+      <title>Install Nginx Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-nginx-cent/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-nginx-cent/</guid>
+      <description>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.</description>
+    </item>
+    
+    <item>
+      <title>Menghapus Notifikasi Pop-Up Lidgrain pada Chrome</title>
+      <link>https://mfachrulrazy.github.io/post/del-notif-chrome/</link>
+      <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/del-notif-chrome/</guid>
+      <description>Jadi, waktu itu habis mengunjungi sebuah situs dan secara tidak sengaja (atau sengaja mungkin ya :D) saya mengizinkan notifikasi pada situs lidgrain.pro.
+Secara otomatis setiap buka browser chrome, notifikasi tersebut selalu muncul. Untuk menghilangkannya bisa dengan cara berikut. 1. Buka pengaturan pada chrome 2. Klik Advanced &amp;gt; Pada bagian Privacy and security &amp;gt; Pilih Content Settings &amp;gt; Pilih Notifications 3. Cari lidgrain.pro dan Pilih menu di kanan &amp;gt; Pilih Remove </description>
     </item>
     
     <item>

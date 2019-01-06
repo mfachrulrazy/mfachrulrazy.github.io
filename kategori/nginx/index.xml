@@ -8,10 +8,22 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 12 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/nginx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Varnish di Centos</title>
+      <link>https://mfachrulrazy.github.io/post/install-varnish-cent/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-varnish-cent/</guid>
+      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
+Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
+Berikut langkah instalasi dan konfigurasi varnish.
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file /etc/yum.repos.d/varnishcache_varnish5.repo untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut 1[varnishcache_varnish5] 2name=varnishcache_varnish5 3baseurl=https://packagecloud.</description>
+    </item>
     
     <item>
       <title>Menambahkan ukuran File Upload</title>
@@ -21,6 +33,16 @@
       <guid>https://mfachrulrazy.github.io/post/max-file-up/</guid>
       <description>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan lemp stack (linux, nginx, mysql, php).
 1. Edit file /etc/php.ini 1... 2upload_max_filesize = 100M 3... 2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http 1server { 2	client_max_body_size 100M; 3} 4 5... 6 7http { 8	client_max_body_size 100M; 9}</description>
+    </item>
+    
+    <item>
+      <title>Install Nginx Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-nginx-cent/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-nginx-cent/</guid>
+      <description>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.</description>
     </item>
     
   </channel>

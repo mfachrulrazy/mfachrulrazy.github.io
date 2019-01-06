@@ -214,6 +214,105 @@
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/">
+                <h2 class="post-title">Reset Password Centos 7</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 10, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
+:/# chroot /sysroot  kemudian reset password
+:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.
+                  <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/">
+                <h2 class="post-title">Install Nginx Centos 7</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Instalasi Web Server Nginx pada Centos 7
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on April 23, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
+                  <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/">
                 <h2 class="post-title">Openssh Centos 7</h2>
 

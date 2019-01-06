@@ -46,6 +46,18 @@ Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Ji
     </item>
     
     <item>
+      <title>Install Varnish di Centos</title>
+      <link>https://mfachrulrazy.github.io/post/install-varnish-cent/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-varnish-cent/</guid>
+      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
+Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
+Berikut langkah instalasi dan konfigurasi varnish.
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file /etc/yum.repos.d/varnishcache_varnish5.repo untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut 1[varnishcache_varnish5] 2name=varnishcache_varnish5 3baseurl=https://packagecloud.</description>
+    </item>
+    
+    <item>
       <title>Uninstall Paket Linux</title>
       <link>https://mfachrulrazy.github.io/post/uninst-paket-centos7/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
@@ -104,6 +116,25 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
       <guid>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</guid>
       <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
 Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
+    </item>
+    
+    <item>
+      <title>Install Php 5.4 Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-php5-cent/</link>
+      <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-php5-cent/</guid>
+      <description> Download paket repositori epel secara manual menggunakan wget # wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm Install menggunakan rpm # rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm Install yum-utils untuk mengatur repositori # yum install yum-utils Kemudian enable php 5.4 dan install paket php # #yum-config-manager --enable remi-php54 # yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo Setelah itu cek versi php-nya # php -v  </description>
+    </item>
+    
+    <item>
+      <title>Install Nginx Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-nginx-cent/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-nginx-cent/</guid>
+      <description>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.</description>
     </item>
     
     <item>

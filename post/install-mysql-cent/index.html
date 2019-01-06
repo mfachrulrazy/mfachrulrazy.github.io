@@ -10,9 +10,9 @@
   <title>Install Mysql Centos 7 - Zyra</title>
   <meta property="og:title" content="Install Mysql Centos 7" />
   <meta name="twitter:title" content="Install Mysql Centos 7" />
-  <meta name="description" content="Install mysql versi community pada Centos 7">
-  <meta property="og:description" content="Install mysql versi community pada Centos 7">
-  <meta name="twitter:description" content="Install mysql versi community pada Centos 7">
+  <meta name="description" content="Install dan uninstall mysql community pada Centos 7">
+  <meta property="og:description" content="Install dan uninstall mysql community pada Centos 7">
+  <meta name="twitter:description" content="Install dan uninstall mysql community pada Centos 7">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -62,9 +62,9 @@
   },
   "headline": "Install Mysql Centos 7",
   "description" : "Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
- Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  ",
+ Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.",
   "inLanguage" : "en",
-  "wordCount": 55,
+  "wordCount": 169,
   "datePublished" : "2017-11-02T00:00:00",
   "dateModified" : "2017-11-02T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -84,12 +84,12 @@
 </script>
 
 <meta property="og:title" content="Install Mysql Centos 7" />
-<meta property="og:description" content="Install mysql versi community pada Centos 7">
+<meta property="og:description" content="Install dan uninstall mysql community pada Centos 7">
 <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-mysql-cent/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
   <meta name="twitter:title" content="Install Mysql Centos 7" />
-  <meta name="twitter:description" content="Install mysql versi community pada Centos 7">
+  <meta name="twitter:description" content="Install dan uninstall mysql community pada Centos 7">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -247,7 +247,7 @@
               
               
                 
-                  <h2 class="post-subheading">Install mysql versi community pada Centos 7</h2>
+                  <h2 class="post-subheading">Install dan uninstall mysql community pada Centos 7</h2>
                 
               
               
@@ -281,7 +281,9 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.</p>
+        
+
+<p>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.</p>
 
 <ol>
 <li>Download dan tambahkan repo.
@@ -293,6 +295,36 @@
 <span class="c1"># systemctl start mysqld</span></code></pre></div></li>
 <li>Jalankan script <code>mysql_secure_installation</code> setelah selesai menginstall mysql
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysql_secure_installation</span></code></pre></div></li>
+</ol>
+
+<h3 id="install-mysql-client">Install Mysql Client</h3>
+
+<ol>
+<li>Download file repositori mysql dari situs resminya (versi mysql community)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget https://repo.mysql.com//mysql57-community-release-el7-11.noarch.rpm</span></code></pre></div></li>
+<li>Install paket tersebut ke dalam RPM paket centos
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum localinstall mysql57-community-release-el7-11.noarch.rpm</span></code></pre></div></li>
+<li>Cek repository telah terinstall
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum repolist enabled | grep &#34;mysql.*-community.*&#34;</span></code></pre></div></li>
+<li>Kemudian Install mysql client
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install mysql-community-client</span></code></pre></div></li>
+</ol>
+
+<h3 id="uninstall-mysql-server">Uninstall Mysql Server</h3>
+
+<ol>
+<li>Lihat daftar paket mysql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum list installed | grep mysql</span></code></pre></div></li>
+<li>Kemudian uninstall seluruh paket mysql yang telah terinstall
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum remove mysql-community-client mysql-community-server mysql-community-common mysql-community-libs mysql-community-libs-compat</span></code></pre></div></li>
+<li>Dapat juga menghapus dengan paket <code>--remove-leaves</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install yum-plugin-remove-with-leaves</span>
+<span class="c1"># yum remove mysql-server --remove-leaves</span></code></pre></div></li>
+<li>Hapus direktori mysql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rm -rf /var/lib/mysql/</span>
+<span class="c1"># rm -rf /etc/my.cnf</span></code></pre></div></li>
+<li>Cek apakah mysql masih ada atau belum
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># find / “mysql”</span></code></pre></div></li>
 </ol>
 
 

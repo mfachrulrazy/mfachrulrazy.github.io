@@ -214,6 +214,164 @@
         <div class="posts-list">
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-php5-cent/">
+                <h2 class="post-title">Install Php 5.4 Centos 7</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 26, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  <ol>
+<li>Download paket repositori epel secara manual menggunakan wget
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm</span>
+<span class="c1"># wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</span></code></pre></div></li>
+<li>Install menggunakan rpm
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm</span></code></pre></div></li>
+<li>Install yum-utils untuk mengatur repositori
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install yum-utils</span></code></pre></div></li>
+<li>Kemudian enable php 5.4 dan install paket php
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># #yum-config-manager --enable remi-php54</span>
+<span class="c1"># yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo</span></code></pre></div></li>
+<li>Setelah itu cek versi php-nya
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># php -v</span></code></pre></div></li>
+</ol>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/">
+                <h2 class="post-title">Install Nginx Centos 7</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Instalasi Web Server Nginx pada Centos 7
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on April 23, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
+                  <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/">
+                <h2 class="post-title">Openssh Centos 7</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Install dan konfigurasi Openssh Centos 7
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 21, 2016
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart
+                  <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/about-cron/">
                 <h2 class="post-title">Berkenalan dengan Cron</h2>
 

@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-varnish-cent/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/tb-update-cent/</loc>
     <lastmod>2017-11-25T00:00:00+00:00</lastmod>
   </url>
@@ -113,6 +118,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-php5-cent/</loc>
+    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/reset-pass-centos7/</loc>
     <lastmod>2017-05-10T13:40:23+08:00</lastmod>
   </url>
@@ -120,6 +130,16 @@
   <url>
     <loc>https://mfachrulrazy.github.io/post/maxtu/</loc>
     <lastmod>2017-04-28T09:51:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/install-nginx-cent/</loc>
+    <lastmod>2017-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/del-notif-chrome/</loc>
+    <lastmod>2016-12-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -195,6 +215,12 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/kategori/google-chrome/</loc>
+    <lastmod>2016-12-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/kategori/hugo/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -232,7 +258,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/nginx/</loc>
-    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -290,6 +316,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/ubuntu/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/varnish/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

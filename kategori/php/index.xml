@@ -34,5 +34,14 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
 1. Edit file /etc/php.ini 1... 2upload_max_filesize = 100M 3... 2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http 1server { 2	client_max_body_size 100M; 3} 4 5... 6 7http { 8	client_max_body_size 100M; 9}</description>
     </item>
     
+    <item>
+      <title>Install Php 5.4 Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-php5-cent/</link>
+      <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-php5-cent/</guid>
+      <description> Download paket repositori epel secara manual menggunakan wget # wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm Install menggunakan rpm # rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm Install yum-utils untuk mengatur repositori # yum install yum-utils Kemudian enable php 5.4 dan install paket php # #yum-config-manager --enable remi-php54 # yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo Setelah itu cek versi php-nya # php -v  </description>
+    </item>
+    
   </channel>
 </rss>

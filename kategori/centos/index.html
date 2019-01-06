@@ -384,7 +384,7 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
                 
                   <h3 class="post-subtitle">
-                    Install mysql versi community pada Centos 7
+                    Install dan uninstall mysql community pada Centos 7
                   </h3>
                 
               </a>
@@ -409,20 +409,9 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
               </p>
               <div class="post-entry">
                 
-                  <p>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.</p>
-
-<ol>
-<li>Download dan tambahkan repo.
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm</span>
-<span class="c1"># sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm</span>
-<span class="c1"># yum update</span></code></pre></div></li>
-<li>Install mysql dan jalankan servisnya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install mysql-server</span>
-<span class="c1"># systemctl start mysqld</span></code></pre></div></li>
-<li>Jalankan script <code>mysql_secure_installation</code> setelah selesai menginstall mysql
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysql_secure_installation</span></code></pre></div></li>
-</ol>
-
+                  Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
+ Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.
+                  <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/" class="post-read-more">[Read More]</a>
                 
               </div>
 
@@ -688,8 +677,8 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
             </article>
           
             <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/">
-                <h2 class="post-title">Reset Password Centos 7</h2>
+              <a href="https://mfachrulrazy.github.io/post/install-php5-cent/">
+                <h2 class="post-title">Install Php 5.4 Centos 7</h2>
 
                 
               </a>
@@ -698,7 +687,7 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 10, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 26, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -714,19 +703,30 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
               </p>
               <div class="post-entry">
                 
-                  Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
-:/# chroot /sysroot  kemudian reset password
-:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.
-                  <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/" class="post-read-more">[Read More]</a>
+                  <ol>
+<li>Download paket repositori epel secara manual menggunakan wget
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm</span>
+<span class="c1"># wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</span></code></pre></div></li>
+<li>Install menggunakan rpm
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm</span></code></pre></div></li>
+<li>Install yum-utils untuk mengatur repositori
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install yum-utils</span></code></pre></div></li>
+<li>Kemudian enable php 5.4 dan install paket php
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># #yum-config-manager --enable remi-php54</span>
+<span class="c1"># yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo</span></code></pre></div></li>
+<li>Setelah itu cek versi php-nya
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># php -v</span></code></pre></div></li>
+</ol>
+
                 
               </div>
 
               
                 <div class="blog-tags">
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
                   
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
                   

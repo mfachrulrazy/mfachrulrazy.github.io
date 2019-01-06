@@ -375,6 +375,59 @@
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-varnish-cent/">
+                <h2 class="post-title">Install Varnish di Centos</h2>
+
+                
+                  <h3 class="post-subtitle">
+                    Install Varnish untuk cache web server
+                  </h3>
+                
+              </a>
+
+              <p class="post-meta">
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 28, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              </p>
+              <div class="post-entry">
+                
+                  Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
+Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
+Berikut langkah instalasi dan konfigurasi varnish.
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file /etc/yum.repos.d/varnishcache_varnish5.repo untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut 1[varnishcache_varnish5] 2name=varnishcache_varnish5 3baseurl=https://packagecloud.
+                  <a href="https://mfachrulrazy.github.io/post/install-varnish-cent/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/varnish/">varnish</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/">
                 <h2 class="post-title">Uninstall Paket Linux</h2>
 
@@ -682,54 +735,6 @@ Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau
                     <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/">
-                <h2 class="post-title">Openssh Centos 7</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Install dan konfigurasi Openssh Centos 7
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 21, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-              <div class="post-entry">
-                
-                  Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart
-                  <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
                   

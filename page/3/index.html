@@ -217,6 +217,57 @@
           
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/github-ssh/">
+                <h2 class="post-title">SSH key Akun Github</h2>
+                
+                  <h3 class="post-subtitle">
+                  Menambahkan SSH Key ke Akun Github dari PC
+                  </h3>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 21, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya
+ Pastikan git sudah terinstall pada PC
+ Buat ssh key di cmd dengan
+&gt; ssh-keygen Ssh key akan secara default masuk ke folder ~user/.ssh/*
+ Ada 2 file yang dibuat seperti di linux yaitu id_rsa dan id_rsa.pub
+ Copy isi file id_rsa.pub
+ Masuk ke menu Settings &gt; SSH and GPG Keys pada akun github
+                  <a href="https://mfachrulrazy.github.io/post/github-ssh/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/github/">github</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/">
                 <h2 class="post-title">Attach dam Import Database SQL Server</h2>
                 
@@ -314,6 +365,62 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
             </article>
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-php5-cent/">
+                <h2 class="post-title">Install Php 5.4 Centos 7</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 26, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <ol>
+<li>Download paket repositori epel secara manual menggunakan wget
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm</span>
+<span class="c1"># wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</span></code></pre></div></li>
+<li>Install menggunakan rpm
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm</span></code></pre></div></li>
+<li>Install yum-utils untuk mengatur repositori
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install yum-utils</span></code></pre></div></li>
+<li>Kemudian enable php 5.4 dan install paket php
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># #yum-config-manager --enable remi-php54</span>
+<span class="c1"># yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo</span></code></pre></div></li>
+<li>Setelah itu cek versi php-nya
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># php -v</span></code></pre></div></li>
+</ol>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/">
                 <h2 class="post-title">Reset Password Centos 7</h2>
                 
@@ -394,6 +501,100 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
                 <div class="blog-tags">
                   
                     <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/">
+                <h2 class="post-title">Install Nginx Centos 7</h2>
+                
+                  <h3 class="post-subtitle">
+                  Instalasi Web Server Nginx pada Centos 7
+                  </h3>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on April 23, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
+                  <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/del-notif-chrome/">
+                <h2 class="post-title">Menghapus Notifikasi Pop-Up Lidgrain pada Chrome</h2>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on December 6, 2016
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Jadi, waktu itu habis mengunjungi sebuah situs dan secara tidak sengaja (atau sengaja mungkin ya :D) saya mengizinkan notifikasi pada situs <strong>lidgrain.pro</strong>.<br />
+Secara otomatis setiap buka browser chrome, notifikasi tersebut selalu muncul. Untuk menghilangkannya bisa dengan cara berikut.
+1. Buka pengaturan pada chrome
+<img src="/img/chrome/notif1.png" alt="img" />
+2. Klik <strong>Advanced</strong> &gt; Pada bagian <strong>Privacy and security</strong> &gt; Pilih <strong>Content Settings</strong> &gt; Pilih <strong>Notifications</strong>
+<img src="/img/chrome/notif2.png" alt="img" />
+3. Cari <strong>lidgrain.pro</strong> dan Pilih menu di kanan &gt; Pilih <strong>Remove</strong>
+<img src="/img/chrome/notif3.png" alt="img" /></p>
+
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/google-chrome/">google chrome</a>&nbsp;
                   
                 </div>
               
@@ -488,201 +689,6 @@ Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut b
               
             </article>
           
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/about-cron/">
-                <h2 class="post-title">Berkenalan dengan Cron</h2>
-                
-                  <h3 class="post-subtitle">
-                  Apa itu Cron? atau Cron jobs?
-                  </h3>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 5, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Apa itu cron? Jadi, cron adalah sebuah software utilitas di lingkungan linux/unix yang berfungsi sebagai pembuat jadwal pekerjaan berdasarkan waktu yang bisa ditentukan.
-Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap perintah yang dijalankan di cron, akan mengirim ke email secara default dan biasanya dalam terminal akan muncul You have new mail in /var/spool/mail/root Isi dari file /var/spool/mail/root adalah proses dari script yang dijalankan.
-                  <a href="https://mfachrulrazy.github.io/post/about-cron/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/cron/">cron</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command2/">
-                <h2 class="post-title">Linux Command Part 2</h2>
-                
-                  <h3 class="post-subtitle">
-                  Beberapa Perintah dasar Linux Part 2
-                  </h3>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&lt;rule_iptable&gt;..... Untuk menghapus iptables $ sudo iptables -D .....&lt;rule_iptable&gt;.....
-Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &lt;namafile&gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall
-                  <a href="https://mfachrulrazy.github.io/post/linux-command2/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/">
-                <h2 class="post-title">Belajar Mysql Part 1</h2>
-                
-                  <h3 class="post-subtitle">
-                  Belajar mysql dasar Part 1
-                  </h3>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 7, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Login ke mysql dari terminal # mysql -u root -p Memilih database &gt; USE MYSQL; Membuat user baru &gt; CREATE USER &#39;userbaru&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;; Lihat nama user yang ingin diubah aksesnya &gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &gt; UPDATE USER SET HOST = &#39;%&#39; WHERE USER=&#39;user&#39;; Mengaktifkan perubahan &gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &gt; SET PASSWORD FOR &#39;user&#39;@&#39;localhost&#39; = PASSWORD(&#39;password&#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).
-                  <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/mysql/">mysql</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command1/">
-                <h2 class="post-title">Linux Command Part 1</h2>
-                
-                  <h3 class="post-subtitle">
-                  Beberapa Perintah dasar Linux Part 1
-                  </h3>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 27, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &#34;*.conf&#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.
-                  <a href="https://mfachrulrazy.github.io/post/linux-command1/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
         </div>
 
         
@@ -692,6 +698,10 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
                 <a href="/page/2/">&larr; Newer Posts</a>
               </li>
             
+            
+              <li class="next">
+                <a href="/page/4/">Older Posts &rarr;</a>
+              </li>
             
           </ul>
         
