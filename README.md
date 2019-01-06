@@ -1,1 +1,1 @@
-# mfachrulrazy.github.io
+Personal blog of MFR
