@@ -24,6 +24,18 @@
     </item>
     
     <item>
+      <title>Install Varnish pada Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/install-varnish-cent/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-varnish-cent/</guid>
+      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
+Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
+Berikut langkah instalasi dan konfigurasi varnish.
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file varnishcache_varnish5.repo di /etc/yum.repos.d/ untuk menampung konfigurasi repository.</description>
+    </item>
+    
+    <item>
       <title>Install Vsftp Ubuntu 16.04</title>
       <link>https://mfachrulrazy.github.io/post/install-ftp-ubuntu/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
@@ -43,18 +55,6 @@ Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti
  VirtualBox Git Kitematic
   Yang semuanya diperlukan untuk menjalankan docker.
 Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Jika masih terdapat error restart PC Kemudian jalankan: Docker Quickstart Terminal Jalankan Kitematic untuk melihat daftar container Contoh di bawah ini pada saat menjalankan container Nginx   </description>
-    </item>
-    
-    <item>
-      <title>Install Varnish di Centos</title>
-      <link>https://mfachrulrazy.github.io/post/install-varnish-cent/</link>
-      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
-      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
-      <guid>https://mfachrulrazy.github.io/post/install-varnish-cent/</guid>
-      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
-Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
-Berikut langkah instalasi dan konfigurasi varnish.
-1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file /etc/yum.repos.d/varnishcache_varnish5.repo untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut 1[varnishcache_varnish5] 2name=varnishcache_varnish5 3baseurl=https://packagecloud.</description>
     </item>
     
     <item>

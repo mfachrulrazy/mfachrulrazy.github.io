@@ -142,7 +142,7 @@
     <item>
       <title>Nginx</title>
       <link>https://mfachrulrazy.github.io/kategori/nginx/</link>
-      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/nginx/</guid>
       <description></description>
@@ -151,7 +151,7 @@
     <item>
       <title>Open Source</title>
       <link>https://mfachrulrazy.github.io/kategori/open-source/</link>
-      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/open-source/</guid>
       <description></description>
@@ -172,6 +172,15 @@
       <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/proxmox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mfachrulrazy.github.io/kategori/python/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/python/</guid>
       <description></description>
     </item>
     
@@ -214,7 +223,7 @@
     <item>
       <title>Varnish</title>
       <link>https://mfachrulrazy.github.io/kategori/varnish/</link>
-      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/varnish/</guid>
       <description></description>

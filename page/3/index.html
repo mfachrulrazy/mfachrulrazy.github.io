@@ -217,6 +217,52 @@
           
           
             <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/tb-web-server1/">
+                <h2 class="post-title">Troubleshoot Web Server I</h2>
+                
+                  <h3 class="post-subtitle">
+                  Troubleshoot error web server
+                  </h3>
+                
+                
+              </a>
+
+              <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 13, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
+Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.
+                  <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+                  
+                </div>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://mfachrulrazy.github.io/post/int-baru-vbox/">
                 <h2 class="post-title">Interface Network pada VirtualBox</h2>
                 
@@ -656,53 +702,6 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
                     <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
                   
                     <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
-                  
-                </div>
-              
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/">
-                <h2 class="post-title">Servis Wireless tidak berjalan pada Windows 7</h2>
-                
-                
-              </a>
-
-              <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 12, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
-Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
-Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
-HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
-Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
-                  <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/wireless/">wireless</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
                   
                 </div>
               

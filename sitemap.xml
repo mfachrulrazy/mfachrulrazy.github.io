@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-varnish-cent/</loc>
+    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/install-hugo/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
   </url>
@@ -23,8 +28,13 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/venv-python/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/linux-win-store/</loc>
-    <lastmod>2018-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -45,11 +55,6 @@
   <url>
     <loc>https://mfachrulrazy.github.io/post/install-docker-win10h/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mfachrulrazy.github.io/post/install-varnish-cent/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -284,13 +289,13 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/nginx/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/open-source/</loc>
-    <lastmod>2018-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -314,6 +319,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/proxmox/</loc>
     <lastmod>2017-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/python/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -347,7 +358,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/varnish/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

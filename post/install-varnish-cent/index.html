@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Install Varnish di Centos" />
-  <meta name="twitter:title" content="Install Varnish di Centos" />
+  <meta property="og:title" content="Install Varnish pada Centos 7" />
+  <meta name="twitter:title" content="Install Varnish pada Centos 7" />
   <meta name="description" content="Install Varnish untuk cache web server">
   <meta property="og:description" content="Install Varnish untuk cache web server">
   <meta name="twitter:description" content="Install Varnish untuk cache web server">
@@ -49,7 +49,7 @@
         "position": 3,
         "item": {
           "@id": "https://mfachrulrazy.github.io/post/install-varnish-cent/",
-          "name": "Install varnish di centos"
+          "name": "Install varnish pada centos 7"
         }
     }]
 }
@@ -60,15 +60,15 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Install Varnish di Centos",
+  "headline": "Install Varnish pada Centos 7",
   "description" : "Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
 Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
 Berikut langkah instalasi dan konfigurasi varnish.
-1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file /etc/yum.repos.d/varnishcache_varnish5.repo untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut 1[varnishcache_varnish5] 2name=varnishcache_varnish5 3baseurl=https://packagecloud.",
+1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file varnishcache_varnish5.repo di /etc/yum.repos.d/ untuk menampung konfigurasi repository.",
   "inLanguage" : "en",
-  "wordCount": 329,
-  "datePublished" : "2017-11-28T00:00:00",
-  "dateModified" : "2017-11-28T00:00:00",
+  "wordCount": 331,
+  "datePublished" : "2018-07-21T00:00:00",
+  "dateModified" : "2018-07-21T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
   "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-varnish-cent/",
@@ -85,12 +85,12 @@ Berikut langkah instalasi dan konfigurasi varnish.
 }
 </script>
 
-<meta property="og:title" content="Install Varnish di Centos" />
+<meta property="og:title" content="Install Varnish pada Centos 7" />
 <meta property="og:description" content="Install Varnish untuk cache web server">
 <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-varnish-cent/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Install Varnish di Centos" />
+  <meta name="twitter:title" content="Install Varnish pada Centos 7" />
   <meta name="twitter:description" content="Install Varnish untuk cache web server">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
@@ -244,7 +244,7 @@ Berikut langkah instalasi dan konfigurasi varnish.
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Install Varnish di Centos</h1>
+                <h1>Install Varnish pada Centos 7</h1>
               
               
               
@@ -256,7 +256,7 @@ Berikut langkah instalasi dan konfigurasi varnish.
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 28, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 21, 2018
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
@@ -289,7 +289,7 @@ Berikut langkah instalasi dan konfigurasi varnish.<br />
 1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk  menambahkan fungsi dari native yum
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install pygpgme yum-utils</span></code></pre></div>
 <img src="/img/varnish/ins-varnish1.png" alt="img1" />
-2. Buat file <code>/etc/yum.repos.d/varnishcache_varnish5.repo</code> untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut
+2. Buat file <code>varnishcache_varnish5.repo</code> di <code>/etc/yum.repos.d/</code> untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span><span class="o">[</span>varnishcache_varnish5<span class="o">]</span>
 <span class="ln"> 2</span><span class="nv">name</span><span class="o">=</span>varnishcache_varnish5
 <span class="ln"> 3</span><span class="nv">baseurl</span><span class="o">=</span>https://packagecloud.io/varnishcache/varnish5/el/7/<span class="nv">$basearch</span>
@@ -381,7 +381,7 @@ atau
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f&amp;text=Install%20Varnish%20di%20Centos&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f&amp;text=Install%20Varnish%20pada%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -402,7 +402,7 @@ atau
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f&amp;title=Install%20Varnish%20di%20Centos" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-varnish-cent%2f&amp;title=Install%20Varnish%20pada%20Centos%207" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -423,12 +423,12 @@ atau
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/tb-update-cent/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Update Repo Centos 7">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/install-hugo/" data-toggle="tooltip" data-placement="top" title="Install dan konfigurasi Hugo">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/install-docker-win10h/" data-toggle="tooltip" data-placement="top" title="Install Docker Windows 10 Home">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/vbox-error/" data-toggle="tooltip" data-placement="top" title="VM Virtual Box Error">Next Post &rarr;</a>
             </li>
           
         </ul>
