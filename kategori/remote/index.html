@@ -242,20 +242,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  
-
-<p>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.<br />
-Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace.
-<img src="/img/vbox-error/bs-err1.png" alt="img" /></p>
-
-<h3 id="solusi">Solusi</h3>
-
-<p>Gunakan aplikasi remote lain</p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -296,29 +282,6 @@ Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bu
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Update paket Ubuntu, kemudian install paket xrdp
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xrdp</code></pre></div></li>
-<li>Install paket xfce4
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xfce4</code></pre></div></li>
-<li>Modifikasi xrdp berjalan startup file di <code>~/.xsession</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> xfce4-session &gt;~/.xsession</code></pre></div></li>
-<li>Edit startup file xrdp untuk mengeksekusi xfce4 service pada saat startup
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo nano /etc/xrdp/startwm.sh</code></pre></div></li>
-<li>Tambahkan:
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span>startxfce4
-<span class="ln">3</span>. /etc/X11/Xsession</code></pre></div></li>
-<li>Sampai di sini, xrdp sudah bisa berjalan tetapi belum bisa login karena port 3350 belum “LISTENING”
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl <span class="nb">enable</span> xrdp</code></pre></div></li>
-<li>Kemudian reboot sistem
-<img src="/img/rem-des-ubuntu.png" alt="" /></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">

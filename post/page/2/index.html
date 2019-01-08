@@ -250,36 +250,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  
-
-<p>Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.</p>
-
-<p>Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:</p>
-
-<ol>
-<li>VirtualBox</li>
-<li>Git</li>
-<li>Kitematic<br /></li>
-</ol>
-
-<p>Yang semuanya diperlukan untuk menjalankan docker.</p>
-
-<h3 id="troubleshoot-1">Troubleshoot 1</h3>
-
-<ul>
-<li>Terdapat error baru pada saat setelah install docker-toolbox
-<img src="/img/ins-docker/install-docker1.png" alt="img1" /></li>
-<li>Jika masih terdapat error restart PC</li>
-<li>Kemudian jalankan: Docker Quickstart Terminal</li>
-<li>Jalankan Kitematic untuk melihat daftar container</li>
-<li>Contoh di bawah ini pada saat menjalankan container Nginx
-<img src="/img/ins-docker/install-docker2.png" alt="img2" /></li>
-</ul>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -324,15 +294,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Jadi ceritanya, pada saat update muncul error karena tidak dapat diupdate (delta rpm disabled)
-<img src="/img/repo-cent/repo-cent1.png" alt="img1" />
-Untuk mengatasi masalah tersebut kita hanya butuh untuk menginstall paket delta rpm
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install deltarpm</span></code></pre></div></p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -373,13 +334,6 @@ Untuk mengatasi masalah tersebut kita hanya butuh untuk menginstall paket delta 
 
 
               </p>
-              <div class="post-entry">
-                
-                  Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
-Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.
-                  <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -426,13 +380,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
- Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.
-                  <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -477,13 +424,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
- Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut 1IPADDR= 2NETMASK= 3GATEWAY= 4DNS1= 5DNS2= 6#onboot untuk mengatur interface aktif pada saat server baru dinyalakan 7ONBOOT=yes 8#bootproto untuk mengatur IP apakah dhcp atau static 9BOOTPROTO=dhcp/static Simpan file dan keluar.
-                  <a href="https://mfachrulrazy.github.io/post/net-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -522,13 +462,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
-1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;&amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.
-                  <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -569,18 +502,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Melihat repository yang aktif pada centos
-# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
-# yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available Cek epel repository
-# yum repolist | grep &#34;^epel\|repo id&#34; Hapus repository
-# yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository
-                  <a href="https://mfachrulrazy.github.io/post/repo-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -623,20 +544,6 @@ Melihat repository dengan nama ‘repoA-id’
 
 
               </p>
-              <div class="post-entry">
-                
-                  
-
-<p>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.<br />
-Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace.
-<img src="/img/vbox-error/bs-err1.png" alt="img" /></p>
-
-<h3 id="solusi">Solusi</h3>
-
-<p>Gunakan aplikasi remote lain</p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -677,29 +584,6 @@ Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bu
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Update paket Ubuntu, kemudian install paket xrdp
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xrdp</code></pre></div></li>
-<li>Install paket xfce4
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xfce4</code></pre></div></li>
-<li>Modifikasi xrdp berjalan startup file di <code>~/.xsession</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> xfce4-session &gt;~/.xsession</code></pre></div></li>
-<li>Edit startup file xrdp untuk mengeksekusi xfce4 service pada saat startup
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo nano /etc/xrdp/startwm.sh</code></pre></div></li>
-<li>Tambahkan:
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span>startxfce4
-<span class="ln">3</span>. /etc/X11/Xsession</code></pre></div></li>
-<li>Sampai di sini, xrdp sudah bisa berjalan tetapi belum bisa login karena port 3350 belum “LISTENING”
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl <span class="nb">enable</span> xrdp</code></pre></div></li>
-<li>Kemudian reboot sistem
-<img src="/img/rem-des-ubuntu.png" alt="" /></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -742,14 +626,6 @@ Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bu
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
-Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
-Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.
-                  <a href="https://mfachrulrazy.github.io/post/tb-php-email/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

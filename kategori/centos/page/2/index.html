@@ -238,14 +238,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
-:/# chroot /sysroot  kemudian reset password
-:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.
-                  <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -290,13 +282,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
- Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
-                  <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -341,12 +326,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart
-                  <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -389,13 +368,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&lt;rule_iptable&gt;..... Untuk menghapus iptables $ sudo iptables -D .....&lt;rule_iptable&gt;.....
-Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &lt;namafile&gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall
-                  <a href="https://mfachrulrazy.github.io/post/linux-command2/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -442,13 +414,6 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 
 
               </p>
-              <div class="post-entry">
-                
-                  Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &#34;*.conf&#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.
-                  <a href="https://mfachrulrazy.github.io/post/linux-command1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

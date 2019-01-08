@@ -238,13 +238,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).
-                  <a href="https://mfachrulrazy.github.io/post/install-wins-2003/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -287,12 +280,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &gt; bcdedit /set hypervisorlaunchtype off   Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V. Belum mencoba untuk menjalankan vm di virtualbox dengan docker secara bersamaan.
-                  <a href="https://mfachrulrazy.github.io/post/vbox-error/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -337,14 +324,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Hugo adalah salah satu static framework untuk membuat website atau biasa dikenal dengan istilah framework static site generators.
-Untuk menginstall hugo di Windows, choco paket manajer harus terlebih dahulu terinstall.
-Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator level) cukup dengan perintah berikut choco install hugo -confirm  Setelah terinstall, tes dengan menjalankan perintah hugo &gt; hugo help untuk mengetahui lokasi hugo terinstall &gt; where hugo Untuk membuat situs baru dengan hugo cukup dengan perintah berikut (tanpa petik) &gt; hugo new site &#39;namasitus&#39; Folder baru akan dibuat dengan struktur folder berikut.
-                  <a href="https://mfachrulrazy.github.io/post/install-hugo/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -389,18 +368,6 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Pertama harus mengaktifkan WSL atau Windows Subsystem for Linux<br /></li>
-<li>Caranya, buka powershell sebagai Administrator dan jalankan perintah berikut:<br />
-<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="nb">Enable-WindowsOptionalFeature</span> <span class="n">-Online</span> <span class="n">-FeatureName</span> <span class="n">Microsoft-Windows-Subsystem-Linux</span></code></pre></div></li>
-<li>Restart PC</li>
-<li>Kemudian install Linux dari Windows Store</li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -445,14 +412,6 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
 
 
               </p>
-              <div class="post-entry">
-                
-                  Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
-Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.
- Cek keamanan powershell Get-ExecutionPolicy Jika kembali dengan Restricted, maka atur seperti berikut Set-ExecutionPolicy AllSigned Atau Set-ExecutionPolicy Bypass -Scope Process Kemudian jalankan script berikut Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.
-                  <a href="https://mfachrulrazy.github.io/post/install-choco/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -491,36 +450,6 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
 
 
               </p>
-              <div class="post-entry">
-                
-                  
-
-<p>Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.</p>
-
-<p>Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:</p>
-
-<ol>
-<li>VirtualBox</li>
-<li>Git</li>
-<li>Kitematic<br /></li>
-</ol>
-
-<p>Yang semuanya diperlukan untuk menjalankan docker.</p>
-
-<h3 id="troubleshoot-1">Troubleshoot 1</h3>
-
-<ul>
-<li>Terdapat error baru pada saat setelah install docker-toolbox
-<img src="/img/ins-docker/install-docker1.png" alt="img1" /></li>
-<li>Jika masih terdapat error restart PC</li>
-<li>Kemudian jalankan: Docker Quickstart Terminal</li>
-<li>Jalankan Kitematic untuk melihat daftar container</li>
-<li>Contoh di bawah ini pada saat menjalankan container Nginx
-<img src="/img/ins-docker/install-docker2.png" alt="img2" /></li>
-</ul>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -561,17 +490,6 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui<br />
-<code>File &gt; Host Network Manager &gt; Create</code></li>
-<li>Untuk mengedit interface yang sudah ada bisa memilih <code>Properties</code>
-<img src="/img/vbox-newint.png" alt="img1" /></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -610,16 +528,6 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
 
 
               </p>
-              <div class="post-entry">
-                
-                  Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
-Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
-Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
-HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
-Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
-                  <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

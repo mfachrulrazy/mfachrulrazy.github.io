@@ -242,13 +242,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
- Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.
-                  <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -293,13 +286,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
-Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.
-                  <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -344,12 +330,6 @@ Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau
 
 
               </p>
-              <div class="post-entry">
-                
-                  Login ke mysql dari terminal # mysql -u root -p Memilih database &gt; USE MYSQL; Membuat user baru &gt; CREATE USER &#39;userbaru&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;; Lihat nama user yang ingin diubah aksesnya &gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &gt; UPDATE USER SET HOST = &#39;%&#39; WHERE USER=&#39;user&#39;; Mengaktifkan perubahan &gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &gt; SET PASSWORD FOR &#39;user&#39;@&#39;localhost&#39; = PASSWORD(&#39;password&#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).
-                  <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

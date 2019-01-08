@@ -238,13 +238,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).
-                  <a href="https://mfachrulrazy.github.io/post/install-wins-2003/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -287,15 +280,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
-Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
-Berikut langkah instalasi dan konfigurasi varnish.
-1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file varnishcache_varnish5.repo di /etc/yum.repos.d/ untuk menampung konfigurasi repository.
-                  <a href="https://mfachrulrazy.github.io/post/install-varnish-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -336,12 +320,6 @@ Berikut langkah instalasi dan konfigurasi varnish.
 
 
               </p>
-              <div class="post-entry">
-                
-                  Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.
-                  <a href="https://mfachrulrazy.github.io/post/install-ftp-ubuntu/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -382,36 +360,6 @@ Berikut langkah instalasi dan konfigurasi varnish.
 
 
               </p>
-              <div class="post-entry">
-                
-                  
-
-<p>Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.</p>
-
-<p>Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:</p>
-
-<ol>
-<li>VirtualBox</li>
-<li>Git</li>
-<li>Kitematic<br /></li>
-</ol>
-
-<p>Yang semuanya diperlukan untuk menjalankan docker.</p>
-
-<h3 id="troubleshoot-1">Troubleshoot 1</h3>
-
-<ul>
-<li>Terdapat error baru pada saat setelah install docker-toolbox
-<img src="/img/ins-docker/install-docker1.png" alt="img1" /></li>
-<li>Jika masih terdapat error restart PC</li>
-<li>Kemudian jalankan: Docker Quickstart Terminal</li>
-<li>Jalankan Kitematic untuk melihat daftar container</li>
-<li>Contoh di bawah ini pada saat menjalankan container Nginx
-<img src="/img/ins-docker/install-docker2.png" alt="img2" /></li>
-</ul>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -456,13 +404,6 @@ Berikut langkah instalasi dan konfigurasi varnish.
 
 
               </p>
-              <div class="post-entry">
-                
-                  Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
-Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.
-                  <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -505,13 +446,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
-1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;&amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.
-                  <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -556,14 +490,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
-Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
-Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.
-                  <a href="https://mfachrulrazy.github.io/post/tb-php-email/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -608,13 +534,6 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
-Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.
-                  <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -657,26 +576,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
-1. Edit file <code>/etc/php.ini</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
-<span class="ln">3</span>...</code></pre></div>
-2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
-<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">3</span><span class="o">}</span>
-<span class="ln">4</span>
-<span class="ln">5</span>...
-<span class="ln">6</span>
-<span class="ln">7</span>http <span class="o">{</span>
-<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -721,13 +620,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 
 
               </p>
-              <div class="post-entry">
-                
-                  Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
-Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.
-                  <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

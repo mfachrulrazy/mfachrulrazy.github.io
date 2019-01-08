@@ -243,13 +243,6 @@
 </span>
 
 
-              <div class="post-entry">
-                
-                  Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
-Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.
-                  <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -285,17 +278,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 </span>
 
 
-              <div class="post-entry">
-                
-                  <ol>
-<li>Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui<br />
-<code>File &gt; Host Network Manager &gt; Create</code></li>
-<li>Untuk mengedit interface yang sudah ada bisa memilih <code>Properties</code>
-<img src="/img/vbox-newint.png" alt="img1" /></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -335,26 +317,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 </span>
 
 
-              <div class="post-entry">
-                
-                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
-1. Edit file <code>/etc/php.ini</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
-<span class="ln">3</span>...</code></pre></div>
-2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
-<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">3</span><span class="o">}</span>
-<span class="ln">4</span>
-<span class="ln">5</span>...
-<span class="ln">6</span>
-<span class="ln">7</span>http <span class="o">{</span>
-<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -396,18 +358,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 </span>
 
 
-              <div class="post-entry">
-                
-                  Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya
- Pastikan git sudah terinstall pada PC
- Buat ssh key di cmd dengan
-&gt; ssh-keygen Ssh key akan secara default masuk ke folder ~user/.ssh/*
- Ada 2 file yang dibuat seperti di linux yaitu id_rsa dan id_rsa.pub
- Copy isi file id_rsa.pub
- Masuk ke menu Settings &gt; SSH and GPG Keys pada akun github
-                  <a href="https://mfachrulrazy.github.io/post/github-ssh/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -447,13 +397,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 </span>
 
 
-              <div class="post-entry">
-                
-                  Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
-Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.
-                  <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -495,14 +438,6 @@ Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau
 </span>
 
 
-              <div class="post-entry">
-                
-                  Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
-Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.
-                  <a href="https://mfachrulrazy.github.io/post/imp-proxmox/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -540,25 +475,6 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 </span>
 
 
-              <div class="post-entry">
-                
-                  <ol>
-<li>Download paket repositori epel secara manual menggunakan wget
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm</span>
-<span class="c1"># wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</span></code></pre></div></li>
-<li>Install menggunakan rpm
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm</span></code></pre></div></li>
-<li>Install yum-utils untuk mengatur repositori
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install yum-utils</span></code></pre></div></li>
-<li>Kemudian enable php 5.4 dan install paket php
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># #yum-config-manager --enable remi-php54</span>
-<span class="c1"># yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo</span></code></pre></div></li>
-<li>Setelah itu cek versi php-nya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># php -v</span></code></pre></div></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -596,14 +512,6 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 </span>
 
 
-              <div class="post-entry">
-                
-                  Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
-:/# chroot /sysroot  kemudian reset password
-:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.
-                  <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -641,14 +549,6 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 </span>
 
 
-              <div class="post-entry">
-                
-                  Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
-Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
- L3 MTU = 1500 (Data: 1480 + IP:20) L2.
-                  <a href="https://mfachrulrazy.github.io/post/maxtu/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -686,13 +586,6 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
 </span>
 
 
-              <div class="post-entry">
-                
-                  Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
- Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
-                  <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

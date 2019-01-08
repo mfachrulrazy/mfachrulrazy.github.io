@@ -242,14 +242,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
-Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
-Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.
-                  <a href="https://mfachrulrazy.github.io/post/tb-php-email/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -294,26 +286,6 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
-1. Edit file <code>/etc/php.ini</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
-<span class="ln">3</span>...</code></pre></div>
-2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
-<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">3</span><span class="o">}</span>
-<span class="ln">4</span>
-<span class="ln">5</span>...
-<span class="ln">6</span>
-<span class="ln">7</span>http <span class="o">{</span>
-<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -354,25 +326,6 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Download paket repositori epel secara manual menggunakan wget
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm</span>
-<span class="c1"># wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</span></code></pre></div></li>
-<li>Install menggunakan rpm
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm</span></code></pre></div></li>
-<li>Install yum-utils untuk mengatur repositori
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install yum-utils</span></code></pre></div></li>
-<li>Kemudian enable php 5.4 dan install paket php
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># #yum-config-manager --enable remi-php54</span>
-<span class="c1"># yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo</span></code></pre></div></li>
-<li>Setelah itu cek versi php-nya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># php -v</span></code></pre></div></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">

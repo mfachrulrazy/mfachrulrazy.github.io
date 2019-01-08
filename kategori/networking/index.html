@@ -242,25 +242,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.<br />
-Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan <strong>nmtui</strong>.</p>
-
-<ol>
-<li>Jalankan nmtui dari terminal
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># nmtui</span></code></pre></div>
-<img src="/img/nmtui/nmtui1.png" alt="img1" /></li>
-<li>Pilih edit connection &gt; kemudian pilih Wired connection 1 &gt; pilih Edit
-<img src="/img/nmtui/nmtui2.png" alt="img2" /></li>
-<li>Kemudian ubah nama profil dan IPv4 configuration menjadi manual
-<img src="/img/nmtui/nmtui3.png" alt="img3" /></li>
-<li>Kemudian OK &gt; Back &gt; Quit</li>
-<li>Restart service network</li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -301,13 +282,6 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
 
 
               </p>
-              <div class="post-entry">
-                
-                  Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
-Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.
-                  <a href="https://mfachrulrazy.github.io/post/err-loopback/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -350,13 +324,6 @@ Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setel
 
 
               </p>
-              <div class="post-entry">
-                
-                  Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
- Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut 1IPADDR= 2NETMASK= 3GATEWAY= 4DNS1= 5DNS2= 6#onboot untuk mengatur interface aktif pada saat server baru dinyalakan 7ONBOOT=yes 8#bootproto untuk mengatur IP apakah dhcp atau static 9BOOTPROTO=dhcp/static Simpan file dan keluar.
-                  <a href="https://mfachrulrazy.github.io/post/net-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -399,14 +366,6 @@ Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setel
 
 
               </p>
-              <div class="post-entry">
-                
-                  Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
-Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.
-                  <a href="https://mfachrulrazy.github.io/post/imp-proxmox/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -447,14 +406,6 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 
 
               </p>
-              <div class="post-entry">
-                
-                  Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
-Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
- L3 MTU = 1500 (Data: 1480 + IP:20) L2.
-                  <a href="https://mfachrulrazy.github.io/post/maxtu/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -491,16 +442,6 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
 
 
               </p>
-              <div class="post-entry">
-                
-                  Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
-Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
-Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
-HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
-Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
-                  <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -541,16 +482,6 @@ Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini.
-<img src="/img/windows/error-gw1.png" alt="img" />
-Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy
-<img src="/img/windows/error-gw2.png" alt="img" />
-Hilangkan tanda centangnya dan login kembali.</p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">

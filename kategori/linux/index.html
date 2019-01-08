@@ -238,12 +238,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.
-                  <a href="https://mfachrulrazy.github.io/post/install-ftp-ubuntu/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -288,18 +282,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Pertama harus mengaktifkan WSL atau Windows Subsystem for Linux<br /></li>
-<li>Caranya, buka powershell sebagai Administrator dan jalankan perintah berikut:<br />
-<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="nb">Enable-WindowsOptionalFeature</span> <span class="n">-Online</span> <span class="n">-FeatureName</span> <span class="n">Microsoft-Windows-Subsystem-Linux</span></code></pre></div></li>
-<li>Restart PC</li>
-<li>Kemudian install Linux dari Windows Store</li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -344,13 +326,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
-Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.
-                  <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -393,13 +368,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
-1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;&amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.
-                  <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -440,18 +408,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Melihat repository yang aktif pada centos
-# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
-# yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available Cek epel repository
-# yum repolist | grep &#34;^epel\|repo id&#34; Hapus repository
-# yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository
-                  <a href="https://mfachrulrazy.github.io/post/repo-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -494,14 +450,6 @@ Melihat repository dengan nama ‘repoA-id’
 
 
               </p>
-              <div class="post-entry">
-                
-                  Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
-Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.
-                  <a href="https://mfachrulrazy.github.io/post/imp-proxmox/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -542,14 +490,6 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 
 
               </p>
-              <div class="post-entry">
-                
-                  Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
-:/# chroot /sysroot  kemudian reset password
-:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.
-                  <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -594,13 +534,6 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
 
 
               </p>
-              <div class="post-entry">
-                
-                  Apa itu cron? Jadi, cron adalah sebuah software utilitas di lingkungan linux/unix yang berfungsi sebagai pembuat jadwal pekerjaan berdasarkan waktu yang bisa ditentukan.
-Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap perintah yang dijalankan di cron, akan mengirim ke email secara default dan biasanya dalam terminal akan muncul You have new mail in /var/spool/mail/root Isi dari file /var/spool/mail/root adalah proses dari script yang dijalankan.
-                  <a href="https://mfachrulrazy.github.io/post/about-cron/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -645,13 +578,6 @@ Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap per
 
 
               </p>
-              <div class="post-entry">
-                
-                  Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&lt;rule_iptable&gt;..... Untuk menghapus iptables $ sudo iptables -D .....&lt;rule_iptable&gt;.....
-Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &lt;namafile&gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall
-                  <a href="https://mfachrulrazy.github.io/post/linux-command2/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -698,13 +624,6 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 
 
               </p>
-              <div class="post-entry">
-                
-                  Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &#34;*.conf&#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.
-                  <a href="https://mfachrulrazy.github.io/post/linux-command1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

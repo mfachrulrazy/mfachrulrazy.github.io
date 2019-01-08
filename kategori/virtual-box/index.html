@@ -242,12 +242,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &gt; bcdedit /set hypervisorlaunchtype off   Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V. Belum mencoba untuk menjalankan vm di virtualbox dengan docker secara bersamaan.
-                  <a href="https://mfachrulrazy.github.io/post/vbox-error/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -292,25 +286,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.<br />
-Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan <strong>nmtui</strong>.</p>
-
-<ol>
-<li>Jalankan nmtui dari terminal
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># nmtui</span></code></pre></div>
-<img src="/img/nmtui/nmtui1.png" alt="img1" /></li>
-<li>Pilih edit connection &gt; kemudian pilih Wired connection 1 &gt; pilih Edit
-<img src="/img/nmtui/nmtui2.png" alt="img2" /></li>
-<li>Kemudian ubah nama profil dan IPv4 configuration menjadi manual
-<img src="/img/nmtui/nmtui3.png" alt="img3" /></li>
-<li>Kemudian OK &gt; Back &gt; Quit</li>
-<li>Restart service network</li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -355,20 +330,6 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
 
 
               </p>
-              <div class="post-entry">
-                
-                  
-
-<p>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.<br />
-Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace.
-<img src="/img/vbox-error/bs-err1.png" alt="img" /></p>
-
-<h3 id="solusi">Solusi</h3>
-
-<p>Gunakan aplikasi remote lain</p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -409,17 +370,6 @@ Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bu
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui<br />
-<code>File &gt; Host Network Manager &gt; Create</code></li>
-<li>Untuk mengedit interface yang sudah ada bisa memilih <code>Properties</code>
-<img src="/img/vbox-newint.png" alt="img1" /></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">

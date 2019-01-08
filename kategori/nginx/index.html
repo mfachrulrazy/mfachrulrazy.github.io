@@ -242,15 +242,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
-Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
-Berikut langkah instalasi dan konfigurasi varnish.
-1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file varnishcache_varnish5.repo di /etc/yum.repos.d/ untuk menampung konfigurasi repository.
-                  <a href="https://mfachrulrazy.github.io/post/install-varnish-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -295,26 +286,6 @@ Berikut langkah instalasi dan konfigurasi varnish.
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan <em>lemp stack</em> (linux, nginx, mysql, php).<br />
-1. Edit file <code>/etc/php.ini</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span><span class="nv">upload_max_filesize</span> <span class="o">=</span> 100M
-<span class="ln">3</span>...</code></pre></div>
-2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
-<span class="ln">2</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">3</span><span class="o">}</span>
-<span class="ln">4</span>
-<span class="ln">5</span>...
-<span class="ln">6</span>
-<span class="ln">7</span>http <span class="o">{</span>
-<span class="ln">8</span>	client_max_body_size 100M<span class="p">;</span>
-<span class="ln">9</span><span class="o">}</span></code></pre></div></p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -359,13 +330,6 @@ Berikut langkah instalasi dan konfigurasi varnish.
 
 
               </p>
-              <div class="post-entry">
-                
-                  Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
- Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
-                  <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

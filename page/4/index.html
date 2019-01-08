@@ -239,16 +239,6 @@
 </span>
 
 
-              <div class="post-entry">
-                
-                  Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
-Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
-Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
-HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
-Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
-                  <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -286,16 +276,6 @@ Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
 </span>
 
 
-              <div class="post-entry">
-                
-                  <p>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini.
-<img src="/img/windows/error-gw1.png" alt="img" />
-Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy
-<img src="/img/windows/error-gw2.png" alt="img" />
-Hilangkan tanda centangnya dan login kembali.</p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -331,19 +311,6 @@ Hilangkan tanda centangnya dan login kembali.</p>
 </span>
 
 
-              <div class="post-entry">
-                
-                  <p>Jadi, waktu itu habis mengunjungi sebuah situs dan secara tidak sengaja (atau sengaja mungkin ya :D) saya mengizinkan notifikasi pada situs <strong>lidgrain.pro</strong>.<br />
-Secara otomatis setiap buka browser chrome, notifikasi tersebut selalu muncul. Untuk menghilangkannya bisa dengan cara berikut.
-1. Buka pengaturan pada chrome
-<img src="/img/chrome/notif1.png" alt="img" />
-2. Klik <strong>Advanced</strong> &gt; Pada bagian <strong>Privacy and security</strong> &gt; Pilih <strong>Content Settings</strong> &gt; Pilih <strong>Notifications</strong>
-<img src="/img/chrome/notif2.png" alt="img" />
-3. Cari <strong>lidgrain.pro</strong> dan Pilih menu di kanan &gt; Pilih <strong>Remove</strong>
-<img src="/img/chrome/notif3.png" alt="img" /></p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -381,12 +348,6 @@ Secara otomatis setiap buka browser chrome, notifikasi tersebut selalu muncul. U
 </span>
 
 
-              <div class="post-entry">
-                
-                  Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart
-                  <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -422,15 +383,6 @@ Secara otomatis setiap buka browser chrome, notifikasi tersebut selalu muncul. U
 </span>
 
 
-              <div class="post-entry">
-                
-                  Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
-Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
-Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
- i : untuk beralih ke mode insert atau memasukkan teks.
-                  <a href="https://mfachrulrazy.github.io/post/belajar-vim/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -470,13 +422,6 @@ Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut b
 </span>
 
 
-              <div class="post-entry">
-                
-                  Apa itu cron? Jadi, cron adalah sebuah software utilitas di lingkungan linux/unix yang berfungsi sebagai pembuat jadwal pekerjaan berdasarkan waktu yang bisa ditentukan.
-Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap perintah yang dijalankan di cron, akan mengirim ke email secara default dan biasanya dalam terminal akan muncul You have new mail in /var/spool/mail/root Isi dari file /var/spool/mail/root adalah proses dari script yang dijalankan.
-                  <a href="https://mfachrulrazy.github.io/post/about-cron/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -518,13 +463,6 @@ Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap per
 </span>
 
 
-              <div class="post-entry">
-                
-                  Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&lt;rule_iptable&gt;..... Untuk menghapus iptables $ sudo iptables -D .....&lt;rule_iptable&gt;.....
-Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &lt;namafile&gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall
-                  <a href="https://mfachrulrazy.github.io/post/linux-command2/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -568,12 +506,6 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 </span>
 
 
-              <div class="post-entry">
-                
-                  Login ke mysql dari terminal # mysql -u root -p Memilih database &gt; USE MYSQL; Membuat user baru &gt; CREATE USER &#39;userbaru&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;; Lihat nama user yang ingin diubah aksesnya &gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &gt; UPDATE USER SET HOST = &#39;%&#39; WHERE USER=&#39;user&#39;; Mengaktifkan perubahan &gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &gt; SET PASSWORD FOR &#39;user&#39;@&#39;localhost&#39; = PASSWORD(&#39;password&#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).
-                  <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -615,13 +547,6 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 </span>
 
 
-              <div class="post-entry">
-                
-                  Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &#34;*.conf&#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.
-                  <a href="https://mfachrulrazy.github.io/post/linux-command1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

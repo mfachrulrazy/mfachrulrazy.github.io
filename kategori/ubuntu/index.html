@@ -238,12 +238,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.
-                  <a href="https://mfachrulrazy.github.io/post/install-ftp-ubuntu/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -288,13 +282,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
-Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.
-                  <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -337,29 +324,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Update paket Ubuntu, kemudian install paket xrdp
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xrdp</code></pre></div></li>
-<li>Install paket xfce4
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt-get install xfce4</code></pre></div></li>
-<li>Modifikasi xrdp berjalan startup file di <code>~/.xsession</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">echo</span> xfce4-session &gt;~/.xsession</code></pre></div></li>
-<li>Edit startup file xrdp untuk mengeksekusi xfce4 service pada saat startup
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo nano /etc/xrdp/startwm.sh</code></pre></div></li>
-<li>Tambahkan:
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span>startxfce4
-<span class="ln">3</span>. /etc/X11/Xsession</code></pre></div></li>
-<li>Sampai di sini, xrdp sudah bisa berjalan tetapi belum bisa login karena port 3350 belum “LISTENING”
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo systemctl <span class="nb">enable</span> xrdp</code></pre></div></li>
-<li>Kemudian reboot sistem
-<img src="/img/rem-des-ubuntu.png" alt="" /></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -402,13 +366,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&lt;rule_iptable&gt;..... Untuk menghapus iptables $ sudo iptables -D .....&lt;rule_iptable&gt;.....
-Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &lt;namafile&gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall
-                  <a href="https://mfachrulrazy.github.io/post/linux-command2/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -455,13 +412,6 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 
 
               </p>
-              <div class="post-entry">
-                
-                  Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
- Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &#34;*.conf&#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.
-                  <a href="https://mfachrulrazy.github.io/post/linux-command1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">

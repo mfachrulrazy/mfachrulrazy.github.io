@@ -242,25 +242,6 @@
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.<br />
-Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan <strong>nmtui</strong>.</p>
-
-<ol>
-<li>Jalankan nmtui dari terminal
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># nmtui</span></code></pre></div>
-<img src="/img/nmtui/nmtui1.png" alt="img1" /></li>
-<li>Pilih edit connection &gt; kemudian pilih Wired connection 1 &gt; pilih Edit
-<img src="/img/nmtui/nmtui2.png" alt="img2" /></li>
-<li>Kemudian ubah nama profil dan IPv4 configuration menjadi manual
-<img src="/img/nmtui/nmtui3.png" alt="img3" /></li>
-<li>Kemudian OK &gt; Back &gt; Quit</li>
-<li>Restart service network</li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -305,15 +286,6 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
 
 
               </p>
-              <div class="post-entry">
-                
-                  <p>Jadi ceritanya, pada saat update muncul error karena tidak dapat diupdate (delta rpm disabled)
-<img src="/img/repo-cent/repo-cent1.png" alt="img1" />
-Untuk mengatasi masalah tersebut kita hanya butuh untuk menginstall paket delta rpm
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install deltarpm</span></code></pre></div></p>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -354,13 +326,6 @@ Untuk mengatasi masalah tersebut kita hanya butuh untuk menginstall paket delta 
 
 
               </p>
-              <div class="post-entry">
-                
-                  Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
-Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.
-                  <a href="https://mfachrulrazy.github.io/post/uninst-paket-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -407,13 +372,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
- Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.
-                  <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -458,13 +416,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
- Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut 1IPADDR= 2NETMASK= 3GATEWAY= 4DNS1= 5DNS2= 6#onboot untuk mengatur interface aktif pada saat server baru dinyalakan 7ONBOOT=yes 8#bootproto untuk mengatur IP apakah dhcp atau static 9BOOTPROTO=dhcp/static Simpan file dan keluar.
-                  <a href="https://mfachrulrazy.github.io/post/net-centos7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -503,13 +454,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
-1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;&amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.
-                  <a href="https://mfachrulrazy.github.io/post/install-nodejs-cent/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -550,18 +494,6 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
 
 
               </p>
-              <div class="post-entry">
-                
-                  Melihat repository yang aktif pada centos
-# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
-# yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available Cek epel repository
-# yum repolist | grep &#34;^epel\|repo id&#34; Hapus repository
-# yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository
-                  <a href="https://mfachrulrazy.github.io/post/repo-cent-7/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -604,14 +536,6 @@ Melihat repository dengan nama ‘repoA-id’
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
-Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
-Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.
-                  <a href="https://mfachrulrazy.github.io/post/tb-php-email/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -656,13 +580,6 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
 
 
               </p>
-              <div class="post-entry">
-                
-                  Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
-Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.
-                  <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" class="post-read-more">[Read More]</a>
-                
-              </div>
 
               
                 <div class="blog-tags">
@@ -701,25 +618,6 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 
 
               </p>
-              <div class="post-entry">
-                
-                  <ol>
-<li>Download paket repositori epel secara manual menggunakan wget
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm</span>
-<span class="c1"># wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</span></code></pre></div></li>
-<li>Install menggunakan rpm
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm</span></code></pre></div></li>
-<li>Install yum-utils untuk mengatur repositori
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install yum-utils</span></code></pre></div></li>
-<li>Kemudian enable php 5.4 dan install paket php
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># #yum-config-manager --enable remi-php54</span>
-<span class="c1"># yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo</span></code></pre></div></li>
-<li>Setelah itu cek versi php-nya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># php -v</span></code></pre></div></li>
-</ol>
-
-                
-              </div>
 
               
                 <div class="blog-tags">
