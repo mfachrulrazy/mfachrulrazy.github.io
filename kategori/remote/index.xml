@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/remote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Error Remote Desktop Connection</title>
+      <link>https://mfachrulrazy.github.io/post/err-rdp-credssp/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-rdp-credssp/</guid>
+      <description>Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor. Versi windows yang digunakan Penyebab Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini. Penyelesaian  Pertama Cek update dari pc client terlebih dahulu (yang me-remote)  Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.</description>
+    </item>
     
     <item>
       <title>Backspace pada Virtual Box</title>

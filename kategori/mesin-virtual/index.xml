@@ -28,8 +28,8 @@
       <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/venv-python/</guid>
-      <description>Berbicara mengenai python, pasti akan mengenal yang namanya lingkungan virtual (virtual environment). Di python sendiri ada beberapa jenis virtual environment yang pernah saya gunakan. Berikut virtual environment yang pernah saya gunakan pada host berbasis Microsoft Windows.
-Virtualenv Instalasi Virtualenv &amp;gt; pip3 install virtualenv Membuat venv &amp;gt; virtualenv -p C:\Python\Python37\python.exelatihan Pada saat membuat venv dengan cara ini, muncul peringatan bahwa modul imp sudah lama dan digantikan dengan importlib Ada baiknya pada saat membuat venv itu diawali dengan dengan .</description>
+      <description>Berbicara mengenai python, pasti akan mengenal yang namanya lingkungan virtual (virtual environment). Fungsinya adalah untuk membuat lingkungan virtual yang terisolasi dari lingkungan sistem operasi host. Berikut virtual environment yang pernah saya gunakan pada host berbasis Microsoft Windows.
+Virtualenv Virtualenv adalah salah satu tools di python untuk membuat virtual environment. Instalasi Virtualenv &amp;gt; pip3 install virtualenv Membuat venv &amp;gt; virtualenv -p C:\Python\Python37\python.exelatihan Pada saat membuat venv dengan cara ini, muncul peringatan bahwa modul imp sudah lama dan digantikan dengan importlib Ada baiknya pada saat membuat venv itu diawali dengan dengan .</description>
     </item>
     
     <item>

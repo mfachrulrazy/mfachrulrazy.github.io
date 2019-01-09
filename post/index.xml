@@ -65,13 +65,22 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
     </item>
     
     <item>
+      <title>Error Remote Desktop Connection</title>
+      <link>https://mfachrulrazy.github.io/post/err-rdp-credssp/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-rdp-credssp/</guid>
+      <description>Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor. Versi windows yang digunakan Penyebab Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini. Penyelesaian  Pertama Cek update dari pc client terlebih dahulu (yang me-remote)  Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.</description>
+    </item>
+    
+    <item>
       <title>Mengenal Virtual Environment Python</title>
       <link>https://mfachrulrazy.github.io/post/venv-python/</link>
       <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/venv-python/</guid>
-      <description>Berbicara mengenai python, pasti akan mengenal yang namanya lingkungan virtual (virtual environment). Di python sendiri ada beberapa jenis virtual environment yang pernah saya gunakan. Berikut virtual environment yang pernah saya gunakan pada host berbasis Microsoft Windows.
-Virtualenv Instalasi Virtualenv &amp;gt; pip3 install virtualenv Membuat venv &amp;gt; virtualenv -p C:\Python\Python37\python.exelatihan Pada saat membuat venv dengan cara ini, muncul peringatan bahwa modul imp sudah lama dan digantikan dengan importlib Ada baiknya pada saat membuat venv itu diawali dengan dengan .</description>
+      <description>Berbicara mengenai python, pasti akan mengenal yang namanya lingkungan virtual (virtual environment). Fungsinya adalah untuk membuat lingkungan virtual yang terisolasi dari lingkungan sistem operasi host. Berikut virtual environment yang pernah saya gunakan pada host berbasis Microsoft Windows.
+Virtualenv Virtualenv adalah salah satu tools di python untuk membuat virtual environment. Instalasi Virtualenv &amp;gt; pip3 install virtualenv Membuat venv &amp;gt; virtualenv -p C:\Python\Python37\python.exelatihan Pada saat membuat venv dengan cara ini, muncul peringatan bahwa modul imp sudah lama dan digantikan dengan importlib Ada baiknya pada saat membuat venv itu diawali dengan dengan .</description>
     </item>
     
     <item>
@@ -192,6 +201,16 @@ Melihat repository dengan nama ‘repoA-id’
 # yum --disablerepo=&amp;#34;*&amp;#34; --enablerepo=&amp;#34;repoA-id&amp;#34; list available Cek epel repository
 # yum repolist | grep &amp;#34;^epel\|repo id&amp;#34; Hapus repository
 # yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository</description>
+    </item>
+    
+    <item>
+      <title>Error Browsing Https</title>
+      <link>https://mfachrulrazy.github.io/post/err-browser-https/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-browser-https/</guid>
+      <description> Ada salah satu komputer klien mengalami error pada saat membuka situs dengan alamat https. Meskipun sudah berganti browser (chrome, firefox dan edge).
+Firefox Chrome Edge Penyebab dan solusi  Periksa apakah ada addons yang bermasalah (jika hanya salah satu browser yang bermasalah) Periksa pc/laptop tidak bervirus Periksa pengaturan waktu dan tanggal  </description>
     </item>
     
     <item>

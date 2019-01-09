@@ -44,6 +44,15 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
     </item>
     
     <item>
+      <title>Error Remote Desktop Connection</title>
+      <link>https://mfachrulrazy.github.io/post/err-rdp-credssp/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-rdp-credssp/</guid>
+      <description>Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor. Versi windows yang digunakan Penyebab Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini. Penyelesaian  Pertama Cek update dari pc client terlebih dahulu (yang me-remote)  Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.</description>
+    </item>
+    
+    <item>
       <title>Install Linux dari Windows Store</title>
       <link>https://mfachrulrazy.github.io/post/linux-win-store/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
@@ -76,6 +85,16 @@ Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti
  VirtualBox Git Kitematic
   Yang semuanya diperlukan untuk menjalankan docker.
 Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Jika masih terdapat error restart PC Kemudian jalankan: Docker Quickstart Terminal Jalankan Kitematic untuk melihat daftar container Contoh di bawah ini pada saat menjalankan container Nginx   </description>
+    </item>
+    
+    <item>
+      <title>Error Browsing Https</title>
+      <link>https://mfachrulrazy.github.io/post/err-browser-https/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-browser-https/</guid>
+      <description> Ada salah satu komputer klien mengalami error pada saat membuka situs dengan alamat https. Meskipun sudah berganti browser (chrome, firefox dan edge).
+Firefox Chrome Edge Penyebab dan solusi  Periksa apakah ada addons yang bermasalah (jika hanya salah satu browser yang bermasalah) Periksa pc/laptop tidak bervirus Periksa pengaturan waktu dan tanggal  </description>
     </item>
     
     <item>

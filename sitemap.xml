@@ -28,6 +28,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/err-rdp-credssp/</loc>
+    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/venv-python/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
   </url>
@@ -85,6 +90,11 @@
   <url>
     <loc>https://mfachrulrazy.github.io/post/repo-cent-7/</loc>
     <lastmod>2017-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/err-browser-https/</loc>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -200,6 +210,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/blog/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/browser/</loc>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -334,7 +350,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/remote/</loc>
-    <lastmod>2017-09-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
