@@ -302,10 +302,10 @@
 <li>Kemudian tambahkan gateway pada file network yang berada di <code>/etc/sysconfig/network</code>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="nv">NETWORKING</span><span class="o">=</span>yes
 <span class="ln">2</span><span class="nv">HOSTNAME</span><span class="o">=</span>server_name
-<span class="ln">3</span><span class="nv">GATEWAY</span><span class="o">=</span><span class="m">172</span>.16.0.231</code></pre></div></li>
+<span class="ln">3</span><span class="nv">GATEWAY</span><span class="o">=</span>x.x.x.x</code></pre></div></li>
 <li>Atur DNS di <code>/etc/resolv.conf</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>nameserver <span class="m">172</span>.16.0.231
-<span class="ln">2</span>nameserver <span class="m">8</span>.8.8.8</code></pre></div></li>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>nameserver <span class="m">8</span>.8.8.8
+<span class="ln">2</span>nameserver <span class="m">8</span>.8.4.4</code></pre></div></li>
 <li>Restart servis network
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl status network.service</span>
 <span class="c1"># systemctl restart network.service</span>
