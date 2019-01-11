@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Troubleshoot IP SSH berubah</title>
+      <link>https://mfachrulrazy.github.io/post/tb-ssh-key/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/tb-ssh-key/</guid>
+      <description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
+ Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
+ Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description>
+    </item>
     
     <item>
       <title>Install WINS Windows Server 2003</title>

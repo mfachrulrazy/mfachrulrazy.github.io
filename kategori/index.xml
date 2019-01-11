@@ -142,7 +142,7 @@
     <item>
       <title>Networking</title>
       <link>https://mfachrulrazy.github.io/kategori/networking/</link>
-      <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/networking/</guid>
       <description></description>
@@ -196,7 +196,7 @@
     <item>
       <title>Remote</title>
       <link>https://mfachrulrazy.github.io/kategori/remote/</link>
-      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/remote/</guid>
       <description></description>
@@ -217,6 +217,15 @@
       <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/kategori/sql-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssh</title>
+      <link>https://mfachrulrazy.github.io/kategori/ssh/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/kategori/ssh/</guid>
       <description></description>
     </item>
     

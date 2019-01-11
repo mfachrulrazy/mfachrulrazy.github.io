@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/tb-ssh-key/</loc>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/install-wins-2003/</loc>
     <lastmod>2018-11-17T00:00:00+00:00</lastmod>
   </url>
@@ -299,7 +304,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/networking/</loc>
-    <lastmod>2018-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -328,7 +333,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/post/</loc>
-    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -350,7 +355,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/remote/</loc>
-    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -363,6 +368,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/sql-server/</loc>
     <lastmod>2017-07-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/ssh/</loc>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -402,7 +413,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/</loc>
-    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

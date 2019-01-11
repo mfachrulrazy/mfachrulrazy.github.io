@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 19 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/remote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Troubleshoot IP SSH berubah</title>
+      <link>https://mfachrulrazy.github.io/post/tb-ssh-key/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/tb-ssh-key/</guid>
+      <description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
+ Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
+ Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description>
+    </item>
     
     <item>
       <title>Error Remote Desktop Connection</title>
@@ -39,6 +50,15 @@ Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bu
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/remote-des-ubuntu/</guid>
       <description> Update paket Ubuntu, kemudian install paket xrdp $ sudo apt-get install xrdp Install paket xfce4 $ sudo apt-get install xfce4 Modifikasi xrdp berjalan startup file di ~/.xsession $ echo xfce4-session &amp;gt;~/.xsession Edit startup file xrdp untuk mengeksekusi xfce4 service pada saat startup $ sudo nano /etc/xrdp/startwm.sh Tambahkan: 1... 2startxfce4 3. /etc/X11/Xsession Sampai di sini, xrdp sudah bisa berjalan tetapi belum bisa login karena port 3350 belum “LISTENING” $ sudo systemctl enable xrdp Kemudian reboot sistem   </description>
+    </item>
+    
+    <item>
+      <title>Openssh Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/openssh-cent-7/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/openssh-cent-7/</guid>
+      <description>Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart</description>
     </item>
     
   </channel>

@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Openssh Centos 7" />
-  <meta name="twitter:title" content="Openssh Centos 7" />
-  <meta name="description" content="Install dan konfigurasi Openssh Centos 7">
-  <meta property="og:description" content="Install dan konfigurasi Openssh Centos 7">
-  <meta name="twitter:description" content="Install dan konfigurasi Openssh Centos 7">
+  <meta property="og:title" content="Troubleshoot IP SSH berubah" />
+  <meta name="twitter:title" content="Troubleshoot IP SSH berubah" />
+  <meta name="description" content="Peringatan SSH ketika IP berubah">
+  <meta property="og:description" content="Peringatan SSH ketika IP berubah">
+  <meta name="twitter:description" content="Peringatan SSH ketika IP berubah">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/openssh-cent-7/",
-          "name": "Openssh centos 7"
+          "@id": "https://mfachrulrazy.github.io/post/tb-ssh-key/",
+          "name": "Troubleshoot i p s s h berubah"
         }
     }]
 }
@@ -60,15 +60,17 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Openssh Centos 7",
-  "description" : "Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart",
+  "headline": "Troubleshoot IP SSH berubah",
+  "description" : "Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
+ Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
+ Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.",
   "inLanguage" : "en",
-  "wordCount": 295,
-  "datePublished" : "2016-08-21T00:00:00",
-  "dateModified" : "2016-08-21T00:00:00",
+  "wordCount": 91,
+  "datePublished" : "2018-12-09T00:00:00",
+  "dateModified" : "2018-12-09T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/openssh-cent-7/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/tb-ssh-key/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -82,13 +84,13 @@
 }
 </script>
 
-<meta property="og:title" content="Openssh Centos 7" />
-<meta property="og:description" content="Install dan konfigurasi Openssh Centos 7">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/openssh-cent-7/" />
+<meta property="og:title" content="Troubleshoot IP SSH berubah" />
+<meta property="og:description" content="Peringatan SSH ketika IP berubah">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-ssh-key/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Openssh Centos 7" />
-  <meta name="twitter:description" content="Install dan konfigurasi Openssh Centos 7">
+  <meta name="twitter:title" content="Troubleshoot IP SSH berubah" />
+  <meta name="twitter:description" content="Peringatan SSH ketika IP berubah">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -96,7 +98,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/openssh-cent-7/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-ssh-key/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -241,22 +243,22 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Openssh Centos 7</h1>
+                <h1>Troubleshoot IP SSH berubah</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Install dan konfigurasi Openssh Centos 7</h2>
+                  <h2 class="post-subheading">Peringatan SSH ketika IP berubah</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 21, 2016
+  <i class="fas fa-calendar"></i>&nbsp;Posted on December 9, 2018
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
   
   
   
@@ -280,79 +282,27 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
+        <p>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan
+<img src="/img/ssh-change1.png" alt="img" />
+Hal tersebut terjadi karena identitas server berubah (server yang berbeda).</p>
 
-<h3 id="install-openssh-server">Install Openssh Server</h3>
-
-<ol>
-<li>Install paket openssh server dan client
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install openssh-server openssh-clients</span></code></pre></div></li>
-<li>Jalankan service-nya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># chkconfig sshd on</span>
-<span class="c1"># service sshd start</span></code></pre></div></li>
-<li>Pastikan service-nya telah berjalan (install netstat terlebih dahulu)
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># netstat -tulpn | grep :22</span></code></pre></div></li>
-<li>Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu)
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># vi /etc/ssh/sshd_config</span></code></pre></div></li>
-<li>Jika ada perubahan pada file konfigurasi, restart servis ssh
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart sshd.service</span>
-Atau
-<span class="c1"># service sshd restart</span></code></pre></div><br /></li>
-</ol>
-
-<h3 id="mengubah-port-ssh">Mengubah Port SSH</h3>
-
-<ol>
-<li>Backup file konfigurasi ssh
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak</span></code></pre></div></li>
-<li>Edit file sshd_config dan hapus komentar pada bagian port kemudian ganti dengan port yang diinginkan
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
-<span class="ln">2</span>Port <span class="m">22</span> <span class="c1">#ubah menjadi port yang diinginkan</span>
-<span class="ln">3</span>...</code></pre></div></li>
-<li>Setelah itu, atur perizinan di SELinux karena SELinux secara default hanya mengizinkan port 22
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># semanage port -a -t ssh_port_t -p tcp #portnumber</span></code></pre></div></li>
-<li>Jika selinux belum terpasang, install paket berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install policycoreutils-python</span></code></pre></div></li>
-<li>Biasanya port yang ditentukan, telah dipakai oleh service lain, jadi pastikan dulu untuk mengecek port yang akan digunakan
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># semanage port -l | grep #portnumber</span></code></pre></div></li>
-<li>Atur firewall-cmd untuk mengizinkan port baru
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --permanent --zone=public --add-port=#portnumber/tcp</span></code></pre></div></li>
-<li>Restart firewall-cmd dan servis ssh
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --reload</span>
-<span class="c1"># systemctl restart sshd.service</span></code></pre></div></li>
-<li>Kemudian verifikasi ssh telah berjalan di port baru
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ss -tnlp | grep ssh</span></code></pre></div><br /></li>
-</ol>
-
-<h3 id="troubleshoot-ssh">Troubleshoot SSH</h3>
-
-<p>Jika mengganti port default dari ssh di Centos 7 akan mengakibatkan service ssh tidak berjalan dan terjadi error seperti gambar di bawah ini
-<img src="/img/ssh-cent1.png" alt="img1" />
-Hal ini dikarenakan adanya security di centos yang harus dikonfigurasi.<br />
-Baca referensi mengenai SE Linux di centos</p>
-
-<h3 id="troubleshoot-prompt-password-ssh">Troubleshoot Prompt Password SSH</h3>
-
-<p>Biasanya ketika login ssh, setelah memasukkan username, prompt untuk memasukkan password lumayan lama untuk muncul.<br />
-Penyebabnya adalah IP address tidak me-reverse pengaturan etc DNS. Berikut hal yang dapat dilakukan
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>GSSAPIAuthentication yes
-<span class="ln">2</span>menjadi: GSSAPIAuthentication no
-<span class="ln">3</span>dan
-<span class="ln">4</span>UseDNS yes
-<span class="ln">5</span>menjadi: UseDNS no</code></pre></div>
-Kemudian restart servis ssh.</p>
+<ul>
+<li>Jika memilih <code>Yes</code> maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.<br /></li>
+<li>Jika memilih <code>No</code> maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows.</li>
+<li><code>Cancel</code> jika tidak ingin melanjutkan koneksi.<br /></li>
+<li>Kalau tidak ingin mendapat peringatan putty, hapus terlebih dahulu ip server yang sebelumnya melalui <em>putty cache registry</em> di <code>HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys</code>
+<img src="/img/ssh-change2.png" alt="img" /></li>
+</ul>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/ssh/">ssh</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
             
               <a href="https://mfachrulrazy.github.io//kategori/remote/">remote</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/ssh/">ssh</a>&nbsp;
             
           </div>
         
@@ -367,28 +317,28 @@ Kemudian restart servis ssh.</p>
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f&amp;text=Openssh%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-ssh-key%2f&amp;text=Troubleshoot%20IP%20SSH%20berubah&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-ssh-key%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-ssh-key%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fopenssh-cent-7%2f&amp;title=Openssh%20Centos%207" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-ssh-key%2f&amp;title=Troubleshoot%20IP%20SSH%20berubah" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -409,13 +359,9 @@ Kemudian restart servis ssh.</p>
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/belajar-vim/" data-toggle="tooltip" data-placement="top" title="Belajar Vi dan Vim">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/install-wins-2003/" data-toggle="tooltip" data-placement="top" title="Install WINS Windows Server 2003">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/del-notif-chrome/" data-toggle="tooltip" data-placement="top" title="Menghapus Notifikasi Pop-Up Lidgrain pada Chrome">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
