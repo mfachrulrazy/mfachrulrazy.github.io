@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Troubleshoot Web Server I" />
-  <meta name="twitter:title" content="Troubleshoot Web Server I" />
-  <meta name="description" content="Troubleshoot error web server">
-  <meta property="og:description" content="Troubleshoot error web server">
-  <meta name="twitter:description" content="Troubleshoot error web server">
+  <meta property="og:title" content="Error Monitoring PRTG HTTPS" />
+  <meta name="twitter:title" content="Error Monitoring PRTG HTTPS" />
+  <meta name="description" content="Mengubah koneksi Monitoring PRTG menjadi koneksi HTTPS">
+  <meta property="og:description" content="Mengubah koneksi Monitoring PRTG menjadi koneksi HTTPS">
+  <meta name="twitter:description" content="Mengubah koneksi Monitoring PRTG menjadi koneksi HTTPS">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/tb-web-server1/",
-          "name": "Troubleshoot web server i"
+          "@id": "https://mfachrulrazy.github.io/post/err-prtg-https/",
+          "name": "Error monitoring p r t g h t t p s"
         }
     }]
 }
@@ -60,16 +60,17 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Troubleshoot Web Server I",
-  "description" : "Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
-Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.",
+  "headline": "Error Monitoring PRTG HTTPS",
+  "description" : "Ketika mengatur PRTG menjadi https, web servernya tidak berhasil berjalan. Pesan error yang muncul ketika dibuka kurang lebih sebagai berikut:
+Connection Refused Socket Error # 10061 Penyebabnya adalah pada saat penggantian koneksi menjadi https, maka portnya juga berganti. Oleh karena itu harus diganti juga pada bagian PRTG Console Setting dan PRTG Administration Tool.
+ Buka PRTG dan masuk ke PRTG Administration Tool Berikut contoh konfigurasinya  Pengaturan perubahan konfigurasi dari http ke https   Sumber: Knowlege Base PRTG",
   "inLanguage" : "en",
-  "wordCount": 83,
-  "datePublished" : "2017-09-13T00:00:00",
-  "dateModified" : "2017-09-13T00:00:00",
+  "wordCount": 75,
+  "datePublished" : "2017-07-12T00:00:00",
+  "dateModified" : "2017-07-12T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/tb-web-server1/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/err-prtg-https/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -83,13 +84,13 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 }
 </script>
 
-<meta property="og:title" content="Troubleshoot Web Server I" />
-<meta property="og:description" content="Troubleshoot error web server">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-web-server1/" />
+<meta property="og:title" content="Error Monitoring PRTG HTTPS" />
+<meta property="og:description" content="Mengubah koneksi Monitoring PRTG menjadi koneksi HTTPS">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/err-prtg-https/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Troubleshoot Web Server I" />
-  <meta name="twitter:description" content="Troubleshoot error web server">
+  <meta name="twitter:title" content="Error Monitoring PRTG HTTPS" />
+  <meta name="twitter:description" content="Mengubah koneksi Monitoring PRTG menjadi koneksi HTTPS">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -97,7 +98,7 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-web-server1/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/err-prtg-https/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -242,19 +243,19 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Troubleshoot Web Server I</h1>
+                <h1>Error Monitoring PRTG HTTPS</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Troubleshoot error web server</h2>
+                  <h2 class="post-subheading">Mengubah koneksi Monitoring PRTG menjadi koneksi HTTPS</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 13, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 12, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -281,22 +282,28 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal.
-<img src="/img/tb-websrv1.png" alt="img1" />
-Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).<br />
-Izinkan traffic mysql dan http dengan menambahkan <em>rule</em> di iptables pada file <code>/etc/sysconfig/iptables</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">80</span> -j / ACCEPT
--A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">3306</span> -j / ACCEPT</code></pre></div>
-Kemudian restart iptables-nya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># /etc/init.d/iptables restart</span></code></pre></div></p>
+        <p>Ketika mengatur PRTG menjadi https, web servernya tidak berhasil berjalan.
+Pesan error yang muncul ketika dibuka kurang lebih sebagai berikut:</p>
+<div class="highlight"><pre class="chroma">Connection Refused Socket Error # 10061</pre></div>
+<p>Penyebabnya adalah pada saat penggantian koneksi menjadi https, maka portnya juga berganti. Oleh karena itu harus diganti juga pada bagian PRTG Console Setting dan PRTG Administration Tool.</p>
+
+<ol>
+<li>Buka PRTG dan masuk ke PRTG Administration Tool</li>
+<li>Berikut contoh konfigurasinya
+<img src="/img/networking/prtg1.png" alt="img" /></li>
+<li>Pengaturan perubahan konfigurasi dari http ke https
+<img src="/img/networking/prtg2.png" alt="img" /></li>
+</ol>
+
+<p>Sumber: <a href="https://kb.paessler.com/en/topic/333-how-do-i-solve-a-connection-refused-socket-error-10061-in-enterprise-console">Knowlege Base PRTG</a></p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/monitoring/">monitoring</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
             
           </div>
         
@@ -311,28 +318,28 @@ Kemudian restart iptables-nya
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f&amp;text=Troubleshoot%20Web%20Server%20I&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-prtg-https%2f&amp;text=Error%20Monitoring%20PRTG%20HTTPS&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-prtg-https%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-prtg-https%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f&amp;title=Troubleshoot%20Web%20Server%20I" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-prtg-https%2f&amp;title=Error%20Monitoring%20PRTG%20HTTPS" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -353,12 +360,12 @@ Kemudian restart iptables-nya
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/tb-dns-client/" data-toggle="tooltip" data-placement="top" title="Troubleshoot DNS WIndows bermasalah">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/install-php5-cent/" data-toggle="tooltip" data-placement="top" title="Install Php 5.4 Centos 7">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/tb-php-email/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Script Email PHP">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/imp-proxmox/" data-toggle="tooltip" data-placement="top" title="All about Proxmox">Next Post &rarr;</a>
             </li>
           
         </ul>

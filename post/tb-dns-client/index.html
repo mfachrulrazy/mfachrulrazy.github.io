@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Troubleshoot Web Server I" />
-  <meta name="twitter:title" content="Troubleshoot Web Server I" />
-  <meta name="description" content="Troubleshoot error web server">
-  <meta property="og:description" content="Troubleshoot error web server">
-  <meta name="twitter:description" content="Troubleshoot error web server">
+  <meta property="og:title" content="Troubleshoot DNS WIndows bermasalah" />
+  <meta name="twitter:title" content="Troubleshoot DNS WIndows bermasalah" />
+  <meta name="description" content="DNS pada laptop bermasalah">
+  <meta property="og:description" content="DNS pada laptop bermasalah">
+  <meta name="twitter:description" content="DNS pada laptop bermasalah">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/tb-web-server1/",
-          "name": "Troubleshoot web server i"
+          "@id": "https://mfachrulrazy.github.io/post/tb-dns-client/",
+          "name": "Troubleshoot d n s w indows bermasalah"
         }
     }]
 }
@@ -60,16 +60,16 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Troubleshoot Web Server I",
-  "description" : "Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
-Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.",
+  "headline": "Troubleshoot DNS WIndows bermasalah",
+  "description" : " Waktu itu ada salah satu laptop klien yang bermasalah dan tidak bisa terkoneksi ke internet.
+Penyebab DNS yang tidak sesuai dengan jaringan yang disediakan oleh router (dns palsu) Solusi  Cek pada pengaturan ip &amp;gt; advanced &amp;gt; pilih tab DNS Perhatikan jika ada dns yang tercantum di dalam &amp;gt; klik remove Kemudian pada bagian internet options &amp;gt; pilih connections &amp;gt; LAN Settings &amp;gt; hilangkan semua centang  Biasanya jika pc sudah direstart, dns palsu akan muncul kembali Cek program yang mencurigakan, dan periksa pada startup  ",
   "inLanguage" : "en",
   "wordCount": 83,
-  "datePublished" : "2017-09-13T00:00:00",
-  "dateModified" : "2017-09-13T00:00:00",
+  "datePublished" : "2017-08-23T00:00:00",
+  "dateModified" : "2017-08-23T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/tb-web-server1/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/tb-dns-client/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -83,13 +83,13 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 }
 </script>
 
-<meta property="og:title" content="Troubleshoot Web Server I" />
-<meta property="og:description" content="Troubleshoot error web server">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-web-server1/" />
+<meta property="og:title" content="Troubleshoot DNS WIndows bermasalah" />
+<meta property="og:description" content="DNS pada laptop bermasalah">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-dns-client/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Troubleshoot Web Server I" />
-  <meta name="twitter:description" content="Troubleshoot error web server">
+  <meta name="twitter:title" content="Troubleshoot DNS WIndows bermasalah" />
+  <meta name="twitter:description" content="DNS pada laptop bermasalah">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -97,7 +97,7 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-web-server1/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-dns-client/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -242,19 +242,19 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Troubleshoot Web Server I</h1>
+                <h1>Troubleshoot DNS WIndows bermasalah</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Troubleshoot error web server</h2>
+                  <h2 class="post-subheading">DNS pada laptop bermasalah</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 13, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 23, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -281,22 +281,31 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal.
-<img src="/img/tb-websrv1.png" alt="img1" />
-Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).<br />
-Izinkan traffic mysql dan http dengan menambahkan <em>rule</em> di iptables pada file <code>/etc/sysconfig/iptables</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">80</span> -j / ACCEPT
--A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">3306</span> -j / ACCEPT</code></pre></div>
-Kemudian restart iptables-nya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># /etc/init.d/iptables restart</span></code></pre></div></p>
+        
+
+<p>Waktu itu ada salah satu laptop klien yang bermasalah dan tidak bisa terkoneksi ke internet.</p>
+
+<h3 id="penyebab">Penyebab</h3>
+
+<p>DNS yang tidak sesuai dengan jaringan yang disediakan oleh router (dns palsu)
+<img src="/img/networking/err-dns1.png" alt="img" /></p>
+
+<h3 id="solusi">Solusi</h3>
+
+<ul>
+<li>Cek pada pengaturan ip &gt; advanced &gt; pilih tab DNS
+Perhatikan jika ada dns yang tercantum di dalam  &gt; klik remove</li>
+<li>Kemudian pada bagian internet options &gt; pilih connections &gt; LAN Settings &gt; hilangkan semua centang
+<img src="/img/networking/err-dns2.png" alt="img" /></li>
+<li>Biasanya jika pc sudah direstart, dns palsu akan muncul kembali</li>
+<li>Cek program yang mencurigakan, dan periksa pada startup</li>
+</ul>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
             
           </div>
         
@@ -311,28 +320,28 @@ Kemudian restart iptables-nya
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f&amp;text=Troubleshoot%20Web%20Server%20I&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-dns-client%2f&amp;text=Troubleshoot%20DNS%20WIndows%20bermasalah&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-dns-client%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-dns-client%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f&amp;title=Troubleshoot%20Web%20Server%20I" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-dns-client%2f&amp;title=Troubleshoot%20DNS%20WIndows%20bermasalah" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -353,12 +362,12 @@ Kemudian restart iptables-nya
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/tb-dns-client/" data-toggle="tooltip" data-placement="top" title="Troubleshoot DNS WIndows bermasalah">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/int-baru-vbox/" data-toggle="tooltip" data-placement="top" title="Interface Network pada VirtualBox">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/tb-php-email/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Script Email PHP">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Web Server I">Next Post &rarr;</a>
             </li>
           
         </ul>

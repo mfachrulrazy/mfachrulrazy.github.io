@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Troubleshoot Web Server I" />
-  <meta name="twitter:title" content="Troubleshoot Web Server I" />
-  <meta name="description" content="Troubleshoot error web server">
-  <meta property="og:description" content="Troubleshoot error web server">
-  <meta name="twitter:description" content="Troubleshoot error web server">
+  <meta property="og:title" content="All pages in the kategori #Monitoring" />
+  <meta name="twitter:title" content="All pages in the kategori #Monitoring" />
+  <meta name="description" content="All pages in the kategori #Monitoring, such as: Error Monitoring PRTG HTTPS">
+  <meta property="og:description" content="All pages in the kategori #Monitoring, such as: Error Monitoring PRTG HTTPS">
+  <meta name="twitter:description" content="All pages in the kategori #Monitoring, such as: Error Monitoring PRTG HTTPS">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -33,63 +33,12 @@
   
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@id": "https://mfachrulrazy.github.io/",
-          "name": "home"
-        }
-    },{
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@id": "https://mfachrulrazy.github.io/post/tb-web-server1/",
-          "name": "Troubleshoot web server i"
-        }
-    }]
-}
-</script><script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "author": {
-    "name" : "MFR"
-  },
-  "headline": "Troubleshoot Web Server I",
-  "description" : "Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
-Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.",
-  "inLanguage" : "en",
-  "wordCount": 83,
-  "datePublished" : "2017-09-13T00:00:00",
-  "dateModified" : "2017-09-13T00:00:00",
-  "image" : "https://mfachrulrazy.github.io/",
-  "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/tb-web-server1/",
-  "publisher" : {
-    "@type": "Organization",
-    "name" : "https://mfachrulrazy.github.io/",
-    "logo" : {
-        "@type" : "ImageObject",
-        "url" : "https://mfachrulrazy.github.io/",
-        "height" :  60 ,
-        "width" :  60
-    }
-  }
-}
-</script>
 
-<meta property="og:title" content="Troubleshoot Web Server I" />
-<meta property="og:description" content="Troubleshoot error web server">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-web-server1/" />
+<meta property="og:title" content="Monitoring" />
+<meta property="og:url" content="https://mfachrulrazy.github.io/kategori/monitoring/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Troubleshoot Web Server I" />
-  <meta name="twitter:description" content="Troubleshoot error web server">
+  <meta name="twitter:title" content="Monitoring" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -97,7 +46,7 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/tb-web-server1/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/kategori/monitoring/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -240,21 +189,46 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
+            <div class="kategori-heading">
               
-                <h1>Troubleshoot Web Server I</h1>
+                <h1>Monitoring</h1>
+              
+              
+                <hr class="small">
               
               
               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://mfachrulrazy.github.io/post/err-prtg-https/">
+                <h2 class="post-title">Error Monitoring PRTG HTTPS</h2>
+
                 
-                  <h2 class="post-subheading">Troubleshoot error web server</h2>
+                  <h3 class="post-subtitle">
+                    Mengubah koneksi Monitoring PRTG menjadi koneksi HTTPS
+                  </h3>
                 
-              
-              
+              </a>
+
+              <p class="post-meta">
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 13, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 12, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -267,112 +241,25 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
 </span>
 
 
+              </p>
+
               
-            </div>
-          </div>
+                <div class="blog-tags">
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/monitoring/">monitoring</a>&nbsp;
+                  
+                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
+                  
+                </div>
+              
+
+            </article>
+          
         </div>
+        
       </div>
     </div>
-  </header>
-
-
-    
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-        <p>Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal.
-<img src="/img/tb-websrv1.png" alt="img1" />
-Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).<br />
-Izinkan traffic mysql dan http dengan menambahkan <em>rule</em> di iptables pada file <code>/etc/sysconfig/iptables</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">-A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">80</span> -j / ACCEPT
--A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport <span class="m">3306</span> -j / ACCEPT</code></pre></div>
-Kemudian restart iptables-nya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># /etc/init.d/iptables restart</span></code></pre></div></p>
-
-
-        
-          <div class="blog-tags">
-            
-              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-            
-          </div>
-        
-
-        
-            <hr/>
-            <section id="social-share">
-              <div class="list-inline footer-links">
-                
-
-<div class="share-box" aria-hidden="true">
-    <ul class="share">
-      
-      <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f&amp;text=Troubleshoot%20Web%20Server%20I&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f" target="_blank" title="Share on Google Plus">
-          <i class="fab fa-google-plus"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f" target="_blank" title="Share on Facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftb-web-server1%2f&amp;title=Troubleshoot%20Web%20Server%20I" target="_blank" title="Share on LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
   </div>
-  
-              </div>
-            </section>
-        
-
-        
-          
-          
-        
-      </article>
-
-      
-        <ul class="pager blog-pager">
-          
-            <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/tb-dns-client/" data-toggle="tooltip" data-placement="top" title="Troubleshoot DNS WIndows bermasalah">&larr; Previous Post</a>
-            </li>
-          
-          
-            <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/tb-php-email/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Script Email PHP">Next Post &rarr;</a>
-            </li>
-          
-        </ul>
-      
-
-
-      
-        
-        
-      
-
-    </div>
-  </div>
-</div>
 
     <footer>
   <div class="container">
@@ -431,7 +318,7 @@ Kemudian restart iptables-nya
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/kategori/monitoring/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
