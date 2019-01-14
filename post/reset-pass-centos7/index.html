@@ -69,7 +69,7 @@
 :/# chroot /sysroot  kemudian reset password
 :/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.",
   "inLanguage" : "en",
-  "wordCount": 95,
+  "wordCount": 119,
   "datePublished" : "2017-05-10T13:40:23",
   "dateModified" : "2017-05-10T13:40:23",
   "image" : "https://mfachrulrazy.github.io/",
@@ -284,7 +284,9 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <ol>
+        
+
+<ol>
 <li>Pada saat booting pertama kali dan muncul GRUB menu, tekan <code>e</code></li>
 <li>Kemudian ubah pada bagian <code>ro</code> menjadi <code>rw</code> dan tambahkan <strong><code>init=/sysroot/bin/sh</code></strong>
 <img src="/img/res-pas-cent7/respasscent11.png" alt="img1" /></li>
@@ -302,6 +304,12 @@
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">:/# <span class="nb">exit</span>  
 :/# reboot</code></pre></div></li>
 </ol>
+
+<h3 id="reset-password-root-via-terminal">Reset password Root via Terminal</h3>
+
+<p>Mengganti password <code>root</code> dari terminal tinggal menggunakan perintah berikut</p>
+<div class="highlight"><pre class="chroma">sudo -i passwd</pre></div>
+<p>Kemudian masukkan password baru untuk user root.</p>
 
 
         
