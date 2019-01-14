@@ -170,6 +170,19 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
     </item>
     
     <item>
+      <title>Windows 10 Tidak dapat akses SMB</title>
+      <link>https://mfachrulrazy.github.io/post/err-win-smb/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-win-smb/</guid>
+      <description>Windows 10 Enterprise secara default melarang fitur SMB. Penjelasan lebih lanjut langsung dari situs micorosoft
+ Guest access in SMB2 disabled by default in Windows 10 Fall Creators Update and Windows Server 2016 version 1709
+ Caranya ubah melalui Group Policy Settings
+Computer configuration\administrative templates\network\Lanman Workstation Aktifkan Enable insecure guest logons
+Dengan catatan, jika mengaktifkan mode ini, akan mengurangi keamanan pada Windows klien. Mungkin hal ini terjadi akibat virus wannacry yang terjadi.</description>
+    </item>
+    
+    <item>
       <title>Install Mysql Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/install-mysql-cent/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
@@ -339,6 +352,19 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
       <description>Ketika mengatur PRTG menjadi https, web servernya tidak berhasil berjalan. Pesan error yang muncul ketika dibuka kurang lebih sebagai berikut:
 Connection Refused Socket Error # 10061 Penyebabnya adalah pada saat penggantian koneksi menjadi https, maka portnya juga berganti. Oleh karena itu harus diganti juga pada bagian PRTG Console Setting dan PRTG Administration Tool.
  Buka PRTG dan masuk ke PRTG Administration Tool Berikut contoh konfigurasinya  Pengaturan perubahan konfigurasi dari http ke https   Sumber: Knowlege Base PRTG</description>
+    </item>
+    
+    <item>
+      <title>Error User Profile Windows 7</title>
+      <link>https://mfachrulrazy.github.io/post/err-profile-win7/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-profile-win7/</guid>
+      <description>Salah satu komputer klien mendapat error tidak dapat me-load user profile, akibatnya semua pengaturan-pengaturan pribadi seperti shortcut di desktop tidak muncul. Untuk dapat memunculkan kembali user profile, lakukan langkah berikut
+1. Restart komputer/laptop dan masuk ke dalam Safe Mode (menekan tombol F8 ketika booting)
+2. Setelah login pada windows, buka Regedit
+3. Masuk ke Folder HKEY_LOCAL_MACHINE &amp;gt;&amp;gt; SOFTWARE &amp;gt;&amp;gt; Microsoft &amp;gt;&amp;gt; Windows NT &amp;gt;&amp;gt; CurrentVersion &amp;gt;&amp;gt; ProfileList
+4. Dalam folder tersebut terdapat 2 folder dengan awalan S-1-5-21 diikuti dengan nomor yang panjang dan sama persis di belakangnya.</description>
     </item>
     
     <item>

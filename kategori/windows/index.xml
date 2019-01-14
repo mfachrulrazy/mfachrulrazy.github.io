@@ -88,6 +88,19 @@ Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Ji
     </item>
     
     <item>
+      <title>Windows 10 Tidak dapat akses SMB</title>
+      <link>https://mfachrulrazy.github.io/post/err-win-smb/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-win-smb/</guid>
+      <description>Windows 10 Enterprise secara default melarang fitur SMB. Penjelasan lebih lanjut langsung dari situs micorosoft
+ Guest access in SMB2 disabled by default in Windows 10 Fall Creators Update and Windows Server 2016 version 1709
+ Caranya ubah melalui Group Policy Settings
+Computer configuration\administrative templates\network\Lanman Workstation Aktifkan Enable insecure guest logons
+Dengan catatan, jika mengaktifkan mode ini, akan mengurangi keamanan pada Windows klien. Mungkin hal ini terjadi akibat virus wannacry yang terjadi.</description>
+    </item>
+    
+    <item>
       <title>Error Browsing Https</title>
       <link>https://mfachrulrazy.github.io/post/err-browser-https/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
@@ -105,6 +118,19 @@ Firefox Chrome Edge Penyebab dan solusi  Periksa apakah ada addons yang bermasal
       <guid>https://mfachrulrazy.github.io/post/int-baru-vbox/</guid>
       <description> Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui
 File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang sudah ada bisa memilih Properties   </description>
+    </item>
+    
+    <item>
+      <title>Error User Profile Windows 7</title>
+      <link>https://mfachrulrazy.github.io/post/err-profile-win7/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-profile-win7/</guid>
+      <description>Salah satu komputer klien mendapat error tidak dapat me-load user profile, akibatnya semua pengaturan-pengaturan pribadi seperti shortcut di desktop tidak muncul. Untuk dapat memunculkan kembali user profile, lakukan langkah berikut
+1. Restart komputer/laptop dan masuk ke dalam Safe Mode (menekan tombol F8 ketika booting)
+2. Setelah login pada windows, buka Regedit
+3. Masuk ke Folder HKEY_LOCAL_MACHINE &amp;gt;&amp;gt; SOFTWARE &amp;gt;&amp;gt; Microsoft &amp;gt;&amp;gt; Windows NT &amp;gt;&amp;gt; CurrentVersion &amp;gt;&amp;gt; ProfileList
+4. Dalam folder tersebut terdapat 2 folder dengan awalan S-1-5-21 diikuti dengan nomor yang panjang dan sama persis di belakangnya.</description>
     </item>
     
     <item>
