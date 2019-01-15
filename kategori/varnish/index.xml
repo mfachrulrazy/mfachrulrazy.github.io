@@ -8,7 +8,7 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 21 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/varnish/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,13 +16,12 @@
     <item>
       <title>Install Varnish pada Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/install-varnish-cent/</link>
-      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/install-varnish-cent/</guid>
-      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy.
-Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish.
-Berikut langkah instalasi dan konfigurasi varnish.
-1. Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk menambahkan fungsi dari native yum # yum install pygpgme yum-utils 2. Buat file varnishcache_varnish5.repo di /etc/yum.repos.d/ untuk menampung konfigurasi repository.</description>
+      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy. Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish. Berikut langkah instalasi dan konfigurasi varnish.
+Install Varnish 6 Install varnish terbaru versi 6 dengan cara compile dari source code.
+1. Download source varnish dari situs resmi varnish # wget https://varnish-cache.org/_downloads/varnish-6.0.2.tgz 2. Install paket pendukung (build dependencies) # yum install make autoconf automake jemalloc-devel libedit-devel libtool ncurses-devel pcre-devel pkgconfig python-docutils python-sphinx 3.</description>
     </item>
     
   </channel>
