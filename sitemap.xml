@@ -63,6 +63,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/spam-youtube/</loc>
+    <lastmod>2017-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/install-docker-win10h/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url>
@@ -275,6 +280,12 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/kategori/email/</loc>
+    <lastmod>2017-12-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/kategori/github/</loc>
     <lastmod>2017-07-21T08:27:55+08:00</lastmod>
     <priority>0</priority>
@@ -289,6 +300,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/hugo/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/internet/</loc>
+    <lastmod>2017-12-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

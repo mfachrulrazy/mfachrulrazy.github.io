@@ -138,6 +138,19 @@ Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setel
     </item>
     
     <item>
+      <title>Email Phising Youtube</title>
+      <link>https://mfachrulrazy.github.io/post/spam-youtube/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/spam-youtube/</guid>
+      <description>Akhir tahun 2017, saya mendapatkan email dari youtube bahwa saya beruntung mendapatkan iPhone dan terdapat sebuah link (yang telah disingkat) mengatakan bahwa akun youtube saya telah dibuat menjadi admin. Berikut tampilannya
+Dari isi email sudah curiga dengan bentuk kata-katanya dan link yang disingkat
+Hal pertama yang dilakukan adalah periksa pengirim email dari sini dapat dilihat sumbernya sepertinya valid (noreply@youtube.com)
+Kemudian lihat kode aslinya (show original)
+Sebelum melihat lebih detail isi header, saya melihat-lihat di forum untuk keterangan youtube tersebut.</description>
+    </item>
+    
+    <item>
       <title>Install Docker Windows 10 Home</title>
       <link>https://mfachrulrazy.github.io/post/install-docker-win10h/</link>
       <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
