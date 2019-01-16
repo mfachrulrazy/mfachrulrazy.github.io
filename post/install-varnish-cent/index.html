@@ -290,39 +290,39 @@ Install Varnish 6 Install varnish terbaru versi 6 dengan cara compile dari sourc
 
 <p>Install varnish terbaru versi 6 dengan cara compile dari source code.<br />
 1. Download source varnish dari situs resmi varnish
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget https://varnish-cache.org/_downloads/varnish-6.0.2.tgz</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># wget https://varnish-cache.org/_downloads/varnish-6.0.2.tgz</span></code></pre></div>
 2. Install paket pendukung (build dependencies)
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install make autoconf automake jemalloc-devel libedit-devel libtool ncurses-devel pcre-devel pkgconfig python-docutils python-sphinx</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># yum install make autoconf automake jemalloc-devel libedit-devel libtool ncurses-devel pcre-devel pkgconfig python-docutils python-sphinx</span></code></pre></div>
 3. Opsi paket pendukung lainnya untuk rebuild svg
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install graphviz</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># yum install graphviz</span></code></pre></div>
 4. Untuk mengambil dari repository varnish
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install git</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># yum install git</span></code></pre></div>
 5. Ekstrak dan masuk ke dalam folder hasil ekstrak
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># tar -zxvf varnish-6.0.2.tgz &amp;&amp; cd varnish-6.0.2</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># tar -zxvf varnish-6.0.2.tgz &amp;&amp; cd varnish-6.0.2</span></code></pre></div>
 6. Jalankan perintah instalasi dari dalam folder varnish
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># sh autogen.sh</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># sh autogen.sh</span>
 <span class="c1"># sh configure</span>
 <span class="c1"># make</span></code></pre></div>
 7. Menjalakan perintah make check untuk menjalankan serangkaian pengecekan. Proses ini akan memakan waktu yang cukup lama dan mungkin akan ada beberapa pengujian yang gagal, hal tersebut bisa dihiraukan.
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make check</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># make check</span></code></pre></div>
 <img src="/img/varnish/ins-varnish5.png" alt="img" />
 8. Setelah selesai, akan ada summary hasil pengujian
 <img src="/img/varnish/ins-varnish6.png" alt="img" />
 9. Terakhir jalankan perintah install
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># make install</span></code></pre></div>
 10. Varnish akan terinstall dalam folder <code>/usr/local</code> dan file binary <code>varnishd</code> tersimpan di <code>/usr/local/sbin</code>
 11. Karena varnish terinstall dari paket biner (binary package), maka menjalankannya dengan cara manual
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># varnishd -a :6081 -T localhost:6082 -b localhost:8080</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># varnishd -a :6081 -T localhost:6082 -b localhost:8080</span></code></pre></div>
 <img src="/img/varnish/ins-varnish7.png" alt="img" /></p>
 
 <h3 id="install-varnish-5">Install Varnish 5</h3>
 
 <ol>
 <li>Install pygpgme untuk handling paket gpg signatures dan yum-utils untuk  menambahkan fungsi dari native yum
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install pygpgme yum-utils</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># yum install pygpgme yum-utils</span></code></pre></div>
 <img src="/img/varnish/ins-varnish1.png" alt="img1" /></li>
 <li>Buat file <code>varnishcache_varnish5.repo</code> di <code>/etc/yum.repos.d/</code> untuk menampung konfigurasi repository. Isikan dengan konfigurasi berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span><span class="o">[</span>varnishcache_varnish5<span class="o">]</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln"> 1</span><span class="o">[</span>varnishcache_varnish5<span class="o">]</span>
 <span class="ln"> 2</span><span class="nv">name</span><span class="o">=</span>varnishcache_varnish5
 <span class="ln"> 3</span><span class="nv">baseurl</span><span class="o">=</span>https://packagecloud.io/varnishcache/varnish5/el/7/<span class="nv">$basearch</span>
 <span class="ln"> 4</span><span class="nv">repo_gpgcheck</span><span class="o">=</span><span class="m">1</span>
@@ -343,44 +343,44 @@ Install Varnish 6 Install varnish terbaru versi 6 dengan cara compile dari sourc
 <span class="ln">19</span><span class="nv">sslcacert</span><span class="o">=</span>/etc/pki/tls/certs/ca-bundle.crt
 <span class="ln">20</span><span class="nv">metadata_expire</span><span class="o">=</span><span class="m">300</span></code></pre></div></li>
 <li>Update lokal yum cache dan install varnish cache 5
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -q makecache -y --disablerepo=&#39;*&#39; --enablerepo=&#39;varnishcache_varnish5&#39;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># yum -q makecache -y --disablerepo=&#39;*&#39; --enablerepo=&#39;varnishcache_varnish5&#39;</span></code></pre></div>
 <img src="/img/varnish/ins-varnish2.png" alt="img2" /></li>
 <li>Install varnish
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y install varnish</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># yum -y install varnish</span></code></pre></div>
 <img src="/img/varnish/ins-varnish3.png" alt="img3" /><br /></li>
 <li>Konfirmasi varnish telah terinstall dengan sukses
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># which varnishd</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># which varnishd</span>
 <span class="c1"># varnishd -V</span></code></pre></div></li>
 <li>Konfigurasi Nginx untuk bisa bekerja dengan Varnish Cache.<br /></li>
 <li>Secara default nginx listen ke port 80, ubah menjadi 8080. Edit file <code>/etc/nginx/nginx.conf</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>server <span class="o">{</span>
 <span class="ln">2</span>    listen  <span class="m">8080</span><span class="p">;</span>
 <span class="ln">3</span>    ...
 <span class="ln">4</span><span class="o">}</span></code></pre></div></li>
 <li>Kemudian buka file konfigurasi varnish environment dan temukan parameter <strong>VARNISH_LISTEN_PORT</strong> ubah port <strong>6081</strong> menjadi <strong>80</strong> karena varnish akan berada paling depan dalam melayani request HTTP. Edit file <code>/etc/varnish/varnish.params</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>...
 <span class="ln">2</span><span class="nv">VARNISH_LISTEN_PORT</span><span class="o">=</span><span class="m">80</span>
 <span class="ln">3</span>...</code></pre></div></li>
 <li>Setup nginx sebagai backend server untuk varnish proxy pada file <code>/etc/varnish/default.vcl</code><br /></li>
 <li>Cari bagian backend dan definiskan IP Host dan port.
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>backend default <span class="o">{</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>backend default <span class="o">{</span>
 <span class="ln">2</span>.host <span class="o">=</span> <span class="s2">&#34;127.0.0.1&#34;</span><span class="p">;</span>
 <span class="ln">3</span>.port <span class="o">=</span> <span class="s2">&#34;8080&#34;</span><span class="p">;</span>
 <span class="ln">4</span><span class="o">}</span></code></pre></div></li>
 <li>Setelah konfigurasi selesai restart nginx dan jalankan varnish cache.
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart nginx</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># systemctl restart nginx</span>
 <span class="c1"># systemctl start varnish</span>
 <span class="c1"># systemctl enable varnish</span>
 <span class="c1"># systemctl status varnish</span></code></pre></div></li>
 <li>Lakukan pengecekan apakah varnish telah jalan menggunakan cURL
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># curl -I http://localhost</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># curl -I http://localhost</span></code></pre></div>
 <img src="/img/varnish/ins-varnish4.png" alt="img4" /></li>
 <li>Cek log varnish
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># varnishlog -q &#39;RespStatus == 503&#39; -g request</span>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># varnishlog -q &#39;RespStatus == 503&#39; -g request</span>
 atau
 <span class="c1"># varnishncsa</span></code></pre></div></li>
 <li>Menguji konfigurasi varnish, jika tidak ada error maka akan mengeluarkan file konfigurasi varnish
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># varnishd -Cf /etc/varnish/default.vcl</span></code></pre></div></li>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># varnishd -Cf /etc/varnish/default.vcl</span></code></pre></div></li>
 
 <li><p>Beberapa direktori penting pada varnish</p>
 

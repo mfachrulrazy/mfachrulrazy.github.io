@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Install Nginx Centos 7" />
-  <meta name="twitter:title" content="Install Nginx Centos 7" />
-  <meta name="description" content="Instalasi Web Server Nginx pada Centos 7">
-  <meta property="og:description" content="Instalasi Web Server Nginx pada Centos 7">
-  <meta name="twitter:description" content="Instalasi Web Server Nginx pada Centos 7">
+  <meta property="og:title" content="Install Mikrotik di Gns3" />
+  <meta name="twitter:title" content="Install Mikrotik di Gns3" />
+  <meta name="description" content="Install OS Mikrotik di Virtualisasi GNS 3">
+  <meta property="og:description" content="Install OS Mikrotik di Virtualisasi GNS 3">
+  <meta name="twitter:description" content="Install OS Mikrotik di Virtualisasi GNS 3">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/install-nginx-cent/",
-          "name": "Install nginx centos 7"
+          "@id": "https://mfachrulrazy.github.io/post/install-mrktk-gns3/",
+          "name": "Install mikrotik di gns3"
         }
     }]
 }
@@ -60,16 +60,20 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Install Nginx Centos 7",
-  "description" : "Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
- Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.",
+  "headline": "Install Mikrotik di Gns3",
+  "description" : "Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.
+1. Pastikan file iso mikrotik telah di-download
+2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:
+C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M 3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)
+4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan
+- qemu-system-i386w.exe : 32bit",
   "inLanguage" : "en",
-  "wordCount": 169,
-  "datePublished" : "2017-04-23T00:00:00",
-  "dateModified" : "2017-04-23T00:00:00",
+  "wordCount": 162,
+  "datePublished" : "2017-03-17T00:00:00",
+  "dateModified" : "2017-03-17T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-nginx-cent/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-mrktk-gns3/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -83,13 +87,13 @@
 }
 </script>
 
-<meta property="og:title" content="Install Nginx Centos 7" />
-<meta property="og:description" content="Instalasi Web Server Nginx pada Centos 7">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-nginx-cent/" />
+<meta property="og:title" content="Install Mikrotik di Gns3" />
+<meta property="og:description" content="Install OS Mikrotik di Virtualisasi GNS 3">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-mrktk-gns3/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Install Nginx Centos 7" />
-  <meta name="twitter:description" content="Instalasi Web Server Nginx pada Centos 7">
+  <meta name="twitter:title" content="Install Mikrotik di Gns3" />
+  <meta name="twitter:description" content="Install OS Mikrotik di Virtualisasi GNS 3">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -97,7 +101,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-nginx-cent/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-mrktk-gns3/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -242,19 +246,19 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Install Nginx Centos 7</h1>
+                <h1>Install Mikrotik di Gns3</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Instalasi Web Server Nginx pada Centos 7</h2>
+                  <h2 class="post-subheading">Install OS Mikrotik di Virtualisasi GNS 3</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 23, 2017
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 17, 2017
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -281,54 +285,35 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<p>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.</p>
-
-<ol>
-<li>Install repository EPEL
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install epel-release</span></code></pre></div></li>
-<li>Kemudian install nginx
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install nginx</span></code></pre></div></li>
-<li>Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --zone=public --permanent --add-port=80/tcp</span>
-<span class="c1"># firewall-cmd --reload</span></code></pre></div></li>
-<li>Jalankan service nginx dan cek statusnya
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl start nginx</span>
-<span class="c1"># systemctl status nginx</span></code></pre></div></li>
-</ol>
-
-<h3 id="troubleshoot-nginx">Troubleshoot Nginx</h3>
-
-<ul>
-<li>Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
-<img src="/img/nginx/err-nginx1.png" alt="img1" /></li>
-<li>Tes file konfigurasi nginx untuk mengecek apakah ada error atau tidak
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># nginx -t</span></code></pre></div></li>
-<li>Melihat log error nginx
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># tail -20 /var/log/nginx/error.log</span></code></pre></div></li>
-</ul>
-
-<h3 id="error-403-forbidden-nginx">Error 403 Forbidden Nginx</h3>
-
-<ol>
-<li>Pada saat mengganti folder root dari nginx diperlukan permission khusus dari SELinux</li>
-<li>Ketika muncul direktori forbidden berarti SELinux yang sedang memblokir</li>
-<li>Cek apakah SELinux aktif
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># getenforce</span></code></pre></div></li>
-<li>Jika keluarannya <code>Enforcing</code> maka izinkan direktori root baru untuk nignx
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># chcon -Rt httpd_sys_content_t /direktori_root_www</span></code></pre></div></li>
-</ol>
+        <p>Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.<br />
+1. Pastikan file iso mikrotik telah di-download<br />
+2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:</p>
+<div class="highlight"><pre class="chroma">C:\Program Files\GNS3\qemu-2.4.0&gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M</pre></div>
+<p><img src="/img/networking/gns31.png" alt="img" />
+3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)<br />
+4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan<br />
+- qemu-system-i386w.exe : 32bit<br />
+- qemu-system-x86_64w.exe   : 64bit<br />
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd">C<span class="p">:</span><span class="nl">\Program</span><span class="c1"> Files\GNS3\qemu-2.4.0&gt;qemu-system-i386w.exe &#34;D:/mikrotik.img&#34; -boot d -cdrom &#34;D:/mikrotik.iso”</span></code></pre></div>
+5. Setelah menjalankan perintah di atas, maka proses instalasi mikrotik berjalan dan install mikrotik seperti biasa.
+6. Kemudian untuk mencoba image yang sudah dibuat ketikkan perintah</p>
+<div class="highlight"><pre class="chroma">C:\Program Files\GNS3\qemu-2.4.0&gt;qemu-system-i386w.exe &#34;D:/mikrotik.img&#34; -boot c</pre></div>
+<p><img src="/img/networking/gns32.png" alt="img" />
+7. Setelah itu, masuk buat VM-nya di GNS3 dengan masuk ke menu Edit &gt; Preferences
+8. Pilih Qemu VMs &gt; klik New
+<img src="/img/networking/gns33.png" alt="img" />
+9. Buat nama VM-nya
+10. Pilih qemu binary dan total RAM yang akan digunakan
+11. Pilih tipe consolenya (telnet)
+12. Pilih tipe image-nya
+<img src="/img/networking/gns34.png" alt="img" />
+13. Kemudian klik finish</p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
             
           </div>
         
@@ -343,28 +328,28 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nginx-cent%2f&amp;text=Install%20Nginx%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-mrktk-gns3%2f&amp;text=Install%20Mikrotik%20di%20Gns3&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nginx-cent%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-mrktk-gns3%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nginx-cent%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-mrktk-gns3%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nginx-cent%2f&amp;title=Install%20Nginx%20Centos%207" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-mrktk-gns3%2f&amp;title=Install%20Mikrotik%20di%20Gns3" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -385,12 +370,12 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/install-mrktk-gns3/" data-toggle="tooltip" data-placement="top" title="Install Mikrotik di Gns3">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/" data-toggle="tooltip" data-placement="top" title="Servis Wireless tidak berjalan pada Windows 7">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/maxtu/" data-toggle="tooltip" data-placement="top" title="Maximum Transmission Unit">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/install-nginx-cent/" data-toggle="tooltip" data-placement="top" title="Install Nginx Centos 7">Next Post &rarr;</a>
             </li>
           
         </ul>
