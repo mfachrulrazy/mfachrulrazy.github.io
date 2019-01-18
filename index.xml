@@ -182,6 +182,18 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
     </item>
     
     <item>
+      <title>Remote Mikrotik Gns3 via Winbox</title>
+      <link>https://mfachrulrazy.github.io/post/remote-mkrtk-gns3/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/remote-mkrtk-gns3/</guid>
+      <description>Untuk terhubung dengan mikrotik di GNS3 dapat menggunakan interface loopback.
+Gunakan cloud untuk menghubungkan interface jaringan komputer ke winbox gns 3 &amp;gt; klik kanan Configure
+Kemudian perhatikan bagian Ethernet Interfaces terdapat Npcap Loopback Adapter
+Perhatikan bagian interface di sistem operasi (windows)</description>
+    </item>
+    
+    <item>
       <title>Windows 10 Tidak dapat akses SMB</title>
       <link>https://mfachrulrazy.github.io/post/err-win-smb/</link>
       <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
