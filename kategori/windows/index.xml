@@ -121,6 +121,17 @@ File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang
     </item>
     
     <item>
+      <title>Konversi Tipe Harddisk pada Windows</title>
+      <link>https://mfachrulrazy.github.io/post/mbr-hdd-win/</link>
+      <pubDate>Tue, 04 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/mbr-hdd-win/</guid>
+      <description>Sebelum melakukan konversi HD, backup seluruh data yang ada di dalamnya, karena konversi mbr ke gpt akan melakukan pembersihan isi seluruh harddisk. Setelah data di-backup lakukan langkah berikut:
+1. Matikan pc, dan colok usb installer windows
+2. Nyalakan pc dan booting ke usb 3. Setelah itu pada saat di jendela Windows Setup tekan Shift + F10 untuk masuk ke command prompt &amp;gt; diskpart 4. Identifikasi drive untuk reformat &amp;gt; list disk 5.</description>
+    </item>
+    
+    <item>
       <title>Error User Profile Windows 7</title>
       <link>https://mfachrulrazy.github.io/post/err-profile-win7/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
