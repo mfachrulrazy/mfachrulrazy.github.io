@@ -24,6 +24,19 @@ Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setel
     </item>
     
     <item>
+      <title>Port Forwarding Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/post/port-forwarding/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/port-forwarding/</guid>
+      <description>Biasanya dalam sebuah jaringan kantor, memiliki IP Publik yang terbatas. Untuk memanfaatkan IP tersebut ke banyak server bisa menggunakan port forwarding.
+1. Sebelum membuat port forwarding, pastikan port yang akan digunakan tidak ada dipakai oleh mikrotik di winbox pada menu IP &amp;gt; services
+2. Setelah itu lakukan konfigurasi port forwarding di bagian IP &amp;gt; Firewall &amp;gt; NAT
+3. Tekan tombol + &amp;gt; Tab General
+4. Bisa di-isikan bagian In Interface adalah interface yang ke internet.</description>
+    </item>
+    
+    <item>
       <title>VPN PPTP pada Mikrotik</title>
       <link>https://mfachrulrazy.github.io/post/pptp-mikrotik/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>

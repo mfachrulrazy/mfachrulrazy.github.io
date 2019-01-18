@@ -379,6 +379,19 @@ Connection Refused Socket Error # 10061 Penyebabnya adalah pada saat penggantian
     </item>
     
     <item>
+      <title>Port Forwarding Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/post/port-forwarding/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/port-forwarding/</guid>
+      <description>Biasanya dalam sebuah jaringan kantor, memiliki IP Publik yang terbatas. Untuk memanfaatkan IP tersebut ke banyak server bisa menggunakan port forwarding.
+1. Sebelum membuat port forwarding, pastikan port yang akan digunakan tidak ada dipakai oleh mikrotik di winbox pada menu IP &amp;gt; services
+2. Setelah itu lakukan konfigurasi port forwarding di bagian IP &amp;gt; Firewall &amp;gt; NAT
+3. Tekan tombol + &amp;gt; Tab General
+4. Bisa di-isikan bagian In Interface adalah interface yang ke internet.</description>
+    </item>
+    
+    <item>
       <title>Error User Profile Windows 7</title>
       <link>https://mfachrulrazy.github.io/post/err-profile-win7/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
@@ -555,7 +568,7 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/page/ref/</guid>
       <description> Berikut daftar Situs yang menjadi referensi saya dalam seluruh postingan di Blog ini.
-Internasional  Linode Digital Ocean Rackspace Mysql Linoxide How to Lamp Tecmint Red Hat Cyberciti Launchpad Liquid Web Zabbix Nagios Linux host Tech Republic Easy Engine Nginx Proxmox Barry Hubbard Microsoft  Indonesia  linux kesehatan kang erik  </description>
+Internasional  Linode Digital Ocean Rackspace Mysql Linoxide How to Lamp Tecmint Red Hat Cyberciti Launchpad Liquid Web Zabbix Nagios Linux host Tech Republic Easy Engine Nginx Proxmox Barry Hubbard Microsoft  Indonesia  linux kesehatan kang erik thinxfree Mikrotik  </description>
     </item>
     
     <item>
