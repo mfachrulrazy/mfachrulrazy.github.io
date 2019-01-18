@@ -121,7 +121,7 @@ Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang me
 2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:
 C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M 3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)
 4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan
-- qemu-system-i386w.exe : 32bit</description>
+- qemu-system-i386w.</description>
     </item>
     
     <item>

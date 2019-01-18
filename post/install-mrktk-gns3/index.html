@@ -66,9 +66,9 @@
 2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:
 C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M 3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)
 4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan
-- qemu-system-i386w.exe : 32bit",
+- qemu-system-i386w.",
   "inLanguage" : "en",
-  "wordCount": 162,
+  "wordCount": 259,
   "datePublished" : "2017-03-17T00:00:00",
   "dateModified" : "2017-03-17T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -261,7 +261,7 @@ C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik
   <i class="fas fa-calendar"></i>&nbsp;Posted on March 17, 2017
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -285,7 +285,9 @@ C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.<br />
+        
+
+<p>Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.<br />
 1. Pastikan file iso mikrotik telah di-download<br />
 2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:</p>
 <div class="highlight"><pre class="chroma">C:\Program Files\GNS3\qemu-2.4.0&gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M</pre></div>
@@ -308,6 +310,23 @@ C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik
 12. Pilih tipe image-nya
 <img src="/img/networking/gns34.png" alt="img" />
 13. Kemudian klik finish</p>
+
+<h3 id="menambahkan-interface-pada-mikrotik">Menambahkan interface pada Mikrotik</h3>
+
+<p>Pilih template mikrotik &gt; <code>configure template</code>
+<img src="/img/networking/add-int-mikrotik1.png" alt="img" />
+Pada tab <code>network</code> &gt; masukkan jumlah interface yang diinginkan pada <code>Adapters</code>
+<img src="/img/networking/add-int-mikrotik2.png" alt="img" />
+Untuk mengganti icon dari mikrotik, pilih VM yang akan diganti kemudian pada tab <code>General Settings</code> &gt; Pilih <code>Symbol:</code> &gt; pilih symbol yang diinginkan
+<img src="/img/networking/add-int-mikrotik3.png" alt="img" /></p>
+
+<h3 id="troubleshoot-mikrotik-tidak-dapat-ping-ke-jaringan-lain">Troubleshoot Mikrotik tidak dapat ping ke jaringan lain</h3>
+
+<p>Mikrotik terdeteksi di winbox, tetapi tidak dapat terkoneksi ke jaringan lain.<br />
+Berikut topologinya<br />
+<img src="/img/networking/add-int-mikrotik4.png" alt="img" />
+Jika mikrotik tidak dapat terkoneksi satu sama lain, salah satu penyebabnya adalah file image yang tidak bagus. Setelah dicoba untuk menggunakan file image lain, mikrotik dapat melakukan tes ping satu sama lain.
+<img src="/img/networking/add-int-mikrotik5.png" alt="img" /></p>
 
 
         
