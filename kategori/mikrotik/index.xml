@@ -24,6 +24,16 @@ Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setel
     </item>
     
     <item>
+      <title>VPN PPTP pada Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/post/pptp-mikrotik/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/pptp-mikrotik/</guid>
+      <description>Kadangkala ketika kita berada di luar kantor (tidak terkoneksi dengan jaringan lokal kantor), kita ingin me-remote perangkat tertentu yang berada di kantor. Salah satu cara agar bisa membuat koneksi seolah-olah berada di jaringan kantor adalah VPN. Pada postingan kali ini VPN yang digunakan adalah PPTP dari Mikrotik. Berikut langkah instalasinya.
+1. Pastikan paket PPP telah terinstall di Mikrotik System &amp;gt; Packages 2. Kemudian masuk pada menu PPP &amp;gt; tab Interfaces &amp;gt; klik PPTP Server &amp;gt; centang pada bagian Enabled dan pastikan pada bagian Default Profile menggunakan default-encryption 3.</description>
+    </item>
+    
+    <item>
       <title>Error Gateway Time Out</title>
       <link>https://mfachrulrazy.github.io/post/err-gateway-to/</link>
       <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
