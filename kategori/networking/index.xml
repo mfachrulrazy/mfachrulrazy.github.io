@@ -68,6 +68,16 @@ Perhatikan bagian interface di sistem operasi (windows)</description>
     </item>
     
     <item>
+      <title>DNS Flooding di Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/post/dns-flood/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/dns-flood/</guid>
+      <description>Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload ether2 yang menggunakan IP public dari provider L.
+Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting allow remote requests yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns. Cara mengatasinya adalah dengan membuatkan address list untuk mengizinkan alamat dns apa saja yang diinginkan.</description>
+    </item>
+    
+    <item>
       <title>Troubleshoot DNS WIndows bermasalah</title>
       <link>https://mfachrulrazy.github.io/post/tb-dns-client/</link>
       <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>

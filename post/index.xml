@@ -302,6 +302,16 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
     </item>
     
     <item>
+      <title>DNS Flooding di Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/post/dns-flood/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/dns-flood/</guid>
+      <description>Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload ether2 yang menggunakan IP public dari provider L.
+Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting allow remote requests yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns. Cara mengatasinya adalah dengan membuatkan address list untuk mengizinkan alamat dns apa saja yang diinginkan.</description>
+    </item>
+    
+    <item>
       <title>Troubleshoot DNS WIndows bermasalah</title>
       <link>https://mfachrulrazy.github.io/post/tb-dns-client/</link>
       <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
@@ -394,7 +404,7 @@ Connection Refused Socket Error # 10061 Penyebabnya adalah pada saat penggantian
     <item>
       <title>Konversi Tipe Harddisk pada Windows</title>
       <link>https://mfachrulrazy.github.io/post/mbr-hdd-win/</link>
-      <pubDate>Tue, 04 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/mbr-hdd-win/</guid>
       <description>Sebelum melakukan konversi HD, backup seluruh data yang ada di dalamnya, karena konversi mbr ke gpt akan melakukan pembersihan isi seluruh harddisk. Setelah data di-backup lakukan langkah berikut:

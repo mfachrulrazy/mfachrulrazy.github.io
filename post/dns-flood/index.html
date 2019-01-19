@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="All pages in the kategori #Windows" />
-  <meta name="twitter:title" content="All pages in the kategori #Windows" />
-  <meta name="description" content="All pages in the kategori #Windows, such as: Install WINS Windows Server 2003">
-  <meta property="og:description" content="All pages in the kategori #Windows, such as: Install WINS Windows Server 2003">
-  <meta name="twitter:description" content="All pages in the kategori #Windows, such as: Install WINS Windows Server 2003">
+  <meta property="og:title" content="DNS Flooding di Mikrotik" />
+  <meta name="twitter:title" content="DNS Flooding di Mikrotik" />
+  <meta name="description" content="Mikrotik diserang oleh DNS Flooding">
+  <meta property="og:description" content="Mikrotik diserang oleh DNS Flooding">
+  <meta name="twitter:description" content="Mikrotik diserang oleh DNS Flooding">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -33,12 +33,63 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/dns-flood/",
+          "name": "D n s flooding di mikrotik"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "DNS Flooding di Mikrotik",
+  "description" : "Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload ether2 yang menggunakan IP public dari provider L.
+Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting allow remote requests yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns. Cara mengatasinya adalah dengan membuatkan address list untuk mengizinkan alamat dns apa saja yang diinginkan.",
+  "inLanguage" : "en",
+  "wordCount": 73,
+  "datePublished" : "2017-08-26T00:00:00",
+  "dateModified" : "2017-08-26T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/dns-flood/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Windows" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/kategori/windows/" />
+<meta property="og:title" content="DNS Flooding di Mikrotik" />
+<meta property="og:description" content="Mikrotik diserang oleh DNS Flooding">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/dns-flood/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Windows" />
+  <meta name="twitter:title" content="DNS Flooding di Mikrotik" />
+  <meta name="twitter:description" content="Mikrotik diserang oleh DNS Flooding">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -46,7 +97,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/kategori/windows/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/dns-flood/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -189,14 +240,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="kategori-heading">
+            <div class="post-heading">
               
-                <h1>Windows</h1>
-              
-              
-                <hr class="small">
+                <h1>DNS Flooding di Mikrotik</h1>
               
               
+              
+                
+                  <h2 class="post-subheading">Mikrotik diserang oleh DNS Flooding</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 26, 2017
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
               
             </div>
           </div>
@@ -207,146 +277,99 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload <code>ether2</code> yang menggunakan IP public dari provider <strong><em>L</em></strong>.<br />
+Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting <strong><em>allow remote requests</em></strong> yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns.
+<img src="/img/networking/dns-flood1.png" alt="img" />
+Cara mengatasinya adalah dengan membuatkan <em>address list</em> untuk mengizinkan alamat dns apa saja yang diinginkan.
+<img src="/img/networking/dns-flood2.png" alt="img" /></p>
+
+
         
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/mbr-hdd-win/">
-                <h2 class="post-title">Konversi Tipe Harddisk pada Windows</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Konversi Harddisk dari MBR ke GPT melalui CMD installer windows
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 3, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/err-profile-win7/">
-                <h2 class="post-title">Error User Profile Windows 7</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Mengatasi Pesan Error User Profile Cannot Be Loaded pada Windows 7
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on June 17, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/tb-wireless-win7/">
-                <h2 class="post-title">Servis Wireless tidak berjalan pada Windows 7</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 12, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/wireless/">wireless</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-        </div>
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/mikrotik/">mikrotik</a>&nbsp;
+            
+          </div>
         
-          <ul class="pager main-pager">
-            
-              <li class="previous">
-                <a href="/kategori/windows/page/1/">&larr; Newer Posts</a>
-              </li>
-            
-            
-          </ul>
+
         
-      </div>
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdns-flood%2f&amp;text=DNS%20Flooding%20di%20Mikrotik&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdns-flood%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdns-flood%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdns-flood%2f&amp;title=DNS%20Flooding%20di%20Mikrotik" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/tb-dns-client/" data-toggle="tooltip" data-placement="top" title="Troubleshoot DNS WIndows bermasalah">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Web Server I">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -405,7 +428,7 @@
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/kategori/windows/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
