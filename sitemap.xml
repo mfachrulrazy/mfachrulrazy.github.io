@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/amp-nginx/</loc>
+    <lastmod>2017-12-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/install-docker-win10h/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url>
@@ -365,7 +370,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/monitoring/</loc>
-    <lastmod>2017-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -465,6 +470,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/virtual-box/</loc>
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/web-server/</loc>
+    <lastmod>2017-12-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -61,10 +61,10 @@
     "name" : "MFR"
   },
   "headline": "Install Nginx Centos 7",
-  "description" : "Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.
+  "description" : "Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai reverse proxy dan load balancer. Postingan ini akan membahas instalasi dan konfigurasi nginx sebagai web server pada centos 7.
  Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.",
   "inLanguage" : "en",
-  "wordCount": 169,
+  "wordCount": 194,
   "datePublished" : "2017-04-23T00:00:00",
   "dateModified" : "2017-04-23T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -283,7 +283,7 @@
       <article role="main" class="blog-post">
         
 
-<p>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai proxy dan load balancer. Postingan ini akan membahas konfigurasi nginx sebagai web server pada centos 7.</p>
+<p>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai reverse proxy dan load balancer. Postingan ini akan membahas instalasi dan konfigurasi nginx sebagai web server pada centos 7.</p>
 
 <ol>
 <li>Install repository EPEL
@@ -318,6 +318,15 @@
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># getenforce</span></code></pre></div></li>
 <li>Jika keluarannya <code>Enforcing</code> maka izinkan direktori root baru untuk nignx
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># chcon -Rt httpd_sys_content_t /direktori_root_www</span></code></pre></div></li>
+</ol>
+
+<h3 id="lainnya">Lainnya</h3>
+
+<ol>
+<li>Melihat servis nginx yang sedang berjalan
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ps -ef | grep nginx</span></code></pre></div></li>
+<li>Menghentikan servis nginx secara paksa
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># kill -9 (pid_nginx)</span></code></pre></div></li>
 </ol>
 
 

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Monitoring on Zyra</title>
-    <link>https://mfachrulrazy.github.io/kategori/monitoring/</link>
-    <description>Recent content in Monitoring on Zyra</description>
+    <title>Web Server on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/web-server/</link>
+    <description>Recent content in Web Server on Zyra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
     <lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mfachrulrazy.github.io/kategori/monitoring/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/kategori/web-server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,17 +21,6 @@
       <guid>https://mfachrulrazy.github.io/post/amp-nginx/</guid>
       <description>Amplify merupakan salah satu software untuk monitoring nginx.
 1. Hal pertama yang dilakukan adalah daftar pada website amplify 2. Install amplify agent pada web server # yum install amplify-agent  3. Pada file konfigurasi nginx tambahkan log format 1http { 2 log_format main_ext &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#34;$request&amp;#34; &amp;#39; 3 &amp;#39;$status $body_bytes_sent &amp;#34;$http_referer&amp;#34; &amp;#39; 4 &amp;#39;&amp;#34;$http_user_agent&amp;#34; &amp;#34;$http_x_forwarded_for&amp;#34; &amp;#39; 5 &amp;#39;&amp;#34;$host&amp;#34; sn=&amp;#34;$server_name&amp;#34; &amp;#39; 6 &amp;#39;rt=$request_time &amp;#39; 7 &amp;#39;ua=&amp;#34;$upstream_addr&amp;#34; us=&amp;#34;$upstream_status&amp;#34; &amp;#39; 8 &amp;#39;ut=&amp;#34;$upstream_response_time&amp;#34; ul=&amp;#34;$upstream_response_length&amp;#34; &amp;#39; 9 &amp;#39;cs=$upstream_cache_status&amp;#39;; 10 11access_log /var/log/nginx/access.</description>
-    </item>
-    
-    <item>
-      <title>Error Monitoring PRTG HTTPS</title>
-      <link>https://mfachrulrazy.github.io/post/err-prtg-https/</link>
-      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
-      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
-      <guid>https://mfachrulrazy.github.io/post/err-prtg-https/</guid>
-      <description>Ketika mengatur PRTG menjadi https, web servernya tidak berhasil berjalan. Pesan error yang muncul ketika dibuka kurang lebih sebagai berikut:
-Connection Refused Socket Error # 10061 Penyebabnya adalah pada saat penggantian koneksi menjadi https, maka portnya juga berganti. Oleh karena itu harus diganti juga pada bagian PRTG Console Setting dan PRTG Administration Tool.
- Buka PRTG dan masuk ke PRTG Administration Tool Berikut contoh konfigurasinya  Pengaturan perubahan konfigurasi dari http ke https   Sumber: Knowlege Base PRTG</description>
     </item>
     
   </channel>
