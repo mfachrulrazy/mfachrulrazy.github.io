@@ -71,7 +71,7 @@ Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut
  q : quite mode (menghilangkan pesan yang muncul)
   Rsync jika tidak menggunakan backslash “/” berarti folder tersebut yang akan dicopy.",
   "inLanguage" : "en",
-  "wordCount": 168,
+  "wordCount": 192,
   "datePublished" : "2017-12-20T00:00:00",
   "dateModified" : "2017-12-20T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -317,6 +317,8 @@ Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut</p>
 <h3 id="delete">Delete</h3>
 
 <p>Untuk opsi delete akan menghapus file di server tujuan yang tidak ada di server sumber.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rsync -rtav --exclude-from=exclude.lst /home/dir1/* user@ip_address:/home/dir2 --delete</span></code></pre></div>
+<p>Perintah di atas artinya akan menghapus file yang ada dalam <code>dir2</code> tapi tidak terdapat di dalam <code>dir1</code></p>
 
 
         
