@@ -8,8 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Posts" />
-  <meta name="twitter:title" content="Posts" />
+  <meta property="og:title" content="Mengenal Rsync" />
+  <meta name="twitter:title" content="Mengenal Rsync" />
+  <meta name="description" content="Rsync untuk sinkronisasi/menyalin file">
+  <meta property="og:description" content="Rsync untuk sinkronisasi/menyalin file">
+  <meta name="twitter:description" content="Rsync untuk sinkronisasi/menyalin file">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -30,12 +33,70 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/about-rsync/",
+          "name": "Mengenal rsync"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Mengenal Rsync",
+  "description" : "Rsync adalah salah satu tools yang digunakan untuk menyalin file dalam perangkat yang berbeda.
+Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut
+# rsync -rtavq Keterangan:
+ r : recursive. Berulang ke sub direktori
+ t : sesuaikan dengan waktu
+ a : archive mode
+ v : verbose mode (banyak muncul penjelasan pada saat transfer)
+ q : quite mode (menghilangkan pesan yang muncul)
+  Rsync jika tidak menggunakan backslash “/” berarti folder tersebut yang akan dicopy.",
+  "inLanguage" : "en",
+  "wordCount": 168,
+  "datePublished" : "2017-12-20T00:00:00",
+  "dateModified" : "2017-12-20T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/about-rsync/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Posts" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/" />
+<meta property="og:title" content="Mengenal Rsync" />
+<meta property="og:description" content="Rsync untuk sinkronisasi/menyalin file">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/about-rsync/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:title" content="Mengenal Rsync" />
+  <meta name="twitter:description" content="Rsync untuk sinkronisasi/menyalin file">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -43,7 +104,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/about-rsync/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -188,22 +249,26 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Posts</h1>
+                <h1>Mengenal Rsync</h1>
               
               
+              
+                
+                  <h2 class="post-subheading">Rsync untuk sinkronisasi/menyalin file</h2>
+                
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 10, 2016
+  <i class="fas fa-calendar"></i>&nbsp;Posted on December 20, 2017
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
   
   
   
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Muhammad Fachrul Razy
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
   
   
 </span>
@@ -219,244 +284,123 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/belajar-vim/">
-                <h2 class="post-title">Belajar Vi dan Vim</h2>
 
-                
-              </a>
+<p>Rsync adalah salah satu tools yang digunakan untuk menyalin file dalam perangkat yang berbeda.<br />
+Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rsync -rtavq</span></code></pre></div>
+<p><strong>Keterangan</strong>:</p>
 
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 10, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
+<ul>
+<li>r : recursive. Berulang ke sub direktori<br /></li>
+<li>t : sesuaikan dengan waktu<br /></li>
+<li>a : archive mode<br /></li>
+<li>v : verbose mode (banyak muncul penjelasan pada saat transfer)<br /></li>
+<li>q : quite mode (menghilangkan pesan yang muncul)<br /></li>
+</ul>
 
+<p>Rsync jika tidak menggunakan backslash “/” berarti folder tersebut yang akan dicopy. Contoh:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rsync -rtav /home/dir1 user@ip_address:/home/dir2</span></code></pre></div>
+<p>Script di atas berarti menyalin folder ‘dir1’ (bukan isi dari dir1) ke dalam ‘dir2’ pada host tujuan. Struktur direktori tersebut menjadi <code>/home/dir2/dir1</code>. Jika ingin menyalin seluruh file yang berada di dalam dir1 maka bisa menggunakan tanda <code>*</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rsync -rtav /home/dir1/* user@ip_address:/home/dir2</span></code></pre></div>
+<h3 id="exclude">Exclude</h3>
 
-              </p>
+<p>Opsi exclude berfungsi untuk tidak menyalin file yang ditentukan. Untuk exclude perhatikan <em>path</em> direktori atau file yang akan di-exclude.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rsync -rtav --exclude-from=exclude.lst /home/dir1/* user@ip_address:/home/dir2</span></code></pre></div>
+<p>Contoh file exclude</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">/home/dir1/image
+/home/dir1/data</code></pre></div>
+<h3 id="delete">Delete</h3>
 
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/code-editor/">code editor</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/about-cron/">
-                <h2 class="post-title">Berkenalan dengan Cron</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Apa itu Cron? atau Cron jobs?
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 5, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
+<p>Untuk opsi delete akan menghapus file di server tujuan yang tidak ada di server sumber.</p>
 
 
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/cron/">cron</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command2/">
-                <h2 class="post-title">Linux Command Part 2</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Beberapa Perintah dasar Linux Part 2
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/">
-                <h2 class="post-title">Belajar Mysql Part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Belajar mysql dasar Part 1
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 7, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/mysql/">mysql</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command1/">
-                <h2 class="post-title">Linux Command Part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Beberapa Perintah dasar Linux Part 1
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 27, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-        </div>
         
-          <ul class="pager main-pager">
+          <div class="blog-tags">
             
-              <li class="previous">
-                <a href="/post/page/5/">&larr; Newer Posts</a>
-              </li>
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
             
+              <a href="https://mfachrulrazy.github.io//kategori/rsync/">rsync</a>&nbsp;
             
-          </ul>
+          </div>
         
-      </div>
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fabout-rsync%2f&amp;text=Mengenal%20Rsync&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fabout-rsync%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fabout-rsync%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fabout-rsync%2f&amp;title=Mengenal%20Rsync" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/amp-nginx/" data-toggle="tooltip" data-placement="top" title="Konfigurasi Amplify pada Nginx">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/spam-youtube/" data-toggle="tooltip" data-placement="top" title="Email Phising Youtube">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -515,7 +459,7 @@
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/post/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>

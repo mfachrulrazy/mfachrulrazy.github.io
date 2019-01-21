@@ -150,6 +150,23 @@ Sebelum melihat lebih detail isi header, saya melihat-lihat di forum untuk keter
     </item>
     
     <item>
+      <title>Mengenal Rsync</title>
+      <link>https://mfachrulrazy.github.io/post/about-rsync/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/about-rsync/</guid>
+      <description>Rsync adalah salah satu tools yang digunakan untuk menyalin file dalam perangkat yang berbeda.
+Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut
+# rsync -rtavq Keterangan:
+ r : recursive. Berulang ke sub direktori
+ t : sesuaikan dengan waktu
+ a : archive mode
+ v : verbose mode (banyak muncul penjelasan pada saat transfer)
+ q : quite mode (menghilangkan pesan yang muncul)
+  Rsync jika tidak menggunakan backslash “/” berarti folder tersebut yang akan dicopy.</description>
+    </item>
+    
+    <item>
       <title>Konfigurasi Amplify pada Nginx</title>
       <link>https://mfachrulrazy.github.io/post/amp-nginx/</link>
       <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
