@@ -23,5 +23,16 @@
 Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
     </item>
     
+    <item>
+      <title>Belajar SQL Server Part 1</title>
+      <link>https://mfachrulrazy.github.io/post/konfig-sqlsrv1/</link>
+      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/konfig-sqlsrv1/</guid>
+      <description>SQL Server merupakan salah satu Relational Database Management System(RDBMS) yang dibuat oleh Micorosoft. Sebagai Database server, dia termasuk dalam sebuah produk yang digunakan untuk menyimpan dan mengambil data dari sebuah aplikasi.
+Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
+1. Jalankan file master instalasi sql server (biasanya berbentuk iso) &amp;gt; Pilih bagian Installation &amp;gt; Pilih New SQL Server stand-alone&amp;hellip;.. 2. Bagian Product Key, masukan lisensi atau produk sql server yang diinginkan &amp;gt; klik Next 3.</description>
+    </item>
+    
   </channel>
 </rss>
