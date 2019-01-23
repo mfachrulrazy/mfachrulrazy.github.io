@@ -64,7 +64,7 @@
   "description" : "Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
  Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut 1IPADDR= 2NETMASK= 3GATEWAY= 4DNS1= 5DNS2= 6#onboot untuk mengatur interface aktif pada saat server baru dinyalakan 7ONBOOT=yes 8#bootproto untuk mengatur IP apakah dhcp atau static 9BOOTPROTO=dhcp/static Simpan file dan keluar.",
   "inLanguage" : "en",
-  "wordCount": 195,
+  "wordCount": 214,
   "datePublished" : "2017-10-13T00:00:00",
   "dateModified" : "2017-10-13T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -257,7 +257,7 @@
   <i class="fas fa-calendar"></i>&nbsp;Posted on October 13, 2017
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -303,7 +303,7 @@
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="nv">NETWORKING</span><span class="o">=</span>yes
 <span class="ln">2</span><span class="nv">HOSTNAME</span><span class="o">=</span>server_name
 <span class="ln">3</span><span class="nv">GATEWAY</span><span class="o">=</span>x.x.x.x</code></pre></div></li>
-<li>Atur DNS di <code>/etc/resolv.conf</code>
+<li>Atur DNS di <code>/etc/resolv.conf</code>. Tetapi jika kita telah memasukkan DNS ke dalam file interface, maka secara otomatis DNS akan terisi dalam file ini.
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>nameserver <span class="m">8</span>.8.8.8
 <span class="ln">2</span>nameserver <span class="m">8</span>.8.4.4</code></pre></div></li>
 <li>Restart servis network
