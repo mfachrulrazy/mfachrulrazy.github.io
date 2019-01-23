@@ -65,7 +65,7 @@
 Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
 1. Jalankan file master instalasi sql server (biasanya berbentuk iso) &amp;gt; Pilih bagian Installation &amp;gt; Pilih New SQL Server stand-alone&amp;hellip;.. 2. Bagian Product Key, masukan lisensi atau produk sql server yang diinginkan &amp;gt; klik Next 3.",
   "inLanguage" : "en",
-  "wordCount": 613,
+  "wordCount": 627,
   "datePublished" : "2017-04-08T00:00:00",
   "dateModified" : "2017-04-08T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -349,13 +349,17 @@ Pada bagian ini juga dapat memilih folder tempat SQL Server akan menyimpan Data 
 
 <h2 id="attach-dan-detach-database">Attach dan Detach Database</h2>
 
+<p>Attach/Detach database dapat digunakan untuk memindahkan file database ke media lainnya. Attach akan mengambil file .mdf dari sebuah database.
+Tetapi cara ini tidak direkomendasikan oleh Microsoft jika kita ingin memindahkan database pada perangkat yang sama [1].(<a href="https://docs.microsoft.com/en-us/sql/relational-databases/databases/attach-a-database?view=sql-server-2017">https://docs.microsoft.com/en-us/sql/relational-databases/databases/attach-a-database?view=sql-server-2017</a>)</p>
+
 <h3 id="attach-database">Attach Database</h3>
 
-<p>Attach/Detach database dapat digunakan untuk memindahkan file database ke media lainnya. Attach akan mengambil file .mdf dari sebuah database.<br />
-1. Klik kanan Folder Database di SSMS &gt; Pilih <code>Attach</code><br />
-2. Pilih Add untuk menambahkan file .mdf &gt; Pada bagian <code>Attach As</code> ubah nama database<br />
-3. Klik OK
-<img src="/img/sqlsrv/ins-sqlsrv11.png" alt="img" /></p>
+<ol>
+<li>Klik kanan Folder Database di SSMS &gt; Pilih <code>Attach</code><br /></li>
+<li>Pilih Add untuk menambahkan file .mdf &gt; Pada bagian <code>Attach As</code> ubah nama database<br /></li>
+<li>Klik OK
+<img src="/img/sqlsrv/ins-sqlsrv11.png" alt="img" /></li>
+</ol>
 
 <h3 id="detach-database">Detach Database</h3>
 
