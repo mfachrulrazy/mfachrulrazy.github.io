@@ -125,6 +125,18 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
     </item>
     
     <item>
+      <title>Install dan Konfigurasi Free NAS</title>
+      <link>https://mfachrulrazy.github.io/post/install-freenas/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-freenas/</guid>
+      <description>Free NAS merupakan salah satu sistem operasi yang khusus dibuat untuk keperluan Network Attached Storage. Free NAS merupakan turunan dari freeBSD yang mendukung CIFS, NFS, iSCSI, FTP, RSYN bersama dengan RAID.
+1. Untuk proses instalasi sendiri seperti instalasi linux pada umumnya, yang membutuhkan partisi root ( / ) dan swap.
+2. Pada saat masuk ke konfigurasi awal, bisa keluar terlebih dahulu.
+3. Untuk menambah user dan grup bisa melalui menu Account &amp;gt; Groups &amp;gt; Add Group dan Account &amp;gt; Users &amp;gt; Add User</description>
+    </item>
+    
+    <item>
       <title>Attach dam Import Database SQL Server</title>
       <link>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</link>
       <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>

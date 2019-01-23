@@ -8,8 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Posts" />
-  <meta name="twitter:title" content="Posts" />
+  <meta property="og:title" content="Install dan Konfigurasi Free NAS" />
+  <meta name="twitter:title" content="Install dan Konfigurasi Free NAS" />
+  <meta name="description" content="NAS gratis untuk keperluan kantor">
+  <meta property="og:description" content="NAS gratis untuk keperluan kantor">
+  <meta name="twitter:description" content="NAS gratis untuk keperluan kantor">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -30,12 +33,65 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/install-freenas/",
+          "name": "Install dan konfigurasi free n a s"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Install dan Konfigurasi Free NAS",
+  "description" : "Free NAS merupakan salah satu sistem operasi yang khusus dibuat untuk keperluan Network Attached Storage. Free NAS merupakan turunan dari freeBSD yang mendukung CIFS, NFS, iSCSI, FTP, RSYN bersama dengan RAID.
+1. Untuk proses instalasi sendiri seperti instalasi linux pada umumnya, yang membutuhkan partisi root ( / ) dan swap.
+2. Pada saat masuk ke konfigurasi awal, bisa keluar terlebih dahulu.
+3. Untuk menambah user dan grup bisa melalui menu Account &amp;gt; Groups &amp;gt; Add Group dan Account &amp;gt; Users &amp;gt; Add User",
+  "inLanguage" : "en",
+  "wordCount": 178,
+  "datePublished" : "2017-07-20T00:00:00",
+  "dateModified" : "2017-07-20T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-freenas/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Posts" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/" />
+<meta property="og:title" content="Install dan Konfigurasi Free NAS" />
+<meta property="og:description" content="NAS gratis untuk keperluan kantor">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-freenas/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:title" content="Install dan Konfigurasi Free NAS" />
+  <meta name="twitter:description" content="NAS gratis untuk keperluan kantor">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -43,7 +99,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-freenas/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -188,22 +244,26 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Posts</h1>
+                <h1>Install dan Konfigurasi Free NAS</h1>
               
               
+              
+                
+                  <h2 class="post-subheading">NAS gratis untuk keperluan kantor</h2>
+                
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on December 6, 2016
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 20, 2017
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
   
   
   
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Muhammad Fachrul Razy
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
   
   
 </span>
@@ -219,326 +279,116 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Free NAS merupakan salah satu sistem operasi yang khusus dibuat untuk keperluan <em>Network Attached Storage</em>. Free NAS merupakan turunan dari freeBSD yang mendukung CIFS, NFS, iSCSI, FTP, RSYN bersama dengan RAID.<br />
+1. Untuk proses instalasi sendiri seperti instalasi linux pada umumnya, yang membutuhkan partisi root ( / ) dan swap.<br />
+2. Pada saat masuk ke konfigurasi awal, bisa keluar terlebih dahulu.<br />
+3. Untuk menambah user dan grup bisa melalui menu <code>Account</code> &gt; <code>Groups</code> &gt; <code>Add Group</code> dan <code>Account</code> &gt; <code>Users</code> &gt; <code>Add User</code><br />
+4. Menambahkan storage dari menu <code>Storage</code> &gt; <code>Volumes</code> &gt; <code>Volume Manager</code>
+<img src="/img/freenas/freenas1.png" alt="img" />
+5. Buat dataset di <code>Storage</code> &gt; <code>Volumes</code> &gt; <code>/mnt/vol01</code> &gt; <code>Create Dataset</code>
+<img src="/img/freenas/freenas2.png" alt="img" />
+6. Konfigurasi dataset
+<img src="/img/freenas/freenas3.png" alt="img" />
+7. Kemudian konfigurasi permissions
+<img src="/img/freenas/freenas4.png" alt="img" />
+8. Buat kembali dataset dengan nama awalan NFS_ (untuk sistem UNIX).<br />
+9. Kemudian atur permission seperti gambar berikut
+<img src="/img/freenas/freenas5.png" alt="img" />
+10. Buat sharing NFS
+<img src="/img/freenas/freenas6.png" alt="img" />
+11. Masukkan <em>path</em> direktorinya
+<img src="/img/freenas/freenas7.png" alt="img" />
+12. Kemudian tambahkan juga untuk sharing OS Windows &gt; masuk di Add Windows SMB Share<br />
+13. Masukkan path seperti pada Unix, tetapi pilih yang CIFS<br />
+14.  Setelah selesai, jalankan pada windows explorer (satu network) dengan cara akses SMB</p>
+<div class="highlight"><pre class="chroma">\\alamat-server</pre></div>
+
         
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/del-notif-chrome/">
-                <h2 class="post-title">Menghapus Notifikasi Pop-Up Lidgrain pada Chrome</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on December 6, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/google-chrome/">google chrome</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/openssh-cent-7/">
-                <h2 class="post-title">Openssh Centos 7</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Install dan konfigurasi Openssh Centos 7
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 21, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/remote/">remote</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ssh/">ssh</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/belajar-vim/">
-                <h2 class="post-title">Belajar Vi dan Vim</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 10, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/code-editor/">code editor</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/about-cron/">
-                <h2 class="post-title">Berkenalan dengan Cron</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Apa itu Cron? atau Cron jobs?
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 5, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/cron/">cron</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command2/">
-                <h2 class="post-title">Linux Command Part 2</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Beberapa Perintah dasar Linux Part 2
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/">
-                <h2 class="post-title">Belajar Mysql Part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Belajar mysql dasar Part 1
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 7, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/mysql/">mysql</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command1/">
-                <h2 class="post-title">Linux Command Part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Beberapa Perintah dasar Linux Part 1
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 27, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-        </div>
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+            
+          </div>
         
-          <ul class="pager main-pager">
-            
-              <li class="previous">
-                <a href="/post/page/5/">&larr; Newer Posts</a>
-              </li>
-            
-            
-          </ul>
+
         
-      </div>
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-freenas%2f&amp;text=Install%20dan%20Konfigurasi%20Free%20NAS&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-freenas%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-freenas%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-freenas%2f&amp;title=Install%20dan%20Konfigurasi%20Free%20NAS" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/" data-toggle="tooltip" data-placement="top" title="Attach dam Import Database SQL Server">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/github-ssh/" data-toggle="tooltip" data-placement="top" title="SSH key Akun Github">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -597,7 +447,7 @@
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/post/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
