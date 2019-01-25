@@ -45,9 +45,8 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
  Pastikan git sudah terinstall pada PC
  Buat ssh key di cmd dengan
 &amp;gt; ssh-keygen Ssh key akan secara default masuk ke folder ~user/.ssh/*
- Ada 2 file yang dibuat seperti di linux yaitu id_rsa dan id_rsa.pub
- Copy isi file id_rsa.pub
- Masuk ke menu Settings &amp;gt; SSH and GPG Keys pada akun github</description>
+ Ada 2 file yang dibuat seperti di linux yaitu id_rsa (private key) dan id_rsa.pub (public key)
+ Copy isi file id_rsa.</description>
     </item>
     
     <item>

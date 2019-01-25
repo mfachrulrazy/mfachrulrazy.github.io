@@ -8,10 +8,25 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Django</title>
+      <link>https://mfachrulrazy.github.io/post/install-django/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-django/</guid>
+      <description>Setelah membahas mengenai virtual environment di python, kali ini akan dibahas mengenai instalasi django yaitu salah satu web framework yang berbasis python.
+ Pastikan python telah terinstall, dalam hal ini menggunakan python 3.
+ Python 3 sudah termasuk dengan pip3, dapat dicek dengan perintah
+&amp;gt; pip3 list
+ Setup virtual environment (menggunakan virtualenv-wrapper) &amp;gt; pip3 install virtualenvwrapper-win
+ Buat direktori kerja untuk django dan masuk ke dalam direktori tersebut.
+ Buat virtual environment contoh dengan nama djangomu &amp;gt; mkvirtualenv djangomu</description>
+    </item>
     
     <item>
       <title>Mengenal Virtual Environment Python</title>
