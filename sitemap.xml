@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-oracle-middleware/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/netmui-cent/</loc>
     <lastmod>2018-02-17T00:00:00+00:00</lastmod>
   </url>
@@ -410,6 +415,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/open-source/</loc>
     <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/oracle/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
