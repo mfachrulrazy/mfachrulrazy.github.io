@@ -71,7 +71,7 @@
  Cek prerequisite-nya  Pada jendela welcome klik next
  Kemudian skip auto updates klik next",
   "inLanguage" : "en",
-  "wordCount": 118,
+  "wordCount": 150,
   "datePublished" : "2018-03-20T00:00:00",
   "dateModified" : "2018-03-20T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -288,7 +288,9 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Instalasi Oracle Fusion Middleware untuk kebutuhan testing kantor. Persiapan yang diperlukan:</p>
+        
+
+<p>Instalasi Oracle Fusion Middleware untuk kebutuhan testing kantor. Persiapan yang diperlukan:</p>
 
 <ul>
 <li>Linux OS with GUI (dalam hal ini menggunakan Centos 7 GUI)<br /></li>
@@ -341,6 +343,17 @@
 <img src="/img/oracle/install-oracle10.png" alt="img" /></p></li>
 
 <li><p>Oracle akan menggunakan port 7101 dan 7102</p></li>
+</ol>
+
+<h3 id="install-sertifikat">Install Sertifikat</h3>
+
+<ol>
+<li>Salin file sertifikat ke direktori oracle<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ cp <span class="se">\*</span>.fin.us6.oraclecloud.com.cer ~/Oracle_Home/wlserver/server/lib/</code></pre></div></li>
+<li>Pindah ke direktori tempat file disalin<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> ~/Oracle_Home/wlserver/server/lib/</code></pre></div></li>
+<li>install sertifikat<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ keytool -import -file <span class="se">\*</span>.fin.us6.oraclecloud.com.cer -keystore DemoTrust.jks -storepass DemoTrustKeyStorePassPhrase</code></pre></div></li>
 </ol>
 
 
