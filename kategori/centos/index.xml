@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 17 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/centos/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install PHP 7.0 dan Modul SQL Server pada Centos</title>
+      <link>https://mfachrulrazy.github.io/post/install-php7/</link>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-php7/</guid>
+      <description>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.</description>
+    </item>
     
     <item>
       <title>Konfigurasi Nmtui Centos 7</title>

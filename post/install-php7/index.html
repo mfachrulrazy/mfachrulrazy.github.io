@@ -8,15 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Redirect Domain URL pada Nginx" />
-  <meta name="twitter:title" content="Redirect Domain URL pada Nginx" />
-  <meta name="description" content="Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di folder konfigurasi nginx ../conf.d/domainku.conf
-Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$request_uri; 4 ... 5 }
-301 berarti redirect secara permanen">
-  <meta property="og:description" content="Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di folder konfigurasi nginx ../conf.d/domainku.conf
-Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$request_uri; 4 ... 5 }
-301 berarti redirect secara permanen">
-  <meta name="twitter:description" content="Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di …">
+  <meta property="og:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
+  <meta name="twitter:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
+  <meta name="description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &#34;Development Tools&#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&#34;`scl enable php70 &#39;echo $X_SCLS&#39;`&#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &#39;extension=pdo_sqlsrv.">
+  <meta property="og:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &#34;Development Tools&#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&#34;`scl enable php70 &#39;echo $X_SCLS&#39;`&#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &#39;extension=pdo_sqlsrv.">
+  <meta name="twitter:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel …">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -52,8 +48,8 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/konfig-nginx/",
-          "name": "Redirect domain u r l pada nginx"
+          "@id": "https://mfachrulrazy.github.io/post/install-php7/",
+          "name": "Install p h p 7.0 dan modul s q l server pada centos"
         }
     }]
 }
@@ -64,17 +60,15 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
   "author": {
     "name" : "MFR"
   },
-  "headline": "Redirect Domain URL pada Nginx",
-  "description" : "Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di folder konfigurasi nginx ../conf.d/domainku.conf
-Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$request_uri; 4 ... 5 }
-301 berarti redirect secara permanen",
+  "headline": "Install PHP 7.0 dan Modul SQL Server pada Centos",
+  "description" : "Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.",
   "inLanguage" : "en",
-  "wordCount": 50,
-  "datePublished" : "2018-08-17T00:00:00",
-  "dateModified" : "2018-08-17T00:00:00",
+  "wordCount": 108,
+  "datePublished" : "2018-09-27T00:00:00",
+  "dateModified" : "2018-09-27T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/konfig-nginx/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-php7/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -88,15 +82,13 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
 }
 </script>
 
-<meta property="og:title" content="Redirect Domain URL pada Nginx" />
-<meta property="og:description" content="Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di folder konfigurasi nginx ../conf.d/domainku.conf
-Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$request_uri; 4 ... 5 }
-301 berarti redirect secara permanen">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-nginx/" />
+<meta property="og:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
+<meta property="og:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &#34;Development Tools&#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&#34;`scl enable php70 &#39;echo $X_SCLS&#39;`&#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &#39;extension=pdo_sqlsrv.">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-php7/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Redirect Domain URL pada Nginx" />
-  <meta name="twitter:description" content="Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di …">
+  <meta name="twitter:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
+  <meta name="twitter:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel …">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -104,7 +96,7 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-nginx/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-php7/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -249,7 +241,7 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Redirect Domain URL pada Nginx</h1>
+                <h1>Install PHP 7.0 dan Modul SQL Server pada Centos</h1>
               
               
               
@@ -257,7 +249,7 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 17, 2018
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 27, 2018
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -284,23 +276,39 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain <strong>domainku.com</strong> akan di-redirect ke <strong>domainbaru.com</strong>.
-Edit file konfigurasi di folder konfigurasi nginx <code>../conf.d/domainku.conf</code><br />
-Tambahkan baris berikut
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>server <span class="o">{</span>
-<span class="ln">2</span>    ...
-<span class="ln">3</span>    <span class="k">return</span> <span class="m">301</span> <span class="nv">$scheme</span>://domainbaru.com<span class="nv">$request_uri</span><span class="p">;</span>
-<span class="ln">4</span>    ...
-<span class="ln">5</span>    <span class="o">}</span></code></pre></div><br />
-301 berarti redirect secara permanen</p>
+        <ol>
+<li>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql</span></code></pre></div></li>
+<li>Install paket development tools
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y groups install &#34;Development Tools&#34;</span></code></pre></div></li>
+<li>Enable php 70
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># scl enable php70 bash</span></code></pre></div></li>
+<li>Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di <code>/etc/profile.d/php70.sh</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="c1"># create new</span>
+<span class="ln">2</span><span class="cp">#!/bin/bash
+</span><span class="ln">3</span><span class="cp"></span><span class="nb">source</span> /opt/remi/php70/enable
+<span class="ln">4</span><span class="nb">export</span> <span class="nv">X_SCLS</span><span class="o">=</span><span class="s2">&#34;`scl enable php70 &#39;echo </span><span class="nv">$X_SCLS</span><span class="s2">&#39;`&#34;</span></code></pre></div></li>
+<li>Install paket unixodbc-devel
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install unixODBC-devel</span></code></pre></div></li>
+<li>Install sql server dan pdo menggunakan pecl
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># pecl install sqlsrv pdo_sqlsrv</span></code></pre></div>
+<img src="/img/centos/php71.png" alt="img" /></li>
+<li>Tambahkan modul sql server dan pdo sql server di konfigurasi php
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># echo &#39;extension=pdo_sqlsrv.so&#39; &gt; /etc/opt/remi/php70/php.d/30-pdo_sqlsrv.ini</span>
+<span class="c1"># echo &#39;extension=sqlsrv.so&#39; &gt; /etc/opt/remi/php70/php.d/30-sqlsrv.ini</span></code></pre></div></li>
+</ol>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/web-server/">web server</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/nginx/">nginx</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
             
           </div>
         
@@ -315,28 +323,28 @@ Tambahkan baris berikut
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-nginx%2f&amp;text=Redirect%20Domain%20URL%20pada%20Nginx&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f&amp;text=Install%20PHP%207.0%20dan%20Modul%20SQL%20Server%20pada%20Centos&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-nginx%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-nginx%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-nginx%2f&amp;title=Redirect%20Domain%20URL%20pada%20Nginx" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f&amp;title=Install%20PHP%207.0%20dan%20Modul%20SQL%20Server%20pada%20Centos" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -357,12 +365,12 @@ Tambahkan baris berikut
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/install-hugo/" data-toggle="tooltip" data-placement="top" title="Install dan konfigurasi Hugo">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/konfig-nginx/" data-toggle="tooltip" data-placement="top" title="Redirect Domain URL pada Nginx">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/install-php7/" data-toggle="tooltip" data-placement="top" title="Install PHP 7.0 dan Modul SQL Server pada Centos">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/install-varnish-cent/" data-toggle="tooltip" data-placement="top" title="Install Varnish pada Centos 7">Next Post &rarr;</a>
             </li>
           
         </ul>

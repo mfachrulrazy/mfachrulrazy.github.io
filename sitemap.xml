@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-php7/</loc>
+    <lastmod>2018-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/konfig-nginx/</loc>
     <lastmod>2018-08-17T00:00:00+00:00</lastmod>
   </url>
@@ -326,7 +331,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/centos/</loc>
-    <lastmod>2018-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -451,7 +456,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/php/</loc>
-    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -503,7 +508,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/sql-server/</loc>
-    <lastmod>2017-07-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
