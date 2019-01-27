@@ -63,7 +63,7 @@
   "headline": "Belajar Mysql Part 1",
   "description" : "Login ke mysql dari terminal # mysql -u root -p Memilih database &amp;gt; USE MYSQL; Membuat user baru &amp;gt; CREATE USER &amp;#39;userbaru&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; Lihat nama user yang ingin diubah aksesnya &amp;gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &amp;gt; UPDATE USER SET HOST = &amp;#39;%&amp;#39; WHERE USER=&amp;#39;user&amp;#39;; Mengaktifkan perubahan &amp;gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &amp;gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &amp;gt; SET PASSWORD FOR &amp;#39;user&amp;#39;@&amp;#39;localhost&amp;#39; = PASSWORD(&amp;#39;password&amp;#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).",
   "inLanguage" : "en",
-  "wordCount": 328,
+  "wordCount": 352,
   "datePublished" : "2015-03-07T00:00:00",
   "dateModified" : "2015-03-07T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -338,6 +338,12 @@ Cara pertama hanya berlaku pada pengaturan aplikasi tertentu seperti centos web 
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cd ~</span>
 <span class="c1"># ls -al</span></code></pre></div>
 Kemudian cari file yang berkaitan dengan mysql cek dengan perintah <code>cat</code></p>
+
+<h3 id="menambahkan-maksimal-koneksi-di-mysql">Menambahkan maksimal koneksi di Mysql</h3>
+
+<p>Biasanya pada saat develop aplikasi terdapat error seperti ini
+<img src="/img/mysql/mysql1.png" alt="img" />
+Solusinya kita dapat menambahkan <code>max_connections</code>menjadi contoh <code>200</code> pada file <code>/etc/mysql/my.cnf</code></p>
 
 
         

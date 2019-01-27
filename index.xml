@@ -170,6 +170,17 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
     </item>
     
     <item>
+      <title>Pengaturan pada PHP</title>
+      <link>https://mfachrulrazy.github.io/post/about-php/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/about-php/</guid>
+      <description>Menambahkan maximum upload file di PHP Ubah ukuran maksimum file upload di php dapat dengan cara mengedit file /etc/php.ini 1 ... 2 post_max_size = 100M 3 ... Kemudian reload service php
+Menambahkan maximum eksekusi PHP Menambahkan maksimum eksekusi edit file /etc/php.ini 1 ... 2 max_execution_time = 500 3 ...
+Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi halaman webnya. Salah satu cara untuk memunculkannya adalah menginstall paket tambahan php yaitu php-gd.</description>
+    </item>
+    
+    <item>
       <title>SE Linux pada Centos</title>
       <link>https://mfachrulrazy.github.io/post/selinux-centos/</link>
       <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
