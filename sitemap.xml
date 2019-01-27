@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/selinux-centos/</loc>
+    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/err-loopback/</loc>
     <lastmod>2017-12-23T00:00:00+00:00</lastmod>
   </url>
@@ -471,6 +476,12 @@
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/rsync/</loc>
     <lastmod>2017-12-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/kategori/security/</loc>
+    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

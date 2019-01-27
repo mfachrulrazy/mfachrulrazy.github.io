@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/security/</link>
+    <description>Recent content in Security on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Thu, 25 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SE Linux pada Centos</title>
+      <link>https://mfachrulrazy.github.io/post/selinux-centos/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/selinux-centos/</guid>
+      <description>SE Linux atau Security Enhanced Linux adalah salah satu fitur keamanan baru dari linux. SE Linux mencakup pada penggunaan proses, user linux, dan juga file. Secara default SE linux berjalan dengan mode Enforcing (default).
+Untuk melihat konteks SE Linux dapat menggunakan perintah
+$ ls -Z SE Linux ada tiga mode, yaitu:
+ Enforcing : Mode ini akan menahan semua proses yang berlawanan dengan apa yang telah didefinisikan pada kebijakan (policy).</description>
+    </item>
+    
+  </channel>
+</rss>
