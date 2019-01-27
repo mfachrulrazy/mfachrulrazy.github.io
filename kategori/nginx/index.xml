@@ -25,6 +25,17 @@ Install Varnish 6 Install varnish terbaru versi 6 dengan cara compile dari sourc
     </item>
     
     <item>
+      <title>Redirect Domain URL pada Nginx</title>
+      <link>https://mfachrulrazy.github.io/post/konfig-nginx/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/konfig-nginx/</guid>
+      <description>Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di folder konfigurasi nginx ../conf.d/domainku.conf
+Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$request_uri; 4 ... 5 }
+301 berarti redirect secara permanen</description>
+    </item>
+    
+    <item>
       <title>Konfigurasi Amplify pada Nginx</title>
       <link>https://mfachrulrazy.github.io/post/amp-nginx/</link>
       <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
