@@ -53,6 +53,15 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
     </item>
     
     <item>
+      <title>List Servis pada Windows Server</title>
+      <link>https://mfachrulrazy.github.io/post/list-service-winsrv/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/list-service-winsrv/</guid>
+      <description>Melihat seluruh servis yang ada pada windows server. Buka power shell dan ketikkan perintah berikut &amp;gt; Get-Service Melihat servis dengan awalan s dan di-sort berdasarkan status (running/stopped) &amp;gt; Get-Service &amp;#34;s*&amp;#34; | Sort-Object status Untuk melihat servis yang sedang berjalan &amp;gt; net start</description>
+    </item>
+    
+    <item>
       <title>Install Linux dari Windows Store</title>
       <link>https://mfachrulrazy.github.io/post/linux-win-store/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>

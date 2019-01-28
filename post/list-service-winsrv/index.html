@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Error Remote Desktop Connection" />
-  <meta name="twitter:title" content="Error Remote Desktop Connection" />
-  <meta name="description" content="Error RDP CredSSP">
-  <meta property="og:description" content="Error RDP CredSSP">
-  <meta name="twitter:description" content="Error RDP CredSSP">
+  <meta property="og:title" content="List Servis pada Windows Server" />
+  <meta name="twitter:title" content="List Servis pada Windows Server" />
+  <meta name="description" content="Melihat servis-servis yang berjalan pada windows server">
+  <meta property="og:description" content="Melihat servis-servis yang berjalan pada windows server">
+  <meta name="twitter:description" content="Melihat servis-servis yang berjalan pada windows server">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/err-rdp-credssp/",
-          "name": "Error remote desktop connection"
+          "@id": "https://mfachrulrazy.github.io/post/list-service-winsrv/",
+          "name": "List servis pada windows server"
         }
     }]
 }
@@ -60,15 +60,15 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Error Remote Desktop Connection",
-  "description" : "Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor. Versi windows yang digunakan Penyebab Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini. Penyelesaian  Pertama Cek update dari pc client terlebih dahulu (yang me-remote)  Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.",
+  "headline": "List Servis pada Windows Server",
+  "description" : "Melihat seluruh servis yang ada pada windows server. Buka power shell dan ketikkan perintah berikut &amp;gt; Get-Service Melihat servis dengan awalan s dan di-sort berdasarkan status (running/stopped) &amp;gt; Get-Service &amp;#34;s*&amp;#34; | Sort-Object status Untuk melihat servis yang sedang berjalan &amp;gt; net start",
   "inLanguage" : "en",
-  "wordCount": 104,
-  "datePublished" : "2018-05-19T00:00:00",
-  "dateModified" : "2018-05-19T00:00:00",
+  "wordCount": 42,
+  "datePublished" : "2018-05-18T00:00:00",
+  "dateModified" : "2018-05-18T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/err-rdp-credssp/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/list-service-winsrv/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -82,13 +82,13 @@
 }
 </script>
 
-<meta property="og:title" content="Error Remote Desktop Connection" />
-<meta property="og:description" content="Error RDP CredSSP">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/err-rdp-credssp/" />
+<meta property="og:title" content="List Servis pada Windows Server" />
+<meta property="og:description" content="Melihat servis-servis yang berjalan pada windows server">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/list-service-winsrv/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Error Remote Desktop Connection" />
-  <meta name="twitter:description" content="Error RDP CredSSP">
+  <meta name="twitter:title" content="List Servis pada Windows Server" />
+  <meta name="twitter:description" content="Melihat servis-servis yang berjalan pada windows server">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -96,7 +96,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/err-rdp-credssp/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/list-service-winsrv/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -241,19 +241,19 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Error Remote Desktop Connection</h1>
+                <h1>List Servis pada Windows Server</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Error RDP CredSSP</h2>
+                  <h2 class="post-subheading">Melihat servis-servis yang berjalan pada windows server</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 19, 2018
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 18, 2018
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -280,35 +280,20 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<p>Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor.
-<img src="/img/windows/rdp1.png" alt="img" />
-Versi windows yang digunakan
-<img src="/img/windows/rdp2.png" alt="img" /></p>
-
-<h3 id="penyebab">Penyebab</h3>
-
-<p>Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini.
-<img src="/img/windows/rdp3.png" alt="img" /></p>
-
-<h3 id="penyelesaian">Penyelesaian</h3>
-
-<ol>
-<li>Pertama Cek update dari pc client terlebih dahulu (yang me-remote)
-<img src="/img/windows/rdp4.png" alt="img" /></li>
-<li>Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.</li>
-<li>Penyelesaian sementara, bisa menggunakan ketikkan perintah berikut dari command prompt (administrator)
-<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">REG</span>  <span class="n">ADD</span> <span class="n">HKLM</span><span class="p">\</span><span class="n">Software</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">CurrentVersion</span><span class="p">\</span><span class="n">Policies</span><span class="p">\</span><span class="n">System</span><span class="p">\</span><span class="n">CredSSP</span><span class="p">\</span><span class="n">Parameters</span><span class="p">\</span> <span class="p">/</span><span class="n">v</span> <span class="n">AllowEncryptionOracle</span> <span class="p">/</span><span class="n">t</span> <span class="n">REG_DWORD</span> <span class="p">/</span><span class="n">d</span> <span class="n">2</span></code></pre></div></li>
-</ol>
+        <p>Melihat seluruh servis yang ada pada windows server. Buka power shell dan ketikkan perintah berikut
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> Get-Service</code></pre></div>
+Melihat servis dengan awalan <strong>s</strong> dan di-sort berdasarkan status (running/stopped)
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> Get-Service <span class="s2">&#34;s*&#34;</span> <span class="p">|</span> Sort-Object status</code></pre></div>
+Untuk melihat servis yang sedang berjalan
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> net start</code></pre></div></p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/remote/">remote</a>&nbsp;
-            
               <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
             
           </div>
         
@@ -323,28 +308,28 @@ Versi windows yang digunakan
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-rdp-credssp%2f&amp;text=Error%20Remote%20Desktop%20Connection&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flist-service-winsrv%2f&amp;text=List%20Servis%20pada%20Windows%20Server&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-rdp-credssp%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flist-service-winsrv%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-rdp-credssp%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flist-service-winsrv%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ferr-rdp-credssp%2f&amp;title=Error%20Remote%20Desktop%20Connection" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2flist-service-winsrv%2f&amp;title=List%20Servis%20pada%20Windows%20Server" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -365,12 +350,12 @@ Versi windows yang digunakan
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/list-service-winsrv/" data-toggle="tooltip" data-placement="top" title="List Servis pada Windows Server">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/venv-python/" data-toggle="tooltip" data-placement="top" title="Mengenal Virtual Environment Python">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/install-django/" data-toggle="tooltip" data-placement="top" title="Install Django">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/err-rdp-credssp/" data-toggle="tooltip" data-placement="top" title="Error Remote Desktop Connection">Next Post &rarr;</a>
             </li>
           
         </ul>
