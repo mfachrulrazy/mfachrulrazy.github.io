@@ -131,6 +131,15 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
     </item>
     
     <item>
+      <title>Install Maria DB pada Ubuntu 16.04</title>
+      <link>https://mfachrulrazy.github.io/post/install-mariadb-cent/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-mariadb-cent/</guid>
+      <description>Tambahkan paket software properties $ sudo apt-get -y install software-properties-common Tambahkan key $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 Tambahkan repository $ sudo add-apt-repository &amp;#39;deb [arch=amd64,i386,ppc64el] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.2/ubuntu xenial main&amp;#39; Update dan install mariadb $ sudo apt-get update $ sudo apt-get install mariadb-server mariadb-client</description>
+    </item>
+    
+    <item>
       <title>Troubleshoot Script Email PHP</title>
       <link>https://mfachrulrazy.github.io/post/tb-php-email/</link>
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
