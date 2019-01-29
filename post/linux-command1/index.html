@@ -64,7 +64,7 @@
   "description" : "Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
  Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.",
   "inLanguage" : "en",
-  "wordCount": 220,
+  "wordCount": 230,
   "datePublished" : "2015-02-27T00:00:00",
   "dateModified" : "2015-02-27T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -320,6 +320,8 @@
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># netstat -tulpn</span></code></pre></div></li>
 <li>Cek harddisk jika terdapat badsector
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># badblocks -v /dev/sda1 &gt; badsectors.txt</span></code></pre></div></li>
+<li>Menambah user ke grup
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># usermod –a –G apache itkalla</span></code></pre></div></li>
 </ol>
 
 
