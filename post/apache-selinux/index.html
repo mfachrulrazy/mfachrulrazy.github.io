@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="All pages in the kategori #Security" />
-  <meta name="twitter:title" content="All pages in the kategori #Security" />
-  <meta name="description" content="All pages in the kategori #Security, such as: SE Linux pada Centos">
-  <meta property="og:description" content="All pages in the kategori #Security, such as: SE Linux pada Centos">
-  <meta name="twitter:description" content="All pages in the kategori #Security, such as: SE Linux pada Centos">
+  <meta property="og:title" content="Apache dan SE Linux" />
+  <meta name="twitter:title" content="Apache dan SE Linux" />
+  <meta name="description" content="Keamanan SE Linux terhadap Apache">
+  <meta property="og:description" content="Keamanan SE Linux terhadap Apache">
+  <meta name="twitter:description" content="Keamanan SE Linux terhadap Apache">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -33,12 +33,63 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/apache-selinux/",
+          "name": "Apache dan s e linux"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Apache dan SE Linux",
+  "description" : "Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:
+# setsebool httpd_can_network_connect_db=1 Jika ingin persistent pada saat server di-restart tambahkan opsi -P # setsebool -P httpd_can_network_connect_db on Cek hasil konfigurasi # getsebool httpd_can_network_connect_db",
+  "inLanguage" : "en",
+  "wordCount": 38,
+  "datePublished" : "2017-08-29T00:00:00",
+  "dateModified" : "2017-08-29T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/apache-selinux/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Security" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/kategori/security/" />
+<meta property="og:title" content="Apache dan SE Linux" />
+<meta property="og:description" content="Keamanan SE Linux terhadap Apache">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/apache-selinux/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Security" />
+  <meta name="twitter:title" content="Apache dan SE Linux" />
+  <meta name="twitter:description" content="Keamanan SE Linux terhadap Apache">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -46,7 +97,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/kategori/security/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/apache-selinux/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -189,86 +240,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="kategori-heading">
+            <div class="post-heading">
               
-                <h1>Security</h1>
-              
-              
-                <hr class="small">
+                <h1>Apache dan SE Linux</h1>
               
               
               
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-    
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/selinux-centos/">
-                <h2 class="post-title">SE Linux pada Centos</h2>
-
                 
-                  <h3 class="post-subtitle">
-                    Berkenalan dengan fitur keamanan baru pada linux
-                  </h3>
+                  <h2 class="post-subheading">Keamanan SE Linux terhadap Apache</h2>
                 
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on January 25, 2018
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
               
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/security/">security</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                </div>
               
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/apache-selinux/">
-                <h2 class="post-title">Apache dan SE Linux</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Keamanan SE Linux terhadap Apache
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
                 <span class="post-meta">
   
   
@@ -285,27 +267,112 @@
 </span>
 
 
-              </p>
-
               
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/web-server/">web server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/apache/">apache</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/security/">security</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
+            </div>
+          </div>
         </div>
-        
       </div>
     </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># setsebool httpd_can_network_connect_db=1</span></code></pre></div>
+Jika ingin persistent pada saat server di-restart tambahkan opsi -P
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># setsebool -P httpd_can_network_connect_db on</span></code></pre></div>
+Cek hasil konfigurasi
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># getsebool httpd_can_network_connect_db</span></code></pre></div></p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/web-server/">web server</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/apache/">apache</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/security/">security</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fapache-selinux%2f&amp;text=Apache%20dan%20SE%20Linux&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fapache-selinux%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fapache-selinux%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fapache-selinux%2f&amp;title=Apache%20dan%20SE%20Linux" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
   </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/dns-flood/" data-toggle="tooltip" data-placement="top" title="DNS Flooding di Mikrotik">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/tb-web-server1/" data-toggle="tooltip" data-placement="top" title="Troubleshoot Web Server I">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
 
     <footer>
   <div class="container">
@@ -364,7 +431,7 @@
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/kategori/security/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>

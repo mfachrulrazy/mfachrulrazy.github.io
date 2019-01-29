@@ -25,5 +25,15 @@ $ ls -Z SE Linux ada tiga mode, yaitu:
  Enforcing : Mode ini akan menahan semua proses yang berlawanan dengan apa yang telah didefinisikan pada kebijakan (policy).</description>
     </item>
     
+    <item>
+      <title>Apache dan SE Linux</title>
+      <link>https://mfachrulrazy.github.io/post/apache-selinux/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/apache-selinux/</guid>
+      <description>Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:
+# setsebool httpd_can_network_connect_db=1 Jika ingin persistent pada saat server di-restart tambahkan opsi -P # setsebool -P httpd_can_network_connect_db on Cek hasil konfigurasi # getsebool httpd_can_network_connect_db</description>
+    </item>
+    
   </channel>
 </rss>

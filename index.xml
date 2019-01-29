@@ -422,6 +422,16 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
     </item>
     
     <item>
+      <title>Apache dan SE Linux</title>
+      <link>https://mfachrulrazy.github.io/post/apache-selinux/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/apache-selinux/</guid>
+      <description>Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:
+# setsebool httpd_can_network_connect_db=1 Jika ingin persistent pada saat server di-restart tambahkan opsi -P # setsebool -P httpd_can_network_connect_db on Cek hasil konfigurasi # getsebool httpd_can_network_connect_db</description>
+    </item>
+    
+    <item>
       <title>DNS Flooding di Mikrotik</title>
       <link>https://mfachrulrazy.github.io/post/dns-flood/</link>
       <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
@@ -488,7 +498,7 @@ File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang
     </item>
     
     <item>
-      <title>Attach dam Import Database SQL Server</title>
+      <title>Attach dan Import Database SQL Server</title>
       <link>https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/</link>
       <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>

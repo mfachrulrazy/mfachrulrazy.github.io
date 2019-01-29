@@ -34,6 +34,18 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
     </item>
     
     <item>
+      <title>SE Linux pada Centos</title>
+      <link>https://mfachrulrazy.github.io/post/selinux-centos/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/selinux-centos/</guid>
+      <description>SE Linux atau Security Enhanced Linux adalah salah satu fitur keamanan baru dari linux. SE Linux mencakup pada penggunaan proses, user linux, dan juga file. Secara default SE linux berjalan dengan mode Enforcing (default).
+Untuk melihat konteks SE Linux dapat menggunakan perintah
+$ ls -Z SE Linux ada tiga mode, yaitu:
+ Enforcing : Mode ini akan menahan semua proses yang berlawanan dengan apa yang telah didefinisikan pada kebijakan (policy).</description>
+    </item>
+    
+    <item>
       <title>Troubleshoot Update Repo Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/tb-update-cent/</link>
       <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
