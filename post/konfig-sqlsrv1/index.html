@@ -65,7 +65,7 @@
 Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
 1. Jalankan file master instalasi sql server (biasanya berbentuk iso) &amp;gt; Pilih bagian Installation &amp;gt; Pilih New SQL Server stand-alone&amp;hellip;.. 2. Bagian Product Key, masukan lisensi atau produk sql server yang diinginkan &amp;gt; klik Next 3.",
   "inLanguage" : "en",
-  "wordCount": 627,
+  "wordCount": 642,
   "datePublished" : "2017-04-08T00:00:00",
   "dateModified" : "2017-04-08T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -258,7 +258,7 @@ Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
   <i class="fas fa-calendar"></i>&nbsp;Posted on April 8, 2017
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
   
   
   
@@ -292,7 +292,7 @@ Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.<br
 3. Setelah itu masuk di bagian <strong>License Terms</strong> &gt; Centang <strong>I accept&hellip;.</strong> &gt; klik <strong>Next</strong><br />
 4. Pengecekan <strong>Global Rule</strong> &gt; klik <strong>Next</strong><br />
 5. Pada bagian <strong>Microsoft Update</strong> dan <strong>Product Update</strong> bisa dihiraukan jika ingin menonaktfikan update otomatis sql server.<br />
-6. Bagian <strong>Install Setup Files</strong> dan <strong>Install Rules</strong> akan melakukan pengecekan sebelum instalasi &gt; klik <strong>Next</strong>
+6. Bagian <strong>Install Setup Files</strong> dan <strong>Install Rules</strong> akan melakukan pengecekan syarat-syarat sebelum instalasi &gt; klik <strong>Next</strong>
 <img src="/img/sqlsrv/ins-sqlsrv2.png" alt="img" />
 7. Bagian <strong>Feature Selection</strong> pilih fitur yang diinginkan. Dalam hal ini:</p>
 
@@ -308,7 +308,8 @@ Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.<br
 10. Bagian Database Engine Configuration pilih metode autentikasi pilih <strong>Mixed Mode</strong> dan masukkan password. Setelah itu pilih <strong>Add Current User</strong> (untuk menambahkan user windows yang sedang login).<br />
 Pada bagian ini juga dapat memilih folder tempat SQL Server akan menyimpan Data (.mdf dan .ldf) secara default.
 <img src="/img/sqlsrv/ins-sqlsrv3.png" alt="img" />
-11. Setelah itu rangkuman fitur yang akan diinstall kemudian pilih Next hingga selesai. SQL server telah berhasil diinstall.</p>
+11. Setelah itu rangkuman fitur yang akan diinstall kemudian pilih <code>Next</code> hingga selesai. SQL server telah berhasil diinstall.<br />
+12. Selanjutnya buat <em>rule firewall</em> untuk mengizinkan sql server koneksi keluar maupun ke dalam.</p>
 
 <h2 id="buat-database">Buat Database</h2>
 
