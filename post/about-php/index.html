@@ -65,7 +65,7 @@
 Menambahkan maximum eksekusi PHP Menambahkan maksimum eksekusi edit file /etc/php.ini 1 ... 2 max_execution_time = 500 3 ...
 Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi halaman webnya. Salah satu cara untuk memunculkannya adalah menginstall paket tambahan php yaitu php-gd.",
   "inLanguage" : "en",
-  "wordCount": 192,
+  "wordCount": 228,
   "datePublished" : "2018-01-25T00:00:00",
   "dateModified" : "2018-01-25T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -258,7 +258,7 @@ Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi 
   <i class="fas fa-calendar"></i>&nbsp;Posted on January 25, 2018
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -309,12 +309,22 @@ Kemudian reload service php</p>
 <p>Sejak menggunakan php 70, paket yang diinstall harus berbeda, karena php bawaan dari centos 7 adalah php 5.4.
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install php70u-mbstring</span></code></pre></div></p>
 
-<h3 id="codeigniter-tidak-dapat-diakses">CodeIgniter tidak dapat diakses</h3>
+<h3 id="web-codeigniter-tidak-dapat-diakses">Web CodeIgniter tidak dapat diakses</h3>
 
 <p>Adakalanya sebuah website yang dibangun di platform yang berbeda dengan server production akan mengakibatkan error.<br />
 Sebagai contoh, developer membangun websitenya di OS Windows, sedangkan server production menggunakan OS Centos. Akibatnya, kadangkala website berjalan normal di platform developer karena salah satunya adalah windows tidak <em>case sensitive</em> sedangkan pada server prodcution bisa berjalan.<br />
 Begitu pula di aplikasi codeigniter yang case sensitive, oleh karenanya ketika salah satu website kantor tidak berjalan, penyebabnya adalah penamanaan modules tidak sesuai.<br />
 Biasanya modul codeigniter diletakkan di folder <code>website/apps/backend/modules</code> tidak diawali dengan huruf besar.</p>
+
+<h3 id="php-error-deprecated-and-warning">PHP Error Deprecated and Warning</h3>
+
+<p>Salah satu website tidak dapat berjalan dan pada saat pengecekan proses php, muncul error
+<img src="/img/centos/err-php1.png" alt="img" /></p>
+
+<ul>
+<li><strong>Error Warning</strong> : Dapat membuat komentar pada <code>register_globals</code> di <code>/etc/php.ini</code><br /></li>
+<li><strong>Error Deprecated</strong> : Upgrade versi php</li>
+</ul>
 
 
         

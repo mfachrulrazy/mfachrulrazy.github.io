@@ -61,10 +61,10 @@
     "name" : "MFR"
   },
   "headline": "Linux Command Part 2",
-  "description" : "Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;.....
+  "description" : "Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;..... Maintenance IPtables # ifconfig eth0 | grep inet | awk &amp;#39;{ print $2 }&amp;#39; # iptables -I INPUT -p tcp —dport 80 -j ACCEPT # service iptables save
 Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall",
   "inLanguage" : "en",
-  "wordCount": 269,
+  "wordCount": 318,
   "datePublished" : "2015-08-31T00:00:00",
   "dateModified" : "2015-08-31T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -290,7 +290,11 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
 Untuk menambah <em>iptables</em>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -A .....&lt;rule_iptable&gt;.....</code></pre></div>
 Untuk menghapus <em>iptables</em>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -D .....&lt;rule_iptable&gt;.....</code></pre></div></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo iptables -D .....&lt;rule_iptable&gt;.....</code></pre></div>
+Maintenance IPtables
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ifconfig eth0 | grep inet | awk &#39;{ print $2 }&#39;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># iptables -I INPUT -p tcp —dport 80 -j ACCEPT</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># service iptables save</span></code></pre></div></p>
 
 <h3 id="mengahpus-paket-instalasi">Mengahpus paket Instalasi</h3>
 
@@ -345,6 +349,11 @@ Untuk melihat sistem informasi
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo dmidecode -t <span class="m">1</span></code></pre></div>
 Untuk melihat hanya service tag
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo dmidecode -s system-serial-number</code></pre></div></p>
+
+<h3 id="menyalin-file-dengan-scp">Menyalin file dengan SCP</h3>
+
+<p>Salah satu aplikasi menyalin file antar server, bisa menggunakan tools <strong>SCP</strong>. Contoh
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># scp -v /var/www/html/* user@x.x.x.x:/destinasi_baru</span></code></pre></div></p>
 
 
         
