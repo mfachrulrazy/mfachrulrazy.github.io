@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install SNMP Linux</title>
+      <link>https://mfachrulrazy.github.io/post/install-snmp-linux/</link>
+      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-snmp-linux/</guid>
+      <description>Centos  Install paket snmp dan pendukungnya # yum install net-snmp net-snmp-utils Kemudian buat backup dan edit file /etc/snmp/snmpd.conf 1# Map &amp;#39;idv90we3rnov90wer&amp;#39; community to the &amp;#39;ConfigUser&amp;#39; 2# Map &amp;#39;209ijvfwer0df92jd&amp;#39; community to the &amp;#39;AllUser&amp;#39; 3# sec.name source community 4com2sec ConfigUser default lakikallasrvc 5com2sec AllUser default lakikallasrv 6# Map &amp;#39;ConfigUser&amp;#39; to &amp;#39;ConfigGroup&amp;#39; for SNMP Version 2c 7# Map &amp;#39;AllUser&amp;#39; to &amp;#39;AllGroup&amp;#39; for SNMP Version 2c 8# sec.model sec.name 9group ConfigGroup v2c ConfigUser 10group AllGroup v2c AllUser 11# Define &amp;#39;SystemView&amp;#39;, which includes everything under .</description>
+    </item>
     
     <item>
       <title>Install Vsftp Ubuntu 16.04</title>

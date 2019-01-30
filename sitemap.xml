@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-snmp-linux/</loc>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/install-hugo/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
   </url>
@@ -418,7 +423,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/linux/</loc>
-    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -436,7 +441,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/monitoring/</loc>
-    <lastmod>2017-12-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
