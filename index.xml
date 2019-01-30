@@ -364,8 +364,7 @@ Dengan catatan, jika mengaktifkan mode ini, akan mengurangi keamanan pada Window
       <guid>https://mfachrulrazy.github.io/post/repo-cent-7/</guid>
       <description>Melihat repository yang aktif pada centos
 # yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
+# yum repolist enable # yum repolist disable # yum repolist all Melihat repository dengan nama ‘repoA-id’
 # yum --disablerepo=&amp;#34;*&amp;#34; --enablerepo=&amp;#34;repoA-id&amp;#34; list available Cek epel repository
 # yum repolist | grep &amp;#34;^epel\|repo id&amp;#34; Hapus repository
 # yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository</description>
@@ -750,7 +749,7 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/page/ref/</guid>
       <description> Berikut daftar Situs yang menjadi referensi saya dalam seluruh postingan di Blog ini.
-Internasional  Linode Digital Ocean Rackspace Mysql Linoxide How to Lamp Tecmint Red Hat Cyberciti Launchpad Liquid Web Zabbix Nagios Linux host Tech Republic Easy Engine Nginx Proxmox Barry Hubbard Microsoft Docs Microsoft How to geek  Indonesia  linux kesehatan kang erik thinkxfree Mikrotik  </description>
+Internasional  Linode Digital Ocean Rackspace Mysql Linoxide How to Lamp Tecmint Red Hat Cyberciti Launchpad Liquid Web Zabbix Nagios Linux host Tech Republic Easy Engine Nginx Proxmox Barry Hubbard Microsoft Docs Microsoft How to geek Shell Hacks  Indonesia  linux kesehatan kang erik thinkxfree Mikrotik  </description>
     </item>
     
     <item>

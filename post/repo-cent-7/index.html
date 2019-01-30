@@ -12,15 +12,13 @@
   <meta name="twitter:title" content="Repository Centos 7" />
   <meta name="description" content="Melihat repository yang aktif pada centos
 # yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
+# yum repolist enable # yum repolist disable # yum repolist all Melihat repository dengan nama ‘repoA-id’
 # yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available Cek epel repository
 # yum repolist | grep &#34;^epel\|repo id&#34; Hapus repository
 # yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository">
   <meta property="og:description" content="Melihat repository yang aktif pada centos
 # yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
+# yum repolist enable # yum repolist disable # yum repolist all Melihat repository dengan nama ‘repoA-id’
 # yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available Cek epel repository
 # yum repolist | grep &#34;^epel\|repo id&#34; Hapus repository
 # yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository">
@@ -77,13 +75,12 @@ Melihat repository dengan nama ‘repoA-id’
   "headline": "Repository Centos 7",
   "description" : "Melihat repository yang aktif pada centos
 # yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
+# yum repolist enable # yum repolist disable # yum repolist all Melihat repository dengan nama ‘repoA-id’
 # yum --disablerepo=&amp;#34;*&amp;#34; --enablerepo=&amp;#34;repoA-id&amp;#34; list available Cek epel repository
 # yum repolist | grep &amp;#34;^epel\|repo id&amp;#34; Hapus repository
 # yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository",
   "inLanguage" : "en",
-  "wordCount": 200,
+  "wordCount": 250,
   "datePublished" : "2017-09-21T00:00:00",
   "dateModified" : "2017-09-21T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -105,8 +102,7 @@ Melihat repository dengan nama ‘repoA-id’
 <meta property="og:title" content="Repository Centos 7" />
 <meta property="og:description" content="Melihat repository yang aktif pada centos
 # yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
-# yum repolist enable # yum repolist disable # yum repolist all
-Melihat repository dengan nama ‘repoA-id’
+# yum repolist enable # yum repolist disable # yum repolist all Melihat repository dengan nama ‘repoA-id’
 # yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available Cek epel repository
 # yum repolist | grep &#34;^epel\|repo id&#34; Hapus repository
 # yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository">
@@ -280,7 +276,7 @@ Melihat repository dengan nama ‘repoA-id’
   <i class="fas fa-calendar"></i>&nbsp;Posted on September 21, 2017
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -313,7 +309,7 @@ Melihat repository dengan nama ‘repoA-id’
 Melihat repository yang enable/disable<br />
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum repolist enable</span>
 <span class="c1"># yum repolist disable</span>
-<span class="c1"># yum repolist all</span></code></pre></div><br />
+<span class="c1"># yum repolist all</span></code></pre></div>
 Melihat repository dengan nama ‘repoA-id’<br />
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum --disablerepo=&#34;*&#34; --enablerepo=&#34;repoA-id&#34; list available</span></code></pre></div>
 Cek epel repository<br />
@@ -334,15 +330,26 @@ Install dan aktifkan EPEL dan Remi repository<br />
 
 <p>Diawal instalasi centos 7 (minimal install) terkadang ada paket-paket yang tidak dapat didownload.
 <img src="/img/repo-cent/repo-cent2.png" alt="img1" />
-Biasanya centos 7 membutuhkan <strong>EPEL (Extra Packages for Enterprise Linux)</strong> - Proyek Repositori dari tim Fedora yang open source dan berbasis komunitas yang menyediakan 100% kualitas tinggi paket software add-on untuk distribusi LinuxRHEL (Red Hat Enterprise Linux), CentOS, and Scientific Linux.<br />
+Biasanya centos 7 membutuhkan <strong>EPEL (Extra Packages for Enterprise Linux)</strong> - Proyek Repositori dari tim Fedora yang open source dan berbasis komunitas yang menyediakan 100% kualitas tinggi paket software add-on untuk distribusi Linux RHEL (Red Hat Enterprise Linux), CentOS, and Scientific Linux.<br />
 1. Enable EPEL Repository Centos 7
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-10.noarch.rpm</span>
-<span class="c1"># rpm -ivh epel-release-7-10.noarch.rpm</span></code></pre></div>
-2. Cek repository
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum repolist</span></code></pre></div>
+<span class="c1"># rpm -ivh epel-release-7-10.noarch.rpm</span>
+Atau yang otomatis
+<span class="c1"># yum install epel-release</span></code></pre></div>
+2. Verifikasi EPEL repo telah terinstall
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum repolist | grep &#34;^epel\|repo id&#34;</span></code></pre></div>
 3. Jika masih terdapat error pada saat update paket di centos, maka lakukan clean pada paketnya.
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rm -fr /var/cache/yum/*</span>
 <span class="c1"># yum clean all</span></code></pre></div></p>
+
+<h3 id="menghapus-epel-repository">Menghapus EPEL Repository</h3>
+
+<p>Untuk menghapus EPEL Repo bisa dengan menggunakan perintah <code>yum</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum remove epel-release</span></code></pre></div>
+Menemukan paket EPEL dengan <code>rpm</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -qa | grep epel</span></code></pre></div>
+Dan hapus paket EPEL
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -e epel-release-x-x.noarch</span></code></pre></div></p>
 
 
         
