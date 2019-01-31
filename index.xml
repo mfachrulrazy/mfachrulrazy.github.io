@@ -75,6 +75,16 @@ Tambahkan baris berikut 1server { 2 ... 3 return 301 $scheme://domainbaru.com$re
     </item>
     
     <item>
+      <title>Belajar SQL Server Part 2</title>
+      <link>https://mfachrulrazy.github.io/post/konfig-sqlsrv2/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/konfig-sqlsrv2/</guid>
+      <description>Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
+Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill + &amp;#39;kill &amp;#39; + CONVERT(varchar(5), spid) + &amp;#39;;&amp;#39; FROM master..sysprocesses WHERE dbid = db_id(‘NamaDatabase’) and spid &amp;gt; 50 and spid &amp;lt;&amp;gt; @@spid EXEC(@kill);</description>
+    </item>
+    
+    <item>
       <title>Install SNMP Linux</title>
       <link>https://mfachrulrazy.github.io/post/install-snmp-linux/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>

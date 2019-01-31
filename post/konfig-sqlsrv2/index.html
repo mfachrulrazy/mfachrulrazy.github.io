@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="All pages in the kategori #Database" />
-  <meta name="twitter:title" content="All pages in the kategori #Database" />
-  <meta name="description" content="All pages in the kategori #Database, such as: Belajar SQL Server Part 2">
-  <meta property="og:description" content="All pages in the kategori #Database, such as: Belajar SQL Server Part 2">
-  <meta name="twitter:description" content="All pages in the kategori #Database, such as: Belajar SQL Server Part 2">
+  <meta property="og:title" content="Belajar SQL Server Part 2" />
+  <meta name="twitter:title" content="Belajar SQL Server Part 2" />
+  <meta name="description" content="SQL Server dasar Part 2">
+  <meta property="og:description" content="SQL Server dasar Part 2">
+  <meta name="twitter:description" content="SQL Server dasar Part 2">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -33,12 +33,63 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/konfig-sqlsrv2/",
+          "name": "Belajar s q l server part 2"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Belajar SQL Server Part 2",
+  "description" : "Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
+Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill &#43; &amp;#39;kill &amp;#39; &#43; CONVERT(varchar(5), spid) &#43; &amp;#39;;&amp;#39; FROM master..sysprocesses WHERE dbid = db_id(‘NamaDatabase’) and spid &amp;gt; 50 and spid &amp;lt;&amp;gt; @@spid EXEC(@kill);",
+  "inLanguage" : "en",
+  "wordCount": 81,
+  "datePublished" : "2018-07-21T00:00:00",
+  "dateModified" : "2018-07-21T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/konfig-sqlsrv2/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Database" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/kategori/database/" />
+<meta property="og:title" content="Belajar SQL Server Part 2" />
+<meta property="og:description" content="SQL Server dasar Part 2">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-sqlsrv2/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Database" />
+  <meta name="twitter:title" content="Belajar SQL Server Part 2" />
+  <meta name="twitter:description" content="SQL Server dasar Part 2">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -46,7 +97,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/kategori/database/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-sqlsrv2/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -189,42 +240,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="kategori-heading">
+            <div class="post-heading">
               
-                <h1>Database</h1>
-              
-              
-                <hr class="small">
+                <h1>Belajar SQL Server Part 2</h1>
               
               
               
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-    
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/konfig-sqlsrv2/">
-                <h2 class="post-title">Belajar SQL Server Part 2</h2>
-
                 
-                  <h3 class="post-subtitle">
-                    SQL Server dasar Part 2
-                  </h3>
+                  <h2 class="post-subheading">SQL Server dasar Part 2</h2>
                 
-              </a>
-
-              <p class="post-meta">
+              
+              
                 <span class="post-meta">
   
   
@@ -241,237 +267,119 @@
 </span>
 
 
-              </p>
-
               
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/install-mysql-cent/">
-                <h2 class="post-title">Install Mysql Centos 7</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Install dan uninstall mysql community pada Centos 7
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 2, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/mysql/">mysql</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/install-mariadb-cent/">
-                <h2 class="post-title">Install Maria DB pada Ubuntu 16.04</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 18, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/attach-imp-sqlsrv/">
-                <h2 class="post-title">Attach dan Import Database SQL Server</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Perbedaan attach dan import Database
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 14, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/konfig-sqlsrv1/">
-                <h2 class="post-title">Belajar SQL Server Part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Sintaks SQL Server dasar Part 1
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on April 8, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/konfig-mysql1/">
-                <h2 class="post-title">Belajar Mysql Part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Belajar mysql dasar Part 1
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 7, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/mysql/">mysql</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
+            </div>
+          </div>
         </div>
-        
       </div>
     </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.</p>
+
+<h3 id="menghapus-database-sql">Menghapus Database SQL</h3>
+
+<p>Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio.
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">IF</span> <span class="k">EXISTS</span> <span class="p">(</span><span class="k">SELECT</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">master</span><span class="p">.</span><span class="n">dbo</span><span class="p">.</span><span class="n">sysdatabases</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="n">N</span><span class="s1">&#39;NamaDatabase&#39;</span><span class="p">)</span>
+<span class="k">DROP</span> <span class="k">DATABASE</span> <span class="n">NamaDatabase</span>
+
+<span class="k">DECLARE</span> <span class="o">@</span><span class="n">kill</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">8000</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="k">SELECT</span> <span class="o">@</span><span class="n">kill</span> <span class="o">=</span> <span class="o">@</span><span class="n">kill</span> <span class="o">+</span> <span class="s1">&#39;kill &#39;</span> <span class="o">+</span> <span class="k">CONVERT</span><span class="p">(</span><span class="nb">varchar</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">spid</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;;&#39;</span>
+<span class="k">FROM</span> <span class="n">master</span><span class="p">..</span><span class="n">sysprocesses</span> 
+<span class="k">WHERE</span> <span class="n">dbid</span> <span class="o">=</span> <span class="n">db_id</span><span class="p">(</span><span class="err">‘</span><span class="n">NamaDatabase</span><span class="err">’</span><span class="p">)</span> <span class="k">and</span> <span class="n">spid</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="k">and</span> <span class="n">spid</span> <span class="o">&lt;&gt;</span> <span class="o">@@</span><span class="n">spid</span>
+<span class="k">EXEC</span><span class="p">(</span><span class="o">@</span><span class="n">kill</span><span class="p">);</span></code></pre></div></p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-sqlsrv2%2f&amp;text=Belajar%20SQL%20Server%20Part%202&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-sqlsrv2%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-sqlsrv2%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-sqlsrv2%2f&amp;title=Belajar%20SQL%20Server%20Part%202" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
   </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/install-snmp-linux/" data-toggle="tooltip" data-placement="top" title="Install SNMP Linux">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/konfig-nginx/" data-toggle="tooltip" data-placement="top" title="Redirect Domain URL pada Nginx">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
 
     <footer>
   <div class="container">
@@ -530,7 +438,7 @@
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/kategori/database/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
