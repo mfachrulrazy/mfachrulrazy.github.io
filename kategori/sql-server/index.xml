@@ -29,7 +29,7 @@
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/konfig-sqlsrv2/</guid>
       <description>Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
-Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill + &amp;#39;kill &amp;#39; + CONVERT(varchar(5), spid) + &amp;#39;;&amp;#39; FROM master..sysprocesses WHERE dbid = db_id(‘NamaDatabase’) and spid &amp;gt; 50 and spid &amp;lt;&amp;gt; @@spid EXEC(@kill);</description>
+Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio yang biasanya penyebabnya adalah masih ada koneksi yang tidak dapat diputus koneksinya. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill + &amp;#39;kill &amp;#39; + CONVERT(varchar(5), spid) + &amp;#39;;&amp;#39; FROM master.</description>
     </item>
     
     <item>
