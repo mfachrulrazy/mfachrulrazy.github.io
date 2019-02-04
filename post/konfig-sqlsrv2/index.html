@@ -64,7 +64,7 @@
   "description" : "Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
 Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio yang biasanya penyebabnya adalah masih ada koneksi yang tidak dapat diputus koneksinya. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill &#43; &amp;#39;kill &amp;#39; &#43; CONVERT(varchar(5), spid) &#43; &amp;#39;;&amp;#39; FROM master.",
   "inLanguage" : "en",
-  "wordCount": 93,
+  "wordCount": 189,
   "datePublished" : "2018-07-21T00:00:00",
   "dateModified" : "2018-07-21T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -296,6 +296,24 @@ Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tida
 <span class="k">FROM</span> <span class="n">master</span><span class="p">..</span><span class="n">sysprocesses</span> 
 <span class="k">WHERE</span> <span class="n">dbid</span> <span class="o">=</span> <span class="n">db_id</span><span class="p">(</span><span class="err">‘</span><span class="n">NamaDatabase</span><span class="err">’</span><span class="p">)</span> <span class="k">and</span> <span class="n">spid</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="k">and</span> <span class="n">spid</span> <span class="o">&lt;&gt;</span> <span class="o">@@</span><span class="n">spid</span>
 <span class="k">EXEC</span><span class="p">(</span><span class="o">@</span><span class="n">kill</span><span class="p">);</span></code></pre></div></p>
+
+<h3 id="menambahkan-user-db">Menambahkan User DB</h3>
+
+<p>Menambahkan user pada salah satu database dengan <em>role</em> hanya dapat memilih.<br />
+1. Buka aplikasi Management Studio. Pilih <code>Security</code> &gt; <code>Logins</code> &gt; <code>New Login</code>. Masukkan Nama user dan password serta pilih <em>default database</em>
+<img src="/img/sqlsrv/adduser1.png" alt="img" />
+2. Kemudian buat database role baru pada database
+<img src="/img/sqlsrv/adduser2.png" alt="img" />
+3. Masukkan nama role dan OK
+<img src="/img/sqlsrv/adduser3.png" alt="img" />
+4. Klik kanan pada Database yang akan ditambahkan role baru &gt; <code>Properties</code><br />
+5. Cari role yang telah dibuat
+<img src="/img/sqlsrv/adduser4.png" alt="img" />
+6. Pilih grant &lsquo;Select&rsquo; &gt; <code>OK</code>
+<img src="/img/sqlsrv/adduser5.png" alt="img" />
+7. Kemudian pada bagian <code>User</code> di Database &gt; klik Kanan &gt; <code>Properties</code><br />
+8. Pada bagian <code>Membership</code> &gt; pilih role database yang telah dibuat
+<img src="/img/sqlsrv/adduser6.png" alt="img" /></p>
 
 
         
