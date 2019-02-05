@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install dan Konfigurasi Nagios</title>
+      <link>https://mfachrulrazy.github.io/post/install-nagios/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-nagios/</guid>
+      <description>Install aplikasi pendukung berupa paket LAMP (linux, apache, mysql, php) # yum install httpd mariadb-server php php-mysql Konfigurasi mysql # mysql_secure_installation Jika terdapat error mysql.sock restart service mysql terlebih dahulu
+ Konfigurasi untuk menjalankan mysql dan apache pada saat boot # systemctl enable httpd.service # systemctl enable mariadb.service Install paket tambahan pendukung Nagios # yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip Konfigurasi installer nagios dan persiapan sebelum compile #.</description>
+    </item>
     
     <item>
       <title>Install SNMP Linux</title>

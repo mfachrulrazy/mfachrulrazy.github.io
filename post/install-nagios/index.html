@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
-  <meta name="twitter:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
-  <meta name="description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &#34;Development Tools&#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&#34;`scl enable php70 &#39;echo $X_SCLS&#39;`&#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &#39;extension=pdo_sqlsrv.">
-  <meta property="og:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &#34;Development Tools&#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&#34;`scl enable php70 &#39;echo $X_SCLS&#39;`&#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &#39;extension=pdo_sqlsrv.">
-  <meta name="twitter:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel …">
+  <meta property="og:title" content="Install dan Konfigurasi Nagios" />
+  <meta name="twitter:title" content="Install dan Konfigurasi Nagios" />
+  <meta name="description" content="Nagios Free untuk Monitoring">
+  <meta property="og:description" content="Nagios Free untuk Monitoring">
+  <meta name="twitter:description" content="Nagios Free untuk Monitoring">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/install-php7/",
-          "name": "Install p h p 7.0 dan modul s q l server pada centos"
+          "@id": "https://mfachrulrazy.github.io/post/install-nagios/",
+          "name": "Install dan konfigurasi nagios"
         }
     }]
 }
@@ -60,15 +60,16 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Install PHP 7.0 dan Modul SQL Server pada Centos",
-  "description" : "Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.",
+  "headline": "Install dan Konfigurasi Nagios",
+  "description" : "Install aplikasi pendukung berupa paket LAMP (linux, apache, mysql, php) # yum install httpd mariadb-server php php-mysql Konfigurasi mysql # mysql_secure_installation Jika terdapat error mysql.sock restart service mysql terlebih dahulu
+ Konfigurasi untuk menjalankan mysql dan apache pada saat boot # systemctl enable httpd.service # systemctl enable mariadb.service Install paket tambahan pendukung Nagios # yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip Konfigurasi installer nagios dan persiapan sebelum compile #.",
   "inLanguage" : "en",
-  "wordCount": 108,
-  "datePublished" : "2018-09-27T00:00:00",
-  "dateModified" : "2018-09-27T00:00:00",
+  "wordCount": 231,
+  "datePublished" : "2018-09-15T00:00:00",
+  "dateModified" : "2018-09-15T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-php7/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-nagios/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -82,13 +83,13 @@
 }
 </script>
 
-<meta property="og:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
-<meta property="og:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &#34;Development Tools&#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh 1# create new 2#!/bin/bash 3source /opt/remi/php70/enable 4export X_SCLS=&#34;`scl enable php70 &#39;echo $X_SCLS&#39;`&#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &#39;extension=pdo_sqlsrv.">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-php7/" />
+<meta property="og:title" content="Install dan Konfigurasi Nagios" />
+<meta property="og:description" content="Nagios Free untuk Monitoring">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-nagios/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Install PHP 7.0 dan Modul SQL Server pada Centos" />
-  <meta name="twitter:description" content="Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel …">
+  <meta name="twitter:title" content="Install dan Konfigurasi Nagios" />
+  <meta name="twitter:description" content="Nagios Free untuk Monitoring">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -96,7 +97,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-php7/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-nagios/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -241,18 +242,22 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Install PHP 7.0 dan Modul SQL Server pada Centos</h1>
+                <h1>Install dan Konfigurasi Nagios</h1>
               
               
+              
+                
+                  <h2 class="post-subheading">Nagios Free untuk Monitoring</h2>
+                
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 27, 2018
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 15, 2018
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -276,39 +281,68 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <ol>
-<li>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql</span></code></pre></div></li>
-<li>Install paket development tools
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum -y groups install &#34;Development Tools&#34;</span></code></pre></div></li>
-<li>Enable php 70
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># scl enable php70 bash</span></code></pre></div></li>
-<li>Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di <code>/etc/profile.d/php70.sh</code>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="c1"># create new</span>
-<span class="ln">2</span><span class="cp">#!/bin/bash
-</span><span class="ln">3</span><span class="cp"></span><span class="nb">source</span> /opt/remi/php70/enable
-<span class="ln">4</span><span class="nb">export</span> <span class="nv">X_SCLS</span><span class="o">=</span><span class="s2">&#34;`scl enable php70 &#39;echo </span><span class="nv">$X_SCLS</span><span class="s2">&#39;`&#34;</span></code></pre></div></li>
-<li>Install paket unixodbc-devel
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install unixODBC-devel</span></code></pre></div></li>
-<li>Install sql server dan pdo menggunakan pecl
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># pecl install sqlsrv pdo_sqlsrv</span></code></pre></div>
-<img src="/img/centos/php71.png" alt="img" /></li>
-<li>Tambahkan modul sql server dan pdo sql server di konfigurasi php
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># echo &#39;extension=pdo_sqlsrv.so&#39; &gt; /etc/opt/remi/php70/php.d/30-pdo_sqlsrv.ini</span>
-<span class="c1"># echo &#39;extension=sqlsrv.so&#39; &gt; /etc/opt/remi/php70/php.d/30-sqlsrv.ini</span></code></pre></div></li>
+        
+
+<ol>
+<li>Install aplikasi pendukung berupa paket LAMP (linux, apache, mysql, php)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install httpd mariadb-server php php-mysql</span></code></pre></div></li>
+<li>Konfigurasi mysql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># mysql_secure_installation</span></code></pre></div></li>
+<li>Jika terdapat error mysql.sock restart service mysql terlebih dahulu<br /></li>
+<li>Konfigurasi untuk menjalankan mysql dan apache pada saat boot
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl enable httpd.service</span>
+<span class="c1"># systemctl enable mariadb.service</span></code></pre></div></li>
+<li>Install paket tambahan pendukung Nagios
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip</span></code></pre></div></li>
+<li>Konfigurasi installer nagios dan persiapan sebelum compile
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#./configure</span></code></pre></div></li>
+<li>Compile nagios core
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make all</span></code></pre></div></li>
+<li>Install nagios core
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install</span></code></pre></div>
+<img src="/img/monitoring/ins-nagios1.png" alt="img" /></li>
+<li>Install initialization script untuk mengatur nagios servis
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-daemoninit</span></code></pre></div></li>
+<li>Install nagios configuration sample
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-config</span></code></pre></div></li>
+<li>Install nagios core command
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-commandmode</span></code></pre></div></li>
+<li>Install file konfigurasi apache web server
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-webconf</span></code></pre></div></li>
+<li>Restart servis apache
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart httpd</span></code></pre></div></li>
+<li>Pastikan firewall-cmd telah mengizinkan port 80
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --zone=public --add-port=80/tcp --permanent</span></code></pre></div></li>
+<li>Buat user nagios untuk akses web nagios
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin</span></code></pre></div></li>
+</ol>
+
+<h3 id="install-plugin-nagios">Install Plugin Nagios</h3>
+
+<ol>
+<li>Sebelumnya pastikan paket pendukung berikut ini telah terinstall
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install gcc glibc glibc-common make gettext automake autoconf wget openssl-devel net-snmp net-snmp-utils epel-release perl-Net-SNMP</span></code></pre></div></li>
+<li>Setelah itu pindah ke direktori tmp dan download serta ekstrak file nagios plugin
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cd /tmp</span>
+<span class="c1"># wget --no-check-certificate -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.2.1.tar.gz</span>
+<span class="c1"># tar zxf nagios-plugins.tar.gz</span></code></pre></div></li>
+<li>Pindah ke direktori hasil ekstrak dan compile serta install nagios server
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cd nagios-plugins-release-2.2.1/</span>
+<span class="c1"># ./tools/setup</span>
+<span class="c1"># ./configure</span>
+<span class="c1"># make</span>
+<span class="c1"># make install</span></code></pre></div></li>
+<li>Jalankan servis nagios
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl start nagios</span></code></pre></div></li>
 </ol>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/php/">php</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/monitoring/">monitoring</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/sql-server/">sql server</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
             
           </div>
         
@@ -323,28 +357,28 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f&amp;text=Install%20PHP%207.0%20dan%20Modul%20SQL%20Server%20pada%20Centos&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nagios%2f&amp;text=Install%20dan%20Konfigurasi%20Nagios&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nagios%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nagios%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-php7%2f&amp;title=Install%20PHP%207.0%20dan%20Modul%20SQL%20Server%20pada%20Centos" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-nagios%2f&amp;title=Install%20dan%20Konfigurasi%20Nagios" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -365,12 +399,12 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/install-nagios/" data-toggle="tooltip" data-placement="top" title="Install dan Konfigurasi Nagios">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/konfig-nginx/" data-toggle="tooltip" data-placement="top" title="Redirect Domain URL pada Nginx">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/install-varnish-cent/" data-toggle="tooltip" data-placement="top" title="Install Varnish pada Centos 7">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/install-php7/" data-toggle="tooltip" data-placement="top" title="Install PHP 7.0 dan Modul SQL Server pada Centos">Next Post &rarr;</a>
             </li>
           
         </ul>
