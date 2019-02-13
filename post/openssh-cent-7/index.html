@@ -63,7 +63,7 @@
   "headline": "Openssh Centos 7",
   "description" : "Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart",
   "inLanguage" : "en",
-  "wordCount": 295,
+  "wordCount": 361,
   "datePublished" : "2016-08-21T00:00:00",
   "dateModified" : "2016-08-21T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -341,6 +341,19 @@ Penyebabnya adalah IP address tidak me-reverse pengaturan etc DNS. Berikut hal y
 <span class="ln">4</span>UseDNS yes
 <span class="ln">5</span>menjadi: UseDNS no</code></pre></div>
 Kemudian restart servis ssh.</p>
+
+<h3 id="konfigurasi-ssh-untuk-menerima-login-root-dari-ip-tertentu">Konfigurasi SSH untuk Menerima Login Root dari IP Tertentu</h3>
+
+<p>Kita dapat mengkonfigurasi jika ingin menerima login <code>root</code> dari beberapa alamat. Semuanya dapat dilakukan dengan cara mengedit file konfigurasi ssh (<code>/etc/ssh/sshd_config</code>)<br />
+Mengizinkan login root dari network tertentu.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span>Match Address x.x.x.x/yy
+<span class="ln">3</span>        PermitRootLogin yes</code></pre></div>
+Jika ingin menggunakan spesifik ip address bisa dengan tanda koma.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span>Match Address x.x.x.x, y.y.y.y
+<span class="ln">3</span>        PermitRootLogin yes</code></pre></div>
+Setelah itu restart/reload servis ssh</p>
 
 
         
