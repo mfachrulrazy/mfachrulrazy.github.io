@@ -8,10 +8,24 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>I/O Stream pada Windows</title>
+      <link>https://mfachrulrazy.github.io/post/iostreamwin/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/iostreamwin/</guid>
+      <description>Pada sistem operasi Windows, ada 3 stream (aliran) yaitu:
+* stdin * stdout (nilai 1) * stderr (nilai 2)
+Berikut penjelasan mengenai masing-masing stream.
+Stdin Standard Input adalah segala input yang dimasukkan melalui keyboard atau alat input lainnya.
+Stdout Standard Output adalah segala output yang ditampilkan di layar, setelah menerima input dan diproses. Contoh: &amp;gt; echo &amp;#34;halo mfr&amp;#34; halo mfr
+Stderr Standard Error ketika input yang diberikan menghasilkan error.</description>
+    </item>
     
     <item>
       <title>Install WINS Windows Server 2003</title>
