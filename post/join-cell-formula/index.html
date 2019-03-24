@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="I/O Stream pada Windows" />
-  <meta name="twitter:title" content="I/O Stream pada Windows" />
-  <meta name="description" content="Input dan output stream Windows">
-  <meta property="og:description" content="Input dan output stream Windows">
-  <meta name="twitter:description" content="Input dan output stream Windows">
+  <meta property="og:title" content="Formula Concat dan Vlookup pada Excel" />
+  <meta name="twitter:title" content="Formula Concat dan Vlookup pada Excel" />
+  <meta name="description" content="Join teks pada cell yang berbeda dengan concat dan vlookup Microsoft Excel">
+  <meta property="og:description" content="Join teks pada cell yang berbeda dengan concat dan vlookup Microsoft Excel">
+  <meta name="twitter:description" content="Join teks pada cell yang berbeda dengan concat dan vlookup Microsoft Excel">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/iostreamwin/",
-          "name": "I/ o stream pada windows"
+          "@id": "https://mfachrulrazy.github.io/post/join-cell-formula/",
+          "name": "Formula concat dan vlookup pada excel"
         }
     }]
 }
@@ -60,20 +60,19 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "I/O Stream pada Windows",
-  "description" : "Pada sistem operasi Windows, ada 3 stream (aliran) yaitu:
-* stdin * stdout (nilai 1) * stderr (nilai 2)
-Berikut penjelasan mengenai masing-masing stream.
-Stdin Standard Input adalah segala input yang dimasukkan melalui keyboard atau alat input lainnya.
-Stdout Standard Output adalah segala output yang ditampilkan di layar, setelah menerima input dan diproses. Contoh: &amp;gt; echo &amp;#34;halo mfr&amp;#34; halo mfr
-Stderr Standard Error ketika input yang diberikan menghasilkan error.",
+  "headline": "Formula Concat dan Vlookup pada Excel",
+  "description" : "Rumus untuk menggabungkan isi cell dalam excel dengan menggunakan vlookup dan concat.
+Di sini ada 2 sheet yaitu:
+1. Sheet1 untuk menyimpan hasil dari vlookup dan concat dari sheet berikutnya.
+2. Daftar Barang adalah tabel referensi untuk sheet1.
+Rumus Sheet1 Rumus untuk mengambil nama server =IFERROR(VLOOKUP(C3;&amp;#39;Daftar Barang&amp;#39;!$A$4:$B$50;2;FALSE);&amp;#34;&amp;#34;) Rumus untuk menggabungkan isi cell dari vlookup =IFERROR(CONCATENATE(VLOOKUP(D3;&amp;#39;Daftar Barang&amp;#39;!$D$4:$E$28;2;FALSE);&amp;#34; &amp;gt;&amp;gt; &amp;#34;;VLOOKUP(E3;&amp;#39;Daftar Barang&amp;#39;!$D$4:$E$28;2;FALSE));&amp;#34;&amp;#34;)",
   "inLanguage" : "en",
-  "wordCount": 184,
-  "datePublished" : "2019-02-08T00:00:00",
-  "dateModified" : "2019-02-08T00:00:00",
+  "wordCount": 59,
+  "datePublished" : "2019-02-20T00:00:00",
+  "dateModified" : "2019-02-20T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/iostreamwin/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/join-cell-formula/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -87,13 +86,13 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.",
 }
 </script>
 
-<meta property="og:title" content="I/O Stream pada Windows" />
-<meta property="og:description" content="Input dan output stream Windows">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/iostreamwin/" />
+<meta property="og:title" content="Formula Concat dan Vlookup pada Excel" />
+<meta property="og:description" content="Join teks pada cell yang berbeda dengan concat dan vlookup Microsoft Excel">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/join-cell-formula/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="I/O Stream pada Windows" />
-  <meta name="twitter:description" content="Input dan output stream Windows">
+  <meta name="twitter:title" content="Formula Concat dan Vlookup pada Excel" />
+  <meta name="twitter:description" content="Join teks pada cell yang berbeda dengan concat dan vlookup Microsoft Excel">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -101,7 +100,7 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.",
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/iostreamwin/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/join-cell-formula/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -246,19 +245,19 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.",
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>I/O Stream pada Windows</h1>
+                <h1>Formula Concat dan Vlookup pada Excel</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Input dan output stream Windows</h2>
+                  <h2 class="post-subheading">Join teks pada cell yang berbeda dengan concat dan vlookup Microsoft Excel</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 8, 2019
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 20, 2019
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -287,72 +286,27 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.",
       <article role="main" class="blog-post">
         
 
-<p>Pada sistem operasi Windows, ada 3 stream (aliran) yaitu:<br />
-* stdin
-* stdout (nilai 1)
-* stderr (nilai 2)<br />
-Berikut penjelasan mengenai masing-masing stream.</p>
+<p>Rumus untuk menggabungkan isi cell dalam excel dengan menggunakan vlookup dan concat.<br />
+Di sini ada 2 sheet yaitu:<br />
+1. <strong>Sheet1</strong> untuk menyimpan hasil dari vlookup dan concat dari sheet berikutnya.<br />
+<img src="/img/excel/excel2.png" alt="img" /><br />
+2. <strong>Daftar Barang</strong> adalah tabel referensi untuk sheet1.<br />
+<img src="/img/excel/excel1.png" alt="img" /></p>
 
-<h3 id="stdin">Stdin</h3>
+<h3 id="rumus-sheet1">Rumus Sheet1</h3>
 
-<p>Standard Input adalah segala input yang dimasukkan melalui keyboard atau alat input lainnya.</p>
-
-<h3 id="stdout">Stdout</h3>
-
-<p>Standard Output adalah segala output yang ditampilkan di layar, setelah menerima input dan diproses. Contoh:
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> echo  <span class="s2">&#34;halo mfr&#34;</span>
-halo mfr</code></pre></div></p>
-
-<h3 id="stderr">Stderr</h3>
-
-<p>Standard Error ketika input yang diberikan menghasilkan error.</p>
-
-<h3 id="redirection">Redirection</h3>
-
-<p>Untuk mengatur output bisa menggunakan perintah redirect berikut:</p>
-
-<h4 id="insert">&gt; (insert)</h4>
-
-<p>Mengarahkan stdout ke sebuah file
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> echo  <span class="s2">&#34;halo mfr&#34;</span> <span class="p">&gt;</span> file.txt
-<span class="p">&gt;</span> cat file.txt
-halo mfr</code></pre></div>
-Jika file sudah ada, maka <code>&gt;</code> akan menimpa (overwrite)</p>
-
-<h4 id="append">&gt;&gt; (append)</h4>
-
-<p>Menambah isi sebuah file<br />
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> echo  <span class="s2">&#34;halo mfr lagi&#34;</span> <span class="p">&gt;&gt;</span> file.txt
-<span class="p">&gt;</span> cat file.txt
-halo mfr
-halo mfr lagi</code></pre></div></p>
-
-<h4 id="pipe">| (pipe)</h4>
-
-<p>Mengarahkan stdout dari sebuah perintah menjadi stdin ke perintah lainnya.<br />
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> cat file.txt <span class="p">|</span> Select-Strings mfr
-
-mfr</code></pre></div></p>
-
-<h4 id="1">&amp;1</h4>
-
-<p>&amp;1 adalah success stream</p>
-
-<h4 id="mengarahkan-stderr">Mengarahkan stderr</h4>
-
-<p>Untuk mengarahkan stderr ke sebuah file bisa menggunakan index dari stderr yaitu <strong>2</strong>.
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> cat filebaru.txt 2<span class="p">&gt;</span> error.txt </code></pre></div></p>
-
-<h4 id="null">$null</h4>
-
-<p>Variabel <code>$null</code> ini digunakan jika stderr ingin dibuang.
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> cat filebaru.txt 2<span class="p">&gt;</span> $null</code></pre></div></p>
+<p>Rumus untuk mengambil nama server
+<div class="highlight"><pre class="chroma"><code class="language-vb" data-lang="vb">=IFERROR(VLOOKUP(C3;&#39;Daftar Barang&#39;!$A$4:$B$50;2;FALSE);&#34;&#34;)</code></pre></div>
+Rumus untuk menggabungkan isi cell dari vlookup
+<div class="highlight"><pre class="chroma"><code class="language-vb" data-lang="vb">=IFERROR(CONCATENATE(VLOOKUP(D3;&#39;Daftar Barang&#39;!$D$4:$E$28;2;FALSE);&#34; &gt;&gt; &#34;;VLOOKUP(E3;&#39;Daftar Barang&#39;!$D$4:$E$28;2;FALSE));&#34;&#34;)</code></pre></div></p>
 
 
         
           <div class="blog-tags">
             
               <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/excel/">excel</a>&nbsp;
             
           </div>
         
@@ -367,28 +321,28 @@ mfr</code></pre></div></p>
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fiostreamwin%2f&amp;text=I%2fO%20Stream%20pada%20Windows&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fjoin-cell-formula%2f&amp;text=Formula%20Concat%20dan%20Vlookup%20pada%20Excel&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fiostreamwin%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fjoin-cell-formula%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fiostreamwin%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fjoin-cell-formula%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fiostreamwin%2f&amp;title=I%2fO%20Stream%20pada%20Windows" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fjoin-cell-formula%2f&amp;title=Formula%20Concat%20dan%20Vlookup%20pada%20Excel" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -409,13 +363,9 @@ mfr</code></pre></div></p>
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/zip-unzip-cent/" data-toggle="tooltip" data-placement="top" title="Kompress dan Ekstrak File Centos">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/iostreamwin/" data-toggle="tooltip" data-placement="top" title="I/O Stream pada Windows">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/join-cell-formula/" data-toggle="tooltip" data-placement="top" title="Formula Concat dan Vlookup pada Excel">Next Post &rarr;</a>
-            </li>
           
         </ul>
       

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/join-cell-formula/</loc>
+    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/iostreamwin/</loc>
     <lastmod>2019-02-08T00:00:00+00:00</lastmod>
   </url>
@@ -412,6 +417,12 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/kategori/excel/</loc>
+    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/kategori/github/</loc>
     <lastmod>2017-07-21T08:27:55+08:00</lastmod>
     <priority>0</priority>
@@ -508,7 +519,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/post/</loc>
-    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -594,7 +605,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/windows/</loc>
-    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -606,7 +617,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/</loc>
-    <lastmod>2019-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

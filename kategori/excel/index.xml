@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excel on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/excel/</link>
+    <description>Recent content in Excel on Zyra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
+    <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
+    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/kategori/excel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formula Concat dan Vlookup pada Excel</title>
+      <link>https://mfachrulrazy.github.io/post/join-cell-formula/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/join-cell-formula/</guid>
+      <description>Rumus untuk menggabungkan isi cell dalam excel dengan menggunakan vlookup dan concat.
+Di sini ada 2 sheet yaitu:
+1. Sheet1 untuk menyimpan hasil dari vlookup dan concat dari sheet berikutnya.
+2. Daftar Barang adalah tabel referensi untuk sheet1.
+Rumus Sheet1 Rumus untuk mengambil nama server =IFERROR(VLOOKUP(C3;&amp;#39;Daftar Barang&amp;#39;!$A$4:$B$50;2;FALSE);&amp;#34;&amp;#34;) Rumus untuk menggabungkan isi cell dari vlookup =IFERROR(CONCATENATE(VLOOKUP(D3;&amp;#39;Daftar Barang&amp;#39;!$D$4:$E$28;2;FALSE);&amp;#34; &amp;gt;&amp;gt; &amp;#34;;VLOOKUP(E3;&amp;#39;Daftar Barang&amp;#39;!$D$4:$E$28;2;FALSE));&amp;#34;&amp;#34;)</description>
+    </item>
+    
+  </channel>
+</rss>
