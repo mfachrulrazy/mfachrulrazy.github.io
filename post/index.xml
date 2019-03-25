@@ -695,6 +695,22 @@ Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
     </item>
     
     <item>
+      <title>Pengaturan Waktu Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/konfig-time-cent7/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/konfig-time-cent7/</guid>
+      <description>Pengaturan waktu dan tanggal pada Centos bisa dengan menggunakan tools timedatectl.
+Untuk melihat pengaturan waktu yang terpasang # timedatectl Mengatur tanggal
+# timedatectl set-time [YYYY-MM-DD] Mengatur waktu gunakan format 24H
+# timedatectl set-time [HH:MM:SS] Pengaturan waktu berdasarkan waktu lokal
+# timedatectl set-local-rtc yes Pengaturan waktu berdasarkan UTC
+# timedatectl set-local-rtc no Melihat zona lokasi
+# timedatectl list-timezones ... Asia/Makassar ... Mengatur zona lokasi
+# timedatectl set-timezone Asia/Makassar Mengatur waktu dengan menggunakan NTP # timedatectl set-ntp yes Tanpa menggunakan NTP # timedatectl set-ntp no</description>
+    </item>
+    
+    <item>
       <title>Install Mikrotik di GNS 3</title>
       <link>https://mfachrulrazy.github.io/post/install-mrktk-gns3/</link>
       <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>

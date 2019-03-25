@@ -144,6 +144,22 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
     </item>
     
     <item>
+      <title>Pengaturan Waktu Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/konfig-time-cent7/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/konfig-time-cent7/</guid>
+      <description>Pengaturan waktu dan tanggal pada Centos bisa dengan menggunakan tools timedatectl.
+Untuk melihat pengaturan waktu yang terpasang # timedatectl Mengatur tanggal
+# timedatectl set-time [YYYY-MM-DD] Mengatur waktu gunakan format 24H
+# timedatectl set-time [HH:MM:SS] Pengaturan waktu berdasarkan waktu lokal
+# timedatectl set-local-rtc yes Pengaturan waktu berdasarkan UTC
+# timedatectl set-local-rtc no Melihat zona lokasi
+# timedatectl list-timezones ... Asia/Makassar ... Mengatur zona lokasi
+# timedatectl set-timezone Asia/Makassar Mengatur waktu dengan menggunakan NTP # timedatectl set-ntp yes Tanpa menggunakan NTP # timedatectl set-ntp no</description>
+    </item>
+    
+    <item>
       <title>Berkenalan dengan Cron</title>
       <link>https://mfachrulrazy.github.io/post/about-cron/</link>
       <pubDate>Fri, 05 Feb 2016 00:00:00 +0000</pubDate>
