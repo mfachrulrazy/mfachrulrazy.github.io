@@ -8,10 +8,23 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Transfer File pada Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/post/transfer-file-linux/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/transfer-file-linux/</guid>
+      <description>Transfer file antar mesin linux bisa menggunakan tools scp.
+Jika ingin mengirim file dari serverB dengan port ssh 22123 ke serverA dan login dari serverA.
+# scp -P 22123 -v user@serverB:/folder/file /folder_serverA Opsi -P untuk port dan -v untuk verbose.
+Jika kita menggunakan scp dan ingin menutup session ssh, maka scp juga akan terputus. Oleh karena itu scp akan kita jalankan di background proses dengan menggunakan nohup.
+Ketika scp dijalankan biasanya akan meminta password (jika belum bertukar ssh key) oleh karena itu gunakan perintah di bawah jika ingin menampilkan permintaan password.</description>
+    </item>
     
     <item>
       <title>Formula Concat dan Vlookup pada Excel</title>
@@ -46,9 +59,10 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.</descripti
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/zip-unzip-cent/</guid>
-      <description>Kompress File Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
-Ekstrak File Ekstrak file bisa menggunakan unzip.
-Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr</description>
+      <description>Kompress File dengan Zip Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
+Ekstrak File dengan Unzip Ekstrak file bisa menggunakan unzip.
+Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr
+Kompress file dengan Tar Kompress file dengan menggunakan tar dan gz #tar -zcvf /folder/file.</description>
     </item>
     
     <item>

@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="All pages in the kategori #Linux" />
-  <meta name="twitter:title" content="All pages in the kategori #Linux" />
-  <meta name="description" content="All pages in the kategori #Linux, such as: Transfer File pada Ubuntu">
-  <meta property="og:description" content="All pages in the kategori #Linux, such as: Transfer File pada Ubuntu">
-  <meta name="twitter:description" content="All pages in the kategori #Linux, such as: Transfer File pada Ubuntu">
+  <meta property="og:title" content="Transfer File pada Ubuntu" />
+  <meta name="twitter:title" content="Transfer File pada Ubuntu" />
+  <meta name="description" content="Transfer file menggunakan SCP">
+  <meta property="og:description" content="Transfer file menggunakan SCP">
+  <meta name="twitter:description" content="Transfer file menggunakan SCP">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -33,12 +33,66 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/transfer-file-linux/",
+          "name": "Transfer file pada ubuntu"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Transfer File pada Ubuntu",
+  "description" : "Transfer file antar mesin linux bisa menggunakan tools scp.
+Jika ingin mengirim file dari serverB dengan port ssh 22123 ke serverA dan login dari serverA.
+# scp -P 22123 -v user@serverB:/folder/file /folder_serverA Opsi -P untuk port dan -v untuk verbose.
+Jika kita menggunakan scp dan ingin menutup session ssh, maka scp juga akan terputus. Oleh karena itu scp akan kita jalankan di background proses dengan menggunakan nohup.
+Ketika scp dijalankan biasanya akan meminta password (jika belum bertukar ssh key) oleh karena itu gunakan perintah di bawah jika ingin menampilkan permintaan password.",
+  "inLanguage" : "en",
+  "wordCount": 145,
+  "datePublished" : "2019-04-25T00:00:00",
+  "dateModified" : "2019-04-25T00:00:00",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/transfer-file-linux/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Linux" />
-<meta property="og:url" content="https://mfachrulrazy.github.io/kategori/linux/" />
+<meta property="og:title" content="Transfer File pada Ubuntu" />
+<meta property="og:description" content="Transfer file menggunakan SCP">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/transfer-file-linux/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Linux" />
+  <meta name="twitter:title" content="Transfer File pada Ubuntu" />
+  <meta name="twitter:description" content="Transfer file menggunakan SCP">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -46,7 +100,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/kategori/linux/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/transfer-file-linux/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -189,14 +243,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="kategori-heading">
+            <div class="post-heading">
               
-                <h1>Linux</h1>
-              
-              
-                <hr class="small">
+                <h1>Transfer File pada Ubuntu</h1>
               
               
+              
+                
+                  <h2 class="post-subheading">Transfer file menggunakan SCP</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on April 25, 2019
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
               
             </div>
           </div>
@@ -207,326 +280,104 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Transfer file antar mesin linux bisa menggunakan tools scp.<br />
+Jika ingin mengirim file dari serverB dengan port ssh 22123 ke serverA dan login dari serverA.<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># scp -P 22123 -v user@serverB:/folder/file /folder_serverA</span></code></pre></div>
+Opsi -P untuk port dan -v untuk verbose.</p>
+
+<p>Jika kita menggunakan scp dan ingin menutup session ssh, maka scp juga akan terputus. Oleh karena itu scp akan kita jalankan di background proses dengan menggunakan <code>nohup</code>.<br />
+Ketika scp dijalankan biasanya akan meminta password (jika belum bertukar ssh key) oleh karena itu gunakan perintah di bawah jika ingin menampilkan permintaan password.<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># nohup scp -P 22123 -v user@serverB:/folder/file /folder_serverA &gt; nohup.out 2&gt;&amp;1</span></code></pre></div>
+Setelah itu akan muncul permintaan password, kemudian tekan <code>Ctrl+Z</code> lalu masukkan perintah
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># bg</span></code></pre></div>
+Hal ini akan menjalankan perintah nohup secara background
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nohup scp -P <span class="m">22123</span> -v user@serverB:/folder/file /folder_serverA &gt; nohup.out <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span></code></pre></div>
+Untuk melihat proses download bisa monitoring dengan netstat
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># netstat -tupn</span></code></pre></div></p>
+
+
         
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/install-freenas/">
-                <h2 class="post-title">Install dan Konfigurasi Free NAS</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    NAS gratis untuk keperluan kantor
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 20, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/imp-proxmox/">
-                <h2 class="post-title">All about Proxmox</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Implementasi Proxmox
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 12, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/proxmox/">proxmox</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/networking/">networking</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/reset-pass-centos7/">
-                <h2 class="post-title">Reset Password Centos 7</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 10, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/konfig-time-cent7/">
-                <h2 class="post-title">Pengaturan Waktu Centos 7</h2>
-
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 27, 2017
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/about-cron/">
-                <h2 class="post-title">Berkenalan dengan Cron</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Apa itu Cron? atau Cron jobs?
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 5, 2016
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/cron/">cron</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command2/">
-                <h2 class="post-title">Linux Command Part 2</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Beberapa Perintah dasar Linux Part 2
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              <a href="https://mfachrulrazy.github.io/post/linux-command1/">
-                <h2 class="post-title">Linux Command Part 1</h2>
-
-                
-                  <h3 class="post-subtitle">
-                    Beberapa Perintah dasar Linux Part 1
-                  </h3>
-                
-              </a>
-
-              <p class="post-meta">
-                <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 27, 2015
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
-  
-  
-</span>
-
-
-              </p>
-
-              
-                <div class="blog-tags">
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/open-source/">open-source</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
-                  
-                    <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
-                  
-                </div>
-              
-
-            </article>
-          
-        </div>
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/linux/">linux</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/ubuntu/">ubuntu</a>&nbsp;
+            
+          </div>
         
-          <ul class="pager main-pager">
-            
-              <li class="previous">
-                <a href="/kategori/linux/page/1/">&larr; Newer Posts</a>
-              </li>
-            
-            
-          </ul>
+
         
-      </div>
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftransfer-file-linux%2f&amp;text=Transfer%20File%20pada%20Ubuntu&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftransfer-file-linux%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftransfer-file-linux%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2ftransfer-file-linux%2f&amp;title=Transfer%20File%20pada%20Ubuntu" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/join-cell-formula/" data-toggle="tooltip" data-placement="top" title="Formula Concat dan Vlookup pada Excel">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -585,7 +436,7 @@
           
           <li>
             
-            <a href="https://mfachrulrazy.github.io/kategori/linux/index.xml" title="RSS">
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
             
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>

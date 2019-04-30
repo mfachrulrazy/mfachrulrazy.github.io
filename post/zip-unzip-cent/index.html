@@ -10,9 +10,9 @@
   <title> Personal Blog - Zyra</title>
   <meta property="og:title" content="Kompress dan Ekstrak File Centos" />
   <meta name="twitter:title" content="Kompress dan Ekstrak File Centos" />
-  <meta name="description" content="Kompress dan ekstrak file menggunakan zip dan unzip">
-  <meta property="og:description" content="Kompress dan ekstrak file menggunakan zip dan unzip">
-  <meta name="twitter:description" content="Kompress dan ekstrak file menggunakan zip dan unzip">
+  <meta name="description" content="Kompress dan ekstrak file menggunakan beberapa tools">
+  <meta property="og:description" content="Kompress dan ekstrak file menggunakan beberapa tools">
+  <meta name="twitter:description" content="Kompress dan ekstrak file menggunakan beberapa tools">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,11 +61,12 @@
     "name" : "MFR"
   },
   "headline": "Kompress dan Ekstrak File Centos",
-  "description" : "Kompress File Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
-Ekstrak File Ekstrak file bisa menggunakan unzip.
-Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr",
+  "description" : "Kompress File dengan Zip Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
+Ekstrak File dengan Unzip Ekstrak file bisa menggunakan unzip.
+Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr
+Kompress file dengan Tar Kompress file dengan menggunakan tar dan gz #tar -zcvf /folder/file.",
   "inLanguage" : "en",
-  "wordCount": 60,
+  "wordCount": 156,
   "datePublished" : "2019-01-11T00:00:00",
   "dateModified" : "2019-01-11T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -85,12 +86,12 @@ Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l na
 </script>
 
 <meta property="og:title" content="Kompress dan Ekstrak File Centos" />
-<meta property="og:description" content="Kompress dan ekstrak file menggunakan zip dan unzip">
+<meta property="og:description" content="Kompress dan ekstrak file menggunakan beberapa tools">
 <meta property="og:url" content="https://mfachrulrazy.github.io/post/zip-unzip-cent/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
   <meta name="twitter:title" content="Kompress dan Ekstrak File Centos" />
-  <meta name="twitter:description" content="Kompress dan ekstrak file menggunakan zip dan unzip">
+  <meta name="twitter:description" content="Kompress dan ekstrak file menggunakan beberapa tools">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -248,7 +249,7 @@ Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l na
               
               
                 
-                  <h2 class="post-subheading">Kompress dan ekstrak file menggunakan zip dan unzip</h2>
+                  <h2 class="post-subheading">Kompress dan ekstrak file menggunakan beberapa tools</h2>
                 
               
               
@@ -284,13 +285,13 @@ Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l na
       <article role="main" class="blog-post">
         
 
-<h2 id="kompress-file">Kompress File</h2>
+<h2 id="kompress-file-dengan-zip">Kompress File dengan Zip</h2>
 
 <p>Kompress file dengan menggunakan zip
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># zip -r namafile.zip nama_file</span></code></pre></div>
 Penggunaan opsi <code>-r</code> berarti dilakukan rekursif di dalam folder dan subfolder</p>
 
-<h2 id="ekstrak-file">Ekstrak File</h2>
+<h2 id="ekstrak-file-dengan-unzip">Ekstrak File dengan Unzip</h2>
 
 <p>Ekstrak file bisa menggunakan unzip.<br />
 Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu
@@ -299,6 +300,26 @@ Ekstark file zip
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># unzip namafile.zip</span></code></pre></div>
 Ekstrak dengan tujuan direktori tertentu
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># unzip namafile.zip -d /var/usr</span></code></pre></div></p>
+
+<h2 id="kompress-file-dengan-tar">Kompress file dengan Tar</h2>
+
+<p>Kompress file dengan menggunakan tar dan gz
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#tar -zcvf /folder/file.tar.gz /folderA</span></code></pre></div>
+Setelah perintah tar, masukkan lokasi dan nama file dengan ekstensi .tar.gz kemudian nama folder atau file yang ingin dikompress.</p>
+
+<ul>
+<li>-z    : kompress dengan gzip</li>
+<li>-c    : buat archive di linux</li>
+<li>-v    : verbose atau menampilkan proses di linux</li>
+<li>-f    : nama file</li>
+</ul>
+
+<h2 id="ekstrak-file-dengan-tar">Ekstrak file dengan Tar</h2>
+
+<p>Untuk ekstrak file hanya berbeda pada opsinya.<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#tar -zxvf /folder/file.tar.gz</span></code></pre></div>
+Opsi <strong>-x</strong> untuk ekstrak file yang diberikan. Jika ingin ekstrak di folder tertentu tambahkan opsi <strong>-C</strong><br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#tar -zxvf /folder/file.tar.gz -C /home/folderA</span></code></pre></div></p>
 
 
         
