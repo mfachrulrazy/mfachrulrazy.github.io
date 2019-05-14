@@ -64,7 +64,7 @@
   "description" : "Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
 Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio yang biasanya penyebabnya adalah masih ada koneksi yang tidak dapat diputus koneksinya. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill &#43; &amp;#39;kill &amp;#39; &#43; CONVERT(varchar(5), spid) &#43; &amp;#39;;&amp;#39; FROM master.",
   "inLanguage" : "en",
-  "wordCount": 189,
+  "wordCount": 282,
   "datePublished" : "2018-07-21T00:00:00",
   "dateModified" : "2018-07-21T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -257,7 +257,7 @@ Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tida
   <i class="fas fa-calendar"></i>&nbsp;Posted on July 21, 2018
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -297,7 +297,7 @@ Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tida
 <span class="k">WHERE</span> <span class="n">dbid</span> <span class="o">=</span> <span class="n">db_id</span><span class="p">(</span><span class="err">‘</span><span class="n">NamaDatabase</span><span class="err">’</span><span class="p">)</span> <span class="k">and</span> <span class="n">spid</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="k">and</span> <span class="n">spid</span> <span class="o">&lt;&gt;</span> <span class="o">@@</span><span class="n">spid</span>
 <span class="k">EXEC</span><span class="p">(</span><span class="o">@</span><span class="n">kill</span><span class="p">);</span></code></pre></div></p>
 
-<h3 id="menambahkan-user-db">Menambahkan User DB</h3>
+<h3 id="menambahkan-user-select-pada-database">Menambahkan User &lsquo;select&rsquo; pada Database</h3>
 
 <p>Menambahkan user pada salah satu database dengan <em>role</em> hanya dapat memilih.<br />
 1. Buka aplikasi Management Studio. Pilih <code>Security</code> &gt; <code>Logins</code> &gt; <code>New Login</code>. Masukkan Nama user dan password serta pilih <em>default database</em>
@@ -314,6 +314,22 @@ Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tida
 7. Kemudian pada bagian <code>User</code> di Database &gt; klik Kanan &gt; <code>Properties</code><br />
 8. Pada bagian <code>Membership</code> &gt; pilih role database yang telah dibuat
 <img src="/img/sqlsrv/adduser6.png" alt="img" /></p>
+
+<h3 id="set-multi-user-database">Set Multi User Database</h3>
+
+<p>Terkadang ketika restore database, kita harus menutup seluruh koneksi yang ada pada database tersebut. Jika dlakukan secara paksa, maka akan membuat database menjadi <code>single user</code> untuk merubahnya bisa dilakukan dengan query berikut.<br />
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">ALTER</span> <span class="k">DATABASE</span> <span class="n">NamaDB</span>
+<span class="k">SET</span> <span class="n">MULTI_USER</span><span class="p">;</span>
+<span class="k">GO</span></code></pre></div></p>
+
+<h3 id="status-restore-database-tidak-berubah">Status Restore Database tidak berubah</h3>
+
+<p>Ketika me-restore database terkadang terjadi error seperti status restore database tidak berubah seperti gambar di bawah ini.<br />
+<img src="/img/sqlsrv/restore-db1.png" alt="img" /><br />
+Untuk mengatasi hal tersebut bisa dengan menggunakan query di t-sql dengan me-restore dan menggunakan opsi with recovery.<br />
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="n">RESTORE</span> <span class="k">DATABASE</span> <span class="n">NamaDB</span> <span class="k">FROM</span> <span class="n">DISK</span> <span class="o">=</span> <span class="s1">&#39;Path\to\file.bak&#39;</span>
+<span class="k">WITH</span> <span class="n">RECOVERY</span>
+<span class="k">GO</span></code></pre></div></p>
 
 
         
