@@ -35,5 +35,20 @@ $ ls -Z SE Linux ada tiga mode, yaitu:
 # setsebool httpd_can_network_connect_db=1 Jika ingin persistent pada saat server di-restart tambahkan opsi -P # setsebool -P httpd_can_network_connect_db on Cek hasil konfigurasi # getsebool httpd_can_network_connect_db</description>
     </item>
     
+    <item>
+      <title>Firewall CMD Centos</title>
+      <link>https://mfachrulrazy.github.io/post/firewall-cmd/</link>
+      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/firewall-cmd/</guid>
+      <description>Firewall-CMD Firewalld adalah sebuah tools untuk mengatur firewall pada Linux. Berikut beberapa perintah firewall-cmd yang biasa digunakan.
+Melihat rule firewall # firewall-cmd --list-all-zones # firewall-cmd --list-all-services # firewall-cmd --list-all # firewall-cmd --list-ports
+Menambahkan servis berdasarkan zona publik # firewall-cmd --zone=public --add-service=http
+Menambahkan servis sercara permanent # firewall-cmd --permanent --add-service=http # firewall-cmd --permanent --add-service=https
+Menambahkan port secara permanent # firewall-cmd --permanent --add-port=2323
+Menyimpan rule firewall # firewall-cmd --reload
+Menghapus rule firewall # firewall-cmd --zone=public --remove-port=2323/tcp # firewall-cmd --runtime-to-permanent # firewall-cmd --reload</description>
+    </item>
+    
   </channel>
 </rss>

@@ -66,7 +66,7 @@ Untuk melihat konteks SE Linux dapat menggunakan perintah
 $ ls -Z SE Linux ada tiga mode, yaitu:
  Enforcing : Mode ini akan menahan semua proses yang berlawanan dengan apa yang telah didefinisikan pada kebijakan (policy).",
   "inLanguage" : "en",
-  "wordCount": 149,
+  "wordCount": 186,
   "datePublished" : "2018-01-25T00:00:00",
   "dateModified" : "2018-01-25T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -283,7 +283,9 @@ $ ls -Z SE Linux ada tiga mode, yaitu:
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>SE Linux atau Security Enhanced Linux adalah salah satu fitur keamanan baru dari linux. SE Linux mencakup pada penggunaan proses, user linux, dan juga file. Secara default SE linux berjalan dengan mode <strong>Enforcing</strong> (default).<br />
+        
+
+<p>SE Linux atau Security Enhanced Linux adalah salah satu fitur keamanan baru dari linux. SE Linux mencakup pada penggunaan proses, user linux, dan juga file. Secara default SE linux berjalan dengan mode <strong>Enforcing</strong> (default).<br />
 Untuk melihat konteks SE Linux dapat menggunakan perintah</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -Z</code></pre></div>
 <p>SE Linux ada tiga mode, yaitu:</p>
@@ -307,6 +309,13 @@ Mengubah SELinux secara permanent dapat dengan mengubah file <code>/etc/selinux/
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
 <span class="ln">2</span><span class="nv">SELINUX</span><span class="o">=</span>enforcing
 <span class="ln">3</span>...</code></pre></div></p>
+
+<h3 id="selinux-policy-management-tool">SELinux Policy Management Tool</h3>
+
+<p>Semanage bisa lebih memudahkan dalam mengkonfigurasi SELinux. Untuk menggunakannya harus terlebih dahulu install paket berikut:<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install policycoreutils-python</span></code></pre></div><br />
+Untuk melihat port dan servis yang diizinkan oleh SE Linux.<br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># semanage port -l</span></code></pre></div></p>
 
 
         

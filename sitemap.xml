@@ -73,6 +73,11 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/install-zabbix/</loc>
+    <lastmod>2018-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/install-ftp-ubuntu/</loc>
     <lastmod>2018-06-15T00:00:00+00:00</lastmod>
   </url>
@@ -335,6 +340,11 @@
   <url>
     <loc>https://mfachrulrazy.github.io/post/err-gateway-to/</loc>
     <lastmod>2017-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/firewall-cmd/</loc>
+    <lastmod>2017-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>

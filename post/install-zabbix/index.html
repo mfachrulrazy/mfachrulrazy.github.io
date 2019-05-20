@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Install dan konfigurasi Hugo" />
-  <meta name="twitter:title" content="Install dan konfigurasi Hugo" />
-  <meta name="description" content="Install hugo di Windows">
-  <meta property="og:description" content="Install hugo di Windows">
-  <meta name="twitter:description" content="Install hugo di Windows">
+  <meta property="og:title" content="Install Zabbix pada Centos" />
+  <meta name="twitter:title" content="Install Zabbix pada Centos" />
+  <meta name="description" content="Install dan konfigurasi Zabbix server">
+  <meta property="og:description" content="Install dan konfigurasi Zabbix server">
+  <meta name="twitter:description" content="Install dan konfigurasi Zabbix server">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/install-hugo/",
-          "name": "Install dan konfigurasi hugo"
+          "@id": "https://mfachrulrazy.github.io/post/install-zabbix/",
+          "name": "Install zabbix pada centos"
         }
     }]
 }
@@ -60,17 +60,19 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Install dan konfigurasi Hugo",
-  "description" : "Hugo adalah salah satu static framework untuk membuat website atau biasa dikenal dengan istilah framework static site generators.
-Untuk menginstall hugo di Windows, choco paket manajer harus terlebih dahulu terinstall.
-Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator level) cukup dengan perintah berikut choco install hugo -confirm  Setelah terinstall, tes dengan menjalankan perintah hugo &amp;gt; hugo help untuk mengetahui lokasi hugo terinstall &amp;gt; where hugo Untuk membuat situs baru dengan hugo cukup dengan perintah berikut (tanpa petik) &amp;gt; hugo new site &amp;#39;namasitus&amp;#39; Folder baru akan dibuat dengan struktur folder berikut.",
+  "headline": "Install Zabbix pada Centos",
+  "description" : "Pre-Requisites  Install dan konfigurasi paket php mariadb dan apache di server zabbix.
+ Jalankan servis php-mariadb-apache. Buat user dan database untuk zabbix.
+  Tambahkan repository Zabbix Jika menggunakan rhel 7, gunakan file konfigurasi berikut # rpm -ivh https://repo.zabbix.com/zabbix/4.2/rhel/7/x86_64/zabbix-release-4.2-1.el7.noarch.rpm
+Instalasi Frontend Install paket yum-config-manager # yum update &amp;amp;&amp;amp; yum install yum-utils Zabbix frontend membutuhkan paket tambahan # yum-config-manager --enable rhel-7-server-optional-rpms
+Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # yum install zabbix-server-mysql Install Zabbix frontend dengan dukungan mysql # yum install zabbix-web-mysql Untuk zabbix proxy dan zabbix server harus menggunakan database yang berbeda.",
   "inLanguage" : "en",
-  "wordCount": 320,
-  "datePublished" : "2018-06-29T00:00:00",
-  "dateModified" : "2018-06-29T00:00:00",
+  "wordCount": 300,
+  "datePublished" : "2018-06-27T00:00:00",
+  "dateModified" : "2018-06-27T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-hugo/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-zabbix/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -84,13 +86,13 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
 }
 </script>
 
-<meta property="og:title" content="Install dan konfigurasi Hugo" />
-<meta property="og:description" content="Install hugo di Windows">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-hugo/" />
+<meta property="og:title" content="Install Zabbix pada Centos" />
+<meta property="og:description" content="Install dan konfigurasi Zabbix server">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-zabbix/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Install dan konfigurasi Hugo" />
-  <meta name="twitter:description" content="Install hugo di Windows">
+  <meta name="twitter:title" content="Install Zabbix pada Centos" />
+  <meta name="twitter:description" content="Install dan konfigurasi Zabbix server">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -98,7 +100,7 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-hugo/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-zabbix/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -243,19 +245,19 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Install dan konfigurasi Hugo</h1>
+                <h1>Install Zabbix pada Centos</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Install hugo di Windows</h2>
+                  <h2 class="post-subheading">Install dan konfigurasi Zabbix server</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on June 29, 2018
+  <i class="fas fa-calendar"></i>&nbsp;Posted on June 27, 2018
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
@@ -284,81 +286,102 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
       <article role="main" class="blog-post">
         
 
-<p>Hugo adalah salah satu static framework untuk membuat website atau biasa dikenal dengan istilah <em>framework static site generators</em>.<br />
-Untuk menginstall hugo di Windows, choco paket manajer harus terlebih dahulu terinstall.</p>
-
-<h3 id="install-hugo">Install Hugo</h3>
+<h3 id="pre-requisites">Pre-Requisites</h3>
 
 <ol>
-<li>Untuk menginstall hugo dapat dijalankan melalui cmd (administrator level) cukup dengan perintah berikut
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd">choco install hugo -confirm</code></pre></div>
-<img src="/img/ins-hugo/ins-hugo1.png" alt="img1" /></li>
-<li>Setelah terinstall, tes dengan menjalankan perintah hugo
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> hugo help
-untuk mengetahui lokasi hugo terinstall
-<span class="p">&gt;</span> where hugo</code></pre></div></li>
-<li>Untuk membuat situs baru dengan hugo cukup dengan perintah berikut (tanpa petik)
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> hugo new site &#39;namasitus&#39;</code></pre></div></li>
-<li>Folder baru akan dibuat dengan struktur folder berikut.<br />
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">|</span>-- config.toml
-<span class="p">|</span>-- archetypes
-<span class="p">|</span>    <span class="p">|</span>-- default.md
-<span class="p">|</span>-- content
-<span class="p">|</span>-- data
-<span class="p">|</span>-- layouts
-<span class="p">|</span>-- static
-<span class="p">|</span>-- themes</code></pre></div></li>
-<li>Untuk menggunakan tema di hugo bisa dengan 3 cara
-
-<ul>
-<li>git submodule</li>
-<li>git clone</li>
-<li>menyalin (copy) file zip secara langsung ke dalam folder themes</li>
-</ul></li>
-<li>Contoh dengan menggunakan git clone untuk merubah tema
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> git clone add https://github.com/bul-ikana/hugo-cards.git themes/kartu</code></pre></div>
-
-<ul>
-<li>download tema dari git repositori dan masukkan ke dalam folder <code>themes</code> dengan nama <strong>kartu</strong></li>
-</ul></li>
-<li>Untuk menggunakan tema, edit file <code>config.toml</code>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="ln">1</span><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
-<span class="ln">2</span><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
-<span class="ln">3</span><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My New Hugo Site&#34;</span>
-<span class="ln">4</span><span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;kartu&#34;</span> <span class="c">#baris untuk merubah tema</span></code></pre></div></li>
-<li>Simpan file, dan jalankan hugo dari direktori root
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> hugo server</code></pre></div></li>
-<li>Pergi ke browser dan buka alamat <code>localhost:1313</code> karena secara default hugo akan menggunakan port tersebut.</li>
-<li>Untuk membuat file baru bisa menggunakan perintah
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> hugo new post\newpost.md</code></pre></div>
-
-<ul>
-<li>Pastikan dalam menjalankan perintah di atas kita berada di direktori root dari hugo site yang dibuat</li>
-<li>Hugo secara otomatis akan membuat sebuah file <code>newpost.md</code> dalam folder ..\content\post<br /></li>
-</ul></li>
+<li>Install dan konfigurasi paket php mariadb dan apache di server zabbix.<br /></li>
+<li>Jalankan servis php-mariadb-apache.</li>
+<li>Buat user dan database untuk zabbix.<br /></li>
 </ol>
 
-<h3 id="menggunakan-examplesite-dari-tema-hugo">Menggunakan exampleSite dari Tema Hugo</h3>
+<h3 id="tambahkan-repository-zabbix">Tambahkan repository Zabbix</h3>
 
-<p>Biasanya, tema dari hugo sudah menyediakan contoh website agar kita dapat melihat struktur postingan dan foldernya seperti apa. Langkah menggunakannya sebagai berikut</p>
+<p>Jika menggunakan rhel 7, gunakan file konfigurasi berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># rpm -ivh https://repo.zabbix.com/zabbix/4.2/rhel/7/x86_64/zabbix-release-4.2-1.el7.noarch.rpm</span></code></pre></div></p>
+
+<h3 id="instalasi-frontend">Instalasi Frontend</h3>
+
+<p>Install paket <code>yum-config-manager</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum update &amp;&amp; yum install yum-utils</span></code></pre></div>
+Zabbix frontend membutuhkan paket tambahan
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum-config-manager --enable rhel-7-server-optional-rpms</span></code></pre></div></p>
+
+<h3 id="instalasi-server-proxy-frontend">Instalasi Server/Proxy/Frontend</h3>
 
 <ol>
-<li>Pastikan sudah membuat site hugo <code>hugo new site ...</code></li>
-<li>Masuk ke dalam folder themes\namatema</li>
-<li>Jalankan hugo dari folder tema yang digunakan
-<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> hugo server --source=exampleSite --themesDir=../..</code></pre></div></li>
-<li>Artinya, server hugo akan berjalan dari direktori exampleSite dengan parameter exampleSite\config.toml dan mengambil tema dari direktori themes (&ndash;themesDir=../..)</li>
+<li>Install Zabbix Server dengan dukungan mysql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install zabbix-server-mysql</span></code></pre></div></li>
+<li>Install Zabbix frontend dengan dukungan mysql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install zabbix-web-mysql</span></code></pre></div></li>
+<li>Untuk zabbix proxy dan zabbix server harus menggunakan database yang berbeda.<br /></li>
+<li>Import initial schema dan data untuk server
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix</span></code></pre></div></li>
+<li>edit file konfigurasi <code>/etc/zabbix/zabbix_server.conf</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="nv">DBHost</span><span class="o">=</span>localhost
+<span class="ln">2</span><span class="nv">DBName</span><span class="o">=</span>zabbix
+<span class="ln">3</span><span class="nv">DBUser</span><span class="o">=</span>zabbix
+<span class="ln">4</span><span class="nv">DBPassword</span><span class="o">=</span>&lt;password&gt;</code></pre></div></li>
+<li>Simpan dan keluar<br /></li>
 </ol>
+
+<h3 id="servis-zabbix">Servis Zabbix</h3>
+
+<ol>
+<li>Jalankan servis zabbix-server
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># service zabbix-server start</span></code></pre></div></li>
+<li>Jalankan servis pada saat booting
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl enable zabbix-server</span></code></pre></div><br /></li>
+</ol>
+
+<h3 id="konfigurasi-frontend">Konfigurasi Frontend</h3>
+
+<p>Ketika menginstall frontend zabbix lokasi file konfigurasi <code>/etc/httpd/conf.d/zabbix.conf</code>.<br />
+Ubah timezone dalam file tersebut.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>...
+<span class="ln">2</span>php_value date.timezone Asia/Makassar
+<span class="ln">3</span>...</code></pre></div></p>
+
+<h3 id="keamanan">Keamanan</h3>
+
+<p>Pengaturan SELinux
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># setsebool -P httpd_can_connect_zabbix on</span>
+<span class="c1"># setsebool -P httpd_can_network_connect_db on</span></code></pre></div>
+Pengaturan firewall-cmd
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --zone=public --permanent --add-port=443/tcp</span>
+<span class="c1"># firewall-cmd --zone=public --permanent --add-port=80/tcp</span></code></pre></div></p>
+
+<h3 id="instalasi-via-browser">Instalasi via Browser</h3>
+
+<ol>
+<li>Jendela selamat datang klik <code>Next</code><br /></li>
+<li>Pengecekan kebutuhan zabbix klik <code>Next</code><br /></li>
+<li>Konfigurasi koneksi database klik <code>Next</code><br /></li>
+<li>Pengecekan database klik <code>Next</code><br /></li>
+<li>Rangkuman instalasi frontend klik <code>Next</code><br /></li>
+<li>Proses Instalasi dan klik <code>Finish</code><br />
+<img src="/img/monitoring/ins-zabbix.png" alt="img" /></li>
+<li>Setelah selesai lakukan login ke zabbix. User default: <strong>Admin</strong> dan password default: <strong>zabbix</strong><br /></li>
+</ol>
+
+<h3 id="troubleshoot-zabbix-server">Troubleshoot Zabbix Server</h3>
+
+<p>Zabbix server belum bisa berjalan karena masih di-block oleh SE Linux.<br />
+Log error dapat dilihat dari log web zabbix (/var/log/zabbix/zabbix_server.log)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> cannot start alert manager service: Cannot <span class="nb">bind</span> socket to <span class="s2">&#34;/var/run/zabbix/zabbix_server_alerter.sock&#34;</span>: <span class="o">[</span><span class="m">98</span><span class="o">]</span> Address already in use.
+ <span class="m">12301</span>:20190520:101534.040 One child process died <span class="o">(</span>PID:12340,exitcode/signal:1<span class="o">)</span>. Exiting ...
+ </code></pre></div><br />
+ * Solusi sementara matikan selinux, tetapi tingkat kelemahan server akan berkurang.<br />
+ * Solusi kedua adalah dengan menggunakan kode berikut
+ <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> <span class="c1"># grep AVC /var/log/audit/audit.log* | audit2allow -M systemd-allow; semodule -i systemd-allow.pp</span>
+ </code></pre></div></p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/hugo/">hugo</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/monitoring/">monitoring</a>&nbsp;
             
-              <a href="https://mfachrulrazy.github.io//kategori/blog/">blog</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/centos/">centos</a>&nbsp;
             
           </div>
         
@@ -373,28 +396,28 @@ untuk mengetahui lokasi hugo terinstall
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-hugo%2f&amp;text=Install%20dan%20konfigurasi%20Hugo&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-zabbix%2f&amp;text=Install%20Zabbix%20pada%20Centos&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-hugo%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-zabbix%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-hugo%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-zabbix%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-hugo%2f&amp;title=Install%20dan%20konfigurasi%20Hugo" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-zabbix%2f&amp;title=Install%20Zabbix%20pada%20Centos" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -415,12 +438,12 @@ untuk mengetahui lokasi hugo terinstall
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/install-zabbix/" data-toggle="tooltip" data-placement="top" title="Install Zabbix pada Centos">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/install-ftp-ubuntu/" data-toggle="tooltip" data-placement="top" title="Install Vsftp Ubuntu 16.04">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/install-snmp-linux/" data-toggle="tooltip" data-placement="top" title="Install SNMP Linux">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/install-hugo/" data-toggle="tooltip" data-placement="top" title="Install dan konfigurasi Hugo">Next Post &rarr;</a>
             </li>
           
         </ul>

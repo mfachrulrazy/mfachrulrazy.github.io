@@ -167,6 +167,19 @@ Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator
     </item>
     
     <item>
+      <title>Install Zabbix pada Centos</title>
+      <link>https://mfachrulrazy.github.io/post/install-zabbix/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-zabbix/</guid>
+      <description>Pre-Requisites  Install dan konfigurasi paket php mariadb dan apache di server zabbix.
+ Jalankan servis php-mariadb-apache. Buat user dan database untuk zabbix.
+  Tambahkan repository Zabbix Jika menggunakan rhel 7, gunakan file konfigurasi berikut # rpm -ivh https://repo.zabbix.com/zabbix/4.2/rhel/7/x86_64/zabbix-release-4.2-1.el7.noarch.rpm
+Instalasi Frontend Install paket yum-config-manager # yum update &amp;amp;&amp;amp; yum install yum-utils Zabbix frontend membutuhkan paket tambahan # yum-config-manager --enable rhel-7-server-optional-rpms
+Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # yum install zabbix-server-mysql Install Zabbix frontend dengan dukungan mysql # yum install zabbix-web-mysql Untuk zabbix proxy dan zabbix server harus menggunakan database yang berbeda.</description>
+    </item>
+    
+    <item>
       <title>Install Vsftp Ubuntu 16.04</title>
       <link>https://mfachrulrazy.github.io/post/install-ftp-ubuntu/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
@@ -761,6 +774,21 @@ Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
     </item>
     
     <item>
+      <title>Firewall CMD Centos</title>
+      <link>https://mfachrulrazy.github.io/post/firewall-cmd/</link>
+      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/firewall-cmd/</guid>
+      <description>Firewall-CMD Firewalld adalah sebuah tools untuk mengatur firewall pada Linux. Berikut beberapa perintah firewall-cmd yang biasa digunakan.
+Melihat rule firewall # firewall-cmd --list-all-zones # firewall-cmd --list-all-services # firewall-cmd --list-all # firewall-cmd --list-ports
+Menambahkan servis berdasarkan zona publik # firewall-cmd --zone=public --add-service=http
+Menambahkan servis sercara permanent # firewall-cmd --permanent --add-service=http # firewall-cmd --permanent --add-service=https
+Menambahkan port secara permanent # firewall-cmd --permanent --add-port=2323
+Menyimpan rule firewall # firewall-cmd --reload
+Menghapus rule firewall # firewall-cmd --zone=public --remove-port=2323/tcp # firewall-cmd --runtime-to-permanent # firewall-cmd --reload</description>
+    </item>
+    
+    <item>
       <title>Menghapus Notifikasi Pop-Up Lidgrain pada Chrome</title>
       <link>https://mfachrulrazy.github.io/post/del-notif-chrome/</link>
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
@@ -837,7 +865,7 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/page/ref/</guid>
       <description> Berikut daftar Situs yang menjadi referensi saya dalam seluruh postingan di Blog ini.
-Internasional  Linode Digital Ocean Rackspace Mysql Linoxide How to Lamp Tecmint Red Hat Cyberciti Launchpad Liquid Web Zabbix Nagios Linux host Tech Republic Easy Engine Nginx Proxmox Barry Hubbard Microsoft Docs Microsoft How to geek Shell Hacks Linux Host Support  Indonesia  linux kesehatan kang erik thinkxfree Mikrotik  </description>
+Internasional  Linode Digital Ocean Rackspace Mysql Linoxide How to Lamp Tecmint Red Hat Cyberciti Launchpad Liquid Web Zabbix Nagios Linux host Tech Republic Easy Engine Nginx Proxmox Barry Hubbard Microsoft Docs Microsoft How to geek Shell Hacks Linux Host Support Linux die  Indonesia  linux kesehatan kang erik thinkxfree Mikrotik  </description>
     </item>
     
     <item>
