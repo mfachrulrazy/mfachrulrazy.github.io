@@ -62,7 +62,7 @@
   },
   "headline": "Install dan Konfigurasi Nagios",
   "description" : "Install aplikasi pendukung berupa paket LAMP (linux, apache, mysql, php) # yum install httpd mariadb-server php php-mysql Konfigurasi mysql # mysql_secure_installation Jika terdapat error mysql.sock restart service mysql terlebih dahulu
- Konfigurasi untuk menjalankan mysql dan apache pada saat boot # systemctl enable httpd.service # systemctl enable mariadb.service Install paket tambahan pendukung Nagios # yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip Konfigurasi installer nagios dan persiapan sebelum compile #.",
+ Konfigurasi untuk menjalankan mysql dan apache pada saat boot # systemctl enable httpd.service # systemctl enable mariadb.service Install paket tambahan pendukung Nagios # yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip net-snmp openssl-devel Buat user dan group nagios # useradd nagios # groupadd nagcmd # usermod -a -G nagcmd nagios # usermod -a -G nagcmd apache Download dan ekstrak nagios core dan plugin (versi 4.",
   "inLanguage" : "en",
   "wordCount": 231,
   "datePublished" : "2018-09-15T00:00:00",
@@ -293,28 +293,33 @@
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl enable httpd.service</span>
 <span class="c1"># systemctl enable mariadb.service</span></code></pre></div></li>
 <li>Install paket tambahan pendukung Nagios
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip</span></code></pre></div></li>
-<li>Konfigurasi installer nagios dan persiapan sebelum compile
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#./configure</span></code></pre></div></li>
-<li>Compile nagios core
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make all</span></code></pre></div></li>
-<li>Install nagios core
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install</span></code></pre></div>
-<img src="/img/monitoring/ins-nagios1.png" alt="img" /></li>
-<li>Install initialization script untuk mengatur nagios servis
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-daemoninit</span></code></pre></div></li>
-<li>Install nagios configuration sample
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-config</span></code></pre></div></li>
-<li>Install nagios core command
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-commandmode</span></code></pre></div></li>
-<li>Install file konfigurasi apache web server
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># make install-webconf</span></code></pre></div></li>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip  net-snmp openssl-devel</span></code></pre></div></li>
+<li>Buat user dan group nagios
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># useradd nagios</span>
+<span class="c1"># groupadd nagcmd</span>
+<span class="c1"># usermod -a -G nagcmd nagios</span>
+<span class="c1"># usermod -a -G nagcmd apache</span></code></pre></div></li>
+<li>Download dan ekstrak nagios core dan plugin (versi 4.4.3 dan plugin versi 2.2.1)
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cd /tmp</span>
+<span class="c1"># wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.3.tar.gz</span>
+<span class="c1"># wget https://nagios-plugins.org/download/nagios-plugins-2.2.1.tar.gz</span>
+<span class="c1"># tar zxf nagios-4.4.3.tar.gz</span>
+<span class="c1"># tar zxf nagios-plugins-2.2.1.tar.gz</span>
+<span class="c1"># cd nagios-4.4.3</span></code></pre></div></li>
+<li>Compile nagios
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ./configure --with-command-group=nagcmd</span>
+<span class="c1"># make all</span>
+<span class="c1"># make install</span>
+<span class="c1"># make install-init</span>
+<span class="c1"># make install-config</span>
+<span class="c1"># make install-commandmode</span>
+<span class="c1"># make install-webconf</span></code></pre></div></li>
+<li>Buat password untuk user nagiosadmin
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin</span></code></pre></div></li>
 <li>Restart servis apache
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart httpd</span></code></pre></div></li>
 <li>Pastikan firewall-cmd telah mengizinkan port 80
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># firewall-cmd --zone=public --add-port=80/tcp --permanent</span></code></pre></div></li>
-<li>Buat user nagios untuk akses web nagios
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin</span></code></pre></div></li>
 </ol>
 
 <h3 id="install-plugin-nagios">Install Plugin Nagios</h3>
@@ -322,15 +327,10 @@
 <ol>
 <li>Sebelumnya pastikan paket pendukung berikut ini telah terinstall
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install gcc glibc glibc-common make gettext automake autoconf wget openssl-devel net-snmp net-snmp-utils epel-release perl-Net-SNMP</span></code></pre></div></li>
-<li>Setelah itu pindah ke direktori tmp dan download serta ekstrak file nagios plugin
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cd /tmp</span>
-<span class="c1"># wget --no-check-certificate -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.2.1.tar.gz</span>
-<span class="c1"># tar zxf nagios-plugins.tar.gz</span></code></pre></div></li>
-<li>Pindah ke direktori hasil ekstrak dan compile serta install nagios server
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cd nagios-plugins-release-2.2.1/</span>
-<span class="c1"># ./tools/setup</span>
-<span class="c1"># ./configure</span>
-<span class="c1"># make</span>
+<li>Setelah itu masuk ke direktori plugin yang telah diekstrak
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># cd /nagios-plugin-x.x</span>
+<span class="c1"># ./configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl</span>
+<span class="c1"># make all</span>
 <span class="c1"># make install</span></code></pre></div></li>
 <li>Jalankan servis nagios
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl start nagios</span></code></pre></div></li>
