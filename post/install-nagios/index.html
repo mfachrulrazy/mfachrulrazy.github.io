@@ -64,7 +64,7 @@
   "description" : "Install aplikasi pendukung berupa paket LAMP (linux, apache, mysql, php) # yum install httpd mariadb-server php php-mysql Konfigurasi mysql # mysql_secure_installation Jika terdapat error mysql.sock restart service mysql terlebih dahulu
  Konfigurasi untuk menjalankan mysql dan apache pada saat boot # systemctl enable httpd.service # systemctl enable mariadb.service Install paket tambahan pendukung Nagios # yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip net-snmp openssl-devel Buat user dan group nagios # useradd nagios # groupadd nagcmd # usermod -a -G nagcmd nagios # usermod -a -G nagcmd apache Download dan ekstrak nagios core dan plugin (versi 4.",
   "inLanguage" : "en",
-  "wordCount": 231,
+  "wordCount": 237,
   "datePublished" : "2018-09-15T00:00:00",
   "dateModified" : "2018-09-15T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -314,7 +314,7 @@
 <span class="c1"># make install-config</span>
 <span class="c1"># make install-commandmode</span>
 <span class="c1"># make install-webconf</span></code></pre></div></li>
-<li>Buat password untuk user nagiosadmin
+<li>Buat password untuk user administrator web interface dalam hal ini <code>nagiosadmin</code>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin</span></code></pre></div></li>
 <li>Restart servis apache
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl restart httpd</span></code></pre></div></li>
