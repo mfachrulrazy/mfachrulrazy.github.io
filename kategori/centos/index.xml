@@ -185,6 +185,20 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
     </item>
     
     <item>
+      <title>Mounting eksternal Drive di Linux</title>
+      <link>https://mfachrulrazy.github.io/post/mount-linux/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/mount-linux/</guid>
+      <description>Mounting dengan file system ntfs.
+Pertama melihat daftar disk # fdisk -l
+Cek filesystem # file -s /dev/sdxx
+Buat direktori mount point # mkdir /mnt/externalhdd
+Mounting # mount -t ntfs-3g /dev/sdxx /mnt/externalhdd
+Unmounting (eject): # umount /dev/sdxx</description>
+    </item>
+    
+    <item>
       <title>Pengaturan Waktu Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/konfig-time-cent7/</link>
       <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>

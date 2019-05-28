@@ -67,7 +67,7 @@
 Instalasi Frontend Install paket yum-config-manager # yum update &amp;amp;&amp;amp; yum install yum-utils Zabbix frontend membutuhkan paket tambahan # yum-config-manager --enable rhel-7-server-optional-rpms
 Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # yum install zabbix-server-mysql Install Zabbix frontend dengan dukungan mysql # yum install zabbix-web-mysql Untuk zabbix proxy dan zabbix server harus menggunakan database yang berbeda.",
   "inLanguage" : "en",
-  "wordCount": 323,
+  "wordCount": 300,
   "datePublished" : "2018-06-27T00:00:00",
   "dateModified" : "2018-06-27T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -368,20 +368,10 @@ Pengaturan firewall-cmd
 <p>Zabbix server belum bisa berjalan karena masih di-block oleh SE Linux.<br />
 Log error dapat dilihat dari log web zabbix (/var/log/zabbix/zabbix_server.log)
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> cannot start alert manager service: Cannot <span class="nb">bind</span> socket to <span class="s2">&#34;/var/run/zabbix/zabbix_server_alerter.sock&#34;</span>: <span class="o">[</span><span class="m">98</span><span class="o">]</span> Address already in use.
- <span class="m">12301</span>:20190520:101534.040 One child process died <span class="o">(</span>PID:12340,exitcode/signal:1<span class="o">)</span>. Exiting ...
- </code></pre></div><br />
- * Solusi sementara matikan selinux, tetapi tingkat kelemahan server akan berkurang.<br />
- * Solusi kedua adalah dengan menggunakan kode berikut
- <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"> <span class="c1"># grep AVC /var/log/audit/audit.log* | audit2allow -M systemd-allow; semodule -i systemd-allow.pp</span>
- </code></pre></div></p>
-
-<p>### Mengganti tema Nagios
- Download tema yang diingikan
- <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">  <span class="c1"># wget https://github.com/ynlamy/vautour-style/releases/download/v1.7/vautour_style.zip</span>
- </code></pre></div><br />
- Ekstrak ke direktori tema nagios di <code>/usr/local/nagios/share/</code>
- <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">  <span class="c1"># unzip vautour_style.zip -d /usr/local/nagios/share</span>
-  </code></pre></div></p>
+ <span class="m">12301</span>:20190520:101534.040 One child process died <span class="o">(</span>PID:12340,exitcode/signal:1<span class="o">)</span>. Exiting ...</code></pre></div><br />
+* Solusi sementara matikan selinux, tetapi tingkat kelemahan server akan berkurang.<br />
+* Solusi kedua adalah dengan menggunakan kode berikut
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># grep AVC /var/log/audit/audit.log* | audit2allow -M systemd-allow; semodule -i systemd-allow.pp</span></code></pre></div></p>
 
 
         

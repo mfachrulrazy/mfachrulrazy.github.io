@@ -64,7 +64,7 @@
   "description" : "Install aplikasi pendukung berupa paket LAMP (linux, apache, mysql, php) # yum install httpd mariadb-server php php-mysql Konfigurasi mysql # mysql_secure_installation Jika terdapat error mysql.sock restart service mysql terlebih dahulu
  Konfigurasi untuk menjalankan mysql dan apache pada saat boot # systemctl enable httpd.service # systemctl enable mariadb.service Install paket tambahan pendukung Nagios # yum install -y gcc glibc glibc-common wget gd gd-devel perl postfix unzip net-snmp openssl-devel Buat user dan group nagios # useradd nagios # groupadd nagcmd # usermod -a -G nagcmd nagios # usermod -a -G nagcmd apache Download dan ekstrak nagios core dan plugin (versi 4.",
   "inLanguage" : "en",
-  "wordCount": 237,
+  "wordCount": 259,
   "datePublished" : "2018-09-15T00:00:00",
   "dateModified" : "2018-09-15T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -333,8 +333,15 @@
 <span class="c1"># make all</span>
 <span class="c1"># make install</span></code></pre></div></li>
 <li>Jalankan servis nagios
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl start nagios</span></code></pre></div></li>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># systemctl start nagios</span></code></pre></div><br /></li>
 </ol>
+
+<h3 id="mengganti-tema-nagios">Mengganti tema Nagios</h3>
+
+<p>Download tema yang diingikan
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># wget https://github.com/ynlamy/vautour-style/releases/download/v1.7/vautour_style.zip</span></code></pre></div><br />
+Ekstrak ke direktori tema nagios di <code>/usr/local/nagios/share/</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># unzip vautour_style.zip -d /usr/local/nagios/share</span></code></pre></div></p>
 
 
         
