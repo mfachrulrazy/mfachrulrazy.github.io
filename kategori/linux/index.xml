@@ -49,6 +49,18 @@ Kompress file dengan Tar Kompress file dengan menggunakan tar dan gz #tar -zcvf 
     </item>
     
     <item>
+      <title>Membuat SSH Key Pair di Putty</title>
+      <link>https://mfachrulrazy.github.io/post/ssh-key-putty/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/ssh-key-putty/</guid>
+      <description>Konfigurasi putty untuk autentikasi dengan menggunakan key (key based auth) beberapa aplikasi bawaan putty. Berikut langkahnya.
+Client Windows  Buka program Puttygen kemudian klik Generate dan arahkan mouse ke sembarang arah pada area kosong di bawah bar progress (hijau) untuk membuat key sampai selesai.  Masukkan passphrase untuk keamanan key.
+ Kemudian simpan public dan private key dari putty di tempat yang aman.
+ Salin public key dari putty ke file authorized_keys di server linux, selanjutnya kembali ke aplikasi putty, masuk pada bagian session masukkan alamat server  Kemudian pada bagian Connection &amp;gt; Data masukkan username sehingga tidak perlu meminta untuk masukkan username  Kemudian cek pada bagian SSH &amp;gt; Auth pastikan Pageant tercentang  Kemudian kembali ke menu session dan klik save.</description>
+    </item>
+    
+    <item>
       <title>Install SNMP Linux</title>
       <link>https://mfachrulrazy.github.io/post/install-snmp-linux/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
@@ -144,6 +156,16 @@ Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *
       <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
 Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
  Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut 1if (data.</description>
+    </item>
+    
+    <item>
+      <title>Linux Shell Shortcut</title>
+      <link>https://mfachrulrazy.github.io/post/linux-shell-sc/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/linux-shell-sc/</guid>
+      <description>Berikut beberapa shortcut yang sering digunakan dalam shell linux.
+Berpindah ke akhir baris Ctrl + E Berpindah ke awal baris Ctrl + A Maju satu kata Esc + F Mundur satu kata Esc + B Keluar secara paksa dari aplikasi Ctrl + C Suspend aplikasi Ctrl + Z Menjalankan aplikasi di foreground # fg Menjalankan aplikasi di background # bg Untuk lebih lengkapnya bisa cek manual dari bash # man bash</description>
     </item>
     
     <item>

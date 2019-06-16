@@ -155,6 +155,16 @@ Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /et
     </item>
     
     <item>
+      <title>Linux Shell Shortcut</title>
+      <link>https://mfachrulrazy.github.io/post/linux-shell-sc/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/linux-shell-sc/</guid>
+      <description>Berikut beberapa shortcut yang sering digunakan dalam shell linux.
+Berpindah ke akhir baris Ctrl + E Berpindah ke awal baris Ctrl + A Maju satu kata Esc + F Mundur satu kata Esc + B Keluar secara paksa dari aplikasi Ctrl + C Suspend aplikasi Ctrl + Z Menjalankan aplikasi di foreground # fg Menjalankan aplikasi di background # bg Untuk lebih lengkapnya bisa cek manual dari bash # man bash</description>
+    </item>
+    
+    <item>
       <title>Install Php 5.4 Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/install-php5-cent/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>

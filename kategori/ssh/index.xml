@@ -25,6 +25,18 @@
     </item>
     
     <item>
+      <title>Membuat SSH Key Pair di Putty</title>
+      <link>https://mfachrulrazy.github.io/post/ssh-key-putty/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/ssh-key-putty/</guid>
+      <description>Konfigurasi putty untuk autentikasi dengan menggunakan key (key based auth) beberapa aplikasi bawaan putty. Berikut langkahnya.
+Client Windows  Buka program Puttygen kemudian klik Generate dan arahkan mouse ke sembarang arah pada area kosong di bawah bar progress (hijau) untuk membuat key sampai selesai.  Masukkan passphrase untuk keamanan key.
+ Kemudian simpan public dan private key dari putty di tempat yang aman.
+ Salin public key dari putty ke file authorized_keys di server linux, selanjutnya kembali ke aplikasi putty, masuk pada bagian session masukkan alamat server  Kemudian pada bagian Connection &amp;gt; Data masukkan username sehingga tidak perlu meminta untuk masukkan username  Kemudian cek pada bagian SSH &amp;gt; Auth pastikan Pageant tercentang  Kemudian kembali ke menu session dan klik save.</description>
+    </item>
+    
+    <item>
       <title>Openssh Centos 7</title>
       <link>https://mfachrulrazy.github.io/post/openssh-cent-7/</link>
       <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
