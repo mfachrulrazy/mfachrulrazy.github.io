@@ -179,5 +179,17 @@ Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder
       <description>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini. Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy Hilangkan tanda centangnya dan login kembali.</description>
     </item>
     
+    <item>
+      <title>Menampilkan Saved Password Wifi Windows 10</title>
+      <link>https://mfachrulrazy.github.io/post/wifi-pass-win10/</link>
+      <pubDate>Sun, 18 Sep 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/wifi-pass-win10/</guid>
+      <description>Menemukan password wifi yang sudah tersimpan (saved password) melalui command prompt dapat menggunakan tools netsh.
+&amp;gt; netsh wlan show profiles &amp;#34;nama_wifi&amp;#34; key=clear
+Hasilnya, dapat dilihat pada bagian Security Settings terdapat parameter Key Content dan isinya adalah password wifi tersebut.
+Security settings ----------------- Authentication : WPA2-Personal Cipher : CCMP Authentication : WPA2-Personal Cipher : GCMP Security key : Present Key Content : PASSWORD_WIFI</description>
+    </item>
+    
   </channel>
 </rss>

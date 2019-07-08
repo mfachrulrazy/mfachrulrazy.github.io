@@ -20,7 +20,7 @@
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/script-run-vbox/</guid>
       <description>Menjalankan mesin virtual dari sebuah file bat agar dapat lebih mudah dibanding harus membuka aplikasi virtual box lalu menjalankan salah satu mesin virtual.
-Buat file bat dan masukkan script berikut @echo off VBoxManage startvm nama_vm Jika ingin menjalankan vm tanpa tampilan jendela vm bisa menambahkan parameter --type headless @echo off VBoxManage startvm nama_vm --type headless Baris pertama @echo off agar perintahnya tidak menampilkan perintah pada script. Berikut hasil perintah ketika dijalankan Waiting for VM &amp;#34;nama_vm&amp;#34; to power on.</description>
+Pastikan VirtualBox sudah ada di dalam environment variable dari Windows. Buat file bat dan masukkan script berikut @echo off VBoxManage startvm nama_vm Jika ingin menjalankan vm tanpa tampilan jendela vm bisa menambahkan parameter --type headless @echo off VBoxManage startvm nama_vm --type headless Baris pertama @echo off agar perintahnya tidak menampilkan perintah pada script.</description>
     </item>
     
     <item>
@@ -201,6 +201,18 @@ Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: *
 Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
 HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3
 Kemudian setelah itu, pastikan juga file xml yang di-load oleh windows di folder</description>
+    </item>
+    
+    <item>
+      <title>Menampilkan Saved Password Wifi Windows 10</title>
+      <link>https://mfachrulrazy.github.io/post/wifi-pass-win10/</link>
+      <pubDate>Sun, 18 Sep 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/wifi-pass-win10/</guid>
+      <description>Menemukan password wifi yang sudah tersimpan (saved password) melalui command prompt dapat menggunakan tools netsh.
+&amp;gt; netsh wlan show profiles &amp;#34;nama_wifi&amp;#34; key=clear
+Hasilnya, dapat dilihat pada bagian Security Settings terdapat parameter Key Content dan isinya adalah password wifi tersebut.
+Security settings ----------------- Authentication : WPA2-Personal Cipher : CCMP Authentication : WPA2-Personal Cipher : GCMP Security key : Present Key Content : PASSWORD_WIFI</description>
     </item>
     
   </channel>

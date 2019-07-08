@@ -20,7 +20,7 @@
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/script-run-vbox/</guid>
       <description>Menjalankan mesin virtual dari sebuah file bat agar dapat lebih mudah dibanding harus membuka aplikasi virtual box lalu menjalankan salah satu mesin virtual.
-Buat file bat dan masukkan script berikut @echo off VBoxManage startvm nama_vm Jika ingin menjalankan vm tanpa tampilan jendela vm bisa menambahkan parameter --type headless @echo off VBoxManage startvm nama_vm --type headless Baris pertama @echo off agar perintahnya tidak menampilkan perintah pada script. Berikut hasil perintah ketika dijalankan Waiting for VM &amp;#34;nama_vm&amp;#34; to power on.</description>
+Pastikan VirtualBox sudah ada di dalam environment variable dari Windows. Buat file bat dan masukkan script berikut @echo off VBoxManage startvm nama_vm Jika ingin menjalankan vm tanpa tampilan jendela vm bisa menambahkan parameter --type headless @echo off VBoxManage startvm nama_vm --type headless Baris pertama @echo off agar perintahnya tidak menampilkan perintah pada script.</description>
     </item>
     
     <item>
