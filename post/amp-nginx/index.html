@@ -62,7 +62,8 @@
   },
   "headline": "Konfigurasi Amplify pada Nginx",
   "description" : "Amplify merupakan salah satu software untuk monitoring nginx.
-1. Hal pertama yang dilakukan adalah daftar pada website amplify 2. Install amplify agent pada web server # yum install amplify-agent  3. Pada file konfigurasi nginx tambahkan log format 1http { 2 log_format main_ext &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#34;$request&amp;#34; &amp;#39; 3 &amp;#39;$status $body_bytes_sent &amp;#34;$http_referer&amp;#34; &amp;#39; 4 &amp;#39;&amp;#34;$http_user_agent&amp;#34; &amp;#34;$http_x_forwarded_for&amp;#34; &amp;#39; 5 &amp;#39;&amp;#34;$host&amp;#34; sn=&amp;#34;$server_name&amp;#34; &amp;#39; 6 &amp;#39;rt=$request_time &amp;#39; 7 &amp;#39;ua=&amp;#34;$upstream_addr&amp;#34; us=&amp;#34;$upstream_status&amp;#34; &amp;#39; 8 &amp;#39;ut=&amp;#34;$upstream_response_time&amp;#34; ul=&amp;#34;$upstream_response_length&amp;#34; &amp;#39; 9 &amp;#39;cs=$upstream_cache_status&amp;#39;; 10 11access_log /var/log/nginx/access.",
+1. Hal pertama yang dilakukan adalah daftar pada website amplify
+2. Install amplify agent pada web server # yum install amplify-agent  3. Pada file konfigurasi nginx tambahkan log format 1http { 2 log_format main_ext &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#34;$request&amp;#34; &amp;#39; 3 &amp;#39;$status $body_bytes_sent &amp;#34;$http_referer&amp;#34; &amp;#39; 4 &amp;#39;&amp;#34;$http_user_agent&amp;#34; &amp;#34;$http_x_forwarded_for&amp;#34; &amp;#39; 5 &amp;#39;&amp;#34;$host&amp;#34; sn=&amp;#34;$server_name&amp;#34; &amp;#39; 6 &amp;#39;rt=$request_time &amp;#39; 7 &amp;#39;ua=&amp;#34;$upstream_addr&amp;#34; us=&amp;#34;$upstream_status&amp;#34; &amp;#39; 8 &amp;#39;ut=&amp;#34;$upstream_response_time&amp;#34; ul=&amp;#34;$upstream_response_length&amp;#34; &amp;#39; 9 &amp;#39;cs=$upstream_cache_status&amp;#39;; 10 11access_log /var/log/nginx/access.",
   "inLanguage" : "en",
   "wordCount": 159,
   "datePublished" : "2017-12-08T00:00:00",
@@ -282,7 +283,7 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Amplify merupakan salah satu software untuk monitoring nginx.<br />
-1. Hal pertama yang dilakukan adalah daftar pada website <a href="https://amplify.nginx.com/login">amplify</a>
+1. Hal pertama yang dilakukan adalah daftar pada website <a href="https://amplify.nginx.com/login">amplify</a><br />
 2. Install amplify agent pada web server
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># yum install amplify-agent</span> </code></pre></div>
 3. Pada file konfigurasi nginx tambahkan log format

@@ -210,6 +210,18 @@ Untuk melihat pengaturan waktu yang terpasang # timedatectl Mengatur tanggal
     </item>
     
     <item>
+      <title>Belajar Vi dan Vim</title>
+      <link>https://mfachrulrazy.github.io/post/belajar-vim/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/belajar-vim/</guid>
+      <description>Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
+Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
+Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
+ i : untuk beralih ke mode insert atau memasukkan teks.</description>
+    </item>
+    
+    <item>
       <title>Berkenalan dengan Cron</title>
       <link>https://mfachrulrazy.github.io/post/about-cron/</link>
       <pubDate>Fri, 05 Feb 2016 00:00:00 +0000</pubDate>
