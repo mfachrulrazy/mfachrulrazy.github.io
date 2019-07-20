@@ -64,9 +64,9 @@
   "description" : "Kompress File dengan Zip Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
 Ekstrak File dengan Unzip Ekstrak file bisa menggunakan unzip.
 Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr
-Kompress file dengan Tar Kompress file dengan menggunakan tar dan gz #tar -zcvf /folder/file.",
+Gzip dan Gunzip Compress file dengan menggunakan gzip # gzip namafile.",
   "inLanguage" : "en",
-  "wordCount": 156,
+  "wordCount": 307,
   "datePublished" : "2019-01-11T00:00:00",
   "dateModified" : "2019-01-11T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -259,7 +259,7 @@ Kompress file dengan Tar Kompress file dengan menggunakan tar dan gz #tar -zcvf 
   <i class="fas fa-calendar"></i>&nbsp;Posted on January 11, 2019
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
   
@@ -301,6 +301,14 @@ Ekstark file zip
 Ekstrak dengan tujuan direktori tertentu
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># unzip namafile.zip -d /var/usr</span></code></pre></div></p>
 
+<h2 id="gzip-dan-gunzip">Gzip dan Gunzip</h2>
+
+<p>Compress file dengan menggunakan <strong>gzip</strong>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># gzip namafile.txt</span></code></pre></div>
+Perintah di atas akan memberikan output berupa file <code>namafile.gz</code>.<br />
+Ekstrak file dengan menggunakan <strong>gunzip</strong>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># gunzip namafile.gz</span></code></pre></div></p>
+
 <h2 id="kompress-file-dengan-tar">Kompress file dengan Tar</h2>
 
 <p>Kompress file dengan menggunakan tar dan gz
@@ -308,7 +316,8 @@ Ekstrak dengan tujuan direktori tertentu
 Setelah perintah tar, masukkan lokasi dan nama file dengan ekstensi .tar.gz kemudian nama folder atau file yang ingin dikompress.</p>
 
 <ul>
-<li>-z    : kompress dengan gzip</li>
+<li>-z    : kompress/ekstrak dengan gzip/gunzip</li>
+<li>-j    : kompress/ekstrak dengan bzip2/bunzip2</li>
 <li>-c    : buat archive di linux</li>
 <li>-v    : verbose atau menampilkan proses di linux</li>
 <li>-f    : nama file</li>
@@ -317,9 +326,32 @@ Setelah perintah tar, masukkan lokasi dan nama file dengan ekstensi .tar.gz kemu
 <h2 id="ekstrak-file-dengan-tar">Ekstrak file dengan Tar</h2>
 
 <p>Untuk ekstrak file hanya berbeda pada opsinya.<br />
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#tar -zxvf /folder/file.tar.gz</span></code></pre></div>
-Opsi <strong>-x</strong> untuk ekstrak file yang diberikan. Jika ingin ekstrak di folder tertentu tambahkan opsi <strong>-C</strong><br />
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#tar -zxvf /folder/file.tar.gz -C /home/folderA</span></code></pre></div></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># tar -xvf /folder/file.tar.gz</span></code></pre></div>
+Opsi <strong>-x</strong> untuk ekstrak file yang diberikan.<br />
+Jika ingin ekstrak di folder tertentu tambahkan opsi <strong>-C</strong><br />
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># tar -xvf /folder/file.tar.gz -C /home/folderA</span></code></pre></div></p>
+
+<h2 id="opsi-tar-lainnya">Opsi Tar Lainnya</h2>
+
+<p>Untuk melihat isi di dalam file tar bisa dengan menggunakan opsi <code>t</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># tar tvf /folder/file.tar.gz</span></code></pre></div></p>
+
+<h2 id="tools-kompress-lain">Tools kompress lain</h2>
+
+<h3 id="zcat">Zcat</h3>
+
+<p>Menggunakan <strong>zcat</strong> untuk ekstrak file yang sama dengan ketika menggunakan perintah <code>gunzip -dc</code> opsi <strong>d</strong> untuk decompress dan <strong>c</strong> untuk mengirimkan hasil ke standard output. Contoh perintah:
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># zcat namafile.tar.gz | tar xvf -</span></code></pre></div>
+Opsi (-) setelah parameter tar artinya sama dengan namafile yang diekstrak oleh zcat ke standard output.</p>
+
+<h3 id="bzip2-dan-bunzip2">bzip2 dan bunzip2</h3>
+
+<p>Sama dengan penggunaan gzip dan gunzip, hanya saja hasil kompressnya lebih kecil. Ekstensi yang digunakan adalah <code>.bz2</code>.<br />
+Dalam <strong>tar</strong> bunzip bisa digunakan dengan opsi <strong>j</strong>.</p>
+
+<h3 id="xz-dan-unxz">xz dan unxz</h3>
+
+<p>Sama seperti gzip, <strong>xz</strong> untuk compress file dan <strong>unxz</strong> untuk ekstrak file.</p>
 
 
         

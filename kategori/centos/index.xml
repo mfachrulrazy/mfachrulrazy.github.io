@@ -22,7 +22,7 @@
       <description>Kompress File dengan Zip Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
 Ekstrak File dengan Unzip Ekstrak file bisa menggunakan unzip.
 Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr
-Kompress file dengan Tar Kompress file dengan menggunakan tar dan gz #tar -zcvf /folder/file.</description>
+Gzip dan Gunzip Compress file dengan menggunakan gzip # gzip namafile.</description>
     </item>
     
     <item>
