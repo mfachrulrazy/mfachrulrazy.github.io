@@ -29,7 +29,7 @@ Pastikan VirtualBox sudah ada di dalam environment variable dari Windows. Buat f
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/vbox-error/</guid>
-      <description>Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off   Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V. Belum mencoba untuk menjalankan vm di virtualbox dengan docker secara bersamaan.</description>
+      <description>Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off  Jika ingin mengembalikan nilai hypervisorlaunchtype &amp;gt; bcdedit /set {current} hypervisorlaunchtype auto  Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V.</description>
     </item>
     
     <item>

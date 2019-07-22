@@ -61,9 +61,9 @@
     "name" : "MFR"
   },
   "headline": "VM Virtual Box Error",
-  "description" : "Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off   Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V. Belum mencoba untuk menjalankan vm di virtualbox dengan docker secara bersamaan.",
+  "description" : "Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off  Jika ingin mengembalikan nilai hypervisorlaunchtype &amp;gt; bcdedit /set {current} hypervisorlaunchtype auto  Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V.",
   "inLanguage" : "en",
-  "wordCount": 70,
+  "wordCount": 81,
   "datePublished" : "2018-11-05T00:00:00",
   "dateModified" : "2018-11-05T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -286,9 +286,11 @@
 <li>Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini
 <img src="/img/vbox-error/vbox-error1.png" alt="img1" /></li>
 <li>setelah searching di internet ternyata ada konflik dengan Hyper-V</li>
-<li>Jadi solusinya, matikan fitur hypervisorlaunchtype
+<li>Jadi solusinya, matikan fitur <em>hypervisorlaunchtype</em>
 <div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">bcdedit</span> <span class="p">/</span><span class="n">set</span> <span class="n">hypervisorlaunchtype</span> <span class="n">off</span></code></pre></div>
-<img src="/img/vbox-error/vbox-error2.png" alt="img2" /></li>
+<img src="/img/vbox-error/vbox-error2.png" alt="img2" /><br /></li>
+<li>Jika ingin mengembalikan nilai <em>hypervisorlaunchtype</em>
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">bcdedit</span> <span class="p">/</span><span class="n">set</span> <span class="p">{</span><span class="n">current</span><span class="p">}</span> <span class="n">hypervisorlaunchtype</span> <span class="n">auto</span></code></pre></div></li>
 </ol>
 
 <h3 id="penyebab">Penyebab</h3>
