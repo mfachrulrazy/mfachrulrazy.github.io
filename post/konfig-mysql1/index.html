@@ -10,9 +10,9 @@
   <title> Personal Blog - Zyra</title>
   <meta property="og:title" content="Belajar Mysql Part 1" />
   <meta name="twitter:title" content="Belajar Mysql Part 1" />
-  <meta name="description" content="Belajar mysql dasar Part 1">
-  <meta property="og:description" content="Belajar mysql dasar Part 1">
-  <meta name="twitter:description" content="Belajar mysql dasar Part 1">
+  <meta name="description" content="Belajar sintaks-sintaks dasar mysql bagian 1">
+  <meta property="og:description" content="Belajar sintaks-sintaks dasar mysql bagian 1">
+  <meta name="twitter:description" content="Belajar sintaks-sintaks dasar mysql bagian 1">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -63,7 +63,7 @@
   "headline": "Belajar Mysql Part 1",
   "description" : "Login ke mysql dari terminal # mysql -u root -p Memilih database &amp;gt; USE MYSQL; Membuat user baru &amp;gt; CREATE USER &amp;#39;userbaru&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; Lihat nama user yang ingin diubah aksesnya &amp;gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &amp;gt; UPDATE USER SET HOST = &amp;#39;%&amp;#39; WHERE USER=&amp;#39;user&amp;#39;; Mengaktifkan perubahan &amp;gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &amp;gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &amp;gt; SET PASSWORD FOR &amp;#39;user&amp;#39;@&amp;#39;localhost&amp;#39; = PASSWORD(&amp;#39;password&amp;#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).",
   "inLanguage" : "en",
-  "wordCount": 375,
+  "wordCount": 433,
   "datePublished" : "2015-03-07T00:00:00",
   "dateModified" : "2015-03-07T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -83,12 +83,12 @@
 </script>
 
 <meta property="og:title" content="Belajar Mysql Part 1" />
-<meta property="og:description" content="Belajar mysql dasar Part 1">
+<meta property="og:description" content="Belajar sintaks-sintaks dasar mysql bagian 1">
 <meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-mysql1/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
   <meta name="twitter:title" content="Belajar Mysql Part 1" />
-  <meta name="twitter:description" content="Belajar mysql dasar Part 1">
+  <meta name="twitter:description" content="Belajar sintaks-sintaks dasar mysql bagian 1">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -246,7 +246,7 @@
               
               
                 
-                  <h2 class="post-subheading">Belajar mysql dasar Part 1</h2>
+                  <h2 class="post-subheading">Belajar sintaks-sintaks dasar mysql bagian 1</h2>
                 
               
               
@@ -256,7 +256,7 @@
   <i class="fas fa-calendar"></i>&nbsp;Posted on March 7, 2015
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
   
   
   
@@ -333,6 +333,15 @@
 <span class="o">&gt;</span> <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">dbtes</span><span class="p">;</span>
 <span class="o">&gt;</span> <span class="k">GRANT</span> <span class="k">INSERT</span><span class="p">,</span><span class="k">SELECT</span> <span class="k">ON</span> <span class="n">dbtes</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;user&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span><span class="p">;</span></code></pre></div></li>
 </ol>
+
+<h3 id="mengganti-password-user-mysql">Mengganti password user mysql</h3>
+
+<p>Untuk mengganti password mysql dapat menggunakan perintah
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">ALTER</span> <span class="n">USER</span> <span class="s1">&#39;userName&#39;</span><span class="o">@</span><span class="s1">&#39;nama-host&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;Password-Baru&#39;</span><span class="p">;</span></code></pre></div>
+atau bisa dengan sintaks berikut
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="n">mysql</span><span class="p">.</span><span class="n">user</span> <span class="kt">SET</span> <span class="n">Password</span><span class="o">=</span><span class="nf">PASSWORD</span><span class="p">(</span><span class="s1">&#39;Password-Baru&#39;</span><span class="p">)</span> <span class="k">WHERE</span> <span class="n">USER</span><span class="o">=</span><span class="s1">&#39;userName&#39;</span> <span class="k">AND</span> <span class="n">Host</span><span class="o">=</span><span class="s1">&#39;nama-host&#39;</span><span class="p">;</span></code></pre></div>
+Sintaks di atas dapat digunakan untuk mysql versi 5.7.6 ke atas. Untuk versi ke bawah dapat menggunakan sintaks berikut
+<div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="o">&gt;</span> <span class="kt">SET</span> <span class="n">PASSWORD</span> <span class="k">FOR</span> <span class="s1">&#39;userName&#39;</span><span class="o">@</span><span class="s1">&#39;nama-host&#39;</span> <span class="o">=</span> <span class="nf">PASSWORD</span><span class="p">(</span><span class="s1">&#39;Password-Baru&#39;</span><span class="p">);</span></code></pre></div></p>
 
 <h3 id="melihat-password-user-root-mysql">Melihat password user root mysql</h3>
 
