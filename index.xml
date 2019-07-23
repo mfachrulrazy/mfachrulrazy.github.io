@@ -64,7 +64,7 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.</descripti
     </item>
     
     <item>
-      <title>Kompress dan Ekstrak File Centos</title>
+      <title>Kompress dan Ekstrak File di Centos</title>
       <link>https://mfachrulrazy.github.io/post/zip-unzip-cent/</link>
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
@@ -223,6 +223,17 @@ Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # y
  Setup virtual environment (menggunakan virtualenv-wrapper) &amp;gt; pip3 install virtualenvwrapper-win
  Buat direktori kerja untuk django dan masuk ke dalam direktori tersebut.
  Buat virtual environment contoh dengan nama djangomu &amp;gt; mkvirtualenv djangomu</description>
+    </item>
+    
+    <item>
+      <title>Mengenal Ubuntu Server 18.04</title>
+      <link>https://mfachrulrazy.github.io/post/ubuntu-srv-1804/</link>
+      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/ubuntu-srv-1804/</guid>
+      <description>Ubuntu mengeluarkan rilis LTS terbaru nya, yaitu Ubuntu 18.04 dengan codename Bionic Beaver. Banyak perubahan yang terjadi pada versi ini, berikut beberapa hal yang berbeda dari ubuntu 18.04.
+Pengaturan Networking Pengaturan IP Address Pengaturan networking sudah tidak menggunakan tools ifupdown, tetapi menggunakan netplan. Netplan menggunakan format .yaml dengan menggunakan indentasi (seperti python).
+Dalam folder /etc/netplan terdapat file 50-cloud-init.yaml di mana dalam file tersebut adalah file konfigurasi default dari ubuntu 18.</description>
     </item>
     
     <item>
