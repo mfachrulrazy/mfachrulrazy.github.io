@@ -24,6 +24,16 @@ Pastikan VirtualBox sudah ada di dalam environment variable dari Windows. Buat f
     </item>
     
     <item>
+      <title>Docker 101</title>
+      <link>https://mfachrulrazy.github.io/post/docker-101/</link>
+      <pubDate>Sat, 12 Jan 2019 08:32:46 +0800</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/docker-101/</guid>
+      <description>Beberapa perintah dasar docker yang didapatkan setelah training di situs kode.id.
+Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.</description>
+    </item>
+    
+    <item>
       <title>VM Virtual Box Error</title>
       <link>https://mfachrulrazy.github.io/post/vbox-error/</link>
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>

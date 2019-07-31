@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title> Personal Blog - Zyra</title>
+  <meta property="og:title" content="Docker 101" />
+  <meta name="twitter:title" content="Docker 101" />
+  <meta name="description" content="Dasar-Dasar Docker dari Kode.id">
+  <meta property="og:description" content="Dasar-Dasar Docker dari Kode.id">
+  <meta name="twitter:description" content="Dasar-Dasar Docker dari Kode.id">
+  <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Zyra",
+    
+    "url": "https://mfachrulrazy.github.io/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://mfachrulrazy.github.io/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mfachrulrazy.github.io/post/docker-101/",
+          "name": "Docker 101"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "MFR"
+  },
+  "headline": "Docker 101",
+  "description" : "Beberapa perintah dasar docker yang didapatkan setelah training di situs kode.id.
+Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.",
+  "inLanguage" : "en",
+  "wordCount": 421,
+  "datePublished" : "2019-01-12T08:32:46",
+  "dateModified" : "2019-01-12T08:32:46",
+  "image" : "https://mfachrulrazy.github.io/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/docker-101/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://mfachrulrazy.github.io/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://mfachrulrazy.github.io/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Docker 101" />
+<meta property="og:description" content="Dasar-Dasar Docker dari Kode.id">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/docker-101/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Zyra" />
+  <meta name="twitter:title" content="Docker 101" />
+  <meta name="twitter:description" content="Dasar-Dasar Docker dari Kode.id">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@muhfachrulrazy" />
+  <meta name="twitter:creator" content="@muhfachrulrazy" />
+  <link href='https://mfachrulrazy.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@muhfachrulrazy" />
+  <meta name="twitter:creator" content="@muhfachrulrazy" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/docker-101/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zyra" />
+
+  <meta name="generator" content="Hugo 0.51" />
+  <link rel="alternate" href="https://mfachrulrazy.github.io/index.xml" type="application/rss+xml" title="Zyra">
+  
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/katex.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://mfachrulrazy.github.io/css/codeblock.css" />
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/default-skin.min.css" />
+  <link rel="stylesheet" href="https://mfachrulrazy.github.io/css/photoswipe.min.css" />
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-custom navbar-brand-logo">
+        <a href="https://mfachrulrazy.github.io/"><img src="/img/logo.png" alt="" srcset=""></a>
+      </div>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Categories" href="/kategori">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="References" href="/page/ref/">References</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Docker 101</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">Dasar-Dasar Docker dari Kode.id</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 12, 2019
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;MFR
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>Beberapa perintah dasar docker yang didapatkan setelah training di situs <strong>kode.id</strong>.</p>
+
+<h3 id="docker-image-dan-container">Docker Image dan Container</h3>
+
+<p>Melihat image docker
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">images</span></code></pre></div>
+Menjalankan image docker menjadi container
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="p">&lt;</span><span class="n">image_id</span><span class="p">&gt;</span></code></pre></div>
+Melihat container yang sedang berjalan
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">ps</span></code></pre></div>
+Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter <code>-a</code>
+<img src="/img/ins-docker/docker1.png" alt="img" />
+Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.<br />
+Mengganti NAMES pada container bisa dengan opsi <code>--name</code>
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">-d</span> <span class="p">-</span><span class="n">-name</span><span class="p">=</span><span class="n">WebSrv</span> <span class="n">nginx</span></code></pre></div>
+Menjalankan container secara interaktif bisa menggunakan parameter</p>
+
+<ul>
+<li>i : interaktif<br /></li>
+<li>t : terminal<br /></li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">-it</span> <span class="n">ubuntu</span> <span class="p">/</span><span class="n">bin</span><span class="p">/</span><span class="n">bash</span></code></pre></div>
+
+<p>Hasilnya akan muncul terminal dari Ubuntu
+<img src="/img/ins-docker/docker2.png" alt="img" />
+Jika tidak ingin menampilkan terminal linux, bisa menggunakan opsi -d (detach)
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">-d</span> <span class="n">nginx</span></code></pre></div></p>
+
+<h3 id="container-management">Container management</h3>
+
+<p>Mengatur container untuk dapat berjalan/berhenti/restart
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">start</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span>
+<span class="p">...</span>
+<span class="p">&gt;</span> <span class="n">docker</span> <span class="n">stop</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span>
+<span class="p">...</span>
+<span class="p">&gt;</span> <span class="n">docker</span> <span class="n">restart</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span></code></pre></div>
+Container ID bisa diganti dengan nama container tersebut.<br />
+Download docker image dari dockerhub, dalam hal ini whalesay
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">pull</span> <span class="n">docker</span><span class="p">/</span><span class="n">whalesay</span></code></pre></div>
+Test command image dari docker/whalesay
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">docker</span><span class="p">/</span><span class="n">whalesay</span> <span class="n">cowsay</span> <span class="n">halo</span> <span class="n">dunia</span></code></pre></div>
+<img src="/img/ins-docker/docker3.png" alt="img" /></p>
+
+<h3 id="container-lifecycle">Container Lifecycle</h3>
+
+<p>Menjalankan container dengan mode detach tambahkan opsi -d
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">-d</span> <span class="p">-</span><span class="n">-name</span><span class="p">=</span><span class="n">Websrv</span> <span class="n">nginx</span></code></pre></div>
+Untuk melihat container yang berjalan tersebut di terminal bisa dengan opsi attach
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">attach</span> <span class="n">Websrv</span></code></pre></div>
+Menghapus image docker yang belum pernah di-run
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">rmi</span> <span class="n">ubuntu</span></code></pre></div>
+Menghapus container yang telah berjalan
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">rm</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span></code></pre></div>
+Hapus seluruh container yang ada
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">rm</span> <span class="p">`</span><span class="n">docker</span> <span class="n">ps</span> <span class="n">-a</span> <span class="n">-q</span><span class="p">`</span></code></pre></div>
+Untuk memaksa hapus docker tanpa melihat container yang terhubung
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">rm</span> <span class="o">-f</span> <span class="p">&lt;</span><span class="n">container_id</span><span class="p">&gt;</span></code></pre></div>
+Jika menghapus secara paksa (force), container tetap ada, karena container membuat snapshot dari image.</p>
+
+<h3 id="redirect-port-docker">Redirect Port Docker</h3>
+
+<p>Redirect port secara random pada docker bisa dengan menggunakan perintah berikut
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">-d</span> <span class="p">-</span><span class="n">-name</span><span class="p">=</span><span class="n">WebSrv1</span> <span class="n">-P</span> <span class="n">nginx</span></code></pre></div>
+Redirect port yang ditentukan
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">-d</span> <span class="n">-p</span> <span class="n">8080</span><span class="err">:</span><span class="n">80</span> <span class="p">-</span><span class="n">-name</span><span class="p">=</span><span class="n">WebSrv2</span> <span class="n">nginx</span></code></pre></div>
+Mount folder dari host os ke docker container. Diasumsikan bahwa dalam folder tersebut terdapat file html (index.html)
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">-d</span> <span class="n">-p</span> <span class="n">8080</span><span class="err">:</span><span class="n">80</span> <span class="p">-</span><span class="n">-name</span><span class="p">=</span><span class="n">WebSrv3</span> <span class="n">-v</span> <span class="p">/</span><span class="n">home</span><span class="p">/</span><span class="n">user</span><span class="p">/</span><span class="n">www</span><span class="err">:</span><span class="p">/</span><span class="n">usr</span> <span class="n">nginx</span></code></pre></div></p>
+
+<h3 id="troubleshoot-docker">Troubleshoot Docker</h3>
+
+<p>Jika menginstall docker pada Windows, kita dapat pilihan <em>docker for windows</em> atau <em>docker for linux</em>. Tentunya jika kita pilih salah satu dari arsitektur ini akan mengambil image yang sesuai dengan tipe docker-nya. Biasanya terdapat error pada saat pull salah satu image ke docker.<br />
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span> <span class="n">C</span><span class="err">:</span><span class="p">\</span><span class="n">docker</span><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">pull</span> <span class="n">nginx</span>
+<span class="n">Using</span> <span class="k">default</span> <span class="n">tag</span><span class="err">:</span> <span class="n">latest</span>
+<span class="n">latest</span><span class="err">:</span> <span class="n">Pulling</span> <span class="n">from</span> <span class="n">library</span><span class="p">/</span><span class="n">nginx</span>
+<span class="n">no</span> <span class="n">matching</span> <span class="n">manifest</span> <span class="k">for</span> <span class="n">unknown</span> <span class="k">in</span> <span class="n">the</span> <span class="n">manifest</span> <span class="n">list</span> <span class="n">entries</span></code></pre></div>
+Cek terlebih dahulu Arsitektur docker
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span> <span class="n">C</span><span class="err">:</span><span class="p">\</span><span class="n">docker</span><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">info</span> <span class="o">-f</span> <span class="s1">&#39;{{.OSType}}/{{.Architecture}}&#39;</span>
+<span class="n">windows</span><span class="p">/</span><span class="n">x86_64</span></code></pre></div>
+Kemungkinan image yang di-download belum tersedia dengan versi docker yang diinstall</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://mfachrulrazy.github.io//kategori/mesin-virtual/">mesin virtual</a>&nbsp;
+            
+              <a href="https://mfachrulrazy.github.io//kategori/docker/">docker</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdocker-101%2f&amp;text=Docker%20101&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdocker-101%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdocker-101%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fdocker-101%2f&amp;title=Docker%20101" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://mfachrulrazy.github.io/post/zip-unzip-cent/" data-toggle="tooltip" data-placement="top" title="Kompress dan Ekstrak File di Centos">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://mfachrulrazy.github.io/post/iostreamwin/" data-toggle="tooltip" data-placement="top" title="I/O Stream pada Windows">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mfachrulrazy@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/fahrulchozy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/mfachrulrazy" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/muhfachrulrazy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/mfachrulrazy" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/mfachrulrazy" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://mfachrulrazy.github.io/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="mfachrulrazy.github.io">Muhammad Fachrul Razy</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2019
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://mfachrulrazy.github.io/">Zyra</a>
+          
+        </p>
+        
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://mfachrulrazy.github.io/js/katex.min.js"></script>
+<script src="https://mfachrulrazy.github.io/js/auto-render.min.js"></script>
+
+
+<script src="https://mfachrulrazy.github.io/js/jquery-1.12.4.min.js"></script>
+<script src="https://mfachrulrazy.github.io/js/bootstrap.min.js"></script>
+
+<script src="https://mfachrulrazy.github.io/js/main.js"></script>
+<script src="https://mfachrulrazy.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://mfachrulrazy.github.io/js/photoswipe.min.js"></script>
+<script src="https://mfachrulrazy.github.io/js/photoswipe-ui-default.min.js"></script>
+
+
+<script src="https://mfachrulrazy.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
+

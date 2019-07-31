@@ -64,7 +64,7 @@
   "description" : "Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;..... Maintenance IPtables # ifconfig eth0 | grep inet | awk &amp;#39;{ print $2 }&amp;#39; # iptables -I INPUT -p tcp —dport 80 -j ACCEPT # service iptables save
 Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall",
   "inLanguage" : "en",
-  "wordCount": 339,
+  "wordCount": 448,
   "datePublished" : "2015-08-31T00:00:00",
   "dateModified" : "2015-08-31T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -257,7 +257,7 @@ Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa
   <i class="fas fa-calendar"></i>&nbsp;Posted on August 31, 2015
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
   
   
   
@@ -356,6 +356,23 @@ Untuk melihat hanya service tag
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ln -s /home/user/file linkfile</code></pre></div>
 Perintah di atas akan membuat link dengan nama <strong>linkfile</strong> dan akan menunjuk ke <strong>/home/user/file</strong>.<br />
 Tanpa opsi <code>-s</code> symlink akan membuat <em>hard link</em></p>
+
+<h3 id="networking-pada-ubuntu">Networking pada Ubuntu</h3>
+
+<p>Biasanya pada ubuntu atau debian, ketika kita merubah ip address dan restart servis networking, ip address pada file tersebut tidak berubah. Selain reboot server, kita bisa disable/enable semua interface. Berikut perintahnya
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo ifdown -a <span class="o">&amp;&amp;</span> sudo ifup -a</code></pre></div></p>
+
+<h3 id="device-pada-linux">Device pada Linux</h3>
+
+<p>Untuk melihat daftar disk yang dilink ke file /dev/sd* dapat dilihat di folder <code>/dev/disk/by-id</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ls -al /dev/disk/by-id
+lrwxrwxrwx <span class="m">1</span> root root   <span class="m">9</span> Jul <span class="m">26</span> <span class="m">08</span>:56 ata-HL-DT-ST_DVD+_-RW_GU90N_KZEIACB1935 -&gt; ../../sr0
+lrwxrwxrwx <span class="m">1</span> root root   <span class="m">9</span> Jul <span class="m">26</span> <span class="m">08</span>:56 ata-Samsung_SSD_860_EVO_500GB_S3YANB0M326986A -&gt; ../../sda
+lrwxrwxrwx <span class="m">1</span> root root  <span class="m">10</span> Jul <span class="m">26</span> <span class="m">08</span>:56 ata-Samsung_SSD_860_EVO_500GB_S3YANB0M326986A-part1 -&gt; ../../sda1</code></pre></div>
+Monitoring event pada disk
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ udevadm monitor
+atau
+$ udevadm monitor --kernel --subsystem-match<span class="o">=</span>scsi</code></pre></div></p>
 
 
         
