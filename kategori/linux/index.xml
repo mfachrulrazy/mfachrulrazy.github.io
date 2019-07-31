@@ -27,6 +27,18 @@ Ketika scp dijalankan biasanya akan meminta password (jika belum bertukar ssh ke
     </item>
     
     <item>
+      <title>Install Docker di Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/ins-docker-cent7/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/ins-docker-cent7/</guid>
+      <description>Instalasi Docker Community Edition (CE) pada Centos 7.
+Persiapan Repository Install terlebih dahulu tools yang dibutuhkan seperti yum-utils yang menyediakan yum-config-manager, dan device-mapper-persistent-data serta lvm2 yang dibutuhkan oleh devicemapper $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2 Gunakan repository stable $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-ce-cli containerd.io Kemudian prompt key GPG-nya untuk memastikan sesuai dengan fingerprint berikut:
+060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35</description>
+    </item>
+    
+    <item>
       <title>Kompress dan Ekstrak File di Centos</title>
       <link>https://mfachrulrazy.github.io/post/zip-unzip-cent/</link>
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>

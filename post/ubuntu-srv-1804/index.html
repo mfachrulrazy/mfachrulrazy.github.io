@@ -65,7 +65,7 @@
 Pengaturan Networking Pengaturan IP Address Pengaturan networking sudah tidak menggunakan tools ifupdown, tetapi menggunakan netplan. Netplan menggunakan format .yaml dengan menggunakan indentasi (seperti python).
 Dalam folder /etc/netplan terdapat file 50-cloud-init.yaml di mana dalam file tersebut adalah file konfigurasi default dari ubuntu 18.",
   "inLanguage" : "en",
-  "wordCount": 218,
+  "wordCount": 261,
   "datePublished" : "2018-05-23T00:00:00",
   "dateModified" : "2018-05-23T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -335,6 +335,18 @@ Kemudian edit file <code>/etc/resolvconf/resolv.conf.d/head</code>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">nameserver <span class="m">8</span>.8.8.8</code></pre></div>
 Restart Servis resolvconf
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo service resolvconf restart</code></pre></div></p>
+
+<h3 id="enable-disable-user-root">Enable/Disable User Root</h3>
+
+<p>Secara default Ubuntu tidak mengaktifkan user root hal ini untuk meningkatkan keamanan.<br />
+Enable user root
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo passwd root
+..
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully</code></pre></div>
+Disable user root
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo passwd -l root</code></pre></div></p>
 
 
         

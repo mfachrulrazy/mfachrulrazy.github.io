@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Sat, 21 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/database/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Konfigurasi Postgresql 11 di Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/post/konfig-postgresql/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/konfig-postgresql/</guid>
+      <description>Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.
+Pertama install paket postgresql. $ sudo apt update $ sudo apt install postgresql postgresql-contrib Mengecek versi Postgresql $ sudo -u postgres psql -c &amp;#34;SELECT version();&amp;#34; Pada saat menginstall postgresql membuat akun default yaitu postgres atau bisa disebut sebagai super user dari postgresql. Untuk login menggunakan user tersebut, harus melalui user root dari sistem operasi. # su - postgres Kemudian akan login sebagai user postgres postgres@host$ createuser --interactive --pwprompt Masukkan nama user, password dan beberapa parameter lainnya.</description>
+    </item>
     
     <item>
       <title>Belajar SQL Server Part 2</title>

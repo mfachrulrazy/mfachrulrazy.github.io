@@ -8,14 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title> Personal Blog - Zyra</title>
-  <meta property="og:title" content="Install WINS Windows Server 2003" />
-  <meta name="twitter:title" content="Install WINS Windows Server 2003" />
-  <meta name="description" content="Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).">
-  <meta property="og:description" content="Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).">
-  <meta name="twitter:description" content="Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan …">
+  <meta property="og:title" content="Konfigurasi Postgresql 11 di Ubuntu" />
+  <meta name="twitter:title" content="Konfigurasi Postgresql 11 di Ubuntu" />
+  <meta name="description" content="Konfigurasi Postgresql 11 di Ubuntu 18.04">
+  <meta property="og:description" content="Konfigurasi Postgresql 11 di Ubuntu 18.04">
+  <meta name="twitter:description" content="Konfigurasi Postgresql 11 di Ubuntu 18.04">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -51,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https://mfachrulrazy.github.io/post/install-wins-2003/",
-          "name": "Install w i n s windows server 2003"
+          "@id": "https://mfachrulrazy.github.io/post/konfig-postgresql/",
+          "name": "Konfigurasi postgresql 11 di ubuntu"
         }
     }]
 }
@@ -63,16 +60,16 @@
   "author": {
     "name" : "MFR"
   },
-  "headline": "Install WINS Windows Server 2003",
-  "description" : "Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).",
+  "headline": "Konfigurasi Postgresql 11 di Ubuntu",
+  "description" : "Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.
+Pertama install paket postgresql. $ sudo apt update $ sudo apt install postgresql postgresql-contrib Mengecek versi Postgresql $ sudo -u postgres psql -c &amp;#34;SELECT version();&amp;#34; Pada saat menginstall postgresql membuat akun default yaitu postgres atau bisa disebut sebagai super user dari postgresql. Untuk login menggunakan user tersebut, harus melalui user root dari sistem operasi. # su - postgres Kemudian akan login sebagai user postgres postgres@host$ createuser --interactive --pwprompt Masukkan nama user, password dan beberapa parameter lainnya.",
   "inLanguage" : "en",
-  "wordCount": 203,
-  "datePublished" : "2018-11-17T00:00:00",
-  "dateModified" : "2018-11-17T00:00:00",
+  "wordCount": 119,
+  "datePublished" : "2018-12-05T00:00:00",
+  "dateModified" : "2018-12-05T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
   "keywords" : [ "" ],
-  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/install-wins-2003/",
+  "mainEntityOfPage" : "https://mfachrulrazy.github.io/post/konfig-postgresql/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https://mfachrulrazy.github.io/",
@@ -86,15 +83,13 @@
 }
 </script>
 
-<meta property="og:title" content="Install WINS Windows Server 2003" />
-<meta property="og:description" content="Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).">
-<meta property="og:url" content="https://mfachrulrazy.github.io/post/install-wins-2003/" />
+<meta property="og:title" content="Konfigurasi Postgresql 11 di Ubuntu" />
+<meta property="og:description" content="Konfigurasi Postgresql 11 di Ubuntu 18.04">
+<meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-postgresql/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
-  <meta name="twitter:title" content="Install WINS Windows Server 2003" />
-  <meta name="twitter:description" content="Dikutip dari Wikipedia
- WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan …">
+  <meta name="twitter:title" content="Konfigurasi Postgresql 11 di Ubuntu" />
+  <meta name="twitter:description" content="Konfigurasi Postgresql 11 di Ubuntu 18.04">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -102,7 +97,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
-  <meta property="og:url" content="https://mfachrulrazy.github.io/post/install-wins-2003/" />
+  <meta property="og:url" content="https://mfachrulrazy.github.io/post/konfig-postgresql/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Zyra" />
 
@@ -247,15 +242,19 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Install WINS Windows Server 2003</h1>
+                <h1>Konfigurasi Postgresql 11 di Ubuntu</h1>
               
               
+              
+                
+                  <h2 class="post-subheading">Konfigurasi Postgresql 11 di Ubuntu 18.04</h2>
+                
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 17, 2018
+  <i class="fas fa-calendar"></i>&nbsp;Posted on December 5, 2018
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
@@ -282,45 +281,29 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Dikutip dari <strong>Wikipedia</strong></p>
-
-<blockquote>
-<p><strong>WINS</strong> adalah singkatan dari <em>Windows Internet Name Services</em> sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).</p>
-</blockquote>
-
-<p>Untuk menginstall paket WINS pada windows server 2003 kebutuhan yang harus disiapkan adalah</p>
-
-<ul>
-<li>File iso atau CD1 installer windows server 2003</li>
-<li>Pastikan windows server 2003 berjalan dengan normal</li>
-</ul>
-
-<p>Jika semua kebutuhan sudah siap. Lanjut ke proses instalasi</p>
-
-<ol>
-<li>Masuk ke <code>control panel</code> &gt; <code>Add Remove Programs</code> &gt; <code>Add/Remove Windows Components</code>
-<img src="/img/win-srv2003/win-srv20031.png" alt="img1" /></li>
-<li>Pilih <code>Networking Service</code> &gt; klik <code>Details</code>
-<img src="/img/win-srv2003/win-srv20032.png" alt="img2" /></li>
-<li>Pilih Windows Internet Name Services (WINS)
-<img src="/img/win-srv2003/win-srv20033.png" alt="img3" /></li>
-<li>Klik Ok dan Next</li>
-<li>Browse file CD1 dari Windows Server 2003
-<img src="/img/win-srv2003/win-srv20034.png" alt="img4" /></li>
-<li>Cari file yang dibutuhkan
-<img src="/img/win-srv2003/win-srv20035.png" alt="img5" /></li>
-<li>Tunggu proses instalasi hingga selesai dan klik <code>Finish</code></li>
-<li>Wins telah berhasil diinstall
-<img src="/img/win-srv2003/win-srv20036.png" alt="img6" /></li>
-</ol>
+        <p>Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.<br />
+Pertama install paket postgresql.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt update
+$ sudo apt install postgresql postgresql-contrib</code></pre></div>
+Mengecek versi Postgresql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo -u postgres psql -c <span class="s2">&#34;SELECT version();&#34;</span></code></pre></div>
+Pada saat menginstall postgresql membuat akun default yaitu <strong>postgres</strong> atau bisa disebut sebagai super user dari postgresql. Untuk login menggunakan user tersebut, harus melalui user root dari sistem operasi.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># su - postgres</span></code></pre></div>
+Kemudian akan login sebagai user postgres
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">postgres@host$ createuser --interactive --pwprompt</code></pre></div>
+Masukkan nama user, password dan beberapa parameter lainnya.<br />
+Membuat database dan memberikan kepemilikan terhadap database tersebut.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">postgres@host$ createdb -O user dbname</code></pre></div>
+Memberikan izin terhadap user dengan database tertentu.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">postgres@host$ psql</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-postgresql" data-lang="postgresql"><span class="n">postgres</span><span class="o">=#</span> <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">PRIVILEGES</span> <span class="k">ON</span> <span class="k">DATABASE</span> <span class="n">kg_mobilaku</span> <span class="k">TO</span> <span class="n">devkg</span><span class="p">;</span>
+<span class="n">exit</span><span class="p">;</span></code></pre></div></p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://mfachrulrazy.github.io//kategori/windows/">windows</a>&nbsp;
-            
-              <a href="https://mfachrulrazy.github.io//kategori/server/">server</a>&nbsp;
+              <a href="https://mfachrulrazy.github.io//kategori/database/">database</a>&nbsp;
             
           </div>
         
@@ -335,28 +318,28 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-wins-2003%2f&amp;text=Install%20WINS%20Windows%20Server%202003&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-postgresql%2f&amp;text=Konfigurasi%20Postgresql%2011%20di%20Ubuntu&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-wins-2003%2f" target="_blank" title="Share on Google Plus">
+        <a href="//plus.google.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-postgresql%2f" target="_blank" title="Share on Google Plus">
           <i class="fab fa-google-plus"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-wins-2003%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-postgresql%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2finstall-wins-2003%2f&amp;title=Install%20WINS%20Windows%20Server%202003" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2fpost%2fkonfig-postgresql%2f&amp;title=Konfigurasi%20Postgresql%2011%20di%20Ubuntu" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
@@ -377,12 +360,12 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://mfachrulrazy.github.io/post/vbox-error/" data-toggle="tooltip" data-placement="top" title="VM Virtual Box Error">&larr; Previous Post</a>
+              <a href="https://mfachrulrazy.github.io/post/install-wins-2003/" data-toggle="tooltip" data-placement="top" title="Install WINS Windows Server 2003">&larr; Previous Post</a>
             </li>
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/konfig-postgresql/" data-toggle="tooltip" data-placement="top" title="Konfigurasi Postgresql 11 di Ubuntu">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/tb-ssh-key/" data-toggle="tooltip" data-placement="top" title="Troubleshoot IP SSH berubah">Next Post &rarr;</a>
             </li>
           
         </ul>

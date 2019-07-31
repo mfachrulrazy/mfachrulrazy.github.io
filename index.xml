@@ -64,6 +64,18 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.</descripti
     </item>
     
     <item>
+      <title>Install Docker di Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/ins-docker-cent7/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/ins-docker-cent7/</guid>
+      <description>Instalasi Docker Community Edition (CE) pada Centos 7.
+Persiapan Repository Install terlebih dahulu tools yang dibutuhkan seperti yum-utils yang menyediakan yum-config-manager, dan device-mapper-persistent-data serta lvm2 yang dibutuhkan oleh devicemapper $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2 Gunakan repository stable $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-ce-cli containerd.io Kemudian prompt key GPG-nya untuk memastikan sesuai dengan fingerprint berikut:
+060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35</description>
+    </item>
+    
+    <item>
       <title>Docker 101</title>
       <link>https://mfachrulrazy.github.io/post/docker-101/</link>
       <pubDate>Sat, 12 Jan 2019 08:32:46 +0800</pubDate>
@@ -94,6 +106,16 @@ Gzip dan Gunzip Compress file dengan menggunakan gzip # gzip namafile.</descript
       <description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
  Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
  Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description>
+    </item>
+    
+    <item>
+      <title>Konfigurasi Postgresql 11 di Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/post/konfig-postgresql/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/konfig-postgresql/</guid>
+      <description>Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.
+Pertama install paket postgresql. $ sudo apt update $ sudo apt install postgresql postgresql-contrib Mengecek versi Postgresql $ sudo -u postgres psql -c &amp;#34;SELECT version();&amp;#34; Pada saat menginstall postgresql membuat akun default yaitu postgres atau bisa disebut sebagai super user dari postgresql. Untuk login menggunakan user tersebut, harus melalui user root dari sistem operasi. # su - postgres Kemudian akan login sebagai user postgres postgres@host$ createuser --interactive --pwprompt Masukkan nama user, password dan beberapa parameter lainnya.</description>
     </item>
     
     <item>

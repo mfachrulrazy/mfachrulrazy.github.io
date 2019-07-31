@@ -64,7 +64,7 @@
   "description" : "Beberapa perintah dasar docker yang didapatkan setelah training di situs kode.id.
 Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.",
   "inLanguage" : "en",
-  "wordCount": 421,
+  "wordCount": 432,
   "datePublished" : "2019-01-12T08:32:46",
   "dateModified" : "2019-01-12T08:32:46",
   "image" : "https://mfachrulrazy.github.io/",
@@ -257,7 +257,7 @@ Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalank
   <i class="fas fa-calendar"></i>&nbsp;Posted on January 12, 2019
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
   
   
   
@@ -341,7 +341,9 @@ Hapus seluruh container yang ada
 <div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">rm</span> <span class="p">`</span><span class="n">docker</span> <span class="n">ps</span> <span class="n">-a</span> <span class="n">-q</span><span class="p">`</span></code></pre></div>
 Untuk memaksa hapus docker tanpa melihat container yang terhubung
 <div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">rm</span> <span class="o">-f</span> <span class="p">&lt;</span><span class="n">container_id</span><span class="p">&gt;</span></code></pre></div>
-Jika menghapus secara paksa (force), container tetap ada, karena container membuat snapshot dari image.</p>
+Jika menghapus secara paksa (force), container tetap ada, karena container membuat snapshot dari image.<br />
+Menghapus keseluruhan docker bisa dengan perintah berikut.
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">system</span> <span class="n">prune</span></code></pre></div></p>
 
 <h3 id="redirect-port-docker">Redirect Port Docker</h3>
 
@@ -432,7 +434,7 @@ Kemungkinan image yang di-download belum tersedia dengan versi docker yang diins
           
           
             <li class="next">
-              <a href="https://mfachrulrazy.github.io/post/iostreamwin/" data-toggle="tooltip" data-placement="top" title="I/O Stream pada Windows">Next Post &rarr;</a>
+              <a href="https://mfachrulrazy.github.io/post/ins-docker-cent7/" data-toggle="tooltip" data-placement="top" title="Install Docker di Centos 7">Next Post &rarr;</a>
             </li>
           
         </ul>
