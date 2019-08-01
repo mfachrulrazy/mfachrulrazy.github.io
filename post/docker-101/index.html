@@ -10,9 +10,9 @@
   <title> Personal Blog - Zyra</title>
   <meta property="og:title" content="Docker 101" />
   <meta name="twitter:title" content="Docker 101" />
-  <meta name="description" content="Dasar-Dasar Docker dari Kode.id">
-  <meta property="og:description" content="Dasar-Dasar Docker dari Kode.id">
-  <meta name="twitter:description" content="Dasar-Dasar Docker dari Kode.id">
+  <meta name="description" content="Beberapa Perintah dasar Docker">
+  <meta property="og:description" content="Beberapa Perintah dasar Docker">
+  <meta name="twitter:description" content="Beberapa Perintah dasar Docker">
   <meta name="author" content="Muhammad Fachrul Razy"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,10 +61,10 @@
     "name" : "MFR"
   },
   "headline": "Docker 101",
-  "description" : "Beberapa perintah dasar docker yang didapatkan setelah training di situs kode.id.
+  "description" : "Beberapa perintah dasar docker yang didapatkan setelah training dari beberapa situs.
 Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.",
   "inLanguage" : "en",
-  "wordCount": 432,
+  "wordCount": 563,
   "datePublished" : "2019-01-12T08:32:46",
   "dateModified" : "2019-01-12T08:32:46",
   "image" : "https://mfachrulrazy.github.io/",
@@ -84,12 +84,12 @@ Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalank
 </script>
 
 <meta property="og:title" content="Docker 101" />
-<meta property="og:description" content="Dasar-Dasar Docker dari Kode.id">
+<meta property="og:description" content="Beberapa Perintah dasar Docker">
 <meta property="og:url" content="https://mfachrulrazy.github.io/post/docker-101/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zyra" />
   <meta name="twitter:title" content="Docker 101" />
-  <meta name="twitter:description" content="Dasar-Dasar Docker dari Kode.id">
+  <meta name="twitter:description" content="Beberapa Perintah dasar Docker">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@muhfachrulrazy" />
   <meta name="twitter:creator" content="@muhfachrulrazy" />
@@ -247,7 +247,7 @@ Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalank
               
               
                 
-                  <h2 class="post-subheading">Dasar-Dasar Docker dari Kode.id</h2>
+                  <h2 class="post-subheading">Beberapa Perintah dasar Docker</h2>
                 
               
               
@@ -283,7 +283,7 @@ Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalank
       <article role="main" class="blog-post">
         
 
-<p>Beberapa perintah dasar docker yang didapatkan setelah training di situs <strong>kode.id</strong>.</p>
+<p>Beberapa perintah dasar docker yang didapatkan setelah training dari beberapa situs.</p>
 
 <h3 id="docker-image-dan-container">Docker Image dan Container</h3>
 
@@ -314,18 +314,37 @@ Jika tidak ingin menampilkan terminal linux, bisa menggunakan opsi -d (detach)
 
 <h3 id="container-management">Container management</h3>
 
-<p>Mengatur container untuk dapat berjalan/berhenti/restart
+<ol>
+<li>Mengatur container untuk dapat berjalan/berhenti/restart
 <div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">start</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span>
 <span class="p">...</span>
 <span class="p">&gt;</span> <span class="n">docker</span> <span class="n">stop</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span>
 <span class="p">...</span>
-<span class="p">&gt;</span> <span class="n">docker</span> <span class="n">restart</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span></code></pre></div>
-Container ID bisa diganti dengan nama container tersebut.<br />
+<span class="p">&gt;</span> <span class="n">docker</span> <span class="n">restart</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span></code></pre></div></li>
+<li>Container ID bisa diganti dengan nama container tersebut.<br />
 Download docker image dari dockerhub, dalam hal ini whalesay
 <div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">pull</span> <span class="n">docker</span><span class="p">/</span><span class="n">whalesay</span></code></pre></div>
 Test command image dari docker/whalesay
 <div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">docker</span><span class="p">/</span><span class="n">whalesay</span> <span class="n">cowsay</span> <span class="n">halo</span> <span class="n">dunia</span></code></pre></div>
-<img src="/img/ins-docker/docker3.png" alt="img" /></p>
+<img src="/img/ins-docker/docker3.png" alt="img" /></li>
+<li>Docker run sebenarnya terdiri dari perintah <code>docker create + docker start</code>.<br /></li>
+<li>Melihat log dari container
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">log</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span></code></pre></div></li>
+<li>Menjalankan container dengan mode attach (melihat output dari container dan menampilkan pada terminal)
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">start</span> <span class="n">-a</span> <span class="p">&lt;</span><span class="n">id_container</span><span class="p">&gt;</span></code></pre></div></li>
+<li>Docker stop mengeluarkan <em>SIGTERM</em> seperti mematikan container tetapi dengan waktu 10 detik.<br /></li>
+<li>Docker kill mengeluarkan <em>SIGKILL</em> seperti mematikan paksa container.<br /></li>
+<li>Menjalankan perintah pada container yang sama dalam hal ini container <strong>redis</strong> dijalankan. Pertama jalankan container redis.
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">run</span> <span class="n">redis</span></code></pre></div></li>
+<li>Buka terminal baru, kemudian cek container yang sedang berjalan
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">ps</span>
+<span class="n">CONTAINER</span> <span class="n">ID</span>        <span class="n">IMAGE</span>               <span class="n">COMMAND</span>                  <span class="n">CREATED</span>             <span class="n">STATUS</span>              <span class="n">PORTS</span>               <span class="n">NAMES</span>
+<span class="n">c4e3f2e8355c</span>        <span class="n">redis</span>               <span class="s2">&#34;docker-entrypoint.s…&#34;</span>   <span class="n">7</span> <span class="n">minutes</span> <span class="n">ago</span>       <span class="n">Up</span> <span class="n">5</span> <span class="n">minutes</span>        <span class="n">6379</span><span class="p">/</span><span class="n">tcp</span>            <span class="n">charming_mahavira</span></code></pre></div></li>
+<li>Untuk masuk ke dalam container tersebut dan menjalankan perintah tertentu
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">-it</span> <span class="n">c4e3f2e8355c</span> <span class="n">redis-cli</span>
+<span class="n">atau</span>
+<span class="p">&gt;</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">-it</span> <span class="n">c4e3f2e8355c</span> <span class="n">bash</span></code></pre></div></li>
+</ol>
 
 <h3 id="container-lifecycle">Container Lifecycle</h3>
 

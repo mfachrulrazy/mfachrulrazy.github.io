@@ -24,6 +24,18 @@ Pastikan VirtualBox sudah ada di dalam environment variable dari Windows. Buat f
     </item>
     
     <item>
+      <title>Install Python 3 di Centos 7</title>
+      <link>https://mfachrulrazy.github.io/post/ins-py3-cent7/</link>
+      <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/ins-py3-cent7/</guid>
+      <description>Pada saat artikel ini dibuat, versi python terbaru adalah 3.7.4.
+Install paket pendukung untuk python 3 # yum install gcc openssl-devel bzip2-devel libffi-devel Download python 3 dari situs resminya # wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz Pindah ke direktori dan install python 3 tersebut # cd Python-3.7.4 # ./configure --enable-optimizations # make altinstall Penggunaan make altinstall agar binary python default (/usr/bin/python) tidak diganti.
+Hapus file download python.
+Cek versi python # python3.7 -V Python 3.</description>
+    </item>
+    
+    <item>
       <title>Transfer File pada Ubuntu</title>
       <link>https://mfachrulrazy.github.io/post/transfer-file-linux/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
@@ -81,7 +93,7 @@ Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-c
       <pubDate>Sat, 12 Jan 2019 08:32:46 +0800</pubDate>
       <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
       <guid>https://mfachrulrazy.github.io/post/docker-101/</guid>
-      <description>Beberapa perintah dasar docker yang didapatkan setelah training di situs kode.id.
+      <description>Beberapa perintah dasar docker yang didapatkan setelah training dari beberapa situs.
 Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.</description>
     </item>
     

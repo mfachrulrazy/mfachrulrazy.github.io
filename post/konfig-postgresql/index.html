@@ -64,7 +64,7 @@
   "description" : "Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.
 Pertama install paket postgresql. $ sudo apt update $ sudo apt install postgresql postgresql-contrib Mengecek versi Postgresql $ sudo -u postgres psql -c &amp;#34;SELECT version();&amp;#34; Pada saat menginstall postgresql membuat akun default yaitu postgres atau bisa disebut sebagai super user dari postgresql. Untuk login menggunakan user tersebut, harus melalui user root dari sistem operasi. # su - postgres Kemudian akan login sebagai user postgres postgres@host$ createuser --interactive --pwprompt Masukkan nama user, password dan beberapa parameter lainnya.",
   "inLanguage" : "en",
-  "wordCount": 119,
+  "wordCount": 175,
   "datePublished" : "2018-12-05T00:00:00",
   "dateModified" : "2018-12-05T00:00:00",
   "image" : "https://mfachrulrazy.github.io/",
@@ -281,7 +281,9 @@ Pertama install paket postgresql. $ sudo apt update $ sudo apt install postgresq
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.<br />
+        
+
+<p>Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.<br />
 Pertama install paket postgresql.
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt update
 $ sudo apt install postgresql postgresql-contrib</code></pre></div>
@@ -296,8 +298,24 @@ Membuat database dan memberikan kepemilikan terhadap database tersebut.
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">postgres@host$ createdb -O user dbname</code></pre></div>
 Memberikan izin terhadap user dengan database tertentu.
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">postgres@host$ psql</code></pre></div>
-<div class="highlight"><pre class="chroma"><code class="language-postgresql" data-lang="postgresql"><span class="n">postgres</span><span class="o">=#</span> <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">PRIVILEGES</span> <span class="k">ON</span> <span class="k">DATABASE</span> <span class="n">kg_mobilaku</span> <span class="k">TO</span> <span class="n">devkg</span><span class="p">;</span>
+Masukkan perintah berikut
+<div class="highlight"><pre class="chroma"><code class="language-postgresql" data-lang="postgresql"><span class="n">postgres</span><span class="o">=#</span> <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">PRIVILEGES</span> <span class="k">ON</span> <span class="k">DATABASE</span> <span class="n">dbname</span> <span class="k">TO</span> <span class="k">user</span><span class="p">;</span>
 <span class="n">exit</span><span class="p">;</span></code></pre></div></p>
+
+<h3 id="pengaturan-security">Pengaturan Security</h3>
+
+<p>Jika postgresql ingin di-remote dari luar jaringan pertama ubah listen address pada file <code>/etc/postgresql/11/main/postgresql.conf</code>.
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">...
+<span class="nv">listen_address</span> <span class="o">=</span> <span class="s1">&#39;*&#39;</span>
+...</code></pre></div>
+Kemudian izinkan pada file <code>/etc/postgresql/11/main/pg_hba.conf</code>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">...
+host    all             all             <span class="m">0</span>.0.0.0/0            md5
+...</code></pre></div>
+Restart postgresql
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># service postgresql restart</span></code></pre></div>
+Kemudian izinkan pada firewall
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># ufw allow in on enp0s31f6 to any port 5432</span></code></pre></div></p>
 
 
         
