@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Github on Zyra</title>
-    <link>https://mfachrulrazy.github.io/kategori/github/</link>
-    <description>Recent content in Github on Zyra</description>
+    <title>Devops on Zyra</title>
+    <link>https://mfachrulrazy.github.io/kategori/devops/</link>
+    <description>Recent content in Devops on Zyra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
     <lastBuildDate>Tue, 04 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mfachrulrazy.github.io/kategori/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/kategori/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

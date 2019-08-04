@@ -180,6 +180,16 @@ Install Varnish 6 Install varnish terbaru versi 6 dengan cara compile dari sourc
     </item>
     
     <item>
+      <title>Error Github Push</title>
+      <link>https://mfachrulrazy.github.io/post/err-github-push/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/err-github-push/</guid>
+      <description>Pada saat ingin melakukan push ke repo github terdapat error. ... error: src refspec master does not match any. error: failed to push some refs to &amp;#39;git@github.com:user/repo.git&amp;#39;
+Solusi Masukkan identitas terlebih dahulu pada git server. # git config --global user.email &amp;#34;user@email.com&amp;#34; Kemudian lakukan commit ulang dan push ke repo.</description>
+    </item>
+    
+    <item>
       <title>Redirect Domain URL pada Nginx</title>
       <link>https://mfachrulrazy.github.io/post/konfig-nginx/</link>
       <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
