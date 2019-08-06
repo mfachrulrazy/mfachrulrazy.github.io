@@ -59,6 +59,21 @@ Gzip dan Gunzip Compress file dengan menggunakan gzip # gzip namafile.</descript
     </item>
     
     <item>
+      <title>Install Zabbix Agent</title>
+      <link>https://mfachrulrazy.github.io/post/install-zabbix-agent/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/install-zabbix-agent/</guid>
+      <description>Install Zabbix Agent pada Windows Pertama download zabbix agent dari situs resminya di sini.
+Kemudian ekstrak file tersebut dan letakkan di dalam direktori C:\zabbix_agent.
+Pindahkan file ...\conf\zabbix_agentd.conf dan ...\bin\zabbix_agentd.exe ke direktori zabbix_agent.
+Edit file zabbix_agentd.conf pada bagian berikut. ... Server=&amp;lt;ip server zabbix&amp;gt; ... ServerActive=&amp;lt;ip server zabbix&amp;gt; ..
+Setelah itu install agent zabbix dengan menggunakan file konfigurasi yang telah diedit.
+Buka cmd (sebagai administrator)
+&amp;gt; zabbix_agentd.exe -c zabbix_config.conf --install Setelah install, jalankan servis zabbix &amp;gt; zabbix_agentd.</description>
+    </item>
+    
+    <item>
       <title>Install Zabbix pada Centos</title>
       <link>https://mfachrulrazy.github.io/post/install-zabbix/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
