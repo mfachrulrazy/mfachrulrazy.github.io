@@ -64,7 +64,7 @@
   "description" : "Beberapa perintah dasar docker yang didapatkan setelah training dari beberapa situs.
 Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.",
   "inLanguage" : "en",
-  "wordCount": 829,
+  "wordCount": 844,
   "datePublished" : "2019-01-12T08:32:46",
   "dateModified" : "2019-01-12T08:32:46",
   "image" : "https://mfachrulrazy.github.io/",
@@ -341,9 +341,11 @@ Test command image dari docker/whalesay
 <span class="n">CONTAINER</span> <span class="n">ID</span>        <span class="n">IMAGE</span>               <span class="n">COMMAND</span>                  <span class="n">CREATED</span>             <span class="n">STATUS</span>              <span class="n">PORTS</span>               <span class="n">NAMES</span>
 <span class="n">c4e3f2e8355c</span>        <span class="n">redis</span>               <span class="s2">&#34;docker-entrypoint.s…&#34;</span>   <span class="n">7</span> <span class="n">minutes</span> <span class="n">ago</span>       <span class="n">Up</span> <span class="n">5</span> <span class="n">minutes</span>        <span class="n">6379</span><span class="p">/</span><span class="n">tcp</span>            <span class="n">charming_mahavira</span></code></pre></div></li>
 <li>Untuk masuk ke dalam container tersebut dan menjalankan perintah tertentu
-<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">-it</span> <span class="n">c4e3f2e8355c</span> <span class="n">redis-cli</span>
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">-it</span> <span class="p">&lt;</span><span class="n">container_id</span><span class="p">&gt;</span> <span class="n">redis-cli</span>
 <span class="n">atau</span>
-<span class="p">&gt;</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">-it</span> <span class="n">c4e3f2e8355c</span> <span class="n">bash</span></code></pre></div></li>
+<span class="p">&gt;</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">-it</span> <span class="p">&lt;</span><span class="n">container_id</span><span class="p">&gt;</span> <span class="n">bash</span></code></pre></div></li>
+<li>Melihat port yang di-expose oleh docker container ke port host os
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="p">&gt;</span> <span class="n">docker</span> <span class="n">port</span> <span class="p">&lt;</span><span class="n">container_id</span><span class="p">&gt;</span></code></pre></div></li>
 </ol>
 
 <h3 id="container-lifecycle">Container Lifecycle</h3>

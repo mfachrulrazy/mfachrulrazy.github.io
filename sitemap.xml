@@ -18,6 +18,16 @@
   </url>
   
   <url>
+    <loc>https://mfachrulrazy.github.io/post/restoredb-sqlsrv/</loc>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mfachrulrazy.github.io/post/suspectdb-sqlsrv/</loc>
+    <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mfachrulrazy.github.io/post/join-cell-formula/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
   </url>
@@ -480,7 +490,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/database/</loc>
-    <lastmod>2018-12-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -510,12 +520,6 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/git/</loc>
-    <lastmod>2018-09-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mfachrulrazy.github.io/kategori/github/</loc>
     <lastmod>2018-09-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -657,7 +661,7 @@
   
   <url>
     <loc>https://mfachrulrazy.github.io/kategori/sql-server/</loc>
-    <lastmod>2018-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

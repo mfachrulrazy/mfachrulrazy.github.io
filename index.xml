@@ -49,6 +49,27 @@ Ketika scp dijalankan biasanya akan meminta password (jika belum bertukar ssh ke
     </item>
     
     <item>
+      <title>Restore Database SQL Server</title>
+      <link>https://mfachrulrazy.github.io/post/restoredb-sqlsrv/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/restoredb-sqlsrv/</guid>
+      <description>Proses restore database berhenti dan tidak berubah status. Solusi Gunakan t-sql dan masukkan kueri untuk restore database dengan menggunakan opsi with recovery RESTORE DATABASE NamaDB FROM DISK = &amp;#39;Path\to\file.bak&amp;#39; WITH RECOVERY GO</description>
+    </item>
+    
+    <item>
+      <title>SQL Server Database Suspect</title>
+      <link>https://mfachrulrazy.github.io/post/suspectdb-sqlsrv/</link>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/suspectdb-sqlsrv/</guid>
+      <description>Terkadang Microsoft SQL Server mengalami error, salah satunya adalah Suspect Database. Salah satu penyebabnya adalah server langsung mati (karena listrik mati atau power failure).
+Salah satu solusinya adalah memperbaiki database secara manual. Contoh dalam hal ini nama database adalah DBTes.
+1. Buka aplikasi query sql seperti Management Studio
+2. Dalam query tersebut ubah database menjadi mode emergency USE master GO ALTER DATABASE DBTes SET EMERGENCY GO 3. Eksekusi perintah dbcc checkdb DBCC CHECKDB (DBTes) GO 4.</description>
+    </item>
+    
+    <item>
       <title>Formula Concat dan Vlookup pada Excel</title>
       <link>https://mfachrulrazy.github.io/post/join-cell-formula/</link>
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
@@ -441,8 +462,8 @@ Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut
  r : recursive. Berulang ke sub direktori
  t : sesuaikan dengan waktu
  a : archive mode
- v : verbose mode (banyak muncul penjelasan pada saat transfer)
- q : quite mode (menghilangkan pesan yang muncul)
+ v : verbose mode (memunculkan penjelasan pada saat transfer)
+ q : quite mode (menghilangkan pesan pada saat rsync dijalankan)
   Rsync jika tidak menggunakan backslash “/” berarti folder tersebut yang akan dicopy.</description>
     </item>
     

@@ -110,8 +110,8 @@ Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut
  r : recursive. Berulang ke sub direktori
  t : sesuaikan dengan waktu
  a : archive mode
- v : verbose mode (banyak muncul penjelasan pada saat transfer)
- q : quite mode (menghilangkan pesan yang muncul)
+ v : verbose mode (memunculkan penjelasan pada saat transfer)
+ q : quite mode (menghilangkan pesan pada saat rsync dijalankan)
   Rsync jika tidak menggunakan backslash “/” berarti folder tersebut yang akan dicopy.</description>
     </item>
     
