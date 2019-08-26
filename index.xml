@@ -191,6 +191,17 @@ Install Varnish 6 Install varnish terbaru versi 6 dengan cara compile dari sourc
     </item>
     
     <item>
+      <title>Listen &amp; Open Port Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/post/port-ubuntu/</link>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/port-ubuntu/</guid>
+      <description>Melihat Port/Socket yang aktif Melihat port yang sedang listen bisa menggunakan 3 tools berikut.
+Perintah lsof Perintah lsof (list open file) $ sudo lsof -i -P -n $ sudo lsof -i -P -n | grep LISTEN
+Perintah netstat Perintah netstat adalah perintah yang terdapat pada beberapa versi linux lama, perintah terbaru adalah ss. $ netstat -tulpn | grep LISTEN Perintah ss $ sudo ss -tulw $ sudo ss -tulwn Parameter dari netstat/ss:</description>
+    </item>
+    
+    <item>
       <title>Install dan Konfigurasi Nagios</title>
       <link>https://mfachrulrazy.github.io/post/install-nagios/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
