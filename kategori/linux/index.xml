@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</managingEditor>
     <webMaster>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</webMaster>
-    <lastBuildDate>Tue, 07 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/kategori/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04</title>
+      <link>https://mfachrulrazy.github.io/post/ins-ssl-nginx-ubuntu/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <author>mfachrulrazy@gmail.com (Muhammad Fachrul Razy)</author>
+      <guid>https://mfachrulrazy.github.io/post/ins-ssl-nginx-ubuntu/</guid>
+      <description>Let&amp;rsquo;s Encrypt adalah salah satu Otoritas Sertifikasi (CA - Certificate Authority) yang dapat mengeluarkan sertifikat SSL. Pada sisi web host (hosting website) kita menggunakan ACME protocol untuk memperbarui sertifikat yang diberikan oleh Let&amp;rsquo;s Encrypt.
+Dalam tutorial ini, kita menggunakan Wildcard SSL yang berfungsi untuk mengaktifkan ssl ke domain dan seluruh sub domain yang kita punya. Pada tutorial ini kita menggunakan domain contoh.com
+Install Paket pendukung Let&amp;rsquo;s Encrypt Install paket yang dibutuhkan oleh let&amp;rsquo;s encrypt $ sudo apt-get update $ sudo apt-get install software-properties-common $ sudo add-apt-repository universe $ sudo add-apt-repository ppa:certbot/certbot $ sudo apt-get update</description>
+    </item>
     
     <item>
       <title>Install Python 3 di Centos 7</title>
