@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2017/dns-flood/" />
+  <link rel="next" href="/2017/tb-web-server1/" />
+  <link rel="canonical" href="/2017/apache-selinux/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Apache dan SE Linux | My Free Resources
+       
+  </title>
+  <meta name="title" content="Apache dan SE Linux | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Apache dan SE Linux"/>
+<meta name="twitter:description" content="Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:
+# setsebool httpd_can_network_connect_db=1 Jika ingin persistent pada saat server di-restart tambahkan opsi -P # setsebool -P httpd_can_network_connect_db on Cek hasil konfigurasi # getsebool httpd_can_network_connect_db"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Apache dan SE Linux",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2017\/apache-selinux\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "web server, apache, security",
+  "wordcount":  38 ,
+  "url": "\/2017\/apache-selinux\/",
+  "datePublished": "2017-08-29T00:00:00\x2b00:00",
+  "dateModified": "2017-08-29T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Apache dan SE Linux</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2017-08-29 >29 August 2017</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/web-server/"> web server </a>
+                        <a href="/categories/apache/"> apache </a>
+                        <a href="/categories/security/"> security </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># setsebool httpd_can_network_connect_db=1</span></code></pre></div>
+Jika ingin persistent pada saat server di-restart tambahkan opsi -P
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># setsebool -P httpd_can_network_connect_db on</span></code></pre></div>
+Cek hasil konfigurasi
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># getsebool httpd_can_network_connect_db</span></code></pre></div></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2017%2fapache-selinux%2f&amp;text=Apache%20dan%20SE%20Linux&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2017%2fapache-selinux%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2017%2fapache-selinux%2f&amp;title=Apache%20dan%20SE%20Linux" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/web-server/">
+                    #web server</a></span>
+            
+            <span class="tag"><a href="tags/apache/">
+                    #apache</a></span>
+            
+            <span class="tag"><a href="tags/security/">
+                    #security</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2017/dns-flood/" class="prev" rel="prev" title="DNS Flooding di Mikrotik"><i class="iconfont icon-dajiantou"></i>&nbsp;DNS Flooding di Mikrotik</a>
+         
+        
+        <a href="/2017/tb-web-server1/" class="next" rel="next" title="Troubleshoot Web Server I">Troubleshoot Web Server I&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

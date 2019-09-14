@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cron on My Free Resources</title>
+    <link>/categories/cron/</link>
+    <description>Recent content in cron on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Feb 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/cron/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Berkenalan dengan Cron</title>
+      <link>/2016/about-cron/</link>
+      <pubDate>Fri, 05 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/about-cron/</guid>
+      <description>Apa itu cron? Jadi, cron adalah sebuah software utilitas di lingkungan linux/unix yang berfungsi sebagai pembuat jadwal pekerjaan berdasarkan waktu yang bisa ditentukan.
+Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap perintah yang dijalankan di cron, akan mengirim ke email secara default dan biasanya dalam terminal akan muncul You have new mail in /var/spool/mail/root Isi dari file /var/spool/mail/root adalah proses dari script yang dijalankan.</description>
+    </item>
+    
+  </channel>
+</rss>

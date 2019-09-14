@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2019/ins-docker-cent7/" />
+  <link rel="next" href="/2019/join-cell-formula/" />
+  <link rel="canonical" href="/2019/iostreamwin/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           I/O Stream pada Windows | My Free Resources
+       
+  </title>
+  <meta name="title" content="I/O Stream pada Windows | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="I/O Stream pada Windows"/>
+<meta name="twitter:description" content="Pada sistem operasi Windows, ada 3 stream (aliran) yaitu:
+ stdin stdout (nilai 1) stderr (nilai 2)
+  Berikut penjelasan mengenai masing-masing stream.
+Stdin Standard Input adalah segala input yang dimasukkan melalui keyboard atau alat input lainnya.
+Stdout Standard Output adalah segala output yang ditampilkan di layar, setelah menerima input dan diproses. Contoh: &gt; echo &#34;halo mfr&#34; halo mfr
+Stderr Standard Error ketika input yang diberikan menghasilkan error."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "I\/O Stream pada Windows",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2019\/iostreamwin\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "windows",
+  "wordcount":  181 ,
+  "url": "\/2019\/iostreamwin\/",
+  "datePublished": "2019-02-08T00:00:00\x2b00:00",
+  "dateModified": "2019-02-08T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">I/O Stream pada Windows</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2019-02-08 >8 February 2019</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/windows/"> windows </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p>Pada sistem operasi Windows, ada 3 stream (aliran) yaitu:</p>
+
+<ul>
+<li>stdin</li>
+<li>stdout (nilai 1)</li>
+<li>stderr (nilai 2)<br /></li>
+</ul>
+
+<p>Berikut penjelasan mengenai masing-masing stream.</p>
+
+<h3 id="stdin">Stdin</h3>
+
+<p>Standard Input adalah segala input yang dimasukkan melalui keyboard atau alat input lainnya.</p>
+
+<h3 id="stdout">Stdout</h3>
+
+<p>Standard Output adalah segala output yang ditampilkan di layar, setelah menerima input dan diproses. Contoh:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; echo  <span style="color:#e6db74">&#34;halo mfr&#34;</span>
+halo mfr</code></pre></div></p>
+
+<h3 id="stderr">Stderr</h3>
+
+<p>Standard Error ketika input yang diberikan menghasilkan error.</p>
+
+<h3 id="redirection">Redirection</h3>
+
+<p>Untuk mengatur output bisa menggunakan perintah redirect berikut:</p>
+
+<h4 id="insert">&gt; (insert)</h4>
+
+<p>Mengarahkan stdout ke sebuah file
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; echo  <span style="color:#e6db74">&#34;halo mfr&#34;</span> &gt; file.txt
+&gt; cat file.txt
+halo mfr</code></pre></div>
+Jika file sudah ada, maka <code>&gt;</code> akan menimpa (overwrite)</p>
+
+<h4 id="append">&gt;&gt; (append)</h4>
+
+<p>Menambah isi sebuah file<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; echo  <span style="color:#e6db74">&#34;halo mfr lagi&#34;</span> &gt;&gt; file.txt
+&gt; cat file.txt
+halo mfr
+halo mfr lagi</code></pre></div></p>
+
+<h4 id="pipe">| (pipe)</h4>
+
+<p>Mengarahkan stdout dari sebuah perintah menjadi stdin ke perintah lainnya.<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; cat file.txt | Select-Strings mfr
+
+mfr</code></pre></div></p>
+
+<h4 id="1">&amp;1</h4>
+
+<p>&amp;1 adalah success stream</p>
+
+<h4 id="mengarahkan-stderr">Mengarahkan stderr</h4>
+
+<p>Untuk mengarahkan stderr ke sebuah file bisa menggunakan index dari stderr yaitu <strong>2</strong>.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; cat filebaru.txt <span style="color:#ae81ff">2</span>&gt; error.txt </code></pre></div></p>
+
+<h4 id="null">$null</h4>
+
+<p>Variabel <code>$null</code> ini digunakan jika stderr ingin dibuang.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; cat filebaru.txt <span style="color:#ae81ff">2</span>&gt; $null</code></pre></div></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2019%2fiostreamwin%2f&amp;text=I%2fO%20Stream%20pada%20Windows&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2019%2fiostreamwin%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2019%2fiostreamwin%2f&amp;title=I%2fO%20Stream%20pada%20Windows" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/windows/">
+                    #windows</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2019/ins-docker-cent7/" class="prev" rel="prev" title="Install Docker di Centos 7"><i class="iconfont icon-dajiantou"></i>&nbsp;Install Docker di Centos 7</a>
+         
+        
+        <a href="/2019/join-cell-formula/" class="next" rel="next" title="Formula Concat dan Vlookup pada Excel">Formula Concat dan Vlookup pada Excel&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on My Free Resources</title>
+    <link>/categories/ssh/</link>
+    <description>Recent content in ssh on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Troubleshoot IP SSH berubah</title>
+      <link>/2018/tb-ssh-key/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/tb-ssh-key/</guid>
+      <description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
+ Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
+ Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description>
+    </item>
+    
+    <item>
+      <title>Membuat SSH Key Pair di Putty</title>
+      <link>/2018/ssh-key-putty/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/ssh-key-putty/</guid>
+      <description>Konfigurasi putty untuk autentikasi dengan menggunakan key (key based auth) beberapa aplikasi bawaan putty. Berikut langkahnya.
+Client Windows  Buka program Puttygen kemudian klik Generate dan arahkan mouse ke sembarang arah pada area kosong di bawah bar progress (hijau) untuk membuat key sampai selesai.  Masukkan passphrase untuk keamanan key.
+ Kemudian simpan public dan private key dari putty di tempat yang aman.
+ Salin public key dari putty ke file authorized_keys di server linux, selanjutnya kembali ke aplikasi putty, masuk pada bagian session masukkan alamat server  Kemudian pada bagian Connection &amp;gt; Data masukkan username sehingga tidak perlu meminta untuk masukkan username  Kemudian cek pada bagian SSH &amp;gt; Auth pastikan Pageant tercentang  Kemudian kembali ke menu session dan klik save.</description>
+    </item>
+    
+    <item>
+      <title>Openssh Centos 7</title>
+      <link>/2016/openssh-cent-7/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/openssh-cent-7/</guid>
+      <description>Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart</description>
+    </item>
+    
+  </channel>
+</rss>

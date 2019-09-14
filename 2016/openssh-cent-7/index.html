@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2016/belajar-vim/" />
+  <link rel="next" href="/2016/wifi-pass-win10/" />
+  <link rel="canonical" href="/2016/openssh-cent-7/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Openssh Centos 7 | My Free Resources
+       
+  </title>
+  <meta name="title" content="Openssh Centos 7 | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Openssh Centos 7"/>
+<meta name="twitter:description" content="Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Openssh Centos 7",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2016\/openssh-cent-7\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  
+  "wordcount":  359 ,
+  "url": "\/2016\/openssh-cent-7\/",
+  "datePublished": "2016-08-21T00:00:00\x2b00:00",
+  "dateModified": "2016-08-21T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Openssh Centos 7</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2016-08-21 >21 August 2016</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/centos/"> centos </a>
+                        <a href="/categories/server/"> server </a>
+                        <a href="/categories/remote/"> remote </a>
+                        <a href="/categories/ssh/"> ssh </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                2 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h3 id="install-openssh-server">Install Openssh Server</h3>
+
+<ol>
+<li>Install paket openssh server dan client
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum -y install openssh-server openssh-clients</span></code></pre></div></li>
+<li>Jalankan service-nya
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># chkconfig sshd on</span>
+<span style="color:#75715e"># service sshd start</span></code></pre></div></li>
+<li>Pastikan service-nya telah berjalan (install netstat terlebih dahulu)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># netstat -tulpn | grep :22</span></code></pre></div></li>
+<li>Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># vi /etc/ssh/sshd_config</span></code></pre></div></li>
+<li>Jika ada perubahan pada file konfigurasi, restart servis ssh
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># systemctl restart sshd.service</span>
+Atau
+<span style="color:#75715e"># service sshd restart</span></code></pre></div><br /></li>
+</ol>
+
+<h3 id="mengubah-port-ssh">Mengubah Port SSH</h3>
+
+<ol>
+<li>Backup file konfigurasi ssh
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak</span></code></pre></div></li>
+<li>Edit file sshd_config dan hapus komentar pada bagian port kemudian ganti dengan port yang diinginkan
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...
+Port <span style="color:#ae81ff">22</span> <span style="color:#75715e">#ubah menjadi port yang diinginkan</span>
+...</code></pre></div></li>
+<li>Setelah itu, atur perizinan di SELinux karena SELinux secara default hanya mengizinkan port 22
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># semanage port -a -t ssh_port_t -p tcp #portnumber</span></code></pre></div></li>
+<li>Jika selinux belum terpasang, install paket berikut
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum -y install policycoreutils-python</span></code></pre></div></li>
+<li>Biasanya port yang ditentukan, telah dipakai oleh service lain, jadi pastikan dulu untuk mengecek port yang akan digunakan
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># semanage port -l | grep #portnumber</span></code></pre></div></li>
+<li>Atur firewall-cmd untuk mengizinkan port baru
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># firewall-cmd --permanent --zone=public --add-port=#portnumber/tcp</span></code></pre></div></li>
+<li>Restart firewall-cmd dan servis ssh
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># firewall-cmd --reload</span>
+<span style="color:#75715e"># systemctl restart sshd.service</span></code></pre></div></li>
+<li>Kemudian verifikasi ssh telah berjalan di port baru
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># ss -tnlp | grep ssh</span></code></pre></div><br /></li>
+</ol>
+
+<h3 id="troubleshoot-ssh">Troubleshoot SSH</h3>
+
+<p>Jika mengganti port default dari ssh di Centos 7 akan mengakibatkan service ssh tidak berjalan dan terjadi error seperti gambar di bawah ini
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/ssh-cent1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+Hal ini dikarenakan adanya security di centos yang harus dikonfigurasi.<br />
+Baca referensi mengenai SE Linux di centos</p>
+
+<h3 id="troubleshoot-prompt-password-ssh">Troubleshoot Prompt Password SSH</h3>
+
+<p>Biasanya ketika login ssh, setelah memasukkan username, prompt untuk memasukkan password lumayan lama untuk muncul.<br />
+Penyebabnya adalah IP address tidak me-reverse pengaturan etc DNS. Berikut hal yang dapat dilakukan
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">GSSAPIAuthentication yes
+menjadi: GSSAPIAuthentication no
+dan
+UseDNS yes
+menjadi: UseDNS no</code></pre></div>
+Kemudian restart servis ssh.</p>
+
+<h3 id="konfigurasi-ssh-untuk-menerima-login-root-dari-ip-tertentu">Konfigurasi SSH untuk Menerima Login Root dari IP Tertentu</h3>
+
+<p>Kita dapat mengkonfigurasi jika ingin menerima login <code>root</code> dari beberapa alamat. Semuanya dapat dilakukan dengan cara mengedit file konfigurasi ssh (<code>/etc/ssh/sshd_config</code>)<br />
+Mengizinkan login root dari network tertentu.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...
+Match Address x.x.x.x/yy
+        PermitRootLogin yes</code></pre></div>
+Jika ingin menggunakan spesifik ip address bisa dengan tanda koma.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...
+Match Address x.x.x.x, y.y.y.y
+        PermitRootLogin yes</code></pre></div>
+Setelah itu restart/reload servis ssh</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2016%2fopenssh-cent-7%2f&amp;text=Openssh%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2016%2fopenssh-cent-7%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2016%2fopenssh-cent-7%2f&amp;title=Openssh%20Centos%207" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2016/belajar-vim/" class="prev" rel="prev" title="Belajar Vi dan Vim"><i class="iconfont icon-dajiantou"></i>&nbsp;Belajar Vi dan Vim</a>
+         
+        
+        <a href="/2016/wifi-pass-win10/" class="next" rel="next" title="Menampilkan Saved Password Wifi Windows 10">Menampilkan Saved Password Wifi Windows 10&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2018/err-rdp-credssp/" />
+  <link rel="next" href="/2018/install-django/" />
+  <link rel="canonical" href="/2018/ubuntu-srv-1804/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Mengenal Ubuntu Server 18.04 | My Free Resources
+       
+  </title>
+  <meta name="title" content="Mengenal Ubuntu Server 18.04 | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mengenal Ubuntu Server 18.04"/>
+<meta name="twitter:description" content="Ubuntu mengeluarkan rilis LTS terbaru nya, yaitu Ubuntu 18.04 dengan codename Bionic Beaver. Banyak perubahan yang terjadi pada versi ini, berikut beberapa hal yang berbeda dari ubuntu 18.04.
+Pengaturan Networking Pengaturan IP Address Pengaturan networking sudah tidak menggunakan tools ifupdown, tetapi menggunakan netplan. Netplan menggunakan format .yaml dengan menggunakan indentasi (seperti python).
+Dalam folder /etc/netplan terdapat file 50-cloud-init.yaml di mana dalam file tersebut adalah file konfigurasi default dari ubuntu 18."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mengenal Ubuntu Server 18.04",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2018\/ubuntu-srv-1804\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  
+  "wordcount":  297 ,
+  "url": "\/2018\/ubuntu-srv-1804\/",
+  "datePublished": "2018-05-23T00:00:00\x2b00:00",
+  "dateModified": "2018-05-23T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Mengenal Ubuntu Server 18.04</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2018-05-23 >23 May 2018</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/linux/"> linux </a>
+                        <a href="/categories/ubuntu/"> ubuntu </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                2 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p>Ubuntu mengeluarkan rilis LTS terbaru nya, yaitu Ubuntu 18.04 dengan <em>codename</em> <strong>Bionic Beaver</strong>. Banyak perubahan yang terjadi pada versi ini, berikut beberapa hal yang berbeda dari ubuntu 18.04.</p>
+
+<h2 id="pengaturan-networking">Pengaturan Networking</h2>
+
+<h3 id="pengaturan-ip-address">Pengaturan IP Address</h3>
+
+<p>Pengaturan networking sudah tidak menggunakan tools ifupdown, tetapi menggunakan <strong>netplan</strong>. Netplan menggunakan format <em>.yaml</em> dengan menggunakan indentasi (seperti python).<br />
+Dalam folder <code>/etc/netplan</code> terdapat file <code>50-cloud-init.yaml</code> di mana dalam file tersebut adalah file konfigurasi default dari ubuntu 18.04.<br />
+Untuk konfigurasi ip statik bisa mengedit file tersebut.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#75715e"># This file is generated from information provided by</span>
+<span style="color:#75715e"># the datasource.  Changes to it will not persist across an instance.</span>
+<span style="color:#75715e"># To disable cloud-init&#39;s network configuration capabilities, write a file</span>
+<span style="color:#75715e"># /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:</span>
+<span style="color:#75715e"># network: {config: disabled}</span>
+network:
+    ethernets:
+        enp8s0:
+            dhcp4: <span style="color:#66d9ef">true</span>
+        enp4s0:
+            addresses: [<span style="color:#ae81ff">192.168.8.2</span>/<span style="color:#ae81ff">24</span>]
+            gateway4: <span style="color:#ae81ff">192.168.8.1</span>
+            dhcp4: no
+            nameservers:
+                    addresses: [<span style="color:#ae81ff">8.8.8.8</span>,<span style="color:#ae81ff">8.8.4.4</span>]
+    version: <span style="color:#ae81ff">2</span></code></pre></div>
+Cara lain bisa dengan membuat file dengan nama <code>01-netcfg.yaml</code> dan masukkan script network berikut jika hanya ingin mengkonfigurasi interface network enp4s0.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">network:
+  version: <span style="color:#ae81ff">2</span>
+  renderer: networkd
+  ethernets:
+    enp4s0:
+      dhcp4: no
+      addresses: [<span style="color:#ae81ff">192.168.8.2</span>/<span style="color:#ae81ff">24</span>]
+      gateway4: <span style="color:#ae81ff">192.168.8.1</span>
+      nameservers:
+        addresses: [<span style="color:#ae81ff">8.8.8.8</span>]</code></pre></div>
+Setelah itu simpan dan keluar dari edit file tersebut dan apply konfigurasi netplan dengan mode debug agar dapat melihat pesan jika ada error.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo netplan --debug apply</code></pre></div></p>
+
+<h3 id="pengaturan-dns-server">Pengaturan DNS Server</h3>
+
+<p>Melihat konfigurasi DNS
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ systemd-resolve --status</code></pre></div>
+Konfigurasi DNS untuk statik yang tidak permanen dapat dilakukan dengan mengedit file <code>/etc/resolv.conf</code> dan tambahkan baris berikut
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nameserver <span style="color:#ae81ff">8</span>.8.8.8</code></pre></div>
+Atau bisa juga dengan menggunakan tools resolvconf
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install resolvconf</code></pre></div>
+Kemudian edit file <code>/etc/resolvconf/resolv.conf.d/head</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nameserver <span style="color:#ae81ff">8</span>.8.8.8</code></pre></div>
+Restart Servis resolvconf
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo service resolvconf restart</code></pre></div></p>
+
+<h3 id="enable-disable-user-root">Enable/Disable User Root</h3>
+
+<p>Secara default Ubuntu tidak mengaktifkan user root hal ini untuk meningkatkan keamanan.<br />
+Enable user root
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo passwd root
+..
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully</code></pre></div>
+Disable user root
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo passwd -l root</code></pre></div></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2018%2fubuntu-srv-1804%2f&amp;text=Mengenal%20Ubuntu%20Server%2018.04&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2018%2fubuntu-srv-1804%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2018%2fubuntu-srv-1804%2f&amp;title=Mengenal%20Ubuntu%20Server%2018.04" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2018/err-rdp-credssp/" class="prev" rel="prev" title="Error Remote Desktop Connection"><i class="iconfont icon-dajiantou"></i>&nbsp;Error Remote Desktop Connection</a>
+         
+        
+        <a href="/2018/install-django/" class="next" rel="next" title="Install Django">Install Django&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2018/install-zabbix-agent/" />
+  <link rel="next" href="/2018/konfig-sqlsrv2/" />
+  <link rel="canonical" href="/2018/ssh-key-putty/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Membuat SSH Key Pair di Putty | My Free Resources
+       
+  </title>
+  <meta name="title" content="Membuat SSH Key Pair di Putty | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Membuat SSH Key Pair di Putty"/>
+<meta name="twitter:description" content="Konfigurasi putty untuk autentikasi dengan menggunakan key (key based auth) beberapa aplikasi bawaan putty. Berikut langkahnya.
+Client Windows  Buka program Puttygen kemudian klik Generate dan arahkan mouse ke sembarang arah pada area kosong di bawah bar progress (hijau) untuk membuat key sampai selesai.  Masukkan passphrase untuk keamanan key.
+ Kemudian simpan public dan private key dari putty di tempat yang aman.
+ Salin public key dari putty ke file authorized_keys di server linux, selanjutnya kembali ke aplikasi putty, masuk pada bagian session masukkan alamat server  Kemudian pada bagian Connection &gt; Data masukkan username sehingga tidak perlu meminta untuk masukkan username  Kemudian cek pada bagian SSH &gt; Auth pastikan Pageant tercentang  Kemudian kembali ke menu session dan klik save."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Membuat SSH Key Pair di Putty",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2018\/ssh-key-putty\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  
+  "wordcount":  167 ,
+  "url": "\/2018\/ssh-key-putty\/",
+  "datePublished": "2018-07-16T00:00:00\x2b00:00",
+  "dateModified": "2018-07-16T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Membuat SSH Key Pair di Putty</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2018-07-16 >16 July 2018</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/ssh/"> ssh </a>
+                        <a href="/categories/remote/"> remote </a>
+                        <a href="/categories/linux/"> linux </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p>Konfigurasi putty untuk autentikasi dengan menggunakan key (key based auth) beberapa aplikasi bawaan putty. Berikut langkahnya.</p>
+
+<h3 id="client-windows">Client Windows</h3>
+
+<ol>
+<li>Buka program <strong>Puttygen</strong> kemudian klik <code>Generate</code> dan arahkan mouse ke sembarang arah pada area kosong di bawah bar progress (hijau) untuk membuat key sampai selesai.
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/remote/ssh-key1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br /></li>
+<li>Masukkan passphrase untuk keamanan key.<br /></li>
+<li>Kemudian simpan public dan private key dari putty di tempat yang aman.<br /></li>
+<li>Salin public key dari putty ke file <strong>authorized_keys</strong> di server linux, selanjutnya kembali ke aplikasi putty, masuk pada bagian <strong>session</strong> masukkan alamat server
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/remote/ssh-key2.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br /></li>
+<li>Kemudian pada bagian <strong>Connection</strong> &gt; <strong>Data</strong> masukkan username sehingga tidak perlu meminta untuk masukkan username
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/remote/ssh-key3.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br /></li>
+<li>Kemudian cek pada bagian <strong>SSH</strong> &gt; <strong>Auth</strong> pastikan <strong>Pageant</strong> tercentang
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/remote/ssh-key4.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br /></li>
+<li>Kemudian kembali ke menu session dan klik save.<br /></li>
+<li>Buka aplikasi <strong>Pageant</strong> dan tambahkan private key yang sudah disimpan
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/remote/ssh-key5.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br /></li>
+<li>Setelah itu autentikasi dengan menggunakan key telah berhasil
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/remote/ssh-key6.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br /></li>
+</ol>
+
+<h3 id="server-linux">Server Linux</h3>
+
+<ol>
+<li>Pada server linux cukup generate key
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># ssh-keygen -t rsa -b 4096 -C &#34;user@email.com&#34;</span></code></pre></div></li>
+<li>Masuk ke dalam folder ssh di <code>~/.ssh</code><br /></li>
+<li>Masukkan isi public key dari putty ke dalam file <code>authorized_keys</code><br /></li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2018%2fssh-key-putty%2f&amp;text=Membuat%20SSH%20Key%20Pair%20di%20Putty&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2018%2fssh-key-putty%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2018%2fssh-key-putty%2f&amp;title=Membuat%20SSH%20Key%20Pair%20di%20Putty" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2018/install-zabbix-agent/" class="prev" rel="prev" title="Install Zabbix Agent"><i class="iconfont icon-dajiantou"></i>&nbsp;Install Zabbix Agent</a>
+         
+        
+        <a href="/2018/konfig-sqlsrv2/" class="next" rel="next" title="Belajar SQL Server Part 2">Belajar SQL Server Part 2&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

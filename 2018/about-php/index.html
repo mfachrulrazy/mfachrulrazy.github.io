@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2018/selinux-centos/" />
+  <link rel="next" href="/2018/install-choco/" />
+  <link rel="canonical" href="/2018/about-php/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Pengaturan pada PHP | My Free Resources
+       
+  </title>
+  <meta name="title" content="Pengaturan pada PHP | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pengaturan pada PHP"/>
+<meta name="twitter:description" content="Menambahkan maximum upload file di PHP Ubah ukuran maksimum file upload di php dapat dengan cara mengedit file /etc/php.ini ... post_max_size = 100M ... Kemudian reload service php
+Menambahkan maximum eksekusi PHP Menambahkan maksimum eksekusi edit file /etc/php.ini ... max_execution_time = 500 ...
+Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi halaman webnya. Salah satu cara untuk memunculkannya adalah menginstall paket tambahan php yaitu php-gd. # yum install php-gd"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pengaturan pada PHP",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2018\/about-php\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "php, server",
+  "wordcount":  222 ,
+  "url": "\/2018\/about-php\/",
+  "datePublished": "2018-01-25T00:00:00\x2b00:00",
+  "dateModified": "2018-01-25T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Pengaturan pada PHP</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2018-01-25 >25 January 2018</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/php/"> php </a>
+                        <a href="/categories/server/"> server </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                2 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h3 id="menambahkan-maximum-upload-file-di-php">Menambahkan maximum upload file di PHP</h3>
+
+<p>Ubah ukuran maksimum file upload di php dapat dengan cara mengedit file <code>/etc/php.ini</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    ...
+    post_max_size <span style="color:#f92672">=</span> 100M
+    ...</code></pre></div>
+Kemudian reload service php</p>
+
+<h3 id="menambahkan-maximum-eksekusi-php">Menambahkan maximum eksekusi PHP</h3>
+
+<p>Menambahkan maksimum eksekusi edit file <code>/etc/php.ini</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    ...
+    max_execution_time <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>
+    ...</code></pre></div></p>
+
+<h3 id="menampilkan-captcha">Menampilkan captcha</h3>
+
+<p>Biasanya developer website membuat <em>captcha</em> pada autentikasi halaman webnya. Salah satu cara untuk memunculkannya adalah menginstall paket tambahan php yaitu <code>php-gd</code>.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum install php-gd</span></code></pre></div></p>
+
+<h3 id="install-library-php-mbstring">Install Library PHP mbstring</h3>
+
+<p>Sejak menggunakan php 70, paket yang diinstall harus berbeda, karena php bawaan dari centos 7 adalah php 5.4.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum install php70u-mbstring</span></code></pre></div></p>
+
+<h3 id="web-codeigniter-tidak-dapat-diakses">Web CodeIgniter tidak dapat diakses</h3>
+
+<p>Adakalanya sebuah website yang dibangun di platform yang berbeda dengan server production akan mengakibatkan error.<br />
+Sebagai contoh, developer membangun websitenya di OS Windows, sedangkan server production menggunakan OS Centos. Akibatnya, kadangkala website berjalan normal di platform developer karena salah satunya adalah windows tidak <em>case sensitive</em> sedangkan pada server prodcution bisa berjalan.<br />
+Begitu pula di aplikasi codeigniter yang case sensitive, oleh karenanya ketika salah satu website kantor tidak berjalan, penyebabnya adalah penamanaan modules tidak sesuai.<br />
+Biasanya modul codeigniter diletakkan di folder <code>website/apps/backend/modules</code> tidak diawali dengan huruf besar.</p>
+
+<h3 id="php-error-deprecated-and-warning">PHP Error Deprecated and Warning</h3>
+
+<p>Salah satu website tidak dapat berjalan dan pada saat pengecekan proses php, muncul error
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/centos/err-php1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
+
+<ul>
+<li><strong>Error Warning</strong> : Dapat membuat komentar pada <code>register_globals</code> di <code>/etc/php.ini</code><br /></li>
+<li><strong>Error Deprecated</strong> : Upgrade versi php</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2018%2fabout-php%2f&amp;text=Pengaturan%20pada%20PHP&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2018%2fabout-php%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2018%2fabout-php%2f&amp;title=Pengaturan%20pada%20PHP" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/php/">
+                    #php</a></span>
+            
+            <span class="tag"><a href="tags/server/">
+                    #server</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2018/selinux-centos/" class="prev" rel="prev" title="SE Linux pada Centos"><i class="iconfont icon-dajiantou"></i>&nbsp;SE Linux pada Centos</a>
+         
+        
+        <a href="/2018/install-choco/" class="next" rel="next" title="Install ChocoLatey di Windows">Install ChocoLatey di Windows&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

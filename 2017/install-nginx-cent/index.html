@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2017/konfig-sqlsrv1/" />
+  <link rel="next" href="/2017/maxtu/" />
+  <link rel="canonical" href="/2017/install-nginx-cent/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Install Nginx Centos 7 | My Free Resources
+       
+  </title>
+  <meta name="title" content="Install Nginx Centos 7 | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Nginx Centos 7"/>
+<meta name="twitter:description" content="Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai reverse proxy dan load balancer. Postingan ini akan membahas instalasi dan konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Install Nginx Centos 7",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2017\/install-nginx-cent\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "server, centos, nginx, web server",
+  "wordcount":  194 ,
+  "url": "\/2017\/install-nginx-cent\/",
+  "datePublished": "2017-04-23T00:00:00\x2b00:00",
+  "dateModified": "2017-04-23T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Install Nginx Centos 7</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2017-04-23 >23 April 2017</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/server/"> server </a>
+                        <a href="/categories/centos/"> centos </a>
+                        <a href="/categories/nginx/"> nginx </a>
+                        <a href="/categories/web-server/"> web server </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai reverse proxy dan load balancer. Postingan ini akan membahas instalasi dan konfigurasi nginx sebagai web server pada centos 7.</p>
+
+<ol>
+<li>Install repository EPEL
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum install epel-release</span></code></pre></div></li>
+<li>Kemudian install nginx
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum install nginx</span></code></pre></div></li>
+<li>Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># firewall-cmd --zone=public --permanent --add-port=80/tcp</span>
+<span style="color:#75715e"># firewall-cmd --reload</span></code></pre></div></li>
+<li>Jalankan service nginx dan cek statusnya
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># systemctl start nginx</span>
+<span style="color:#75715e"># systemctl status nginx</span></code></pre></div></li>
+</ol>
+
+<h3 id="troubleshoot-nginx">Troubleshoot Nginx</h3>
+
+<ul>
+<li>Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/nginx/err-nginx1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+<li>Tes file konfigurasi nginx untuk mengecek apakah ada error atau tidak
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># nginx -t</span></code></pre></div></li>
+<li>Melihat log error nginx
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># tail -20 /var/log/nginx/error.log</span></code></pre></div></li>
+</ul>
+
+<h3 id="error-403-forbidden-nginx">Error 403 Forbidden Nginx</h3>
+
+<ol>
+<li>Pada saat mengganti folder root dari nginx diperlukan permission khusus dari SELinux</li>
+<li>Ketika muncul direktori forbidden berarti SELinux yang sedang memblokir</li>
+<li>Cek apakah SELinux aktif
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># getenforce</span></code></pre></div></li>
+<li>Jika keluarannya <code>Enforcing</code> maka izinkan direktori root baru untuk nignx
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># chcon -Rt httpd_sys_content_t /direktori_root_www</span></code></pre></div></li>
+</ol>
+
+<h3 id="lainnya">Lainnya</h3>
+
+<ol>
+<li>Melihat servis nginx yang sedang berjalan
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># ps -ef | grep nginx</span></code></pre></div></li>
+<li>Menghentikan servis nginx secara paksa
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># kill -9 (pid_nginx)</span></code></pre></div></li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2017%2finstall-nginx-cent%2f&amp;text=Install%20Nginx%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2017%2finstall-nginx-cent%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2017%2finstall-nginx-cent%2f&amp;title=Install%20Nginx%20Centos%207" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/server/">
+                    #server</a></span>
+            
+            <span class="tag"><a href="tags/centos/">
+                    #centos</a></span>
+            
+            <span class="tag"><a href="tags/nginx/">
+                    #nginx</a></span>
+            
+            <span class="tag"><a href="tags/web-server/">
+                    #web server</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2017/konfig-sqlsrv1/" class="prev" rel="prev" title="Belajar SQL Server Part 1"><i class="iconfont icon-dajiantou"></i>&nbsp;Belajar SQL Server Part 1</a>
+         
+        
+        <a href="/2017/maxtu/" class="next" rel="next" title="Maximum Transmission Unit">Maximum Transmission Unit&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

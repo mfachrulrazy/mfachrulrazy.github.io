@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mesin virtual on My Free Resources</title>
+    <link>/tags/mesin-virtual/</link>
+    <description>Recent content in mesin virtual on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mesin-virtual/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Backspace pada Virtual Box</title>
+      <link>/2017/err-backspace-vbox/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/err-backspace-vbox/</guid>
+      <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
+Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
+    </item>
+    
+  </channel>
+</rss>

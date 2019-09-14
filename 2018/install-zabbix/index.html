@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2018/install-ftp-ubuntu/" />
+  <link rel="next" href="/2018/install-hugo/" />
+  <link rel="canonical" href="/2018/install-zabbix/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Install Zabbix pada Centos | My Free Resources
+       
+  </title>
+  <meta name="title" content="Install Zabbix pada Centos | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Zabbix pada Centos"/>
+<meta name="twitter:description" content="Pre-Requisites  Install dan konfigurasi paket php mariadb dan apache di server zabbix.
+ Jalankan servis php-mariadb-apache. Buat user dan database untuk zabbix.
+  Tambahkan repository Zabbix Jika menggunakan rhel 7, gunakan file konfigurasi berikut # rpm -ivh https://repo.zabbix.com/zabbix/4.2/rhel/7/x86_64/zabbix-release-4.2-1.el7.noarch.rpm
+Instalasi Frontend Install paket yum-config-manager # yum update &amp;&amp; yum install yum-utils Zabbix frontend membutuhkan paket tambahan # yum-config-manager --enable rhel-7-server-optional-rpms
+Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # yum install zabbix-server-mysql Install Zabbix frontend dengan dukungan mysql # yum install zabbix-web-mysql Untuk zabbix proxy dan zabbix server harus menggunakan database yang berbeda."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Install Zabbix pada Centos",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2018\/install-zabbix\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "monitoring, centos",
+  "wordcount":  298 ,
+  "url": "\/2018\/install-zabbix\/",
+  "datePublished": "2018-06-27T00:00:00\x2b00:00",
+  "dateModified": "2018-06-27T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Install Zabbix pada Centos</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2018-06-27 >27 June 2018</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/monitoring/"> monitoring </a>
+                        <a href="/categories/centos/"> centos </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                2 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h3 id="pre-requisites">Pre-Requisites</h3>
+
+<ol>
+<li>Install dan konfigurasi paket php mariadb dan apache di server zabbix.<br /></li>
+<li>Jalankan servis php-mariadb-apache.</li>
+<li>Buat user dan database untuk zabbix.<br /></li>
+</ol>
+
+<h3 id="tambahkan-repository-zabbix">Tambahkan repository Zabbix</h3>
+
+<p>Jika menggunakan rhel 7, gunakan file konfigurasi berikut
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># rpm -ivh https://repo.zabbix.com/zabbix/4.2/rhel/7/x86_64/zabbix-release-4.2-1.el7.noarch.rpm</span></code></pre></div></p>
+
+<h3 id="instalasi-frontend">Instalasi Frontend</h3>
+
+<p>Install paket <code>yum-config-manager</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum update &amp;&amp; yum install yum-utils</span></code></pre></div>
+Zabbix frontend membutuhkan paket tambahan
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum-config-manager --enable rhel-7-server-optional-rpms</span></code></pre></div></p>
+
+<h3 id="instalasi-server-proxy-frontend">Instalasi Server/Proxy/Frontend</h3>
+
+<ol>
+<li>Install Zabbix Server dengan dukungan mysql
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum install zabbix-server-mysql</span></code></pre></div></li>
+<li>Install Zabbix frontend dengan dukungan mysql
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># yum install zabbix-web-mysql</span></code></pre></div></li>
+<li>Untuk zabbix proxy dan zabbix server harus menggunakan database yang berbeda.<br /></li>
+<li>Import initial schema dan data untuk server
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix</span></code></pre></div></li>
+<li>edit file konfigurasi <code>/etc/zabbix/zabbix_server.conf</code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">DBHost<span style="color:#f92672">=</span>localhost
+DBName<span style="color:#f92672">=</span>zabbix
+DBUser<span style="color:#f92672">=</span>zabbix
+DBPassword<span style="color:#f92672">=</span>&lt;password&gt;</code></pre></div></li>
+<li>Simpan dan keluar<br /></li>
+</ol>
+
+<h3 id="servis-zabbix">Servis Zabbix</h3>
+
+<ol>
+<li>Jalankan servis zabbix-server
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># service zabbix-server start</span></code></pre></div></li>
+<li>Jalankan servis pada saat booting
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># systemctl enable zabbix-server</span></code></pre></div><br /></li>
+</ol>
+
+<h3 id="konfigurasi-frontend">Konfigurasi Frontend</h3>
+
+<p>Ketika menginstall frontend zabbix lokasi file konfigurasi <code>/etc/httpd/conf.d/zabbix.conf</code>.<br />
+Ubah timezone dalam file tersebut.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...
+php_value date.timezone Asia/Makassar
+...</code></pre></div></p>
+
+<h3 id="keamanan">Keamanan</h3>
+
+<p>Pengaturan SELinux
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># setsebool -P httpd_can_connect_zabbix on</span>
+<span style="color:#75715e"># setsebool -P httpd_can_network_connect_db on</span></code></pre></div>
+Pengaturan firewall-cmd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># firewall-cmd --zone=public --permanent --add-port=443/tcp</span>
+<span style="color:#75715e"># firewall-cmd --zone=public --permanent --add-port=80/tcp</span></code></pre></div></p>
+
+<h3 id="instalasi-via-browser">Instalasi via Browser</h3>
+
+<ol>
+<li>Jendela selamat datang klik <code>Next</code><br /></li>
+<li>Pengecekan kebutuhan zabbix klik <code>Next</code><br /></li>
+<li>Konfigurasi koneksi database klik <code>Next</code><br /></li>
+<li>Pengecekan database klik <code>Next</code><br /></li>
+<li>Rangkuman instalasi frontend klik <code>Next</code><br /></li>
+<li>Proses Instalasi dan klik <code>Finish</code><br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/monitoring/ins-zabbix.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+<li>Setelah selesai lakukan login ke zabbix. User default: <strong>Admin</strong> dan password default: <strong>zabbix</strong><br /></li>
+</ol>
+
+<h3 id="troubleshoot-zabbix-server">Troubleshoot Zabbix Server</h3>
+
+<p>Zabbix server belum bisa berjalan karena masih di-block oleh SE Linux.<br />
+Log error dapat dilihat dari log web zabbix (/var/log/zabbix/zabbix_server.log)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> cannot start alert manager service: Cannot bind socket to <span style="color:#e6db74">&#34;/var/run/zabbix/zabbix_server_alerter.sock&#34;</span>: <span style="color:#f92672">[</span><span style="color:#ae81ff">98</span><span style="color:#f92672">]</span> Address already in use.
+ <span style="color:#ae81ff">12301101534</span>.040 One child process died <span style="color:#f92672">(</span>PID:12340,exitcode/signal:1<span style="color:#f92672">)</span>. Exiting ...</code></pre></div></p>
+
+<ul>
+<li>Solusi sementara matikan selinux, tetapi tingkat kelemahan server akan berkurang.<br /></li>
+<li>Solusi kedua adalah dengan menggunakan kode berikut
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># grep AVC /var/log/audit/audit.log* | audit2allow -M systemd-allow; semodule -i systemd-allow.pp</span></code></pre></div><br /></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2018%2finstall-zabbix%2f&amp;text=Install%20Zabbix%20pada%20Centos&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2018%2finstall-zabbix%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2018%2finstall-zabbix%2f&amp;title=Install%20Zabbix%20pada%20Centos" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/monitoring/">
+                    #monitoring</a></span>
+            
+            <span class="tag"><a href="tags/centos/">
+                    #centos</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2018/install-ftp-ubuntu/" class="prev" rel="prev" title="Install Vsftp Ubuntu 16.04"><i class="iconfont icon-dajiantou"></i>&nbsp;Install Vsftp Ubuntu 16.04</a>
+         
+        
+        <a href="/2018/install-hugo/" class="next" rel="next" title="Install dan konfigurasi Hugo">Install dan konfigurasi Hugo&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

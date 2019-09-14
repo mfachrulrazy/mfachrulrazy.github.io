@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proxmox on My Free Resources</title>
+    <link>/tags/proxmox/</link>
+    <description>Recent content in proxmox on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All about Proxmox</title>
+      <link>/2017/imp-proxmox/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/imp-proxmox/</guid>
+      <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
+Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
+ Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.</description>
+    </item>
+    
+  </channel>
+</rss>

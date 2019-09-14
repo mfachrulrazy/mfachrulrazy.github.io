@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2017/install-freenas/" />
+  <link rel="next" href="/2017/max-file-up/" />
+  <link rel="canonical" href="/2017/github-ssh/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           SSH key Akun Github | My Free Resources
+       
+  </title>
+  <meta name="title" content="SSH key Akun Github | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SSH key Akun Github"/>
+<meta name="twitter:description" content="Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya
+ Pastikan git sudah terinstall pada PC
+ Buat ssh key di cmd dengan
+&gt; ssh-keygen Ssh key akan secara default masuk ke folder ~user/.ssh/*
+ Ada 2 file yang dibuat seperti di linux yaitu id_rsa (private key) dan id_rsa.pub (public key)
+ Copy isi file id_rsa."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "SSH key Akun Github",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2017\/github-ssh\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "devops, git",
+  "wordcount":  113 ,
+  "url": "\/2017\/github-ssh\/",
+  "datePublished": "2017-07-21T08:27:55\x2b08:00",
+  "dateModified": "2017-07-21T08:27:55\x2b08:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">SSH key Akun Github</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2017-07-21 >21 July 2017</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/devops/"> devops </a>
+                        <a href="/categories/git/"> git </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya</p>
+
+<ol>
+<li>Pastikan git sudah terinstall pada PC<br /></li>
+<li>Buat ssh key di cmd dengan<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; ssh-keygen</code></pre></div></li>
+<li>Ssh key akan secara default masuk ke folder <strong>~user/.ssh/*</strong><br /></li>
+<li>Ada 2 file yang dibuat seperti di linux yaitu <code>id_rsa</code> (private key) dan <code>id_rsa.pub</code> (public key)<br /></li>
+<li>Copy isi file id_rsa.pub<br /></li>
+<li>Masuk ke menu <code>Settings</code> &gt; <code>SSH and GPG Keys</code> pada akun github<br /></li>
+<li>Klik <code>New SSH Key</code> &gt; tambahkan title dan paste isi dari id_rsa.pub yang telah di-copy ke dalam <code>Key</code> &gt; Klik <code>Add SSH Key</code><br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/github-ssh/git-ssh1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+<li>Setelah itu konfirmasi password kembali dan ssh telah berhasil ditambahkan<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/github-ssh/git-ssh2.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2017%2fgithub-ssh%2f&amp;text=SSH%20key%20Akun%20Github&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2017%2fgithub-ssh%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2017%2fgithub-ssh%2f&amp;title=SSH%20key%20Akun%20Github" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/devops/">
+                    #devops</a></span>
+            
+            <span class="tag"><a href="tags/git/">
+                    #git</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2017/install-freenas/" class="prev" rel="prev" title="Install dan Konfigurasi Free NAS"><i class="iconfont icon-dajiantou"></i>&nbsp;Install dan Konfigurasi Free NAS</a>
+         
+        
+        <a href="/2017/max-file-up/" class="next" rel="next" title="Menambahkan ukuran File Upload">Menambahkan ukuran File Upload&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

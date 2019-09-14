@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code editor on My Free Resources</title>
+    <link>/categories/code-editor/</link>
+    <description>Recent content in code editor on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/code-editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Belajar Vi dan Vim</title>
+      <link>/2016/belajar-vim/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/belajar-vim/</guid>
+      <description>Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
+Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
+Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
+ i : untuk beralih ke mode insert atau memasukkan teks.</description>
+    </item>
+    
+  </channel>
+</rss>

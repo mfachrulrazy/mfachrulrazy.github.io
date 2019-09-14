@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open source on My Free Resources</title>
+    <link>/tags/open-source/</link>
+    <description>Recent content in open source on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install ChocoLatey di Windows</title>
+      <link>/2018/install-choco/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-choco/</guid>
+      <description>Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
+Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.
+ Cek keamanan powershell Get-ExecutionPolicy Jika kembali dengan Restricted, maka atur seperti berikut Set-ExecutionPolicy AllSigned Atau Set-ExecutionPolicy Bypass -Scope Process Kemudian jalankan script berikut Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.</description>
+    </item>
+    
+    <item>
+      <title>Belajar Vi dan Vim</title>
+      <link>/2016/belajar-vim/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/belajar-vim/</guid>
+      <description>Vi adalah salah satu editor kode yang banyak digunakan oleh para sys admin dan developer dikarenakan kestabilan dan kemampuannya dalam mengedit segala jenis file.
+Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
+Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
+ i : untuk beralih ke mode insert atau memasukkan teks.</description>
+    </item>
+    
+  </channel>
+</rss>

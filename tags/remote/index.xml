@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>remote on My Free Resources</title>
+    <link>/tags/remote/</link>
+    <description>Recent content in remote on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/remote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Error Remote Desktop Connection</title>
+      <link>/2018/err-rdp-credssp/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/err-rdp-credssp/</guid>
+      <description>Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor. Versi windows yang digunakan Penyebab Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini. Penyelesaian  Pertama Cek update dari pc client terlebih dahulu (yang me-remote)  Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.</description>
+    </item>
+    
+    <item>
+      <title>Backspace pada Virtual Box</title>
+      <link>/2017/err-backspace-vbox/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/err-backspace-vbox/</guid>
+      <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
+Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
+    </item>
+    
+  </channel>
+</rss>

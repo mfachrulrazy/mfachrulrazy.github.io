@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>server on My Free Resources</title>
+    <link>/tags/server/</link>
+    <description>Recent content in server on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install WINS Windows Server 2003</title>
+      <link>/2018/install-wins-2003/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-wins-2003/</guid>
+      <description>Dikutip dari Wikipedia
+ WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).</description>
+    </item>
+    
+    <item>
+      <title>Install Varnish pada Centos 7</title>
+      <link>/2018/install-varnish-cent/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-varnish-cent/</guid>
+      <description>Varnish adalah salah satu aplikasi cache web server atau aplikasi akselerator website yang biasa dikenal dengan a caching HTTP reverse proxy. Sebelumnya kita telah menginstall nginx sebagai web server yang akan berjalan di belakang varnish. Berikut langkah instalasi dan konfigurasi varnish.
+Install Varnish 6 Install varnish terbaru versi 6 dengan cara compile dari source code.
+1. Download source varnish dari situs resmi varnish # wget https://varnish-cache.org/_downloads/varnish-6.0.2.tgz 2. Install paket pendukung (build dependencies) # yum install make autoconf automake jemalloc-devel libedit-devel libtool ncurses-devel pcre-devel pkgconfig python-docutils python-sphinx 3.</description>
+    </item>
+    
+    <item>
+      <title>Install PHP 7.0 dan Modul SQL Server pada Centos</title>
+      <link>/2018/install-php7/</link>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-php7/</guid>
+      <description>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh # create new #!/bin/bash source /opt/remi/php70/enable export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.</description>
+    </item>
+    
+    <item>
+      <title>Aktivasi Windows Server 2012</title>
+      <link>/2018/aktivasi-winsrv/</link>
+      <pubDate>Wed, 25 Jul 2018 19:35:46 +0800</pubDate>
+      
+      <guid>/2018/aktivasi-winsrv/</guid>
+      <description>Aktivasi pada Windows Server 2012 R2 Standard Edition terdapat 2 tahap. Pertama identifikasi terlebih dahulu versi windows dengan perintah berikut. &amp;gt; DISM /online /Get-CurrentEdition Ubah versi windows lalu masukkan Edisi yang diinginkan dan Product Key &amp;gt; DISM /online /Set-Edition:ServerStandard /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /AcceptEula Dimana xxxxx adalah serial key dari lisensi windows yang dibeli.
+Setelah itu, masukkan kembali serial key melalui System &amp;gt; Change Product Key &amp;gt; masukkan serial key tersebut.
+Restart Server.</description>
+    </item>
+    
+    <item>
+      <title>Install SNMP Linux</title>
+      <link>/2018/install-snmp-linux/</link>
+      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-snmp-linux/</guid>
+      <description>Centos  Install paket snmp dan pendukungnya # yum install net-snmp net-snmp-utils Kemudian buat backup dan edit file /etc/snmp/snmpd.conf # Map &amp;#39;idv90we3rnov90wer&amp;#39; community to the &amp;#39;ConfigUser&amp;#39; # Map &amp;#39;209ijvfwer0df92jd&amp;#39; community to the &amp;#39;AllUser&amp;#39; # sec.name source community com2sec ConfigUser default lakikallasrvc com2sec AllUser default lakikallasrv # Map &amp;#39;ConfigUser&amp;#39; to &amp;#39;ConfigGroup&amp;#39; for SNMP Version 2c # Map &amp;#39;AllUser&amp;#39; to &amp;#39;AllGroup&amp;#39; for SNMP Version 2c # sec.model sec.name group ConfigGroup v2c ConfigUser group AllGroup v2c AllUser # Define &amp;#39;SystemView&amp;#39;, which includes everything under .</description>
+    </item>
+    
+    <item>
+      <title>Install Vsftp Ubuntu 16.04</title>
+      <link>/2018/install-ftp-ubuntu/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-ftp-ubuntu/</guid>
+      <description>Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.</description>
+    </item>
+    
+    <item>
+      <title>Install Oracle Fusion Middleware</title>
+      <link>/2018/install-oracle-middleware/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-oracle-middleware/</guid>
+      <description>Instalasi Oracle Fusion Middleware untuk kebutuhan testing kantor. Persiapan yang diperlukan:
+ Linux OS with GUI (dalam hal ini menggunakan Centos 7 GUI)
+ JDK versi 1.8xxx
+ File installer oracle fmw_12.2.1.3.0_wls_quick.jar
+  Setelah semua kebutuhan siap, lanjut ke proses instalasi.
+ Jalankan file master oracle
+# java -jar fmw_12.2.1.3.0_wls_quick.jar  Pemilihan inventory setup  Atur direktori di /home/laki/oraInventory
+ Cek prerequisite-nya  Pada jendela welcome klik next</description>
+    </item>
+    
+    <item>
+      <title>Pengaturan pada PHP</title>
+      <link>/2018/about-php/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/about-php/</guid>
+      <description>Menambahkan maximum upload file di PHP Ubah ukuran maksimum file upload di php dapat dengan cara mengedit file /etc/php.ini ... post_max_size = 100M ... Kemudian reload service php
+Menambahkan maximum eksekusi PHP Menambahkan maksimum eksekusi edit file /etc/php.ini ... max_execution_time = 500 ...
+Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi halaman webnya. Salah satu cara untuk memunculkannya adalah menginstall paket tambahan php yaitu php-gd. # yum install php-gd</description>
+    </item>
+    
+    <item>
+      <title>Install Nodejs Centos 7</title>
+      <link>/2017/install-nodejs-cent/</link>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/install-nodejs-cent/</guid>
+      <description>Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
+1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;amp;&amp;amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.</description>
+    </item>
+    
+    <item>
+      <title>Install Maria DB pada Ubuntu 16.04</title>
+      <link>/2017/install-mariadb-cent/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/install-mariadb-cent/</guid>
+      <description>Tambahkan paket software properties $ sudo apt-get -y install software-properties-common Tambahkan key $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 Tambahkan repository $ sudo add-apt-repository &amp;#39;deb [arch=amd64,i386,ppc64el] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.2/ubuntu xenial main&amp;#39; Update dan install mariadb $ sudo apt-get update $ sudo apt-get install mariadb-server mariadb-client</description>
+    </item>
+    
+    <item>
+      <title>Install dan Konfigurasi Free NAS</title>
+      <link>/2017/install-freenas/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/install-freenas/</guid>
+      <description>Free NAS merupakan salah satu sistem operasi yang khusus dibuat untuk keperluan Network Attached Storage. Free NAS merupakan turunan dari freeBSD yang mendukung CIFS, NFS, iSCSI, FTP, RSYN bersama dengan RAID.
+1. Untuk proses instalasi sendiri seperti instalasi linux pada umumnya, yang membutuhkan partisi root ( / ) dan swap.
+2. Pada saat masuk ke konfigurasi awal, bisa keluar terlebih dahulu.
+3. Untuk menambah user dan grup bisa melalui menu Account &amp;gt; Groups &amp;gt; Add Group dan Account &amp;gt; Users &amp;gt; Add User</description>
+    </item>
+    
+    <item>
+      <title>Attach dan Import Database SQL Server</title>
+      <link>/2017/attach-imp-sqlsrv/</link>
+      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/attach-imp-sqlsrv/</guid>
+      <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
+Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
+    </item>
+    
+    <item>
+      <title>Install Php 5.4 Centos 7</title>
+      <link>/2017/install-php5-cent/</link>
+      <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/install-php5-cent/</guid>
+      <description> Download paket repositori epel secara manual menggunakan wget # wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm Install menggunakan rpm # rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm Install yum-utils untuk mengatur repositori # yum install yum-utils Kemudian enable php 5.4 dan install paket php # #yum-config-manager --enable remi-php54 # yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo Setelah itu cek versi php-nya # php -v  </description>
+    </item>
+    
+    <item>
+      <title>Install Nginx Centos 7</title>
+      <link>/2017/install-nginx-cent/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/install-nginx-cent/</guid>
+      <description>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai reverse proxy dan load balancer. Postingan ini akan membahas instalasi dan konfigurasi nginx sebagai web server pada centos 7.
+ Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.</description>
+    </item>
+    
+    <item>
+      <title>Berkenalan dengan Cron</title>
+      <link>/2016/about-cron/</link>
+      <pubDate>Fri, 05 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/about-cron/</guid>
+      <description>Apa itu cron? Jadi, cron adalah sebuah software utilitas di lingkungan linux/unix yang berfungsi sebagai pembuat jadwal pekerjaan berdasarkan waktu yang bisa ditentukan.
+Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap perintah yang dijalankan di cron, akan mengirim ke email secara default dan biasanya dalam terminal akan muncul You have new mail in /var/spool/mail/root Isi dari file /var/spool/mail/root adalah proses dari script yang dijalankan.</description>
+    </item>
+    
+  </channel>
+</rss>

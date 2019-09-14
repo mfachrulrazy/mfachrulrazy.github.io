@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2019/iostreamwin/" />
+  <link rel="next" href="/2019/suspectdb-sqlsrv/" />
+  <link rel="canonical" href="/2019/join-cell-formula/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Formula Concat dan Vlookup pada Excel | My Free Resources
+       
+  </title>
+  <meta name="title" content="Formula Concat dan Vlookup pada Excel | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Formula Concat dan Vlookup pada Excel"/>
+<meta name="twitter:description" content="Rumus untuk menggabungkan isi cell dalam excel dengan menggunakan vlookup dan concat.
+Di sini ada 2 sheet yaitu:
+1. Sheet1 untuk menyimpan hasil dari vlookup dan concat dari sheet berikutnya.
+2. Daftar Barang adalah tabel referensi untuk sheet1.
+Rumus Sheet1 Rumus untuk mengambil nama server =IFERROR(VLOOKUP(C3;&#39;Daftar Barang&#39;!$A$4:$B$50;2;FALSE);&#34;&#34;) Rumus untuk menggabungkan isi cell dari vlookup =IFERROR(CONCATENATE(VLOOKUP(D3;&#39;Daftar Barang&#39;!$D$4:$E$28;2;FALSE);&#34; &gt;&gt; &#34;;VLOOKUP(E3;&#39;Daftar Barang&#39;!$D$4:$E$28;2;FALSE));&#34;&#34;)"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Formula Concat dan Vlookup pada Excel",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2019\/join-cell-formula\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  
+  "wordcount":  59 ,
+  "url": "\/2019\/join-cell-formula\/",
+  "datePublished": "2019-02-20T00:00:00\x2b00:00",
+  "dateModified": "2019-02-20T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Formula Concat dan Vlookup pada Excel</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2019-02-20 >20 February 2019</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/windows/"> windows </a>
+                        <a href="/categories/excel/"> excel </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p>Rumus untuk menggabungkan isi cell dalam excel dengan menggunakan vlookup dan concat.<br />
+Di sini ada 2 sheet yaitu:<br />
+1. <strong>Sheet1</strong> untuk menyimpan hasil dari vlookup dan concat dari sheet berikutnya.<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/excel/excel2.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure><br />
+2. <strong>Daftar Barang</strong> adalah tabel referensi untuk sheet1.<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/excel/excel1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
+
+<h3 id="rumus-sheet1">Rumus Sheet1</h3>
+
+<p>Rumus untuk mengambil nama server
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vb" data-lang="vb"><span style="color:#f92672">=</span>IFERROR(VLOOKUP(C3<span style="color:#960050;background-color:#1e0010">;&#39;</span>Daftar Barang<span style="color:#960050;background-color:#1e0010">&#39;</span>!<span style="color:#960050;background-color:#1e0010">$</span>A<span style="color:#960050;background-color:#1e0010">$</span>4:<span style="color:#960050;background-color:#1e0010">$</span>B<span style="color:#960050;background-color:#1e0010">$</span>50<span style="color:#960050;background-color:#1e0010">;</span>2<span style="color:#960050;background-color:#1e0010">;</span><span style="color:#66d9ef">FALSE</span>)<span style="color:#960050;background-color:#1e0010">;</span><span style="color:#e6db74">&#34;&#34;</span>)</code></pre></div>
+Rumus untuk menggabungkan isi cell dari vlookup
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vb" data-lang="vb"><span style="color:#f92672">=</span>IFERROR(CONCATENATE(VLOOKUP(D3<span style="color:#960050;background-color:#1e0010">;&#39;</span>Daftar Barang<span style="color:#960050;background-color:#1e0010">&#39;</span>!<span style="color:#960050;background-color:#1e0010">$</span>D<span style="color:#960050;background-color:#1e0010">$</span>4:<span style="color:#960050;background-color:#1e0010">$</span>E<span style="color:#960050;background-color:#1e0010">$</span>28<span style="color:#960050;background-color:#1e0010">;</span>2<span style="color:#960050;background-color:#1e0010">;</span><span style="color:#66d9ef">FALSE</span>)<span style="color:#960050;background-color:#1e0010">;</span><span style="color:#e6db74">&#34; &gt;&gt; &#34;</span><span style="color:#960050;background-color:#1e0010">;</span>VLOOKUP(E3<span style="color:#960050;background-color:#1e0010">;&#39;</span>Daftar Barang<span style="color:#960050;background-color:#1e0010">&#39;</span>!<span style="color:#960050;background-color:#1e0010">$</span>D<span style="color:#960050;background-color:#1e0010">$</span>4:<span style="color:#960050;background-color:#1e0010">$</span>E<span style="color:#960050;background-color:#1e0010">$</span>28<span style="color:#960050;background-color:#1e0010">;</span>2<span style="color:#960050;background-color:#1e0010">;</span><span style="color:#66d9ef">FALSE</span>))<span style="color:#960050;background-color:#1e0010">;</span><span style="color:#e6db74">&#34;&#34;</span>)</code></pre></div></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2019%2fjoin-cell-formula%2f&amp;text=Formula%20Concat%20dan%20Vlookup%20pada%20Excel&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2019%2fjoin-cell-formula%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2019%2fjoin-cell-formula%2f&amp;title=Formula%20Concat%20dan%20Vlookup%20pada%20Excel" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2019/iostreamwin/" class="prev" rel="prev" title="I/O Stream pada Windows"><i class="iconfont icon-dajiantou"></i>&nbsp;I/O Stream pada Windows</a>
+         
+        
+        <a href="/2019/suspectdb-sqlsrv/" class="next" rel="next" title="SQL Server Database Suspect">SQL Server Database Suspect&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on My Free Resources</title>
+    <link>/categories/devops/</link>
+    <description>Recent content in devops on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Jan 2019 08:32:46 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker 101</title>
+      <link>/2019/docker-101/</link>
+      <pubDate>Sat, 12 Jan 2019 08:32:46 +0800</pubDate>
+      
+      <guid>/2019/docker-101/</guid>
+      <description>Beberapa perintah dasar docker yang didapatkan setelah training dari beberapa situs.
+Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.</description>
+    </item>
+    
+    <item>
+      <title>Error Github Push</title>
+      <link>/2018/err-github-push/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/err-github-push/</guid>
+      <description>Pada saat ingin melakukan push ke repo github terdapat error. ... error: src refspec master does not match any. error: failed to push some refs to &amp;#39;git@github.com:user/repo.git&amp;#39;
+Solusi Masukkan identitas terlebih dahulu pada git server. # git config --global user.email &amp;#34;user@email.com&amp;#34; Kemudian lakukan commit ulang dan push ke repo.</description>
+    </item>
+    
+    <item>
+      <title>Install Docker Windows 10 Home</title>
+      <link>/2017/install-docker-win10h/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/install-docker-win10h/</guid>
+      <description> Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.
+Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:
+ VirtualBox Git Kitematic
+  Yang semuanya diperlukan untuk menjalankan docker.
+Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Jika masih terdapat error restart PC Kemudian jalankan: Docker Quickstart Terminal Jalankan Kitematic untuk melihat daftar container Contoh di bawah ini pada saat menjalankan container Nginx   </description>
+    </item>
+    
+    <item>
+      <title>SSH key Akun Github</title>
+      <link>/2017/github-ssh/</link>
+      <pubDate>Fri, 21 Jul 2017 08:27:55 +0800</pubDate>
+      
+      <guid>/2017/github-ssh/</guid>
+      <description>Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya
+ Pastikan git sudah terinstall pada PC
+ Buat ssh key di cmd dengan
+&amp;gt; ssh-keygen Ssh key akan secara default masuk ke folder ~user/.ssh/*
+ Ada 2 file yang dibuat seperti di linux yaitu id_rsa (private key) dan id_rsa.pub (public key)
+ Copy isi file id_rsa.</description>
+    </item>
+    
+  </channel>
+</rss>

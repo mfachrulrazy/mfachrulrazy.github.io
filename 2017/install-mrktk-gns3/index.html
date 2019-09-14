@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2017/tb-wireless-win7/" />
+  <link rel="next" href="/2017/konfig-time-cent7/" />
+  <link rel="canonical" href="/2017/install-mrktk-gns3/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Install Mikrotik di GNS 3 | My Free Resources
+       
+  </title>
+  <meta name="title" content="Install Mikrotik di GNS 3 | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Mikrotik di GNS 3"/>
+<meta name="twitter:description" content="Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.
+1. Pastikan file iso mikrotik telah di-download
+2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:
+C:\Program Files\GNS3\qemu-2.4.0&gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M  3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)
+4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Install Mikrotik di GNS 3",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2017\/install-mrktk-gns3\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "networking",
+  "wordcount":  259 ,
+  "url": "\/2017\/install-mrktk-gns3\/",
+  "datePublished": "2017-03-17T00:00:00\x2b00:00",
+  "dateModified": "2017-03-17T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Install Mikrotik di GNS 3</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2017-03-17 >17 March 2017</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/networking/"> networking </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                2 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p>Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.<br />
+1. Pastikan file iso mikrotik telah di-download<br />
+2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:</p>
+
+<pre><code>C:\Program Files\GNS3\qemu-2.4.0&gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M
+</code></pre>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/gns31.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)<br />
+4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan<br />
+- qemu-system-i386w.exe : 32bit<br />
+- qemu-system-x86_64w.exe   : 64bit<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">C:\Program<span style="color:#75715e"> Files\GNS3\qemu-2.4.0&gt;qemu-system-i386w.exe &#34;D:/mikrotik.img&#34; -boot d -cdrom &#34;D:/mikrotik.iso”</span></code></pre></div>
+5. Setelah menjalankan perintah di atas, maka proses instalasi mikrotik berjalan dan install mikrotik seperti biasa.
+6. Kemudian untuk mencoba image yang sudah dibuat ketikkan perintah</p>
+
+<pre><code>C:\Program Files\GNS3\qemu-2.4.0&gt;qemu-system-i386w.exe &quot;D:/mikrotik.img&quot; -boot c
+</code></pre>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/gns32.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+7. Setelah itu, masuk buat VM-nya di GNS3 dengan masuk ke menu Edit &gt; Preferences
+8. Pilih Qemu VMs &gt; klik New
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/gns33.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+9. Buat nama VM-nya
+10. Pilih qemu binary dan total RAM yang akan digunakan
+11. Pilih tipe consolenya (telnet)
+12. Pilih tipe image-nya
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/gns34.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+13. Kemudian klik finish</p>
+
+<h3 id="menambahkan-interface-pada-mikrotik">Menambahkan interface pada Mikrotik</h3>
+
+<p>Pilih template mikrotik &gt; <code>configure template</code>
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/add-int-mikrotik1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+Pada tab <code>network</code> &gt; masukkan jumlah interface yang diinginkan pada <code>Adapters</code>
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/add-int-mikrotik2.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+Untuk mengganti icon dari mikrotik, pilih VM yang akan diganti kemudian pada tab <code>General Settings</code> &gt; Pilih <code>Symbol:</code> &gt; pilih symbol yang diinginkan
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/add-int-mikrotik3.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
+
+<h3 id="troubleshoot-mikrotik-tidak-dapat-ping-ke-jaringan-lain">Troubleshoot Mikrotik tidak dapat ping ke jaringan lain</h3>
+
+<p>Mikrotik terdeteksi di winbox, tetapi tidak dapat terkoneksi ke jaringan lain.<br />
+Berikut topologinya<br />
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/add-int-mikrotik4.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
+Jika mikrotik tidak dapat terkoneksi satu sama lain, salah satu penyebabnya adalah file image yang tidak bagus. Setelah dicoba untuk menggunakan file image lain, mikrotik dapat melakukan tes ping satu sama lain.
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/networking/add-int-mikrotik5.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2017%2finstall-mrktk-gns3%2f&amp;text=Install%20Mikrotik%20di%20GNS%203&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2017%2finstall-mrktk-gns3%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2017%2finstall-mrktk-gns3%2f&amp;title=Install%20Mikrotik%20di%20GNS%203" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/networking/">
+                    #networking</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2017/tb-wireless-win7/" class="prev" rel="prev" title="Servis Wireless tidak berjalan pada Windows 7"><i class="iconfont icon-dajiantou"></i>&nbsp;Servis Wireless tidak berjalan pada Windows 7</a>
+         
+        
+        <a href="/2017/konfig-time-cent7/" class="next" rel="next" title="Pengaturan Waktu Centos 7">Pengaturan Waktu Centos 7&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

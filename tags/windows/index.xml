@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on My Free Resources</title>
+    <link>/tags/windows/</link>
+    <description>Recent content in windows on My Free Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I/O Stream pada Windows</title>
+      <link>/2019/iostreamwin/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/iostreamwin/</guid>
+      <description>Pada sistem operasi Windows, ada 3 stream (aliran) yaitu:
+ stdin stdout (nilai 1) stderr (nilai 2)
+  Berikut penjelasan mengenai masing-masing stream.
+Stdin Standard Input adalah segala input yang dimasukkan melalui keyboard atau alat input lainnya.
+Stdout Standard Output adalah segala output yang ditampilkan di layar, setelah menerima input dan diproses. Contoh: &amp;gt; echo &amp;#34;halo mfr&amp;#34; halo mfr
+Stderr Standard Error ketika input yang diberikan menghasilkan error.</description>
+    </item>
+    
+    <item>
+      <title>Install WINS Windows Server 2003</title>
+      <link>/2018/install-wins-2003/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-wins-2003/</guid>
+      <description>Dikutip dari Wikipedia
+ WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).</description>
+    </item>
+    
+    <item>
+      <title>Aktivasi Windows Server 2012</title>
+      <link>/2018/aktivasi-winsrv/</link>
+      <pubDate>Wed, 25 Jul 2018 19:35:46 +0800</pubDate>
+      
+      <guid>/2018/aktivasi-winsrv/</guid>
+      <description>Aktivasi pada Windows Server 2012 R2 Standard Edition terdapat 2 tahap. Pertama identifikasi terlebih dahulu versi windows dengan perintah berikut. &amp;gt; DISM /online /Get-CurrentEdition Ubah versi windows lalu masukkan Edisi yang diinginkan dan Product Key &amp;gt; DISM /online /Set-Edition:ServerStandard /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /AcceptEula Dimana xxxxx adalah serial key dari lisensi windows yang dibeli.
+Setelah itu, masukkan kembali serial key melalui System &amp;gt; Change Product Key &amp;gt; masukkan serial key tersebut.
+Restart Server.</description>
+    </item>
+    
+    <item>
+      <title>Error Remote Desktop Connection</title>
+      <link>/2018/err-rdp-credssp/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/err-rdp-credssp/</guid>
+      <description>Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor. Versi windows yang digunakan Penyebab Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini. Penyelesaian  Pertama Cek update dari pc client terlebih dahulu (yang me-remote)  Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.</description>
+    </item>
+    
+    <item>
+      <title>Install ChocoLatey di Windows</title>
+      <link>/2018/install-choco/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/install-choco/</guid>
+      <description>Chocolatey merupakan package manager open source yang dibuat khusus untuk windows env. Untuk menginstallnya dapat dijalankan dengan menggunakan cmd dan powershell dengan administrator privileges.
+Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan keamanan ketika ingin menginstall script dari luar. Sebenarnya sama saja dengan cmd, tetapi dalam script cmd sudah ada Bypass yang mengurangi tingkat keamanan powershell.
+ Cek keamanan powershell Get-ExecutionPolicy Jika kembali dengan Restricted, maka atur seperti berikut Set-ExecutionPolicy AllSigned Atau Set-ExecutionPolicy Bypass -Scope Process Kemudian jalankan script berikut Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.</description>
+    </item>
+    
+    <item>
+      <title>Install Docker Windows 10 Home</title>
+      <link>/2017/install-docker-win10h/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/install-docker-win10h/</guid>
+      <description> Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.
+Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:
+ VirtualBox Git Kitematic
+  Yang semuanya diperlukan untuk menjalankan docker.
+Troubleshoot 1  Terdapat error baru pada saat setelah install docker-toolbox  Jika masih terdapat error restart PC Kemudian jalankan: Docker Quickstart Terminal Jalankan Kitematic untuk melihat daftar container Contoh di bawah ini pada saat menjalankan container Nginx   </description>
+    </item>
+    
+    <item>
+      <title>Windows 10 Tidak dapat akses SMB</title>
+      <link>/2017/err-win-smb/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/err-win-smb/</guid>
+      <description>Windows 10 Enterprise secara default melarang fitur SMB. Penjelasan lebih lanjut langsung dari situs micorosoft
+ Guest access in SMB2 disabled by default in Windows 10 Fall Creators Update and Windows Server 2016 version 1709
+ Caranya ubah melalui Group Policy Settings
+Computer configuration\administrative templates\network\Lanman Workstation  Aktifkan Enable insecure guest logons
+Dengan catatan, jika mengaktifkan mode ini, akan mengurangi keamanan pada Windows klien. Mungkin hal ini terjadi akibat virus wannacry yang terjadi.</description>
+    </item>
+    
+    <item>
+      <title>Error Browsing Https</title>
+      <link>/2017/err-browser-https/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/err-browser-https/</guid>
+      <description> Ada salah satu komputer klien mengalami error pada saat membuka situs dengan alamat https. Meskipun sudah berganti browser (chrome, firefox dan edge).
+Firefox Chrome Edge Penyebab dan solusi  Periksa apakah ada addons yang bermasalah (jika hanya salah satu browser yang bermasalah) Periksa pc/laptop tidak bervirus Periksa pengaturan waktu dan tanggal  </description>
+    </item>
+    
+    <item>
+      <title>Interface Network pada VirtualBox</title>
+      <link>/2017/int-baru-vbox/</link>
+      <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>
+      
+      <guid>/2017/int-baru-vbox/</guid>
+      <description> Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui
+File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang sudah ada bisa memilih Properties   </description>
+    </item>
+    
+    <item>
+      <title>Error User Profile Windows 7</title>
+      <link>/2017/err-profile-win7/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/err-profile-win7/</guid>
+      <description>Salah satu komputer klien mendapat error tidak dapat me-load user profile, akibatnya semua pengaturan-pengaturan pribadi seperti shortcut di desktop tidak muncul. Untuk dapat memunculkan kembali user profile, lakukan langkah berikut
+1. Restart komputer/laptop dan masuk ke dalam Safe Mode (menekan tombol F8 ketika booting)
+2. Setelah login pada windows, buka Regedit
+3. Masuk ke Folder HKEY_LOCAL_MACHINE &amp;gt;&amp;gt; SOFTWARE &amp;gt;&amp;gt; Microsoft &amp;gt;&amp;gt; Windows NT &amp;gt;&amp;gt; CurrentVersion &amp;gt;&amp;gt; ProfileList
+4. Dalam folder tersebut terdapat 2 folder dengan awalan S-1-5-21 diikuti dengan nomor yang panjang dan sama persis di belakangnya.</description>
+    </item>
+    
+  </channel>
+</rss>

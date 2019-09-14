@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2019/docker-101/" />
+  <link rel="next" href="/2019/iostreamwin/" />
+  <link rel="canonical" href="/2019/ins-docker-cent7/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Install Docker di Centos 7 | My Free Resources
+       
+  </title>
+  <meta name="title" content="Install Docker di Centos 7 | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Docker di Centos 7"/>
+<meta name="twitter:description" content="Instalasi Docker Community Edition (CE) pada Centos 7.
+Persiapan Repository Install terlebih dahulu tools yang dibutuhkan seperti yum-utils yang menyediakan yum-config-manager, dan device-mapper-persistent-data serta lvm2 yang dibutuhkan oleh devicemapper $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2 Gunakan repository stable $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-ce-cli containerd.io Kemudian prompt key GPG-nya untuk memastikan sesuai dengan fingerprint berikut:
+060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Install Docker di Centos 7",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2019\/ins-docker-cent7\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "linux, docker, centos",
+  "wordcount":  223 ,
+  "url": "\/2019\/ins-docker-cent7\/",
+  "datePublished": "2019-02-01T00:00:00\x2b00:00",
+  "dateModified": "2019-02-01T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Install Docker di Centos 7</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2019-02-01 >1 February 2019</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/linux/"> linux </a>
+                        <a href="/categories/docker/"> docker </a>
+                        <a href="/categories/centos/"> centos </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                2 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<p>Instalasi Docker Community Edition (CE) pada Centos 7.</p>
+
+<h3 id="persiapan-repository">Persiapan Repository</h3>
+
+<p>Install terlebih dahulu tools yang dibutuhkan seperti <code>yum-utils</code> yang menyediakan <code>yum-config-manager</code>, dan <code>device-mapper-persistent-data</code> serta <code>lvm2</code> yang dibutuhkan oleh devicemapper
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2</code></pre></div>
+Gunakan repository <strong>stable</strong>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</code></pre></div></p>
+
+<h3 id="install-docker-engine">Install Docker Engine</h3>
+
+<p>Install tools docker
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo yum install docker-ce docker-ce-cli containerd.io</code></pre></div>
+Kemudian prompt key GPG-nya untuk memastikan sesuai dengan fingerprint berikut:<br />
+<code>060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35</code><br />
+Jika sama, terima gpg key-nya.<br />
+Jalankan docker
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo systemctl start docker</code></pre></div>
+Atur docker supaya berjalan pada saat setelah boot
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo systemctl enable docker.service</code></pre></div>
+Tambahkan user ke grup docker
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo usermod -aG docker <span style="color:#66d9ef">$(</span>whoami<span style="color:#66d9ef">)</span></code></pre></div>
+Cek versi docker
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker version</code></pre></div></p>
+
+<h3 id="uninstall-docker-engine">Uninstall Docker Engine</h3>
+
+<p>Hapus aplikasi docker
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo yum remove docker-ce</code></pre></div>
+Hapus direktori docker yang menyimpan image, container dan lainnya yang berhubungan dengan docker.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo rm -rf /var/lib/docker</code></pre></div></p>
+
+<h3 id="troubleshoot-docker-pada-centos">Troubleshoot Docker pada Centos</h3>
+
+<p>Ketika menjalankan docker container, terdapat pesan error
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">WARNING: IPv4 forwarding is disabled</code></pre></div>
+Hal tersebut karena docker membutuhkan Universal Control Plane 2.0.x atau versi terbaru untuk menjalankan container.<br />
+Pertama cek status IPv4 forwarding
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ /sbin/sysctl net.ipv4.conf.all.forwarding
+net.ipv4.conf.all.forwarding <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span></code></pre></div>
+Jika hasilnya 0, maka harus di-enable
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ /sbin/sysctl -w net.ipv4.conf.all.forwarding<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span></code></pre></div>
+Kemudian cek status docker
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker info</code></pre></div>
+Untuk membuat perubahan permanent ketika server di-restart bisa dengan meng-edit file <code>/etc/sysctl.conf</code> dan menambahkan net.ipv4.conf.all.forwarding=1.</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2019%2fins-docker-cent7%2f&amp;text=Install%20Docker%20di%20Centos%207&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2019%2fins-docker-cent7%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2019%2fins-docker-cent7%2f&amp;title=Install%20Docker%20di%20Centos%207" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/linux/">
+                    #linux</a></span>
+            
+            <span class="tag"><a href="tags/docker/">
+                    #docker</a></span>
+            
+            <span class="tag"><a href="tags/centos/">
+                    #centos</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2019/docker-101/" class="prev" rel="prev" title="Docker 101"><i class="iconfont icon-dajiantou"></i>&nbsp;Docker 101</a>
+         
+        
+        <a href="/2019/iostreamwin/" class="next" rel="next" title="I/O Stream pada Windows">I/O Stream pada Windows&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>

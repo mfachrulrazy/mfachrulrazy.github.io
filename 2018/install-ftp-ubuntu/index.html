@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="/2018/install-django/" />
+  <link rel="next" href="/2018/install-zabbix/" />
+  <link rel="canonical" href="/2018/install-ftp-ubuntu/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Install Vsftp Ubuntu 16.04 | My Free Resources
+       
+  </title>
+  <meta name="title" content="Install Vsftp Ubuntu 16.04 | My Free Resources">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install Vsftp Ubuntu 16.04"/>
+<meta name="twitter:description" content="Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd."/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Install Vsftp Ubuntu 16.04",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "\/2018\/install-ftp-ubuntu\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  "keywords": "server, linux, ubuntu",
+  "wordcount":  209 ,
+  "url": "\/2018\/install-ftp-ubuntu\/",
+  "datePublished": "2018-06-15T00:00:00\x2b00:00",
+  "dateModified": "2018-06-15T00:00:00\x2b00:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "MFR",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MFR"
+  },
+  "description": ""
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="">My Free Resources</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="">My Free Resources</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <a class="menu-item" href="/ref" title="">References</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Install Vsftp Ubuntu 16.04</h1>
+        <div class="post-meta">
+            Written by <a href="" rel="author">MFR</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2018-06-15 >15 June 2018</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="/categories/server/"> server </a>
+                        <a href="/categories/linux/"> linux </a>
+                        <a href="/categories/ubuntu/"> ubuntu </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                1 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <ol>
+<li>Install ftp server menggunakan paket vsftpd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+$ sudo apt-get install vsftpd</code></pre></div></li>
+<li>Backup file konfigurasi terlebih dahulu
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig</code></pre></div></li>
+<li>Cek firewall jika aktif bisa di disable atau allow port dari ftp
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ufw status
+$ sudo ufw allow <span style="color:#ae81ff">20</span>/tcp
+$ sudo ufw allow <span style="color:#ae81ff">21</span>/tcp
+$ sudo ufw allow <span style="color:#ae81ff">990</span>/tcp
+$ sudo ufw allow <span style="color:#ae81ff">40000</span>:50000/tcp
+$ sudo ufw status</code></pre></div></li>
+<li>Tambahkan user ftp
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo adduser ftpuser</code></pre></div></li>
+<li>Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mkdir /home/ftpuser/ftp
+$ sudo chown nobody:nogroup /home/ftpuser/ftp
+$ sudo chmod a-w /home/ ftpuser /ftp</code></pre></div></li>
+<li>Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mkdir /home/ftpuser/ftp/files
+$ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files</code></pre></div></li>
+<li>Kemudian edit file /etc/vsftpd.conf
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...
+anonymous_enable<span style="color:#f92672">=</span>NO
+...
+local_enable<span style="color:#f92672">=</span>YES
+...
+write_enable<span style="color:#f92672">=</span>YES
+...
+chroot_local_user<span style="color:#f92672">=</span>YES</code></pre></div></li>
+<li>Tambahkan user_sub_token untuk memasukkan username di lokal folder root ftp. Hal ini berlaku untuk user lainnya yang akan ditambahkan kedepannya
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...
+user_sub_token<span style="color:#f92672">=</span>$USER
+local_root<span style="color:#f92672">=</span>/home/$USER/ftp
+pasv_min_port<span style="color:#f92672">=</span><span style="color:#ae81ff">40000</span>
+pasv_max_port<span style="color:#f92672">=</span><span style="color:#ae81ff">50000</span></code></pre></div></li>
+<li>Untuk 2 baris terakhir di atas untuk membatasi jarak port yang dapat digunakan oleh FTP</li>
+<li>Buat userlist yang akan mengizinkan akses ke ftp
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">userlist_enable<span style="color:#f92672">=</span>YES
+userlist_file<span style="color:#f92672">=</span>/etc/vsftpd.userlist
+userlist_deny<span style="color:#f92672">=</span>NO</code></pre></div></li>
+<li>Tambahkan nama user (ftpuser) pada file userlist
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo <span style="color:#e6db74">&#34;ftpuser&#34;</span> | sudo tee -a /etc/vsftpd.userlist</code></pre></div></li>
+<li>Restart service vsftpd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo systemctl restart vsftpd</code></pre></div></li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>MFR </span>
+                </p>
+            
+           
+           
+            
+            <p class="copyright-item">
+                
+                <span>Share:</span>
+                <span>
+
+      
+        <a href="//twitter.com/share?url=%2f2018%2finstall-ftp-ubuntu%2f&amp;text=Install%20Vsftp%20Ubuntu%2016.04&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
+          <i class="iconfont icon-twitter"></i>
+        </a>
+        
+      
+      
+        <a href="//www.facebook.com/sharer/sharer.php?u=%2f2018%2finstall-ftp-ubuntu%2f" target="_blank" title="Share on Facebook">
+          <i class="iconfont icon-facebook"></i>
+        </a>
+        
+      
+      
+      
+      
+        <a href="//www.linkedin.com/shareArticle?url=%2f2018%2finstall-ftp-ubuntu%2f&amp;title=Install%20Vsftp%20Ubuntu%2016.04" target="_blank" title="Share on LinkedIn">
+          <i class="iconfont icon-linkedin"></i>
+        </a>
+        
+      
+      
+        
+      
+        
+      
+
+          
+
+          
+
+          
+
+          
+</span>
+                
+            </p>
+
+           
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-icon-tag"></i>Tag: 
+            
+            <span class="tag"><a href="tags/server/">
+                    #server</a></span>
+            
+            <span class="tag"><a href="tags/linux/">
+                    #linux</a></span>
+            
+            <span class="tag"><a href="tags/ubuntu/">
+                    #ubuntu</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="/2018/install-django/" class="prev" rel="prev" title="Install Django"><i class="iconfont icon-dajiantou"></i>&nbsp;Install Django</a>
+         
+        
+        <a href="/2018/install-zabbix/" class="next" rel="next" title="Install Zabbix pada Centos">Install Zabbix pada Centos&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'yourdiscussshortname';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2015 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="">MFR</a> | </span>
+         
+
+		  <span>Crafted with ❤️ by Us </span>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>
