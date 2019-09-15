@@ -188,6 +188,15 @@ Menghapus rule firewall # firewall-cmd --zone=public --remove-port=2323/tcp # fi
     </item>
     
     <item>
+      <title>Openssh Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2016/openssh-cent-7/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2016/openssh-cent-7/</guid>
+      <description>Install Openssh Server  Install paket openssh server dan client # yum -y install openssh-server openssh-clients Jalankan service-nya # chkconfig sshd on # service sshd start Pastikan service-nya telah berjalan (install netstat terlebih dahulu) # netstat -tulpn | grep :22 Edit file konfigurasinya jika ingin mengganti port(pastikan untuk backup file konfigurasi terlebih dahulu) # vi /etc/ssh/sshd_config Jika ada perubahan pada file konfigurasi, restart servis ssh # systemctl restart sshd.service Atau # service sshd restart</description>
+    </item>
+    
+    <item>
       <title>Linux Command Part 2</title>
       <link>https://mfachrulrazy.github.io/2015/linux-command2/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
