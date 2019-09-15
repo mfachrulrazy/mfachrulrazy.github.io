@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mysql on My Free Resources</title>
-    <link>/categories/mysql/</link>
+    <link>https://mfachrulrazy.github.io/categories/mysql/</link>
     <description>Recent content in mysql on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 02 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install Mysql Centos 7</title>
-      <link>/2017/install-mysql-cent/</link>
+      <link>https://mfachrulrazy.github.io/2017/install-mysql-cent/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/install-mysql-cent/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/install-mysql-cent/</guid>
       <description>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
  Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.</description>
     </item>
     
     <item>
       <title>Belajar Mysql Part 1</title>
-      <link>/2015/konfig-mysql1/</link>
+      <link>https://mfachrulrazy.github.io/2015/konfig-mysql1/</link>
       <pubDate>Sat, 07 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/konfig-mysql1/</guid>
+      <guid>https://mfachrulrazy.github.io/2015/konfig-mysql1/</guid>
       <description>Login ke mysql dari terminal # mysql -u root -p Memilih database &amp;gt; USE MYSQL; Membuat user baru &amp;gt; CREATE USER &amp;#39;userbaru&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; Lihat nama user yang ingin diubah aksesnya &amp;gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &amp;gt; UPDATE USER SET HOST = &amp;#39;%&amp;#39; WHERE USER=&amp;#39;user&amp;#39;; Mengaktifkan perubahan &amp;gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &amp;gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &amp;gt; SET PASSWORD FOR &amp;#39;user&amp;#39;@&amp;#39;localhost&amp;#39; = PASSWORD(&amp;#39;password&amp;#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).</description>
     </item>
     

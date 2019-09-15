@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>database on My Free Resources</title>
-    <link>/categories/database/</link>
+    <link>https://mfachrulrazy.github.io/categories/database/</link>
     <description>Recent content in database on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/database/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/database/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Restore Database SQL Server</title>
-      <link>/2019/restoredb-sqlsrv/</link>
+      <link>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/restoredb-sqlsrv/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</guid>
       <description>Proses restore database berhenti dan tidak berubah status. Solusi Gunakan t-sql dan masukkan kueri untuk restore database dengan menggunakan opsi with recovery RESTORE DATABASE NamaDB FROM DISK = &amp;#39;Path\to\file.bak&amp;#39; WITH RECOVERY GO</description>
     </item>
     
     <item>
       <title>SQL Server Database Suspect</title>
-      <link>/2019/suspectdb-sqlsrv/</link>
+      <link>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</link>
       <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/suspectdb-sqlsrv/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</guid>
       <description>Terkadang Microsoft SQL Server mengalami error, salah satunya adalah Suspect Database. Salah satu penyebabnya adalah server langsung mati (karena listrik mati atau power failure).
 Salah satu solusinya adalah memperbaiki database secara manual. Contoh dalam hal ini nama database adalah DBTes.
 1. Buka aplikasi query sql seperti Management Studio
@@ -34,59 +34,59 @@ Salah satu solusinya adalah memperbaiki database secara manual. Contoh dalam hal
     
     <item>
       <title>Konfigurasi Postgresql 11 di Ubuntu</title>
-      <link>/2018/konfig-postgresql/</link>
+      <link>https://mfachrulrazy.github.io/2018/konfig-postgresql/</link>
       <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/konfig-postgresql/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/konfig-postgresql/</guid>
       <description>Database sql dengan menggunakan Postgresql sangat berbeda dengan database sql server.
 Pertama install paket postgresql. $ sudo apt update $ sudo apt install postgresql postgresql-contrib Mengecek versi Postgresql $ sudo -u postgres psql -c &amp;#34;SELECT version();&amp;#34; Pada saat menginstall postgresql membuat akun default yaitu postgres atau bisa disebut sebagai super user dari postgresql. Untuk login menggunakan user tersebut, harus melalui user root dari sistem operasi. # su - postgres Kemudian akan login sebagai user postgres postgres@host$ createuser --interactive --pwprompt Masukkan nama user, password dan beberapa parameter lainnya.</description>
     </item>
     
     <item>
       <title>Belajar SQL Server Part 2</title>
-      <link>/2018/konfig-sqlsrv2/</link>
+      <link>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</link>
       <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/konfig-sqlsrv2/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</guid>
       <description>Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
 Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio yang biasanya penyebabnya adalah masih ada koneksi yang tidak dapat diputus koneksinya. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill + &amp;#39;kill &amp;#39; + CONVERT(varchar(5), spid) + &amp;#39;;&amp;#39; FROM master.</description>
     </item>
     
     <item>
       <title>Install Mysql Centos 7</title>
-      <link>/2017/install-mysql-cent/</link>
+      <link>https://mfachrulrazy.github.io/2017/install-mysql-cent/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/install-mysql-cent/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/install-mysql-cent/</guid>
       <description>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
  Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.</description>
     </item>
     
     <item>
       <title>Install Maria DB pada Ubuntu 16.04</title>
-      <link>/2017/install-mariadb-cent/</link>
+      <link>https://mfachrulrazy.github.io/2017/install-mariadb-cent/</link>
       <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/install-mariadb-cent/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/install-mariadb-cent/</guid>
       <description>Tambahkan paket software properties $ sudo apt-get -y install software-properties-common Tambahkan key $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 Tambahkan repository $ sudo add-apt-repository &amp;#39;deb [arch=amd64,i386,ppc64el] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.2/ubuntu xenial main&amp;#39; Update dan install mariadb $ sudo apt-get update $ sudo apt-get install mariadb-server mariadb-client</description>
     </item>
     
     <item>
       <title>Attach dan Import Database SQL Server</title>
-      <link>/2017/attach-imp-sqlsrv/</link>
+      <link>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</link>
       <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/attach-imp-sqlsrv/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</guid>
       <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
 Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
     </item>
     
     <item>
       <title>Belajar SQL Server Part 1</title>
-      <link>/2017/konfig-sqlsrv1/</link>
+      <link>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</link>
       <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/konfig-sqlsrv1/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</guid>
       <description>SQL Server merupakan salah satu Relational Database Management System(RDBMS) yang dibuat oleh Micorosoft. Sebagai Database server, dia termasuk dalam sebuah produk yang digunakan untuk menyimpan dan mengambil data dari sebuah aplikasi.
 Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
 1. Jalankan file master instalasi sql server (biasanya berbentuk iso) &amp;gt; Pilih bagian Installation &amp;gt; Pilih New SQL Server stand-alone&amp;hellip;.. 2. Bagian Product Key, masukan lisensi atau produk sql server yang diinginkan &amp;gt; klik Next 3.</description>
@@ -94,10 +94,10 @@ Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
     
     <item>
       <title>Belajar Mysql Part 1</title>
-      <link>/2015/konfig-mysql1/</link>
+      <link>https://mfachrulrazy.github.io/2015/konfig-mysql1/</link>
       <pubDate>Sat, 07 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/konfig-mysql1/</guid>
+      <guid>https://mfachrulrazy.github.io/2015/konfig-mysql1/</guid>
       <description>Login ke mysql dari terminal # mysql -u root -p Memilih database &amp;gt; USE MYSQL; Membuat user baru &amp;gt; CREATE USER &amp;#39;userbaru&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; Lihat nama user yang ingin diubah aksesnya &amp;gt; SELECT USER,HOST FROM USER; Update datanya menjadi yang diinginkan &amp;gt; UPDATE USER SET HOST = &amp;#39;%&amp;#39; WHERE USER=&amp;#39;user&amp;#39;; Mengaktifkan perubahan &amp;gt; FLUSH PRIVILEGES; Cek database sekarang atau user sekarang (yang sedang aktif) &amp;gt; SELECT [ database() ]; [ user() ] Mengubah password user mysql &amp;gt; SET PASSWORD FOR &amp;#39;user&amp;#39;@&amp;#39;localhost&amp;#39; = PASSWORD(&amp;#39;password&amp;#39;);  Tanda % memastikan bahwa user dapat mengakses database via remote (any ip address).</description>
     </item>
     

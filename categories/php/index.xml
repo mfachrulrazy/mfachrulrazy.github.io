@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>php on My Free Resources</title>
-    <link>/categories/php/</link>
+    <link>https://mfachrulrazy.github.io/categories/php/</link>
     <description>Recent content in php on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install PHP 7.0 dan Modul SQL Server pada Centos</title>
-      <link>/2018/install-php7/</link>
+      <link>https://mfachrulrazy.github.io/2018/install-php7/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/install-php7/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/install-php7/</guid>
       <description>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh # create new #!/bin/bash source /opt/remi/php70/enable export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.</description>
     </item>
     
     <item>
       <title>Pengaturan pada PHP</title>
-      <link>/2018/about-php/</link>
+      <link>https://mfachrulrazy.github.io/2018/about-php/</link>
       <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/about-php/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/about-php/</guid>
       <description>Menambahkan maximum upload file di PHP Ubah ukuran maksimum file upload di php dapat dengan cara mengedit file /etc/php.ini ... post_max_size = 100M ... Kemudian reload service php
 Menambahkan maximum eksekusi PHP Menambahkan maksimum eksekusi edit file /etc/php.ini ... max_execution_time = 500 ...
 Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi halaman webnya. Salah satu cara untuk memunculkannya adalah menginstall paket tambahan php yaitu php-gd. # yum install php-gd</description>
@@ -33,10 +33,10 @@ Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi 
     
     <item>
       <title>Troubleshoot Script Email PHP</title>
-      <link>/2017/tb-php-email/</link>
+      <link>https://mfachrulrazy.github.io/2017/tb-php-email/</link>
       <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/tb-php-email/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/tb-php-email/</guid>
       <description>Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
 Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
 Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.</description>
@@ -44,20 +44,20 @@ Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke j
     
     <item>
       <title>Menambahkan ukuran File Upload</title>
-      <link>/2017/max-file-up/</link>
+      <link>https://mfachrulrazy.github.io/2017/max-file-up/</link>
       <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/max-file-up/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/max-file-up/</guid>
       <description>Menambahkan ukuran maximum file yang dapat diupload pada aplikasi yang menggunakan lemp stack (linux, nginx, mysql, php).
 1. Edit file /etc/php.ini ... upload_max_filesize = 100M ... 2. Ubah pada file nginx.conf dan ubah pada bagian blok server dan http server { client_max_body_size 100M; } ... http { client_max_body_size 100M; }</description>
     </item>
     
     <item>
       <title>Install Php 5.4 Centos 7</title>
-      <link>/2017/install-php5-cent/</link>
+      <link>https://mfachrulrazy.github.io/2017/install-php5-cent/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/install-php5-cent/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/install-php5-cent/</guid>
       <description> Download paket repositori epel secara manual menggunakan wget # wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm Install menggunakan rpm # rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm Install yum-utils untuk mengatur repositori # yum install yum-utils Kemudian enable php 5.4 dan install paket php # #yum-config-manager --enable remi-php54 # yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo Setelah itu cek versi php-nya # php -v  </description>
     </item>
     

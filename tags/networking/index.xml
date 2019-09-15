@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>networking on My Free Resources</title>
-    <link>/tags/networking/</link>
+    <link>https://mfachrulrazy.github.io/tags/networking/</link>
     <description>Recent content in networking on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Error Loopback Mikrotik</title>
-      <link>/2017/err-loopback/</link>
+      <link>https://mfachrulrazy.github.io/2017/err-loopback/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/err-loopback/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/err-loopback/</guid>
       <description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
 Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description>
     </item>
     
     <item>
       <title>DNS Flooding di Mikrotik</title>
-      <link>/2017/dns-flood/</link>
+      <link>https://mfachrulrazy.github.io/2017/dns-flood/</link>
       <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/dns-flood/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/dns-flood/</guid>
       <description>Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload ether2 yang menggunakan IP public dari provider L.
 Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting allow remote requests yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns. Cara mengatasinya adalah dengan membuatkan address list untuk mengizinkan alamat dns apa saja yang diinginkan.</description>
     </item>
     
     <item>
       <title>All about Proxmox</title>
-      <link>/2017/imp-proxmox/</link>
+      <link>https://mfachrulrazy.github.io/2017/imp-proxmox/</link>
       <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/imp-proxmox/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/imp-proxmox/</guid>
       <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
 Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
  Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.</description>
@@ -44,10 +44,10 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
     
     <item>
       <title>Error Monitoring PRTG HTTPS</title>
-      <link>/2017/err-prtg-https/</link>
+      <link>https://mfachrulrazy.github.io/2017/err-prtg-https/</link>
       <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/err-prtg-https/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/err-prtg-https/</guid>
       <description>Ketika mengatur PRTG menjadi https, web servernya tidak berhasil berjalan. Pesan error yang muncul ketika dibuka kurang lebih sebagai berikut:
 Connection Refused Socket Error # 10061  Penyebabnya adalah pada saat penggantian koneksi menjadi https, maka portnya juga berganti. Oleh karena itu harus diganti juga pada bagian PRTG Console Setting dan PRTG Administration Tool.
  Buka PRTG dan masuk ke PRTG Administration Tool Berikut contoh konfigurasinya  Pengaturan perubahan konfigurasi dari http ke https   Sumber: Knowlege Base PRTG</description>
@@ -55,10 +55,10 @@ Connection Refused Socket Error # 10061  Penyebabnya adalah pada saat penggantia
     
     <item>
       <title>Install Mikrotik di GNS 3</title>
-      <link>/2017/install-mrktk-gns3/</link>
+      <link>https://mfachrulrazy.github.io/2017/install-mrktk-gns3/</link>
       <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/install-mrktk-gns3/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/install-mrktk-gns3/</guid>
       <description>Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.
 1. Pastikan file iso mikrotik telah di-download
 2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:
@@ -68,10 +68,10 @@ C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik
     
     <item>
       <title>Error Gateway Time Out</title>
-      <link>/2017/err-gateway-to/</link>
+      <link>https://mfachrulrazy.github.io/2017/err-gateway-to/</link>
       <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/err-gateway-to/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/err-gateway-to/</guid>
       <description>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini. Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy Hilangkan tanda centangnya dan login kembali.</description>
     </item>
     

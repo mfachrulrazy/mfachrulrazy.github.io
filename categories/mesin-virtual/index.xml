@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mesin virtual on My Free Resources</title>
-    <link>/categories/mesin-virtual/</link>
+    <link>https://mfachrulrazy.github.io/categories/mesin-virtual/</link>
     <description>Recent content in mesin virtual on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/mesin-virtual/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/mesin-virtual/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Menjalankan VM Vbox melalui File</title>
-      <link>/2019/script-run-vbox/</link>
+      <link>https://mfachrulrazy.github.io/2019/script-run-vbox/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/script-run-vbox/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/script-run-vbox/</guid>
       <description>Menjalankan mesin virtual dari sebuah file bat agar dapat lebih mudah dibanding harus membuka aplikasi virtual box lalu menjalankan salah satu mesin virtual.
-Pastikan VirtualBox sudah ada di dalam environment variable dari Windows. Buat file bat dan masukkan script berikut @echo off VBoxManage startvm nama_vm Jika ingin menjalankan vm tanpa tampilan jendela vm bisa menambahkan parameter --type headless @echo off VBoxManage startvm nama_vm --type headless Baris pertama @echo off agar perintahnya tidak menampilkan perintah pada script.</description>
+Pastikan VirtualBox sudah ada di dalam environment variable Windows. Melihat daftar VM VBoxManage list vms Melihat daftar VM yang sedang berjalan VBoxManage list runningvms Untuk menjalankan VM, buat file bat dan masukkan script berikut @echo off VBoxManage startvm nama_vm Jika ingin menjalankan vm tanpa tampilan jendela vm bisa menambahkan parameter --type headless @echo off VBoxManage startvm nama_vm --type headless Baris pertama @echo off agar perintahnya tidak menampilkan perintah pada script.</description>
     </item>
     
     <item>
       <title>VM Virtual Box Error</title>
-      <link>/2018/vbox-error/</link>
+      <link>https://mfachrulrazy.github.io/2018/vbox-error/</link>
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/vbox-error/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/vbox-error/</guid>
       <description>Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off  Jika ingin mengembalikan nilai hypervisorlaunchtype &amp;gt; bcdedit /set {current} hypervisorlaunchtype auto  Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V.</description>
     </item>
     
     <item>
       <title>Mengenal Virtual Environment Python</title>
-      <link>/2018/venv-python/</link>
+      <link>https://mfachrulrazy.github.io/2018/venv-python/</link>
       <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/venv-python/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/venv-python/</guid>
       <description>Berbicara mengenai python, pasti akan mengenal yang namanya lingkungan virtual (virtual environment). Fungsinya adalah untuk membuat lingkungan virtual yang terisolasi dari lingkungan sistem operasi host. Berikut virtual environment yang pernah saya gunakan pada host berbasis Microsoft Windows.
 Virtualenv Virtualenv adalah salah satu tools di python untuk membuat virtual environment. Instalasi Virtualenv &amp;gt; pip3 install virtualenv Membuat venv &amp;gt; virtualenv -p C:\Python\Python37\python.exe latihan Pada saat membuat venv dengan cara ini, muncul peringatan bahwa modul imp sudah lama dan digantikan dengan importlib Ada baiknya pada saat membuat venv itu diawali dengan dengan .</description>
     </item>
     
     <item>
       <title>Backspace pada Virtual Box</title>
-      <link>/2017/err-backspace-vbox/</link>
+      <link>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</link>
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/err-backspace-vbox/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</guid>
       <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
 Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
     </item>

@@ -2,363 +2,363 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on My Free Resources</title>
-    <link>/categories/</link>
+    <link>https://mfachrulrazy.github.io/categories/</link>
     <description>Recent content in Categories on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>linux</title>
-      <link>/categories/linux/</link>
+      <link>https://mfachrulrazy.github.io/categories/linux/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/linux/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nginx</title>
-      <link>/categories/nginx/</link>
+      <link>https://mfachrulrazy.github.io/categories/nginx/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/nginx/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/nginx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ubuntu</title>
-      <link>/categories/ubuntu/</link>
+      <link>https://mfachrulrazy.github.io/categories/ubuntu/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ubuntu/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web server</title>
-      <link>/categories/web-server/</link>
+      <link>https://mfachrulrazy.github.io/categories/web-server/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/web-server/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/web-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mesin virtual</title>
-      <link>/categories/mesin-virtual/</link>
+      <link>https://mfachrulrazy.github.io/categories/mesin-virtual/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/mesin-virtual/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>windows</title>
-      <link>/categories/windows/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/windows/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/mesin-virtual/</guid>
       <description></description>
     </item>
     
     <item>
       <title>centos</title>
-      <link>/categories/centos/</link>
+      <link>https://mfachrulrazy.github.io/categories/centos/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/centos/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/centos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>/categories/python/</link>
+      <link>https://mfachrulrazy.github.io/categories/python/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/python/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>/categories/blog/</link>
+      <link>https://mfachrulrazy.github.io/categories/blog/</link>
       <pubDate>Sat, 06 Apr 2019 09:45:17 +0800</pubDate>
       
-      <guid>/categories/blog/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/categories/hugo/</link>
+      <link>https://mfachrulrazy.github.io/categories/hugo/</link>
       <pubDate>Sat, 06 Apr 2019 09:45:17 +0800</pubDate>
       
-      <guid>/categories/hugo/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://mfachrulrazy.github.io/categories/windows/</link>
+      <pubDate>Sat, 06 Apr 2019 09:45:17 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/categories/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
-      <link>/categories/database/</link>
+      <link>https://mfachrulrazy.github.io/categories/database/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/database/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sql server</title>
-      <link>/categories/sql-server/</link>
+      <link>https://mfachrulrazy.github.io/categories/sql-server/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/sql-server/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/sql-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>excel</title>
-      <link>/categories/excel/</link>
+      <link>https://mfachrulrazy.github.io/categories/excel/</link>
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/excel/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/excel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>/categories/docker/</link>
+      <link>https://mfachrulrazy.github.io/categories/docker/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/docker/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>devops</title>
-      <link>/categories/devops/</link>
+      <link>https://mfachrulrazy.github.io/categories/devops/</link>
       <pubDate>Sat, 12 Jan 2019 08:32:46 +0800</pubDate>
       
-      <guid>/categories/devops/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>networking</title>
-      <link>/categories/networking/</link>
+      <link>https://mfachrulrazy.github.io/categories/networking/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/networking/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/networking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>remote</title>
-      <link>/categories/remote/</link>
+      <link>https://mfachrulrazy.github.io/categories/remote/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/remote/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/remote/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>/categories/ssh/</link>
+      <link>https://mfachrulrazy.github.io/categories/ssh/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ssh/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>server</title>
-      <link>/categories/server/</link>
+      <link>https://mfachrulrazy.github.io/categories/server/</link>
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/server/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>virtual box</title>
-      <link>/categories/virtual-box/</link>
+      <link>https://mfachrulrazy.github.io/categories/virtual-box/</link>
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/virtual-box/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/virtual-box/</guid>
       <description></description>
     </item>
     
     <item>
       <title>varnish</title>
-      <link>/categories/varnish/</link>
+      <link>https://mfachrulrazy.github.io/categories/varnish/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/varnish/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/varnish/</guid>
       <description></description>
     </item>
     
     <item>
       <title>php</title>
-      <link>/categories/php/</link>
+      <link>https://mfachrulrazy.github.io/categories/php/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/php/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>monitoring</title>
-      <link>/categories/monitoring/</link>
+      <link>https://mfachrulrazy.github.io/categories/monitoring/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/monitoring/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/monitoring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>/categories/git/</link>
+      <link>https://mfachrulrazy.github.io/categories/git/</link>
       <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/git/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>open source</title>
-      <link>/categories/open-source/</link>
+      <link>https://mfachrulrazy.github.io/categories/open-source/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/open-source/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>oracle</title>
-      <link>/categories/oracle/</link>
+      <link>https://mfachrulrazy.github.io/categories/oracle/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/oracle/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/oracle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>security</title>
-      <link>/categories/security/</link>
+      <link>https://mfachrulrazy.github.io/categories/security/</link>
       <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/security/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/security/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mikrotik</title>
-      <link>/categories/mikrotik/</link>
+      <link>https://mfachrulrazy.github.io/categories/mikrotik/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/mikrotik/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/mikrotik/</guid>
       <description></description>
     </item>
     
     <item>
       <title>email</title>
-      <link>/categories/email/</link>
+      <link>https://mfachrulrazy.github.io/categories/email/</link>
       <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/email/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/email/</guid>
       <description></description>
     </item>
     
     <item>
       <title>internet</title>
-      <link>/categories/internet/</link>
+      <link>https://mfachrulrazy.github.io/categories/internet/</link>
       <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/internet/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/internet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rsync</title>
-      <link>/categories/rsync/</link>
+      <link>https://mfachrulrazy.github.io/categories/rsync/</link>
       <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/rsync/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/rsync/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>/categories/mysql/</link>
+      <link>https://mfachrulrazy.github.io/categories/mysql/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/mysql/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>browser</title>
-      <link>/categories/browser/</link>
+      <link>https://mfachrulrazy.github.io/categories/browser/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/browser/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/browser/</guid>
       <description></description>
     </item>
     
     <item>
       <title>apache</title>
-      <link>/categories/apache/</link>
+      <link>https://mfachrulrazy.github.io/categories/apache/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/apache/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/apache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>proxmox</title>
-      <link>/categories/proxmox/</link>
+      <link>https://mfachrulrazy.github.io/categories/proxmox/</link>
       <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/proxmox/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/proxmox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wireless</title>
-      <link>/categories/wireless/</link>
+      <link>https://mfachrulrazy.github.io/categories/wireless/</link>
       <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/wireless/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/wireless/</guid>
       <description></description>
     </item>
     
     <item>
       <title>google chrome</title>
-      <link>/categories/google-chrome/</link>
+      <link>https://mfachrulrazy.github.io/categories/google-chrome/</link>
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/categories/google-chrome/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/google-chrome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code editor</title>
-      <link>/categories/code-editor/</link>
+      <link>https://mfachrulrazy.github.io/categories/code-editor/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/categories/code-editor/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/code-editor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cron</title>
-      <link>/categories/cron/</link>
+      <link>https://mfachrulrazy.github.io/categories/cron/</link>
       <pubDate>Fri, 05 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/categories/cron/</guid>
+      <guid>https://mfachrulrazy.github.io/categories/cron/</guid>
       <description></description>
     </item>
     

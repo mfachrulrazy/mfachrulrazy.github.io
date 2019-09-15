@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on My Free Resources</title>
-    <link>/tags/python/</link>
+    <link>https://mfachrulrazy.github.io/tags/python/</link>
     <description>Recent content in python on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 07 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install Python 3 di Centos 7</title>
-      <link>/2019/ins-py3-cent7/</link>
+      <link>https://mfachrulrazy.github.io/2019/ins-py3-cent7/</link>
       <pubDate>Tue, 07 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/ins-py3-cent7/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/ins-py3-cent7/</guid>
       <description>Pada saat artikel ini dibuat, versi python terbaru adalah 3.7.4.
 Install paket pendukung untuk python 3 # yum install gcc openssl-devel bzip2-devel libffi-devel Download python 3 dari situs resminya # wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz Pindah ke direktori dan install python 3 tersebut # cd Python-3.7.4 # ./configure --enable-optimizations # make altinstall Penggunaan make altinstall agar binary python default (/usr/bin/python) tidak diganti.
 Hapus file download python.
@@ -25,10 +25,10 @@ Cek versi python # python3.7 -V Python 3.</description>
     
     <item>
       <title>Install Django</title>
-      <link>/2018/install-django/</link>
+      <link>https://mfachrulrazy.github.io/2018/install-django/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/install-django/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/install-django/</guid>
       <description>Setelah membahas mengenai virtual environment di python, kali ini akan dibahas mengenai instalasi django yaitu salah satu web framework yang berbasis python.
  Pastikan python telah terinstall, dalam hal ini menggunakan python 3.
  Python 3 sudah termasuk dengan pip3, dapat dicek dengan perintah

@@ -2,31 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>virtual box on My Free Resources</title>
-    <link>/tags/virtual-box/</link>
+    <link>https://mfachrulrazy.github.io/tags/virtual-box/</link>
     <description>Recent content in virtual box on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/virtual-box/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/tags/virtual-box/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Menjalankan VM Vbox melalui File</title>
+      <link>https://mfachrulrazy.github.io/2019/script-run-vbox/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/script-run-vbox/</guid>
+      <description>Menjalankan mesin virtual dari sebuah file bat agar dapat lebih mudah dibanding harus membuka aplikasi virtual box lalu menjalankan salah satu mesin virtual.
+Pastikan VirtualBox sudah ada di dalam environment variable Windows. Melihat daftar VM VBoxManage list vms Melihat daftar VM yang sedang berjalan VBoxManage list runningvms Untuk menjalankan VM, buat file bat dan masukkan script berikut @echo off VBoxManage startvm nama_vm Jika ingin menjalankan vm tanpa tampilan jendela vm bisa menambahkan parameter --type headless @echo off VBoxManage startvm nama_vm --type headless Baris pertama @echo off agar perintahnya tidak menampilkan perintah pada script.</description>
+    </item>
+    
+    <item>
       <title>Backspace pada Virtual Box</title>
-      <link>/2017/err-backspace-vbox/</link>
+      <link>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</link>
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/err-backspace-vbox/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</guid>
       <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
 Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
     </item>
     
     <item>
       <title>Interface Network pada VirtualBox</title>
-      <link>/2017/int-baru-vbox/</link>
+      <link>https://mfachrulrazy.github.io/2017/int-baru-vbox/</link>
       <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>
       
-      <guid>/2017/int-baru-vbox/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/int-baru-vbox/</guid>
       <description> Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui
 File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang sudah ada bisa memilih Properties   </description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>browser on My Free Resources</title>
-    <link>/tags/browser/</link>
+    <link>https://mfachrulrazy.github.io/tags/browser/</link>
     <description>Recent content in browser on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/browser/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/tags/browser/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Error Browsing Https</title>
-      <link>/2017/err-browser-https/</link>
+      <link>https://mfachrulrazy.github.io/2017/err-browser-https/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/err-browser-https/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/err-browser-https/</guid>
       <description> Ada salah satu komputer klien mengalami error pada saat membuka situs dengan alamat https. Meskipun sudah berganti browser (chrome, firefox dan edge).
 Firefox Chrome Edge Penyebab dan solusi  Periksa apakah ada addons yang bermasalah (jika hanya salah satu browser yang bermasalah) Periksa pc/laptop tidak bervirus Periksa pengaturan waktu dan tanggal  </description>
     </item>

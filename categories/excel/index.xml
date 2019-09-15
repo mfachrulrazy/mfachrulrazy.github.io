@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>excel on My Free Resources</title>
-    <link>/categories/excel/</link>
+    <link>https://mfachrulrazy.github.io/categories/excel/</link>
     <description>Recent content in excel on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/excel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/excel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Formula Concat dan Vlookup pada Excel</title>
-      <link>/2019/join-cell-formula/</link>
+      <link>https://mfachrulrazy.github.io/2019/join-cell-formula/</link>
       <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/join-cell-formula/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/join-cell-formula/</guid>
       <description>Rumus untuk menggabungkan isi cell dalam excel dengan menggunakan vlookup dan concat.
 Di sini ada 2 sheet yaitu:
 1. Sheet1 untuk menyimpan hasil dari vlookup dan concat dari sheet berikutnya.

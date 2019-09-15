@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>apache on My Free Resources</title>
-    <link>/categories/apache/</link>
+    <link>https://mfachrulrazy.github.io/categories/apache/</link>
     <description>Recent content in apache on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 29 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/apache/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/apache/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apache dan SE Linux</title>
-      <link>/2017/apache-selinux/</link>
+      <link>https://mfachrulrazy.github.io/2017/apache-selinux/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/apache-selinux/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/apache-selinux/</guid>
       <description>Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:
 # setsebool httpd_can_network_connect_db=1 Jika ingin persistent pada saat server di-restart tambahkan opsi -P # setsebool -P httpd_can_network_connect_db on Cek hasil konfigurasi # getsebool httpd_can_network_connect_db</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oracle on My Free Resources</title>
-    <link>/tags/oracle/</link>
+    <link>https://mfachrulrazy.github.io/tags/oracle/</link>
     <description>Recent content in oracle on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install Oracle Fusion Middleware</title>
-      <link>/2018/install-oracle-middleware/</link>
+      <link>https://mfachrulrazy.github.io/2018/install-oracle-middleware/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/install-oracle-middleware/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/install-oracle-middleware/</guid>
       <description>Instalasi Oracle Fusion Middleware untuk kebutuhan testing kantor. Persiapan yang diperlukan:
  Linux OS with GUI (dalam hal ini menggunakan Centos 7 GUI)
  JDK versi 1.8xxx

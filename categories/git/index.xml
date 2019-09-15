@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on My Free Resources</title>
-    <link>/categories/git/</link>
+    <link>https://mfachrulrazy.github.io/categories/git/</link>
     <description>Recent content in git on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 04 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Error Github Push</title>
-      <link>/2018/err-github-push/</link>
+      <link>https://mfachrulrazy.github.io/2018/err-github-push/</link>
       <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/err-github-push/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/err-github-push/</guid>
       <description>Pada saat ingin melakukan push ke repo github terdapat error. ... error: src refspec master does not match any. error: failed to push some refs to &amp;#39;git@github.com:user/repo.git&amp;#39;
 Solusi Masukkan identitas terlebih dahulu pada git server. # git config --global user.email &amp;#34;user@email.com&amp;#34; Kemudian lakukan commit ulang dan push ke repo.</description>
     </item>
     
     <item>
       <title>SSH key Akun Github</title>
-      <link>/2017/github-ssh/</link>
+      <link>https://mfachrulrazy.github.io/2017/github-ssh/</link>
       <pubDate>Fri, 21 Jul 2017 08:27:55 +0800</pubDate>
       
-      <guid>/2017/github-ssh/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/github-ssh/</guid>
       <description>Menambahkan SSH Key ke Akun github dari PC tujuannya adalah kita tidak perlu lagi memasukkan password tiap kali ingin terhubung dengan akun github. Berikut caranya
  Pastikan git sudah terinstall pada PC
  Buat ssh key di cmd dengan

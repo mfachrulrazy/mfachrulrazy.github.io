@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web server on My Free Resources</title>
-    <link>/categories/web-server/</link>
+    <link>https://mfachrulrazy.github.io/categories/web-server/</link>
     <description>Recent content in web server on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/web-server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/web-server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04</title>
-      <link>/2019/ins-ssl-nginx-ubuntu/</link>
+      <link>https://mfachrulrazy.github.io/2019/ins-ssl-nginx-ubuntu/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/ins-ssl-nginx-ubuntu/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/ins-ssl-nginx-ubuntu/</guid>
       <description>Let&amp;rsquo;s Encrypt adalah salah satu Otoritas Sertifikasi (CA - Certificate Authority) yang dapat mengeluarkan sertifikat SSL. Pada sisi web host (hosting website) kita menggunakan ACME protocol untuk memperbarui sertifikat yang diberikan oleh Let&amp;rsquo;s Encrypt.
 Dalam tutorial ini, kita menggunakan Wildcard SSL yang berfungsi untuk mengaktifkan ssl ke domain dan seluruh sub domain yang kita punya. Pada tutorial ini kita menggunakan domain contoh.com
 Install Paket pendukung Let&amp;rsquo;s Encrypt Install paket yang dibutuhkan oleh let&amp;rsquo;s encrypt $ sudo apt-get update $ sudo apt-get install software-properties-common $ sudo add-apt-repository universe $ sudo add-apt-repository ppa:certbot/certbot $ sudo apt-get update</description>
@@ -24,10 +24,10 @@ Install Paket pendukung Let&amp;rsquo;s Encrypt Install paket yang dibutuhkan ol
     
     <item>
       <title>Redirect Domain URL pada Nginx</title>
-      <link>/2018/konfig-nginx/</link>
+      <link>https://mfachrulrazy.github.io/2018/konfig-nginx/</link>
       <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/konfig-nginx/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/konfig-nginx/</guid>
       <description>Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di folder konfigurasi nginx ../conf.d/domainku.conf
 Tambahkan baris berikut server { ... return 301 $scheme://domainbaru.com$request_uri; ... }
 301 berarti redirect secara permanen</description>
@@ -35,10 +35,10 @@ Tambahkan baris berikut server { ... return 301 $scheme://domainbaru.com$request
     
     <item>
       <title>Install Django</title>
-      <link>/2018/install-django/</link>
+      <link>https://mfachrulrazy.github.io/2018/install-django/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/install-django/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/install-django/</guid>
       <description>Setelah membahas mengenai virtual environment di python, kali ini akan dibahas mengenai instalasi django yaitu salah satu web framework yang berbasis python.
  Pastikan python telah terinstall, dalam hal ini menggunakan python 3.
  Python 3 sudah termasuk dengan pip3, dapat dicek dengan perintah
@@ -50,10 +50,10 @@ Tambahkan baris berikut server { ... return 301 $scheme://domainbaru.com$request
     
     <item>
       <title>Konfigurasi Amplify pada Nginx</title>
-      <link>/2017/amp-nginx/</link>
+      <link>https://mfachrulrazy.github.io/2017/amp-nginx/</link>
       <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/amp-nginx/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/amp-nginx/</guid>
       <description>Amplify merupakan salah satu software untuk monitoring nginx.
 1. Hal pertama yang dilakukan adalah daftar pada website amplify
 2. Install amplify agent pada web server # yum install amplify-agent  3. Pada file konfigurasi nginx tambahkan log format http { log_format main_ext &amp;#39;$remote_addr - $remote_user [$time_local] &amp;#34;$request&amp;#34; &amp;#39; &amp;#39;$status $body_bytes_sent &amp;#34;$http_referer&amp;#34; &amp;#39; &amp;#39;&amp;#34;$http_user_agent&amp;#34; &amp;#34;$http_x_forwarded_for&amp;#34; &amp;#39; &amp;#39;&amp;#34;$host&amp;#34; sn=&amp;#34;$server_name&amp;#34; &amp;#39; &amp;#39;rt=$request_time &amp;#39; &amp;#39;ua=&amp;#34;$upstream_addr&amp;#34; us=&amp;#34;$upstream_status&amp;#34; &amp;#39; &amp;#39;ut=&amp;#34;$upstream_response_time&amp;#34; ul=&amp;#34;$upstream_response_length&amp;#34; &amp;#39; &amp;#39;cs=$upstream_cache_status&amp;#39;; access_log /var/log/nginx/access.log main_ext; error_log /var/log/nginx/error.</description>
@@ -61,20 +61,20 @@ Tambahkan baris berikut server { ... return 301 $scheme://domainbaru.com$request
     
     <item>
       <title>Apache dan SE Linux</title>
-      <link>/2017/apache-selinux/</link>
+      <link>https://mfachrulrazy.github.io/2017/apache-selinux/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/apache-selinux/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/apache-selinux/</guid>
       <description>Secara default keamanan di centos mencegah script Apache untuk mengakses database. Untuk mengaktifkannya lakukan:
 # setsebool httpd_can_network_connect_db=1 Jika ingin persistent pada saat server di-restart tambahkan opsi -P # setsebool -P httpd_can_network_connect_db on Cek hasil konfigurasi # getsebool httpd_can_network_connect_db</description>
     </item>
     
     <item>
       <title>Install Nginx Centos 7</title>
-      <link>/2017/install-nginx-cent/</link>
+      <link>https://mfachrulrazy.github.io/2017/install-nginx-cent/</link>
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/install-nginx-cent/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/install-nginx-cent/</guid>
       <description>Nginx adalah salah satu software yang memiliki banyak fungsi selain web server, bisa juga sebagai reverse proxy dan load balancer. Postingan ini akan membahas instalasi dan konfigurasi nginx sebagai web server pada centos 7.
  Install repository EPEL # yum install epel-release Kemudian install nginx # yum install nginx Sebelum menjalankan servis nginx, ada baiknya untuk mengizinkan port yang nantinya akan digunakan oleh nginx # firewall-cmd --zone=public --permanent --add-port=80/tcp # firewall-cmd --reload Jalankan service nginx dan cek statusnya # systemctl start nginx # systemctl status nginx  Troubleshoot Nginx  Biasanya jika kita menjalankan servis nginx sebelum membuka firewall maka ada error seperti gambar di bawah ini.</description>
     </item>

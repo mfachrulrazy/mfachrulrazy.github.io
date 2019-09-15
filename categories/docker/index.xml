@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on My Free Resources</title>
-    <link>/categories/docker/</link>
+    <link>https://mfachrulrazy.github.io/categories/docker/</link>
     <description>Recent content in docker on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install Docker di Centos 7</title>
-      <link>/2019/ins-docker-cent7/</link>
+      <link>https://mfachrulrazy.github.io/2019/ins-docker-cent7/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/ins-docker-cent7/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/ins-docker-cent7/</guid>
       <description>Instalasi Docker Community Edition (CE) pada Centos 7.
 Persiapan Repository Install terlebih dahulu tools yang dibutuhkan seperti yum-utils yang menyediakan yum-config-manager, dan device-mapper-persistent-data serta lvm2 yang dibutuhkan oleh devicemapper $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2 Gunakan repository stable $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-ce-cli containerd.io Kemudian prompt key GPG-nya untuk memastikan sesuai dengan fingerprint berikut:
@@ -25,20 +25,20 @@ Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-c
     
     <item>
       <title>Docker 101</title>
-      <link>/2019/docker-101/</link>
+      <link>https://mfachrulrazy.github.io/2019/docker-101/</link>
       <pubDate>Sat, 12 Jan 2019 08:32:46 +0800</pubDate>
       
-      <guid>/2019/docker-101/</guid>
+      <guid>https://mfachrulrazy.github.io/2019/docker-101/</guid>
       <description>Beberapa perintah dasar docker yang didapatkan setelah training dari beberapa situs.
 Docker Image dan Container Melihat image docker &amp;gt; docker images Menjalankan image docker menjadi container &amp;gt; docker run &amp;lt;image_id&amp;gt; Melihat container yang sedang berjalan &amp;gt; docker run ps Untuk melihat semua container yang sedang jalan atau yang sudah berjalan tambahkan parameter -a Untuk kolom NAMES paling terakhir diberikan docker adalah nama alias random yang merujuk ke container tersebut.</description>
     </item>
     
     <item>
       <title>Install Docker Windows 10 Home</title>
-      <link>/2017/install-docker-win10h/</link>
+      <link>https://mfachrulrazy.github.io/2017/install-docker-win10h/</link>
       <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/install-docker-win10h/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/install-docker-win10h/</guid>
       <description> Menginstall Docker for Windows Community Edition (CE) sistem operasi yang dibutuhkan adalah Windows 10 Professional atau Enterprise 64-bit. Jika diinstall pada versi Windows 10 Home ada pengaturan khususnya.
 Download Docker-Toolbox dan di dalamnya terdapat beberapa paket tambahan seperti:
  VirtualBox Git Kitematic

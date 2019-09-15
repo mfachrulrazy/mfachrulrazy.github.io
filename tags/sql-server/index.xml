@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sql server on My Free Resources</title>
-    <link>/tags/sql-server/</link>
+    <link>https://mfachrulrazy.github.io/tags/sql-server/</link>
     <description>Recent content in sql server on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/sql-server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/tags/sql-server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Install PHP 7.0 dan Modul SQL Server pada Centos</title>
-      <link>/2018/install-php7/</link>
+      <link>https://mfachrulrazy.github.io/2018/install-php7/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/install-php7/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/install-php7/</guid>
       <description>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh # create new #!/bin/bash source /opt/remi/php70/enable export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.</description>
     </item>
     
     <item>
       <title>Attach dan Import Database SQL Server</title>
-      <link>/2017/attach-imp-sqlsrv/</link>
+      <link>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</link>
       <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/attach-imp-sqlsrv/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</guid>
       <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
 Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
     </item>

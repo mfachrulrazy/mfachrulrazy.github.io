@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>virtual box on My Free Resources</title>
-    <link>/categories/virtual-box/</link>
+    <link>https://mfachrulrazy.github.io/categories/virtual-box/</link>
     <description>Recent content in virtual box on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 05 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/virtual-box/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/virtual-box/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VM Virtual Box Error</title>
-      <link>/2018/vbox-error/</link>
+      <link>https://mfachrulrazy.github.io/2018/vbox-error/</link>
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/vbox-error/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/vbox-error/</guid>
       <description>Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off  Jika ingin mengembalikan nilai hypervisorlaunchtype &amp;gt; bcdedit /set {current} hypervisorlaunchtype auto  Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V.</description>
     </item>
     
     <item>
       <title>Konfigurasi Nmtui Centos 7</title>
-      <link>/2018/netmui-cent/</link>
+      <link>https://mfachrulrazy.github.io/2018/netmui-cent/</link>
       <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/netmui-cent/</guid>
+      <guid>https://mfachrulrazy.github.io/2018/netmui-cent/</guid>
       <description>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.
 Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan nmtui.
  Jalankan nmtui dari terminal # nmtui  Pilih edit connection &amp;gt; kemudian pilih Wired connection 1 &amp;gt; pilih Edit  Kemudian ubah nama profil dan IPv4 configuration menjadi manual  Kemudian OK &amp;gt; Back &amp;gt; Quit Restart service network  </description>
@@ -33,20 +33,20 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
     
     <item>
       <title>Backspace pada Virtual Box</title>
-      <link>/2017/err-backspace-vbox/</link>
+      <link>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</link>
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/err-backspace-vbox/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</guid>
       <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
 Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
     </item>
     
     <item>
       <title>Interface Network pada VirtualBox</title>
-      <link>/2017/int-baru-vbox/</link>
+      <link>https://mfachrulrazy.github.io/2017/int-baru-vbox/</link>
       <pubDate>Tue, 15 Aug 2017 15:01:28 +0800</pubDate>
       
-      <guid>/2017/int-baru-vbox/</guid>
+      <guid>https://mfachrulrazy.github.io/2017/int-baru-vbox/</guid>
       <description> Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui
 File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang sudah ada bisa memilih Properties   </description>
     </item>

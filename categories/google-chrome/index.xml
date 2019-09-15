@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>google chrome on My Free Resources</title>
-    <link>/categories/google-chrome/</link>
+    <link>https://mfachrulrazy.github.io/categories/google-chrome/</link>
     <description>Recent content in google chrome on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Dec 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/google-chrome/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mfachrulrazy.github.io/categories/google-chrome/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Menghapus Notifikasi Pop-Up Lidgrain pada Chrome</title>
-      <link>/2016/del-notif-chrome/</link>
+      <link>https://mfachrulrazy.github.io/2016/del-notif-chrome/</link>
       <pubDate>Tue, 06 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/del-notif-chrome/</guid>
+      <guid>https://mfachrulrazy.github.io/2016/del-notif-chrome/</guid>
       <description>Jadi, waktu itu habis mengunjungi sebuah situs dan secara tidak sengaja (atau sengaja mungkin ya :D) saya mengizinkan notifikasi pada situs lidgrain.pro.
 Secara otomatis setiap buka browser chrome, notifikasi tersebut selalu muncul. Untuk menghilangkannya bisa dengan cara berikut. 1. Buka pengaturan pada chrome 2. Klik Advanced &amp;gt; Pada bagian Privacy and security &amp;gt; Pilih Content Settings &amp;gt; Pilih Notifications 3. Cari lidgrain.pro dan Pilih menu di kanan &amp;gt; Pilih Remove </description>
     </item>
