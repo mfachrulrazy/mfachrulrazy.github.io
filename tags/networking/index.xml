@@ -6,10 +6,21 @@
     <description>Recent content in networking on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Konfigurasi Nmtui Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2018/netmui-cent/</link>
+      <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/netmui-cent/</guid>
+      <description>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.
+Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan nmtui.
+ Jalankan nmtui dari terminal # nmtui  Pilih edit connection &amp;gt; kemudian pilih Wired connection 1 &amp;gt; pilih Edit  Kemudian ubah nama profil dan IPv4 configuration menjadi manual  Kemudian OK &amp;gt; Back &amp;gt; Quit Restart service network  </description>
+    </item>
     
     <item>
       <title>Error Loopback Mikrotik</title>
@@ -19,6 +30,16 @@
       <guid>https://mfachrulrazy.github.io/2017/err-loopback/</guid>
       <description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
 Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description>
+    </item>
+    
+    <item>
+      <title>Networking pada Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/net-centos7/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/net-centos7/</guid>
+      <description>Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
+ Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut IPADDR= NETMASK= GATEWAY= DNS1= DNS2= #onboot untuk mengatur interface aktif pada saat server baru dinyalakan ONBOOT=yes #bootproto untuk mengatur IP apakah dhcp atau static BOOTPROTO=dhcp/static Simpan file dan keluar.</description>
     </item>
     
     <item>

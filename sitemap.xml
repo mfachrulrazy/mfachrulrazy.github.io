@@ -92,16 +92,6 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/ubuntu/</loc>
-      
-      <lastmod>2019-05-30T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://mfachrulrazy.github.io/tags/ubuntu/</loc>
       
       <lastmod>2019-05-30T00:00:00+00:00</lastmod>
@@ -112,7 +102,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/web-server/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/ubuntu/</loc>
       
       <lastmod>2019-05-30T00:00:00+00:00</lastmod>
       
@@ -123,6 +113,16 @@
   
     <url>
       <loc>https://mfachrulrazy.github.io/categories/web-server/</loc>
+      
+      <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://mfachrulrazy.github.io/tags/web-server/</loc>
       
       <lastmod>2019-05-30T00:00:00+00:00</lastmod>
       
@@ -352,7 +352,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/docker/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/docker/</loc>
       
       <lastmod>2019-02-01T00:00:00+00:00</lastmod>
       
@@ -362,7 +362,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/docker/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/docker/</loc>
       
       <lastmod>2019-02-01T00:00:00+00:00</lastmod>
       
@@ -382,7 +382,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/devops/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/devops/</loc>
       
       <lastmod>2019-01-12T08:32:46+08:00</lastmod>
       
@@ -392,7 +392,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/devops/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/devops/</loc>
       
       <lastmod>2019-01-12T08:32:46+08:00</lastmod>
       
@@ -492,7 +492,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/server/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/server/</loc>
       
       <lastmod>2018-11-17T00:00:00+00:00</lastmod>
       
@@ -502,7 +502,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/server/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/server/</loc>
       
       <lastmod>2018-11-17T00:00:00+00:00</lastmod>
       
@@ -652,7 +652,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/git/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/git/</loc>
       
       <lastmod>2018-09-04T00:00:00+00:00</lastmod>
       
@@ -662,7 +662,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/git/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/git/</loc>
       
       <lastmod>2018-09-04T00:00:00+00:00</lastmod>
       
@@ -882,16 +882,6 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/oracle/</loc>
-      
-      <lastmod>2018-03-20T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://mfachrulrazy.github.io/tags/oracle/</loc>
       
       <lastmod>2018-03-20T00:00:00+00:00</lastmod>
@@ -902,7 +892,27 @@
     </url>
   
     <url>
+      <loc>https://mfachrulrazy.github.io/categories/oracle/</loc>
+      
+      <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://mfachrulrazy.github.io/2018/netmui-cent/</loc>
+      
+      <lastmod>2018-02-17T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://mfachrulrazy.github.io/tags/networking/</loc>
       
       <lastmod>2018-02-17T00:00:00+00:00</lastmod>
       
@@ -962,16 +972,6 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/mikrotik/</loc>
-      
-      <lastmod>2017-12-23T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://mfachrulrazy.github.io/categories/mikrotik/</loc>
       
       <lastmod>2017-12-23T00:00:00+00:00</lastmod>
@@ -982,7 +982,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/networking/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/mikrotik/</loc>
       
       <lastmod>2017-12-23T00:00:00+00:00</lastmod>
       
@@ -1112,7 +1112,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/mysql/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/mysql/</loc>
       
       <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
@@ -1122,7 +1122,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/mysql/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/mysql/</loc>
       
       <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
@@ -1382,7 +1382,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/proxmox/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/proxmox/</loc>
       
       <lastmod>2017-07-12T00:00:00+00:00</lastmod>
       
@@ -1392,7 +1392,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/proxmox/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/proxmox/</loc>
       
       <lastmod>2017-07-12T00:00:00+00:00</lastmod>
       

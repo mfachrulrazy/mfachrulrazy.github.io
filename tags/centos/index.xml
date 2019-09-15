@@ -73,6 +73,17 @@ Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # y
     </item>
     
     <item>
+      <title>Konfigurasi Nmtui Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2018/netmui-cent/</link>
+      <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/netmui-cent/</guid>
+      <description>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.
+Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan nmtui.
+ Jalankan nmtui dari terminal # nmtui  Pilih edit connection &amp;gt; kemudian pilih Wired connection 1 &amp;gt; pilih Edit  Kemudian ubah nama profil dan IPv4 configuration menjadi manual  Kemudian OK &amp;gt; Back &amp;gt; Quit Restart service network  </description>
+    </item>
+    
+    <item>
       <title>Install Mysql Centos 7</title>
       <link>https://mfachrulrazy.github.io/2017/install-mysql-cent/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
@@ -80,6 +91,16 @@ Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # y
       <guid>https://mfachrulrazy.github.io/2017/install-mysql-cent/</guid>
       <description>Instalasi mysql versi community pada centos dapat dilakukan dengan cara download paket mysql terlebih dahulu dari repository mysql.
  Download dan tambahkan repo. # wget http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm # sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm # yum update Install mysql dan jalankan servisnya # yum install mysql-server # systemctl start mysqld Jalankan script mysql_secure_installation setelah selesai menginstall mysql # mysql_secure_installation  Install Mysql Client  Download file repositori mysql dari situs resminya (versi mysql community) # wget https://repo.</description>
+    </item>
+    
+    <item>
+      <title>Networking pada Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/net-centos7/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/net-centos7/</guid>
+      <description>Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
+ Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut IPADDR= NETMASK= GATEWAY= DNS1= DNS2= #onboot untuk mengatur interface aktif pada saat server baru dinyalakan ONBOOT=yes #bootproto untuk mengatur IP apakah dhcp atau static BOOTPROTO=dhcp/static Simpan file dan keluar.</description>
     </item>
     
     <item>
