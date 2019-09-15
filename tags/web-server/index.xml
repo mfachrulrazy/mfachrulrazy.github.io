@@ -23,6 +23,17 @@ Install Paket pendukung Let&amp;rsquo;s Encrypt Install paket yang dibutuhkan ol
     </item>
     
     <item>
+      <title>Redirect Domain URL pada Nginx</title>
+      <link>https://mfachrulrazy.github.io/2018/konfig-nginx/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/konfig-nginx/</guid>
+      <description>Redirect alamat situs dengan sub foldernya dengan cara edit file konfigurasi situs yang diinginkan, sebagai contoh domain domainku.com akan di-redirect ke domainbaru.com. Edit file konfigurasi di folder konfigurasi nginx ../conf.d/domainku.conf
+Tambahkan baris berikut server { ... return 301 $scheme://domainbaru.com$request_uri; ... }
+301 berarti redirect secara permanen</description>
+    </item>
+    
+    <item>
       <title>Install Django</title>
       <link>https://mfachrulrazy.github.io/2018/install-django/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>

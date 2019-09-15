@@ -31,5 +31,25 @@ Install Paket pendukung Let&amp;rsquo;s Encrypt Install paket yang dibutuhkan ol
       <description>Install ftp server menggunakan paket vsftpd $ sudo apt-get update $ sudo apt-get install vsftpd Backup file konfigurasi terlebih dahulu $ sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig Cek firewall jika aktif bisa di disable atau allow port dari ftp $ sudo ufw status $ sudo ufw allow 20/tcp $ sudo ufw allow 21/tcp $ sudo ufw allow 990/tcp $ sudo ufw allow 40000:50000/tcp $ sudo ufw status Tambahkan user ftp $ sudo adduser ftpuser Buat direktori yang akan berfungsi sebagai chroot dan sebuah direktori yang dapat ditulis dan dihapus $ sudo mkdir /home/ftpuser/ftp $ sudo chown nobody:nogroup /home/ftpuser/ftp $ sudo chmod a-w /home/ ftpuser /ftp Buat direktori yang dapat ditulis (writeable) dan buatkan ownership pada ftpuser $ sudo mkdir /home/ftpuser/ftp/files $ sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files Kemudian edit file /etc/vsftpd.</description>
     </item>
     
+    <item>
+      <title>Linux Command Part 2</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command2/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command2/</guid>
+      <description>Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;..... Maintenance IPtables # ifconfig eth0 | grep inet | awk &amp;#39;{ print $2 }&amp;#39; # iptables -I INPUT -p tcp —dport 80 -j ACCEPT # service iptables save
+Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 1</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command1/</link>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command1/</guid>
+      <description>Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
+ Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</description>
+    </item>
+    
   </channel>
 </rss>

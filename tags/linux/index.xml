@@ -75,6 +75,17 @@ Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-c
     </item>
     
     <item>
+      <title>Install Linux dari Windows Store</title>
+      <link>https://mfachrulrazy.github.io/2018/linux-win-store/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/linux-win-store/</guid>
+      <description> Pertama harus mengaktifkan WSL atau Windows Subsystem for Linux
+ Caranya, buka powershell sebagai Administrator dan jalankan perintah berikut:
+&amp;gt; Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux Restart PC Kemudian install Linux dari Windows Store  </description>
+    </item>
+    
+    <item>
       <title>Mengenal Rsync</title>
       <link>https://mfachrulrazy.github.io/2017/about-rsync/</link>
       <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
@@ -125,6 +136,46 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
     </item>
     
     <item>
+      <title>Linux Shell Shortcut</title>
+      <link>https://mfachrulrazy.github.io/2017/linux-shell-sc/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/linux-shell-sc/</guid>
+      <description>Berikut beberapa shortcut yang sering digunakan dalam shell linux.
+Berpindah ke akhir baris Ctrl + E Berpindah ke awal baris Ctrl + A Maju satu kata Esc + F Mundur satu kata Esc + B Keluar secara paksa dari aplikasi Ctrl + C Suspend aplikasi Ctrl + Z Menjalankan aplikasi di foreground # fg Menjalankan aplikasi di background # bg Untuk lebih lengkapnya bisa cek manual dari bash # man bash</description>
+    </item>
+    
+    <item>
+      <title>Mounting eksternal Drive di Linux</title>
+      <link>https://mfachrulrazy.github.io/2017/mount-linux/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/mount-linux/</guid>
+      <description>Mounting dengan file system ntfs.
+Pertama melihat daftar disk # fdisk -l
+Cek filesystem # file -s /dev/sdxx
+Buat direktori mount point # mkdir /mnt/externalhdd
+Mounting # mount -t ntfs-3g /dev/sdxx /mnt/externalhdd
+Unmounting (eject): # umount /dev/sdxx</description>
+    </item>
+    
+    <item>
+      <title>Pengaturan Waktu Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/konfig-time-cent7/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/konfig-time-cent7/</guid>
+      <description>Pengaturan waktu dan tanggal pada Centos bisa dengan menggunakan tools timedatectl.
+Untuk melihat pengaturan waktu yang terpasang # timedatectl Mengatur tanggal
+# timedatectl set-time [YYYY-MM-DD] Mengatur waktu gunakan format 24H
+# timedatectl set-time [HHSS] Pengaturan waktu berdasarkan waktu lokal
+# timedatectl set-local-rtc yes Pengaturan waktu berdasarkan UTC
+# timedatectl set-local-rtc no Melihat zona lokasi
+# timedatectl list-timezones ... Asia/Makassar ... Mengatur zona lokasi
+# timedatectl set-timezone Asia/Makassar Mengatur waktu dengan menggunakan NTP # timedatectl set-ntp yes Tanpa menggunakan NTP # timedatectl set-ntp no</description>
+    </item>
+    
+    <item>
       <title>Belajar Vi dan Vim</title>
       <link>https://mfachrulrazy.github.io/2016/belajar-vim/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
@@ -144,6 +195,26 @@ Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut b
       <guid>https://mfachrulrazy.github.io/2016/about-cron/</guid>
       <description>Apa itu cron? Jadi, cron adalah sebuah software utilitas di lingkungan linux/unix yang berfungsi sebagai pembuat jadwal pekerjaan berdasarkan waktu yang bisa ditentukan.
 Untuk membuat cron baru # crontab -e Melihat daftar cron # crontab -l Setiap perintah yang dijalankan di cron, akan mengirim ke email secara default dan biasanya dalam terminal akan muncul You have new mail in /var/spool/mail/root Isi dari file /var/spool/mail/root adalah proses dari script yang dijalankan.</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 2</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command2/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command2/</guid>
+      <description>Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;..... Maintenance IPtables # ifconfig eth0 | grep inet | awk &amp;#39;{ print $2 }&amp;#39; # iptables -I INPUT -p tcp —dport 80 -j ACCEPT # service iptables save
+Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 1</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command1/</link>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command1/</guid>
+      <description>Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
+ Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</description>
     </item>
     
   </channel>

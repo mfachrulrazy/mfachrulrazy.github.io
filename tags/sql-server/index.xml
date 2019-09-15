@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Belajar SQL Server Part 2</title>
+      <link>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</guid>
+      <description>Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
+Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio yang biasanya penyebabnya adalah masih ada koneksi yang tidak dapat diputus koneksinya. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill + &amp;#39;kill &amp;#39; + CONVERT(varchar(5), spid) + &amp;#39;;&amp;#39; FROM master.</description>
+    </item>
+    
+    <item>
       <title>Attach dan Import Database SQL Server</title>
       <link>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</link>
       <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
@@ -28,6 +38,17 @@
       <guid>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</guid>
       <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
 Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
+    </item>
+    
+    <item>
+      <title>Belajar SQL Server Part 1</title>
+      <link>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</link>
+      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</guid>
+      <description>SQL Server merupakan salah satu Relational Database Management System(RDBMS) yang dibuat oleh Micorosoft. Sebagai Database server, dia termasuk dalam sebuah produk yang digunakan untuk menyimpan dan mengambil data dari sebuah aplikasi.
+Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
+1. Jalankan file master instalasi sql server (biasanya berbentuk iso) &amp;gt; Pilih bagian Installation &amp;gt; Pilih New SQL Server stand-alone&amp;hellip;.. 2. Bagian Product Key, masukan lisensi atau produk sql server yang diinginkan &amp;gt; klik Next 3.</description>
     </item>
     
   </channel>

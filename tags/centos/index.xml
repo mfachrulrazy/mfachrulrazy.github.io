@@ -93,6 +93,16 @@ Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # y
     </item>
     
     <item>
+      <title>Linux Shell Shortcut</title>
+      <link>https://mfachrulrazy.github.io/2017/linux-shell-sc/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/linux-shell-sc/</guid>
+      <description>Berikut beberapa shortcut yang sering digunakan dalam shell linux.
+Berpindah ke akhir baris Ctrl + E Berpindah ke awal baris Ctrl + A Maju satu kata Esc + F Mundur satu kata Esc + B Keluar secara paksa dari aplikasi Ctrl + C Suspend aplikasi Ctrl + Z Menjalankan aplikasi di foreground # fg Menjalankan aplikasi di background # bg Untuk lebih lengkapnya bisa cek manual dari bash # man bash</description>
+    </item>
+    
+    <item>
       <title>Install Php 5.4 Centos 7</title>
       <link>https://mfachrulrazy.github.io/2017/install-php5-cent/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
@@ -112,6 +122,36 @@ Instalasi Server/Proxy/Frontend  Install Zabbix Server dengan dukungan mysql # y
     </item>
     
     <item>
+      <title>Mounting eksternal Drive di Linux</title>
+      <link>https://mfachrulrazy.github.io/2017/mount-linux/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/mount-linux/</guid>
+      <description>Mounting dengan file system ntfs.
+Pertama melihat daftar disk # fdisk -l
+Cek filesystem # file -s /dev/sdxx
+Buat direktori mount point # mkdir /mnt/externalhdd
+Mounting # mount -t ntfs-3g /dev/sdxx /mnt/externalhdd
+Unmounting (eject): # umount /dev/sdxx</description>
+    </item>
+    
+    <item>
+      <title>Pengaturan Waktu Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/konfig-time-cent7/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/konfig-time-cent7/</guid>
+      <description>Pengaturan waktu dan tanggal pada Centos bisa dengan menggunakan tools timedatectl.
+Untuk melihat pengaturan waktu yang terpasang # timedatectl Mengatur tanggal
+# timedatectl set-time [YYYY-MM-DD] Mengatur waktu gunakan format 24H
+# timedatectl set-time [HHSS] Pengaturan waktu berdasarkan waktu lokal
+# timedatectl set-local-rtc yes Pengaturan waktu berdasarkan UTC
+# timedatectl set-local-rtc no Melihat zona lokasi
+# timedatectl list-timezones ... Asia/Makassar ... Mengatur zona lokasi
+# timedatectl set-timezone Asia/Makassar Mengatur waktu dengan menggunakan NTP # timedatectl set-ntp yes Tanpa menggunakan NTP # timedatectl set-ntp no</description>
+    </item>
+    
+    <item>
       <title>Firewall CMD Centos</title>
       <link>https://mfachrulrazy.github.io/2017/firewall-cmd/</link>
       <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
@@ -124,6 +164,26 @@ Menambahkan servis sercara permanent # firewall-cmd --permanent --add-service=ht
 Menambahkan port secara permanent # firewall-cmd --permanent --add-port=2323
 Menyimpan rule firewall # firewall-cmd --reload
 Menghapus rule firewall # firewall-cmd --zone=public --remove-port=2323/tcp # firewall-cmd --runtime-to-permanent # firewall-cmd --reload</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 2</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command2/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command2/</guid>
+      <description>Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;..... Maintenance IPtables # ifconfig eth0 | grep inet | awk &amp;#39;{ print $2 }&amp;#39; # iptables -I INPUT -p tcp —dport 80 -j ACCEPT # service iptables save
+Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 1</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command1/</link>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command1/</guid>
+      <description>Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
+ Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</description>
     </item>
     
   </channel>

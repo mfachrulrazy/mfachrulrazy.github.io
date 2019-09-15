@@ -6,10 +6,21 @@
     <description>Recent content in open source on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Linux dari Windows Store</title>
+      <link>https://mfachrulrazy.github.io/2018/linux-win-store/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/linux-win-store/</guid>
+      <description> Pertama harus mengaktifkan WSL atau Windows Subsystem for Linux
+ Caranya, buka powershell sebagai Administrator dan jalankan perintah berikut:
+&amp;gt; Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux Restart PC Kemudian install Linux dari Windows Store  </description>
+    </item>
     
     <item>
       <title>Install ChocoLatey di Windows</title>
@@ -32,6 +43,26 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
 Sedangkan Vim hanyalah pengembangan dari Vi, yang biasa dikenal dengan vim = vi improved yang juga sangat stabil dan dapat ditambahkan berbagai macam plugin.
 Pada saat masuk ke program vi, maka kita akan berada pada mode command. Berkut beberapa perintah dasar dari editor vim/vi:
  i : untuk beralih ke mode insert atau memasukkan teks.</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 2</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command2/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command2/</guid>
+      <description>Konfigurasi IPTables IPTables berfungsi sebagai firewall pada linux. Untuk melihat daftar semua iptables $ sudo iptables -S Untuk menambah iptables $ sudo iptables -A .....&amp;lt;rule_iptable&amp;gt;..... Untuk menghapus iptables $ sudo iptables -D .....&amp;lt;rule_iptable&amp;gt;..... Maintenance IPtables # ifconfig eth0 | grep inet | awk &amp;#39;{ print $2 }&amp;#39; # iptables -I INPUT -p tcp —dport 80 -j ACCEPT # service iptables save
+Mengahpus paket Instalasi Menghapus paket yang telah terinstall pada centos bisa menggunakan perintah berikut # rm -i &amp;lt;namafile&amp;gt; Untuk menghapus sisa dependensi suatu paket yang tidak diketahui dapat menggunakan perintah autoremove # yum autoremove Selain itu dapat menggunakan package cleanup tetapi sebelumnya install paket yum-utils # package-cleanup --leaves Perintah di atas akan memperlihatkan daftar paket yang terinstall</description>
+    </item>
+    
+    <item>
+      <title>Linux Command Part 1</title>
+      <link>https://mfachrulrazy.github.io/2015/linux-command1/</link>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2015/linux-command1/</guid>
+      <description>Berikut beberapa perintah-perintah dasar di Centos-based maupun di Ubuntu-based yang sering digunakan oleh para sistem administrator.
+ Mengganti owner dari direktori. Contoh direktori /tmp # chown -R apache:apache /tmp  keterangan: -R artinya seluruh direktori dan file di dalam folder tmp akan diterapkan juga pergantian ownership apache:apache  Mencari tipe file tertentu (dalam hal ini file .conf) dari folder root / # find / -type f -name &amp;#34;*.conf&amp;#34; Melihat ukuran file # du -h namafile Melihat isi direktori disortir berdasarkan ukuran # ls -lSh Melihat ukuran isi suatu direktori # du -h --max-depth=1  &amp;ndash;max-depth=1 adalah kedalaman sub-direktori yang akan ditampilkan, dalam hal ini hanya 1 level dibawah direktori yang dipilih.</description>
     </item>
     
   </channel>

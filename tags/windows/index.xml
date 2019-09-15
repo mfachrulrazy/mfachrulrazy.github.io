@@ -6,10 +6,23 @@
     <description>Recent content in windows on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Formula Concat dan Vlookup pada Excel</title>
+      <link>https://mfachrulrazy.github.io/2019/join-cell-formula/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/join-cell-formula/</guid>
+      <description>Rumus untuk menggabungkan isi cell dalam excel dengan menggunakan vlookup dan concat.
+Di sini ada 2 sheet yaitu:
+1. Sheet1 untuk menyimpan hasil dari vlookup dan concat dari sheet berikutnya.
+2. Daftar Barang adalah tabel referensi untuk sheet1.
+Rumus Sheet1 Rumus untuk mengambil nama server =IFERROR(VLOOKUP(C3;&amp;#39;Daftar Barang&amp;#39;!$A$4:$B$50;2;FALSE);&amp;#34;&amp;#34;) Rumus untuk menggabungkan isi cell dari vlookup =IFERROR(CONCATENATE(VLOOKUP(D3;&amp;#39;Daftar Barang&amp;#39;!$D$4:$E$28;2;FALSE);&amp;#34; &amp;gt;&amp;gt; &amp;#34;;VLOOKUP(E3;&amp;#39;Daftar Barang&amp;#39;!$D$4:$E$28;2;FALSE));&amp;#34;&amp;#34;)</description>
+    </item>
     
     <item>
       <title>I/O Stream pada Windows</title>
@@ -53,6 +66,26 @@ Restart Server.</description>
       
       <guid>https://mfachrulrazy.github.io/2018/err-rdp-credssp/</guid>
       <description>Terjadi error Pada saat mencoba remote desktop ke salah satu server windows di kantor. Versi windows yang digunakan Penyebab Setelah membaca beberapa artikel, ini adalah kelemahan dari RDP. Pada bulan Mei 2018 microsoft telah mengeluarkan update security untuk RDP ini. Jadi ketika ingin melakukan remote desktop, komputer sumber dan tujuan harus ter-update untuk security di RDP ini. Penyelesaian  Pertama Cek update dari pc client terlebih dahulu (yang me-remote)  Jika update sudah terinstall di client tetapi muncul error, berarti update belum terinstall di server.</description>
+    </item>
+    
+    <item>
+      <title>List Servis pada Windows Server</title>
+      <link>https://mfachrulrazy.github.io/2018/list-service-winsrv/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/list-service-winsrv/</guid>
+      <description>Melihat seluruh servis yang ada pada windows server. Buka power shell dan ketikkan perintah berikut &amp;gt; Get-Service Melihat servis dengan awalan s dan di-sort berdasarkan status (running/stopped) &amp;gt; Get-Service &amp;#34;s*&amp;#34; | Sort-Object status Untuk melihat servis yang sedang berjalan &amp;gt; net start</description>
+    </item>
+    
+    <item>
+      <title>Install Linux dari Windows Store</title>
+      <link>https://mfachrulrazy.github.io/2018/linux-win-store/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/linux-win-store/</guid>
+      <description> Pertama harus mengaktifkan WSL atau Windows Subsystem for Linux
+ Caranya, buka powershell sebagai Administrator dan jalankan perintah berikut:
+&amp;gt; Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux Restart PC Kemudian install Linux dari Windows Store  </description>
     </item>
     
     <item>
@@ -110,6 +143,17 @@ Firefox Chrome Edge Penyebab dan solusi  Periksa apakah ada addons yang bermasal
       <guid>https://mfachrulrazy.github.io/2017/int-baru-vbox/</guid>
       <description> Untuk membuat interface baru pada versi virtualbox 5.2.12 ke atas dapat melalui
 File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang sudah ada bisa memilih Properties   </description>
+    </item>
+    
+    <item>
+      <title>Konversi Tipe Harddisk pada Windows</title>
+      <link>https://mfachrulrazy.github.io/2017/mbr-hdd-win/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/mbr-hdd-win/</guid>
+      <description>Sebelum melakukan konversi HD, backup seluruh data yang ada di dalamnya, karena konversi mbr ke gpt akan melakukan pembersihan isi seluruh harddisk. Setelah data di-backup lakukan langkah berikut:
+1. Matikan pc, dan colok usb installer windows
+2. Nyalakan pc dan booting ke usb 3. Setelah itu pada saat di jendela Windows Setup tekan Shift + F10 untuk masuk ke command prompt &amp;gt; diskpart 4. Identifikasi drive untuk reformat &amp;gt; list disk 5.</description>
     </item>
     
     <item>
