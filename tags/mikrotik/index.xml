@@ -32,6 +32,29 @@ Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu l
     </item>
     
     <item>
+      <title>Port Forwarding Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/2017/port-forwarding/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/port-forwarding/</guid>
+      <description>Biasanya dalam sebuah jaringan kantor, memiliki IP Publik yang terbatas. Untuk memanfaatkan IP tersebut ke banyak server bisa menggunakan port forwarding.
+1. Sebelum membuat port forwarding, pastikan port yang akan digunakan tidak ada dipakai oleh mikrotik di winbox pada menu IP &amp;gt; services
+2. Setelah itu lakukan konfigurasi port forwarding di bagian IP &amp;gt; Firewall &amp;gt; NAT
+3. Tekan tombol + &amp;gt; Tab General
+4. Bisa di-isikan bagian In Interface adalah interface yang ke internet.</description>
+    </item>
+    
+    <item>
+      <title>VPN PPTP pada Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/2017/pptp-mikrotik/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/pptp-mikrotik/</guid>
+      <description>Kadangkala ketika kita berada di luar kantor (tidak terkoneksi dengan jaringan lokal kantor), kita ingin me-remote perangkat tertentu yang berada di kantor. Salah satu cara agar bisa membuat koneksi seolah-olah berada di jaringan kantor adalah VPN. Pada postingan kali ini VPN yang digunakan adalah PPTP dari Mikrotik. Berikut langkah instalasinya.
+1. Pastikan paket PPP telah terinstall di Mikrotik System &amp;gt; Packages 2. Kemudian masuk pada menu PPP &amp;gt; tab Interfaces &amp;gt; klik PPTP Server &amp;gt; centang pada bagian Enabled dan pastikan pada bagian Default Profile menggunakan default-encryption 3.</description>
+    </item>
+    
+    <item>
       <title>Error Gateway Time Out</title>
       <link>https://mfachrulrazy.github.io/2017/err-gateway-to/</link>
       <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>

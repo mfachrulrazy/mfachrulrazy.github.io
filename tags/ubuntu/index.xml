@@ -23,6 +23,17 @@ Install Paket pendukung Let&amp;rsquo;s Encrypt Install paket yang dibutuhkan ol
     </item>
     
     <item>
+      <title>Listen &amp; Open Port Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/2018/port-ubuntu/</link>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/port-ubuntu/</guid>
+      <description>Melihat Port/Socket yang aktif Melihat port yang sedang listen bisa menggunakan 3 tools berikut.
+Perintah lsof Perintah lsof (list open file) $ sudo lsof -i -P -n $ sudo lsof -i -P -n | grep LISTEN
+Perintah netstat Perintah netstat adalah perintah yang terdapat pada beberapa versi linux lama, perintah terbaru adalah ss. $ netstat -tulpn | grep LISTEN Perintah ss $ sudo ss -tulw $ sudo ss -tulwn Parameter dari netstat/ss:</description>
+    </item>
+    
+    <item>
       <title>Install Vsftp Ubuntu 16.04</title>
       <link>https://mfachrulrazy.github.io/2018/install-ftp-ubuntu/</link>
       <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
