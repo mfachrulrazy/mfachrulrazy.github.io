@@ -1,393 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noodp"/>
-  
-  
-  
-  
-  
-  <link rel="prev" href="https://mfachrulrazy.github.io/2018/install-snmp-linux/" />
-  <link rel="next" href="https://mfachrulrazy.github.io/2018/ssh-key-putty/" />
-  <link rel="canonical" href="https://mfachrulrazy.github.io/2018/install-zabbix-agent/" />
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>
-       
-       
-           Install Zabbix Agent | MFR Official Blog
-       
-  </title>
-  <meta name="title" content="Install Zabbix Agent | MFR Official Blog">
-    
-  
-  <link rel="stylesheet" href="/font/iconfont.css">
-  <link rel="stylesheet" href="/css/main.min.css">
-
-
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Install Zabbix Agent"/>
-<meta name="twitter:description" content="Install Zabbix Agent pada Windows Pertama download zabbix agent dari situs resminya di sini.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content=noodp><link rel=prev href=https://mfachrulrazy.github.io/2018/install-snmp-linux/><link rel=next href=https://mfachrulrazy.github.io/2018/ssh-key-putty/><link rel=canonical href=https://mfachrulrazy.github.io/2018/install-zabbix-agent/><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>Install Zabbix Agent | MFR Official Blog</title><meta name=title content="Install Zabbix Agent | MFR Official Blog"><link rel=stylesheet href=/font/iconfont.css><link rel=stylesheet href=/css/main.min.css><meta name=twitter:card content=summary><meta name=twitter:title content="Install Zabbix Agent"><meta name=twitter:description content="Install Zabbix Agent pada Windows Pertama download zabbix agent dari situs resminya di sini.
 Kemudian ekstrak file tersebut dan letakkan di dalam direktori C:\zabbix_agent.
 Pindahkan file ...\conf\zabbix_agentd.conf dan ...\bin\zabbix_agentd.exe ke direktori zabbix_agent.
 Edit file zabbix_agentd.conf pada bagian berikut. ... Server=&lt;ip server zabbix&gt; ... ServerActive=&lt;ip server zabbix&gt; ..
 Setelah itu install agent zabbix dengan menggunakan file konfigurasi yang telah diedit.
 Buka cmd (sebagai administrator)
-&gt; zabbix_agentd.exe -c zabbix_config.conf --install Setelah install, jalankan servis zabbix &gt; zabbix_agentd."/>
-
-  <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Install Zabbix Agent",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https:\/\/mfachrulrazy.github.io\/2018\/install-zabbix-agent\/"
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https:\/\/mfachrulrazy.github.io\/cover.png",
-    "width":  800 ,
-    "height":  600 
-  },
-  "genre": "posts",
-  "keywords": "monitoring, centos",
-  "wordcount":  241 ,
-  "url": "https:\/\/mfachrulrazy.github.io\/2018\/install-zabbix-agent\/",
-  "datePublished": "2018-07-06T00:00:00\x2b00:00",
-  "dateModified": "2018-07-06T00:00:00\x2b00:00",
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "MFR",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https:\/\/mfachrulrazy.github.io\/logo.png",
-      "width":  127 ,
-      "height":  40 
-    }
-  },
-  "author": {
-    "@type": "Person",
-    "name": "MFR"
-  },
-  "description": ""
-}
-</script>
-</head>
-
-  
-
-
-
-  <body class="">
-    <div class="wrapper">
-        <nav class="navbar">
-    <div class="container">
-        <div class="navbar-header header-logo">
-        	<a href="https://mfachrulrazy.github.io/">MFR Official Blog</a>
-        </div>
-        <div class="menu navbar-right">
-                
-                
-                <a class="menu-item" href="/categories/" title="">Categories</a>
-                
-                <a class="menu-item" href="/tags/" title="">Tags</a>
-                
-                <a class="menu-item" href="/about" title="">About</a>
-                
-                <a class="menu-item" href="/ref" title="">References</a>
-                
-                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
-        </div>
-    </div>
-</nav>
-<nav class="navbar-mobile" id="nav-mobile" style="display: none">
-     <div class="container">
-        <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="https://mfachrulrazy.github.io/">MFR Official Blog</a></div>
-            <div class="menu-toggle">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-     
-          <div class="menu" id="mobile-menu">
-                
-                
-                <a class="menu-item" href="/categories/" title="">Categories</a>
-                
-                <a class="menu-item" href="/tags/" title="">Tags</a>
-                
-                <a class="menu-item" href="/about" title="">About</a>
-                
-                <a class="menu-item" href="/ref" title="">References</a>
-                
-        </div>
-    </div>
-</nav>
-
-    	 <main class="main">
-          <div class="container">
-      		
-<article class="post-warp">
-    <header class="post-header">
-        <h1 class="post-title">Install Zabbix Agent</h1>
-        <div class="post-meta">
-            Written by <a href="https://mfachrulrazy.github.io/" rel="author">MFR</a> with ♥ 
-                <span class="post-time">
-                    on <time datetime=2018-07-06 >6 July 2018</time>
-                </span>
-                in
-                <i class="iconfont icon-folder"></i>
-                <span class="post-category">
-                        <a href="https://mfachrulrazy.github.io/categories/monitoring/"> monitoring </a>
-                        <a href="https://mfachrulrazy.github.io/categories/centos/"> centos </a>
-                        
-                </span>
-                <i class="iconfont icon-timer"></i>
-                2 min
-        </div>
-    </header>
-    <div class="post-content">
-        
-
-        
-            
-        
-
-        
-        
-     
-          
-          
-          
-
-          
-          
-          
-
-          
-
-<h3 id="install-zabbix-agent-pada-windows">Install Zabbix Agent pada Windows</h3>
-
-<p>Pertama download zabbix agent dari situs resminya di <a href="https://www.zabbix.com/download_agents" rel="nofollow noreferrer" target="_blank">sini</a>.<br />
-Kemudian ekstrak file tersebut dan letakkan di dalam direktori C:\zabbix_agent.<br />
-Pindahkan file <code>...\conf\zabbix_agentd.conf</code> dan <code>...\bin\zabbix_agentd.exe</code> ke direktori zabbix_agent.<br />
-Edit file <code>zabbix_agentd.conf</code> pada bagian berikut.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">...
+&gt; zabbix_agentd.exe -c zabbix_config.conf --install Setelah install, jalankan servis zabbix &gt; zabbix_agentd."><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Install Zabbix Agent","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/mfachrulrazy.github.io\/2018\/install-zabbix-agent\/"},"image":{"@type":"ImageObject","url":"https:\/\/mfachrulrazy.github.io\/cover.png","width":800,"height":600},"genre":"posts","keywords":"monitoring, centos","wordcount":241,"url":"https:\/\/mfachrulrazy.github.io\/2018\/install-zabbix-agent\/","datePublished":"2018-07-06T00:00:00\x2b00:00","dateModified":"2018-07-06T00:00:00\x2b00:00","publisher":{"@type":"Organization","name":"MFR","logo":{"@type":"ImageObject","url":"https:\/\/mfachrulrazy.github.io\/logo.png","width":127,"height":40}},"author":{"@type":"Person","name":"MFR"},"description":""}</script></head><body><div class=wrapper><nav class=navbar><div class=container><div class="navbar-header header-logo"><a href=https://mfachrulrazy.github.io/>MFR Official Blog</a></div><div class="menu navbar-right"><a class=menu-item href=/categories/>Categories</a>
+<a class=menu-item href=/tags/>Tags</a>
+<a class=menu-item href=/about>About</a>
+<a class=menu-item href=/ref>References</a>
+<a href=javascript:void(0); class=theme-switch><i class="iconfont icon-dribbble"></i></a>&nbsp;</div></div></nav><nav class=navbar-mobile id=nav-mobile style=display:none><div class=container><div class=navbar-header><div><a href=javascript:void(0); class=theme-switch><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href=https://mfachrulrazy.github.io/>MFR Official Blog</a></div><div class=menu-toggle><span></span><span></span><span></span></div></div><div class=menu id=mobile-menu><a class=menu-item href=/categories/>Categories</a>
+<a class=menu-item href=/tags/>Tags</a>
+<a class=menu-item href=/about>About</a>
+<a class=menu-item href=/ref>References</a></div></div></nav><main class=main><div class=container><article class=post-warp><header class=post-header><h1 class=post-title>Install Zabbix Agent</h1><div class=post-meta>Written by <a href=https://mfachrulrazy.github.io/ rel=author>MFR</a> with ♥
+<span class=post-time>on <time datetime=2018-07-06>6 July 2018</time></span>
+in
+<i class="iconfont icon-folder"></i><span class=post-category><a href=https://mfachrulrazy.github.io/categories/monitoring/>monitoring</a>
+<a href=https://mfachrulrazy.github.io/categories/centos/>centos</a></span>
+<i class="iconfont icon-timer"></i>2 min</div></header><div class=post-content><h3 id=install-zabbix-agent-pada-windows>Install Zabbix Agent pada Windows</h3><p>Pertama download zabbix agent dari situs resminya di <a href=https://www.zabbix.com/download_agents rel="nofollow noreferrer" target=_blank>sini</a>.<br>Kemudian ekstrak file tersebut dan letakkan di dalam direktori C:\zabbix_agent.<br>Pindahkan file <code>...\conf\zabbix_agentd.conf</code> dan <code>...\bin\zabbix_agentd.exe</code> ke direktori zabbix_agent.<br>Edit file <code>zabbix_agentd.conf</code> pada bagian berikut.<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cmd data-lang=cmd>...
 Server=&lt;ip server zabbix&gt;
 ...
 ServerActive=&lt;ip server zabbix&gt;
-..</code></pre></div><br />
-Setelah itu install agent zabbix dengan menggunakan file konfigurasi yang telah diedit.<br />
-Buka cmd (sebagai administrator)<br />
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; zabbix_agentd.exe -c zabbix_config.conf --install</code></pre></div>
-Setelah install, jalankan servis zabbix
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">&gt; zabbix_agentd.exe -s</code></pre></div>
-Kemudian terakhir, izinkan zabbix agent untuk terkoneksi keluar dari firewall Windows.
-Zabbix agent menggunakan port 10050.</p>
+..</code></pre></div><br>Setelah itu install agent zabbix dengan menggunakan file konfigurasi yang telah diedit.<br>Buka cmd (sebagai administrator)<br><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cmd data-lang=cmd>&gt; zabbix_agentd.exe -c zabbix_config.conf --install</code></pre></div>Setelah install, jalankan servis zabbix<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cmd data-lang=cmd>&gt; zabbix_agentd.exe -s</code></pre></div>Kemudian terakhir, izinkan zabbix agent untuk terkoneksi keluar dari firewall Windows.
+Zabbix agent menggunakan port 10050.</p><h4 id=error-zabbix-agent>Error Zabbix Agent</h4><p>Terdapat error pada saat menjalankan service zabbix agent<figure><img src=/images/ring.svg data-sizes=auto data-src=/img/zabbix/agent1.png alt class=lazyload><figcaption class=image-caption></figcaption></figure><strong>Solusi:</strong><br>Ubah path direktori dari zabbix agent menjadi <code>C:\zabbix</code></p><h3 id=install-zabbix-agent-pada-ubuntu>Install Zabbix Agent pada Ubuntu</h3><p>Tambahkan repo zabbix<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo wget http://repo.zabbix.com/zabbix/3.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.4-1+xenial_all.deb
 
-<h4 id="error-zabbix-agent">Error Zabbix Agent</h4>
-
-<p>Terdapat error pada saat menjalankan service zabbix agent
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/img/zabbix/agent1.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
-<strong>Solusi:</strong><br />
-Ubah path direktori dari zabbix agent menjadi <code>C:\zabbix</code></p>
-
-<h3 id="install-zabbix-agent-pada-ubuntu">Install Zabbix Agent pada Ubuntu</h3>
-
-<p>Tambahkan repo zabbix
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo wget http://repo.zabbix.com/zabbix/3.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.4-1+xenial_all.deb
-
-$ sudo dpkg -i zabbix-release_3.4-1+xenial_all.deb</code></pre></div>
-Update dan install zabbix agent
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update
-$ sudo apt-get install zabbix-agent</code></pre></div>
-Jalankan servis zabbix agent
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo systemctl start zabbix-agent
-$ sudo systemctl status zabbix-agent</code></pre></div>
-Izinkan zabbix agent di firewall ubuntu
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ufw allow <span style="color:#ae81ff">10050</span></code></pre></div></p>
-
-<h3 id="install-zabbix-agent-pada-centos">Install Zabbix Agent pada Centos</h3>
-
-<p>Tambahkan repo yum
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">##Centos 7</span>
+$ sudo dpkg -i zabbix-release_3.4-1+xenial_all.deb</code></pre></div>Update dan install zabbix agent<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo apt-get update
+$ sudo apt-get install zabbix-agent</code></pre></div>Jalankan servis zabbix agent<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo systemctl start zabbix-agent
+$ sudo systemctl status zabbix-agent</code></pre></div>Izinkan zabbix agent di firewall ubuntu<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo ufw allow <span style=color:#ae81ff>10050</span></code></pre></div></p><h3 id=install-zabbix-agent-pada-centos>Install Zabbix Agent pada Centos</h3><p>Tambahkan repo yum<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>##Centos 7</span>
 $rpm -Uvh http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm
 
-<span style="color:#75715e">##Centos 6</span>
-$sudo rpm -Uvh http://repo.zabbix.com/zabbix/3.4/rhel/6/x86_64/zabbix-release-3.4-1.el6.noarch.rpm</code></pre></div>
-Install paket zabbix agent
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo yum install zabbix-agent</code></pre></div>
-Edit file konfigurasi zabbix di <code>/etc/zabbix/zabbix_agentd.conf</code>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">....
-Server<span style="color:#f92672">=</span>&lt;ip_zabbix_server&gt;
+<span style=color:#75715e>##Centos 6</span>
+$sudo rpm -Uvh http://repo.zabbix.com/zabbix/3.4/rhel/6/x86_64/zabbix-release-3.4-1.el6.noarch.rpm</code></pre></div>Install paket zabbix agent<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo yum install zabbix-agent</code></pre></div>Edit file konfigurasi zabbix di <code>/etc/zabbix/zabbix_agentd.conf</code><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>....
+Server<span style=color:#f92672>=</span>&lt;ip_zabbix_server&gt;
 ....
-ServerActive<span style="color:#f92672">=</span>&lt;ip_zabbix_server&gt;
+ServerActive<span style=color:#f92672>=</span>&lt;ip_zabbix_server&gt;
 ....
-Hostname<span style="color:#f92672">=</span>&lt;hostname_client&gt;</code></pre></div>
-Izinkan port yang digunakan oleh zabbix pada iptables
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo iptables -A INPUT -p tcp -s &lt;ip_zabbix_server&gt; --dport <span style="color:#ae81ff">10050</span> -m state --state NEW,ESTABLISHED -j ACCEPT</code></pre></div>
-Restart zabbix agent
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo service zabbix-agent restart</code></pre></div></p>
-
-    </div>
-
-    <div class="post-copyright">
-             
-            <p class="copyright-item">
-                <span>Author:</span>
-                <span>MFR </span>
-                </p>
-            
-           
-           
-            
-            <p class="copyright-item">
-                
-                <span>Share:</span>
-                <span>
-
-      
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2f2018%2finstall-zabbix-agent%2f&amp;text=Install%20Zabbix%20Agent&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
-          <i class="iconfont icon-twitter"></i>
-        </a>
-        
-      
-      
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2f2018%2finstall-zabbix-agent%2f" target="_blank" title="Share on Facebook">
-          <i class="iconfont icon-facebook"></i>
-        </a>
-        
-      
-      
-      
-      
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2f2018%2finstall-zabbix-agent%2f&amp;title=Install%20Zabbix%20Agent" target="_blank" title="Share on LinkedIn">
-          <i class="iconfont icon-linkedin"></i>
-        </a>
-        
-      
-      
-        
-      
-        
-      
-
-          
-
-          
-
-          
-
-          
-</span>
-                
-            </p>
-
-           
-    </div>
-
-  
-    <div class="post-tags">
-        
-            <section>
-            <i class="iconfont icon-icon-tag"></i>Tag: 
-            
-            <span class="tag"><a href="https://mfachrulrazy.github.io/tags/monitoring/">
-                    #monitoring</a></span>
-            
-            <span class="tag"><a href="https://mfachrulrazy.github.io/tags/centos/">
-                    #centos</a></span>
-            
-            </section>
-        
-        <section>
-                <a href="javascript:window.history.back();">Back</a></span> · 
-                <span><a href="https://mfachrulrazy.github.io/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav">
-        
-        <a href="https://mfachrulrazy.github.io/2018/install-snmp-linux/" class="prev" rel="prev" title="Install SNMP Linux"><i class="iconfont icon-dajiantou"></i>&nbsp;Install SNMP Linux</a>
-         
-        
-        <a href="https://mfachrulrazy.github.io/2018/ssh-key-putty/" class="next" rel="next" title="Membuat SSH Key Pair di Putty">Membuat SSH Key Pair di Putty&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
-        
-    </div>
-
-    <div class="post-comment">
-          
-          
-  
-
- 
-
-
-          
-    </div>
-</article>
-          </div>
-		   </main>
-      <footer class="footer">
-    <div class="copyright">
-        &copy;
-        
-        <span itemprop="copyrightYear">2015 - 2019</span>
-        
-         
-            <span class="author" itemprop="copyrightHolder"><a href="https://mfachrulrazy.github.io/">MFR</a> | </span>
-         
-
-		  <span>Crafted with ❤️ by Us </span>
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/js/vendor_gallery.min.js" async="" ></script>
-    
-  
-
-
-
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-148178248-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-
-     </div>
-  </body>
-</html>
+Hostname<span style=color:#f92672>=</span>&lt;hostname_client&gt;</code></pre></div>Izinkan port yang digunakan oleh zabbix pada iptables<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo iptables -A INPUT -p tcp -s &lt;ip_zabbix_server&gt; --dport <span style=color:#ae81ff>10050</span> -m state --state NEW,ESTABLISHED -j ACCEPT</code></pre></div>Restart zabbix agent<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo service zabbix-agent restart</code></pre></div></p></div><div class=post-copyright><p class=copyright-item><span>Author:</span>
+<span>MFR</span></p><p class=copyright-item><span>Share:</span>
+<span><a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2f2018%2finstall-zabbix-agent%2f&amp;text=Install%20Zabbix%20Agent&amp;via=muhfachrulrazy" target=_blank title="Share on Twitter"><i class="iconfont icon-twitter"></i></a><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2f2018%2finstall-zabbix-agent%2f" target=_blank title="Share on Facebook"><i class="iconfont icon-facebook"></i></a><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2f2018%2finstall-zabbix-agent%2f&amp;title=Install%20Zabbix%20Agent" target=_blank title="Share on LinkedIn"><i class="iconfont icon-linkedin"></i></a></span></p></div><div class=post-tags><section><i class="iconfont icon-icon-tag"></i>Tag:
+<span class=tag><a href=https://mfachrulrazy.github.io/tags/monitoring/>#monitoring</a></span>
+<span class=tag><a href=https://mfachrulrazy.github.io/tags/centos/>#centos</a></span></section><section><a href=javascript:window.history.back();>Back</a></span> ·
+<span><a href=https://mfachrulrazy.github.io/>Home</a></span></section></div><div class=post-nav><a href=https://mfachrulrazy.github.io/2018/install-snmp-linux/ class=prev rel=prev title="Install SNMP Linux"><i class="iconfont icon-dajiantou"></i>&nbsp;Install SNMP Linux</a>
+<a href=https://mfachrulrazy.github.io/2018/ssh-key-putty/ class=next rel=next title="Membuat SSH Key Pair di Putty">Membuat SSH Key Pair di Putty&nbsp;<i class="iconfont icon-xiaojiantou"></i></a></div><div class=post-comment></div></article></div></main><footer class=footer><div class=copyright>&copy;
+<span itemprop=copyrightYear>2015 - 2019</span>
+<span class=author itemprop=copyrightHolder><a href=https://mfachrulrazy.github.io/>MFR</a> |</span>
+<span>Crafted with ❤️ by Us</span></div></footer><link href=//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css rel=stylesheet><script src=/js/vendor_gallery.min.js async></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-148178248-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></div></body></html>

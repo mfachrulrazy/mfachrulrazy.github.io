@@ -1,191 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>networking on MFR Official Blog</title>
-    <link>https://mfachrulrazy.github.io/tags/networking/</link>
-    <description>Recent content in networking on MFR Official Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://mfachrulrazy.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Troubleshoot IP SSH berubah</title>
-      <link>https://mfachrulrazy.github.io/2018/tb-ssh-key/</link>
-      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2018/tb-ssh-key/</guid>
-      <description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
- Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
- Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description>
-    </item>
-    
-    <item>
-      <title>Konfigurasi Nmtui Centos 7</title>
-      <link>https://mfachrulrazy.github.io/2018/netmui-cent/</link>
-      <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2018/netmui-cent/</guid>
-      <description>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>networking on MFR Official Blog</title><link>https://mfachrulrazy.github.io/tags/networking/</link><description>Recent content in networking on MFR Official Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://mfachrulrazy.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Troubleshoot IP SSH berubah</title><link>https://mfachrulrazy.github.io/2018/tb-ssh-key/</link><pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2018/tb-ssh-key/</guid><description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
+Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
+Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description></item><item><title>Konfigurasi Nmtui Centos 7</title><link>https://mfachrulrazy.github.io/2018/netmui-cent/</link><pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2018/netmui-cent/</guid><description>Waktu itu saya mencoba menginstall centos di virtual machine dan lupa menambahkan adapter jaringan. Jadi mesin virtual dimatikan terlebih dahulu kemudian tambah adapter jaringan pada virtual box.
 Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat ditangani dengan nmtui.
- Jalankan nmtui dari terminal # nmtui  Pilih edit connection &amp;gt; kemudian pilih Wired connection 1 &amp;gt; pilih Edit  Kemudian ubah nama profil dan IPv4 configuration menjadi manual  Kemudian OK &amp;gt; Back &amp;gt; Quit Restart service network  </description>
-    </item>
-    
-    <item>
-      <title>Error Loopback Mikrotik</title>
-      <link>https://mfachrulrazy.github.io/2017/err-loopback/</link>
-      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/err-loopback/</guid>
-      <description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
-Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description>
-    </item>
-    
-    <item>
-      <title>Remote Mikrotik Gns3 via Winbox</title>
-      <link>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</link>
-      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</guid>
-      <description>Untuk terhubung dengan mikrotik di GNS3 dapat menggunakan interface loopback.
+Jalankan nmtui dari terminal # nmtui Pilih edit connection &amp;gt; kemudian pilih Wired connection 1 &amp;gt; pilih Edit Kemudian ubah nama profil dan IPv4 configuration menjadi manual Kemudian OK &amp;gt; Back &amp;gt; Quit Restart service network</description></item><item><title>Error Loopback Mikrotik</title><link>https://mfachrulrazy.github.io/2017/err-loopback/</link><pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/err-loopback/</guid><description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
+Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description></item><item><title>Remote Mikrotik Gns3 via Winbox</title><link>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</link><pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</guid><description>Untuk terhubung dengan mikrotik di GNS3 dapat menggunakan interface loopback.
 Gunakan cloud untuk menghubungkan interface jaringan komputer ke winbox gns 3 &amp;gt; klik kanan Configure
 Kemudian perhatikan bagian Ethernet Interfaces terdapat Npcap Loopback Adapter
-Perhatikan bagian interface di sistem operasi (windows)</description>
-    </item>
-    
-    <item>
-      <title>Networking pada Centos 7</title>
-      <link>https://mfachrulrazy.github.io/2017/net-centos7/</link>
-      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/net-centos7/</guid>
-      <description>Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
- Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut IPADDR= NETMASK= GATEWAY= DNS1= DNS2= #onboot untuk mengatur interface aktif pada saat server baru dinyalakan ONBOOT=yes #bootproto untuk mengatur IP apakah dhcp atau static BOOTPROTO=dhcp/static Simpan file dan keluar.</description>
-    </item>
-    
-    <item>
-      <title>DNS Flooding di Mikrotik</title>
-      <link>https://mfachrulrazy.github.io/2017/dns-flood/</link>
-      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/dns-flood/</guid>
-      <description>Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload ether2 yang menggunakan IP public dari provider L.
-Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting allow remote requests yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns. Cara mengatasinya adalah dengan membuatkan address list untuk mengizinkan alamat dns apa saja yang diinginkan.</description>
-    </item>
-    
-    <item>
-      <title>Troubleshoot DNS WIndows bermasalah</title>
-      <link>https://mfachrulrazy.github.io/2017/tb-dns-client/</link>
-      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/tb-dns-client/</guid>
-      <description> Waktu itu ada salah satu laptop klien yang bermasalah dan tidak bisa terkoneksi ke internet.
-Penyebab DNS yang tidak sesuai dengan jaringan yang disediakan oleh router (dns palsu) Solusi  Cek pada pengaturan ip &amp;gt; advanced &amp;gt; pilih tab DNS Perhatikan jika ada dns yang tercantum di dalam &amp;gt; klik remove Kemudian pada bagian internet options &amp;gt; pilih connections &amp;gt; LAN Settings &amp;gt; hilangkan semua centang  Biasanya jika pc sudah direstart, dns palsu akan muncul kembali Cek program yang mencurigakan, dan periksa pada startup  </description>
-    </item>
-    
-    <item>
-      <title>All about Proxmox</title>
-      <link>https://mfachrulrazy.github.io/2017/imp-proxmox/</link>
-      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/imp-proxmox/</guid>
-      <description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
+Perhatikan bagian interface di sistem operasi (windows)</description></item><item><title>Networking pada Centos 7</title><link>https://mfachrulrazy.github.io/2017/net-centos7/</link><pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/net-centos7/</guid><description>Berikut penjelasan mengenai pengaturan jaringan pada Centos 7 melalui terminal.
+Pasang ip address secara manual melalui file ifcfg-xxx (sesuaikan dengan nama interface) yang berada dalam folder /etc/sysconfig/network-scripts/ # vi ifcfg-xxx (sesuaikan dengan nama interface yang akan diatur) Tambahkan baris berikut IPADDR= NETMASK= GATEWAY= DNS1= DNS2= #onboot untuk mengatur interface aktif pada saat server baru dinyalakan ONBOOT=yes #bootproto untuk mengatur IP apakah dhcp atau static BOOTPROTO=dhcp/static Simpan file dan keluar.</description></item><item><title>DNS Flooding di Mikrotik</title><link>https://mfachrulrazy.github.io/2017/dns-flood/</link><pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/dns-flood/</guid><description>Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload ether2 yang menggunakan IP public dari provider L.
+Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting allow remote requests yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns. Cara mengatasinya adalah dengan membuatkan address list untuk mengizinkan alamat dns apa saja yang diinginkan.</description></item><item><title>Troubleshoot DNS WIndows bermasalah</title><link>https://mfachrulrazy.github.io/2017/tb-dns-client/</link><pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/tb-dns-client/</guid><description> Waktu itu ada salah satu laptop klien yang bermasalah dan tidak bisa terkoneksi ke internet.
+Penyebab DNS yang tidak sesuai dengan jaringan yang disediakan oleh router (dns palsu) Solusi Cek pada pengaturan ip &amp;gt; advanced &amp;gt; pilih tab DNS Perhatikan jika ada dns yang tercantum di dalam &amp;gt; klik remove Kemudian pada bagian internet options &amp;gt; pilih connections &amp;gt; LAN Settings &amp;gt; hilangkan semua centang Biasanya jika pc sudah direstart, dns palsu akan muncul kembali Cek program yang mencurigakan, dan periksa pada startup</description></item><item><title>All about Proxmox</title><link>https://mfachrulrazy.github.io/2017/imp-proxmox/</link><pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/imp-proxmox/</guid><description>Postingan ini akan membahas mengenai beberapa hal yang telah saya lakukan dengan Proxmox.
 Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya pada saat setelah login di proxmox, langsung muncul No Valid Subscription. Untuk menghapusnya bisa dengan cara berikut
- Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu  proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js  Kemudian edit pada baris berikut if (data.</description>
-    </item>
-    
-    <item>
-      <title>Error Monitoring PRTG HTTPS</title>
-      <link>https://mfachrulrazy.github.io/2017/err-prtg-https/</link>
-      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/err-prtg-https/</guid>
-      <description>Ketika mengatur PRTG menjadi https, web servernya tidak berhasil berjalan. Pesan error yang muncul ketika dibuka kurang lebih sebagai berikut:
-Connection Refused Socket Error # 10061  Penyebabnya adalah pada saat penggantian koneksi menjadi https, maka portnya juga berganti. Oleh karena itu harus diganti juga pada bagian PRTG Console Setting dan PRTG Administration Tool.
- Buka PRTG dan masuk ke PRTG Administration Tool Berikut contoh konfigurasinya  Pengaturan perubahan konfigurasi dari http ke https   Sumber: Knowlege Base PRTG</description>
-    </item>
-    
-    <item>
-      <title>Port Forwarding Mikrotik</title>
-      <link>https://mfachrulrazy.github.io/2017/port-forwarding/</link>
-      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/port-forwarding/</guid>
-      <description>Biasanya dalam sebuah jaringan kantor, memiliki IP Publik yang terbatas. Untuk memanfaatkan IP tersebut ke banyak server bisa menggunakan port forwarding.
+Edit file /usr/share/pve-manager/ext4/pvemanagerlib.js Ingat untuk membuat backup file tersebut terlebih dahulu proxmox 4.4 foldernya di: /usr/share/pve-manager/ext6 proxmox 5 foldernya di: /usr/share/pve-manager/js Kemudian edit pada baris berikut if (data.</description></item><item><title>Error Monitoring PRTG HTTPS</title><link>https://mfachrulrazy.github.io/2017/err-prtg-https/</link><pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/err-prtg-https/</guid><description>Ketika mengatur PRTG menjadi https, web servernya tidak berhasil berjalan. Pesan error yang muncul ketika dibuka kurang lebih sebagai berikut:
+Connection Refused Socket Error # 10061 Penyebabnya adalah pada saat penggantian koneksi menjadi https, maka portnya juga berganti. Oleh karena itu harus diganti juga pada bagian PRTG Console Setting dan PRTG Administration Tool.
+Buka PRTG dan masuk ke PRTG Administration Tool Berikut contoh konfigurasinya Pengaturan perubahan konfigurasi dari http ke https Sumber: Knowlege Base PRTG</description></item><item><title>Port Forwarding Mikrotik</title><link>https://mfachrulrazy.github.io/2017/port-forwarding/</link><pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/port-forwarding/</guid><description>Biasanya dalam sebuah jaringan kantor, memiliki IP Publik yang terbatas. Untuk memanfaatkan IP tersebut ke banyak server bisa menggunakan port forwarding.
 1. Sebelum membuat port forwarding, pastikan port yang akan digunakan tidak ada dipakai oleh mikrotik di winbox pada menu IP &amp;gt; services
 2. Setelah itu lakukan konfigurasi port forwarding di bagian IP &amp;gt; Firewall &amp;gt; NAT
 3. Tekan tombol + &amp;gt; Tab General
-4. Bisa di-isikan bagian In Interface adalah interface yang ke internet.</description>
-    </item>
-    
-    <item>
-      <title>VPN PPTP pada Mikrotik</title>
-      <link>https://mfachrulrazy.github.io/2017/pptp-mikrotik/</link>
-      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/pptp-mikrotik/</guid>
-      <description>Kadangkala ketika kita berada di luar kantor (tidak terkoneksi dengan jaringan lokal kantor), kita ingin me-remote perangkat tertentu yang berada di kantor. Salah satu cara agar bisa membuat koneksi seolah-olah berada di jaringan kantor adalah VPN. Pada postingan kali ini VPN yang digunakan adalah PPTP dari Mikrotik. Berikut langkah instalasinya.
-1. Pastikan paket PPP telah terinstall di Mikrotik System &amp;gt; Packages 2. Kemudian masuk pada menu PPP &amp;gt; tab Interfaces &amp;gt; klik PPTP Server &amp;gt; centang pada bagian Enabled dan pastikan pada bagian Default Profile menggunakan default-encryption 3.</description>
-    </item>
-    
-    <item>
-      <title>Maximum Transmission Unit</title>
-      <link>https://mfachrulrazy.github.io/2017/maxtu/</link>
-      <pubDate>Fri, 28 Apr 2017 09:51:55 +0800</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/maxtu/</guid>
-      <description>Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
+4. Bisa di-isikan bagian In Interface adalah interface yang ke internet.</description></item><item><title>VPN PPTP pada Mikrotik</title><link>https://mfachrulrazy.github.io/2017/pptp-mikrotik/</link><pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/pptp-mikrotik/</guid><description>Kadangkala ketika kita berada di luar kantor (tidak terkoneksi dengan jaringan lokal kantor), kita ingin me-remote perangkat tertentu yang berada di kantor. Salah satu cara agar bisa membuat koneksi seolah-olah berada di jaringan kantor adalah VPN. Pada postingan kali ini VPN yang digunakan adalah PPTP dari Mikrotik. Berikut langkah instalasinya.
+1. Pastikan paket PPP telah terinstall di Mikrotik System &amp;gt; Packages 2. Kemudian masuk pada menu PPP &amp;gt; tab Interfaces &amp;gt; klik PPTP Server &amp;gt; centang pada bagian Enabled dan pastikan pada bagian Default Profile menggunakan default-encryption 3.</description></item><item><title>Maximum Transmission Unit</title><link>https://mfachrulrazy.github.io/2017/maxtu/</link><pubDate>Fri, 28 Apr 2017 09:51:55 +0800</pubDate><guid>https://mfachrulrazy.github.io/2017/maxtu/</guid><description>Kemarin penasaran dengan apa itu MTU pada saat menganalisis jaringan di kantor.
 Jadi, Maximum Transmission Unit adalah istilah dalam teknologi informasi yang merujuk kepada ukuran paket data terbesar yang dapat ditransmisikan melalui sebuah media jaringan. Ukuran MTU adalah bervariasi, tergantung teknologi jaringan yang digunakan. Contohnya adalah dalam jaringan berbasis teknologi Ethernet, ukuran MTU maksimum adalah 1500 bytes. Adalah tugas lapisan data-link yang harus menentukan ukuran MTU.
- L3 MTU = 1500 (Data: 1480 + IP:20) L2.</description>
-    </item>
-    
-    <item>
-      <title>Install Mikrotik di GNS 3</title>
-      <link>https://mfachrulrazy.github.io/2017/install-mrktk-gns3/</link>
-      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/install-mrktk-gns3/</guid>
-      <description>Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.
+L3 MTU = 1500 (Data: 1480 + IP:20) L2.</description></item><item><title>Install Mikrotik di GNS 3</title><link>https://mfachrulrazy.github.io/2017/install-mrktk-gns3/</link><pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/install-mrktk-gns3/</guid><description>Terdapat beberapa cara untuk membuat simulasi salah satunya dengan menggunakan qemu.
 1. Pastikan file iso mikrotik telah di-download
 2. Pertama buat image dari file iso mikrotik dengan qemu dan simpan di drive D:
-C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M  3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)
-4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan</description>
-    </item>
-    
-    <item>
-      <title>Servis Wireless tidak berjalan pada Windows 7</title>
-      <link>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</link>
-      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</guid>
-      <description>Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
+C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik.img 256M 3. Setelah itu, install file img yang sudah dibuat menggunakan iso file mikrotik (file iso sudah di-rename mikrotik.iso)
+4. Sesuaikan bit aplikasi qemu dengan iso yang akan dijalankan</description></item><item><title>Servis Wireless tidak berjalan pada Windows 7</title><link>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</link><pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</guid><description>Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
 Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
 Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
-HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio  Pastikan, keys untuk Start bernilai 3</description>
-    </item>
-    
-    <item>
-      <title>Error Gateway Time Out</title>
-      <link>https://mfachrulrazy.github.io/2017/err-gateway-to/</link>
-      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/err-gateway-to/</guid>
-      <description>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini. Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy Hilangkan tanda centangnya dan login kembali.</description>
-    </item>
-    
-    <item>
-      <title>Menampilkan Saved Password Wifi Windows 10</title>
-      <link>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</link>
-      <pubDate>Sun, 18 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</guid>
-      <description>Menemukan password wifi yang sudah tersimpan (saved password) melalui command prompt dapat menggunakan tools netsh.
+HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio Pastikan, keys untuk Start bernilai 3</description></item><item><title>Error Gateway Time Out</title><link>https://mfachrulrazy.github.io/2017/err-gateway-to/</link><pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/err-gateway-to/</guid><description>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini. Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy Hilangkan tanda centangnya dan login kembali.</description></item><item><title>Menampilkan Saved Password Wifi Windows 10</title><link>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</link><pubDate>Sun, 18 Sep 2016 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</guid><description>Menemukan password wifi yang sudah tersimpan (saved password) melalui command prompt dapat menggunakan tools netsh.
 &amp;gt; netsh wlan show profiles &amp;#34;nama_wifi&amp;#34; key=clear
 Hasilnya, dapat dilihat pada bagian Security Settings terdapat parameter Key Content dan isinya adalah password wifi tersebut.
-Security settings ----------------- Authentication : WPA2-Personal Cipher : CCMP Authentication : WPA2-Personal Cipher : GCMP Security key : Present Key Content : PASSWORD_WIFI</description>
-    </item>
-    
-  </channel>
-</rss>
+Security settings ----------------- Authentication : WPA2-Personal Cipher : CCMP Authentication : WPA2-Personal Cipher : GCMP Security key : Present Key Content : PASSWORD_WIFI</description></item></channel></rss>

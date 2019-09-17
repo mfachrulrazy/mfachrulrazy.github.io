@@ -1,76 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>sql server on MFR Official Blog</title>
-    <link>https://mfachrulrazy.github.io/tags/sql-server/</link>
-    <description>Recent content in sql server on MFR Official Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://mfachrulrazy.github.io/tags/sql-server/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Restore Database SQL Server</title>
-      <link>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</link>
-      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</guid>
-      <description>Proses restore database berhenti dan tidak berubah status. Solusi Gunakan t-sql dan masukkan kueri untuk restore database dengan menggunakan opsi with recovery RESTORE DATABASE NamaDB FROM DISK = &amp;#39;Path\to\file.bak&amp;#39; WITH RECOVERY GO</description>
-    </item>
-    
-    <item>
-      <title>SQL Server Database Suspect</title>
-      <link>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</link>
-      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</guid>
-      <description>Terkadang Microsoft SQL Server mengalami error, salah satunya adalah Suspect Database. Salah satu penyebabnya adalah server langsung mati (karena listrik mati atau power failure).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sql server on MFR Official Blog</title><link>https://mfachrulrazy.github.io/tags/sql-server/</link><description>Recent content in sql server on MFR Official Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://mfachrulrazy.github.io/tags/sql-server/index.xml" rel="self" type="application/rss+xml"/><item><title>Restore Database SQL Server</title><link>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</link><pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</guid><description>Proses restore database berhenti dan tidak berubah status. Solusi Gunakan t-sql dan masukkan kueri untuk restore database dengan menggunakan opsi with recovery RESTORE DATABASE NamaDB FROM DISK = &amp;#39;Path\to\file.bak&amp;#39; WITH RECOVERY GO</description></item><item><title>SQL Server Database Suspect</title><link>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</link><pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</guid><description>Terkadang Microsoft SQL Server mengalami error, salah satunya adalah Suspect Database. Salah satu penyebabnya adalah server langsung mati (karena listrik mati atau power failure).
 Salah satu solusinya adalah memperbaiki database secara manual. Contoh dalam hal ini nama database adalah DBTes.
 1. Buka aplikasi query sql seperti Management Studio
-2. Dalam query tersebut ubah database menjadi mode emergency USE master GO ALTER DATABASE DBTes SET EMERGENCY GO 3. Eksekusi perintah dbcc checkdb DBCC CHECKDB (DBTes) GO 4.</description>
-    </item>
-    
-    <item>
-      <title>Install PHP 7.0 dan Modul SQL Server pada Centos</title>
-      <link>https://mfachrulrazy.github.io/2018/install-php7/</link>
-      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2018/install-php7/</guid>
-      <description>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh # create new #!/bin/bash source /opt/remi/php70/enable export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv  Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.</description>
-    </item>
-    
-    <item>
-      <title>Belajar SQL Server Part 2</title>
-      <link>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</link>
-      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</guid>
-      <description>Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
-Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio yang biasanya penyebabnya adalah masih ada koneksi yang tidak dapat diputus koneksinya. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill + &amp;#39;kill &amp;#39; + CONVERT(varchar(5), spid) + &amp;#39;;&amp;#39; FROM master.</description>
-    </item>
-    
-    <item>
-      <title>Attach dan Import Database SQL Server</title>
-      <link>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</link>
-      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</guid>
-      <description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
-Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description>
-    </item>
-    
-    <item>
-      <title>Belajar SQL Server Part 1</title>
-      <link>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</link>
-      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</guid>
-      <description>SQL Server merupakan salah satu Relational Database Management System(RDBMS) yang dibuat oleh Micorosoft. Sebagai Database server, dia termasuk dalam sebuah produk yang digunakan untuk menyimpan dan mengambil data dari sebuah aplikasi.
+2. Dalam query tersebut ubah database menjadi mode emergency USE master GO ALTER DATABASE DBTes SET EMERGENCY GO 3. Eksekusi perintah dbcc checkdb DBCC CHECKDB (DBTes) GO 4.</description></item><item><title>Install PHP 7.0 dan Modul SQL Server pada Centos</title><link>https://mfachrulrazy.github.io/2018/install-php7/</link><pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2018/install-php7/</guid><description>Install paket-paket yang dibutuhkan oleh php dan sql server menggunakan repo remi # yum --enablerepo=remi-safe -y install php70 php70-php-pear php70-php-mbstring php70-php-pdo php70-php-devel php70-php-mysql Install paket development tools # yum -y groups install &amp;#34;Development Tools&amp;#34; Enable php 70 # scl enable php70 bash Menjalankan php70 pada saat login pertama kali dengan cara membuat file script di /etc/profile.d/php70.sh # create new #!/bin/bash source /opt/remi/php70/enable export X_SCLS=&amp;#34;`scl enable php70 &amp;#39;echo $X_SCLS&amp;#39;`&amp;#34; Install paket unixodbc-devel # yum install unixODBC-devel Install sql server dan pdo menggunakan pecl # pecl install sqlsrv pdo_sqlsrv Tambahkan modul sql server dan pdo sql server di konfigurasi php # echo &amp;#39;extension=pdo_sqlsrv.</description></item><item><title>Belajar SQL Server Part 2</title><link>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</link><pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2018/konfig-sqlsrv2/</guid><description>Postingan kali ini akan membahas mengenai teori teknologi replikasi dalam SQL Server, karena kebetulan di kantor sedang menerapkan teknologi tersebut.
+Menghapus Database SQL Menghapus database dengan menggunakan query sql jika tidak dapat dihapus dari Management Studio yang biasanya penyebabnya adalah masih ada koneksi yang tidak dapat diputus koneksinya. IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N&amp;#39;NamaDatabase&amp;#39;) DROP DATABASE NamaDatabase DECLARE @kill varchar(8000) = &amp;#39;&amp;#39; SELECT @kill = @kill + &amp;#39;kill &amp;#39; + CONVERT(varchar(5), spid) + &amp;#39;;&amp;#39; FROM master.</description></item><item><title>Attach dan Import Database SQL Server</title><link>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</link><pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/attach-imp-sqlsrv/</guid><description>Pada postingan kali ini akan saya bahas mengenai attach/detach database sql server menggunakan sql server management studio (SSMS 2017).
+Jadi biasanya kita menggunakan attach dan detach database untuk memindahkan atau me-rename database. Tetapi merujuk dari situs dokumentasi microsoft sebaiknya tidak menggunakan cara ini tetapi dengan cara ALTER DATABASE. Biasanya kalau menggunakan cara ini kita harus memutus seluruh koneksi ke database dan transaction log backups, dan ada kemungkinan bisa menghapus file secara tidak sengaja.</description></item><item><title>Belajar SQL Server Part 1</title><link>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</link><pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/konfig-sqlsrv1/</guid><description>SQL Server merupakan salah satu Relational Database Management System(RDBMS) yang dibuat oleh Micorosoft. Sebagai Database server, dia termasuk dalam sebuah produk yang digunakan untuk menyimpan dan mengambil data dari sebuah aplikasi.
 Kali ini akan membahas mengenai Instalasi dan beberapa sintaks di SQL Server.
-1. Jalankan file master instalasi sql server (biasanya berbentuk iso) &amp;gt; Pilih bagian Installation &amp;gt; Pilih New SQL Server stand-alone&amp;hellip;.. 2. Bagian Product Key, masukan lisensi atau produk sql server yang diinginkan &amp;gt; klik Next 3.</description>
-    </item>
-    
-  </channel>
-</rss>
+1. Jalankan file master instalasi sql server (biasanya berbentuk iso) &amp;gt; Pilih bagian Installation &amp;gt; Pilih New SQL Server stand-alone&amp;hellip;.. 2. Bagian Product Key, masukan lisensi atau produk sql server yang diinginkan &amp;gt; klik Next 3.</description></item></channel></rss>

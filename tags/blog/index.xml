@@ -1,37 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>blog on MFR Official Blog</title>
-    <link>https://mfachrulrazy.github.io/tags/blog/</link>
-    <description>Recent content in blog on MFR Official Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 06 Apr 2019 09:45:17 +0800</lastBuildDate>
-    
-	<atom:link href="https://mfachrulrazy.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Upgrade Hugo di Windows</title>
-      <link>https://mfachrulrazy.github.io/2019/upg-hugo-win/</link>
-      <pubDate>Sat, 06 Apr 2019 09:45:17 +0800</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2019/upg-hugo-win/</guid>
-      <description>Upgrade Hugo dapat dilakukan dengan paket manager choco yang telah diinstall pada windows.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on MFR Official Blog</title><link>https://mfachrulrazy.github.io/tags/blog/</link><description>Recent content in blog on MFR Official Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 06 Apr 2019 09:45:17 +0800</lastBuildDate><atom:link href="https://mfachrulrazy.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Upgrade Hugo di Windows</title><link>https://mfachrulrazy.github.io/2019/upg-hugo-win/</link><pubDate>Sat, 06 Apr 2019 09:45:17 +0800</pubDate><guid>https://mfachrulrazy.github.io/2019/upg-hugo-win/</guid><description>Upgrade Hugo dapat dilakukan dengan paket manager choco yang telah diinstall pada windows.
 &amp;gt; choco upgrade hugo Kemudian Ketik Y untuk menjalankan script upgrade hugo.
-Install Hugo-extended Hugo extended dapat bekerja dengan native Sass/Scss. Instalasi hugo extended pada windows dapat menggunakan choco &amp;gt; choco install hugo-extended Kemudian Ketik Y untuk menjalankan script install hugo-extended.</description>
-    </item>
-    
-    <item>
-      <title>Install dan konfigurasi Hugo</title>
-      <link>https://mfachrulrazy.github.io/2018/install-hugo/</link>
-      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2018/install-hugo/</guid>
-      <description>Hugo adalah salah satu static framework untuk membuat website atau biasa dikenal dengan istilah framework static site generators.
+Install Hugo-extended Hugo extended dapat bekerja dengan native Sass/Scss. Instalasi hugo extended pada windows dapat menggunakan choco &amp;gt; choco install hugo-extended Kemudian Ketik Y untuk menjalankan script install hugo-extended.</description></item><item><title>Install dan konfigurasi Hugo</title><link>https://mfachrulrazy.github.io/2018/install-hugo/</link><pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2018/install-hugo/</guid><description>Hugo adalah salah satu static framework untuk membuat website atau biasa dikenal dengan istilah framework static site generators.
 Untuk menginstall hugo di Windows, choco paket manajer harus terlebih dahulu terinstall.
-Install Hugo  Untuk menginstall hugo dapat dijalankan melalui cmd (administrator level) cukup dengan perintah berikut choco install hugo -confirm  Setelah terinstall, tes dengan menjalankan perintah hugo &amp;gt; hugo help untuk mengetahui lokasi hugo terinstall &amp;gt; where hugo Untuk membuat situs baru dengan hugo cukup dengan perintah berikut (tanpa petik) &amp;gt; hugo new site &amp;#39;namasitus&amp;#39; Folder baru akan dibuat dengan struktur folder berikut.</description>
-    </item>
-    
-  </channel>
-</rss>
+Install Hugo Untuk menginstall hugo dapat dijalankan melalui cmd (administrator level) cukup dengan perintah berikut choco install hugo -confirm Setelah terinstall, tes dengan menjalankan perintah hugo &amp;gt; hugo help untuk mengetahui lokasi hugo terinstall &amp;gt; where hugo Untuk membuat situs baru dengan hugo cukup dengan perintah berikut (tanpa petik) &amp;gt; hugo new site &amp;#39;namasitus&amp;#39; Folder baru akan dibuat dengan struktur folder berikut.</description></item></channel></rss>

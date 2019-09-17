@@ -1,276 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noodp"/>
-  
-  
-  
-  
-  
-  <link rel="prev" href="https://mfachrulrazy.github.io/2019/script-run-vbox/" />
-  
-  <link rel="canonical" href="https://mfachrulrazy.github.io/2019/ins-ssl-nginx-ubuntu/" />
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>
-       
-       
-           SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04 | MFR Official Blog
-       
-  </title>
-  <meta name="title" content="SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04 | MFR Official Blog">
-    
-  
-  <link rel="stylesheet" href="/font/iconfont.css">
-  <link rel="stylesheet" href="/css/main.min.css">
-
-
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04"/>
-<meta name="twitter:description" content="Let&rsquo;s Encrypt adalah salah satu Otoritas Sertifikasi (CA - Certificate Authority) yang dapat mengeluarkan sertifikat SSL. Pada sisi web host (hosting website) kita menggunakan ACME protocol untuk memperbarui sertifikat yang diberikan oleh Let&rsquo;s Encrypt.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content=noodp><link rel=prev href=https://mfachrulrazy.github.io/2019/script-run-vbox/><link rel=canonical href=https://mfachrulrazy.github.io/2019/ins-ssl-nginx-ubuntu/><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04 | MFR Official Blog</title><meta name=title content="SSL Wildcard Let's Encrypt pada Nginx di Ubuntu 18.04 | MFR Official Blog"><link rel=stylesheet href=/font/iconfont.css><link rel=stylesheet href=/css/main.min.css><meta name=twitter:card content=summary><meta name=twitter:title content="SSL Wildcard Let's Encrypt pada Nginx di Ubuntu 18.04"><meta name=twitter:description content="Let&rsquo;s Encrypt adalah salah satu Otoritas Sertifikasi (CA - Certificate Authority) yang dapat mengeluarkan sertifikat SSL. Pada sisi web host (hosting website) kita menggunakan ACME protocol untuk memperbarui sertifikat yang diberikan oleh Let&rsquo;s Encrypt.
 Dalam tutorial ini, kita menggunakan Wildcard SSL yang berfungsi untuk mengaktifkan ssl ke domain dan seluruh sub domain yang kita punya. Pada tutorial ini kita menggunakan domain contoh.com
-Install Paket pendukung Let&rsquo;s Encrypt Install paket yang dibutuhkan oleh let&rsquo;s encrypt $ sudo apt-get update $ sudo apt-get install software-properties-common $ sudo add-apt-repository universe $ sudo add-apt-repository ppa:certbot/certbot $ sudo apt-get update"/>
-
-  <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BlogPosting",
-  "headline": "SSL Wildcard Let\x27s Encrypt pada Nginx di Ubuntu 18.04",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https:\/\/mfachrulrazy.github.io\/2019\/ins-ssl-nginx-ubuntu\/"
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https:\/\/mfachrulrazy.github.io\/cover.png",
-    "width":  800 ,
-    "height":  600 
-  },
-  "genre": "posts",
-  "keywords": "ubuntu, linux, web server, nginx",
-  "wordcount":  769 ,
-  "url": "https:\/\/mfachrulrazy.github.io\/2019\/ins-ssl-nginx-ubuntu\/",
-  "datePublished": "2019-05-30T00:00:00\x2b00:00",
-  "dateModified": "2019-05-30T00:00:00\x2b00:00",
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "MFR",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https:\/\/mfachrulrazy.github.io\/logo.png",
-      "width":  127 ,
-      "height":  40 
-    }
-  },
-  "author": {
-    "@type": "Person",
-    "name": "MFR"
-  },
-  "description": ""
-}
-</script>
-</head>
-
-  
-
-
-
-  <body class="">
-    <div class="wrapper">
-        <nav class="navbar">
-    <div class="container">
-        <div class="navbar-header header-logo">
-        	<a href="https://mfachrulrazy.github.io/">MFR Official Blog</a>
-        </div>
-        <div class="menu navbar-right">
-                
-                
-                <a class="menu-item" href="/categories/" title="">Categories</a>
-                
-                <a class="menu-item" href="/tags/" title="">Tags</a>
-                
-                <a class="menu-item" href="/about" title="">About</a>
-                
-                <a class="menu-item" href="/ref" title="">References</a>
-                
-                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;
-        </div>
-    </div>
-</nav>
-<nav class="navbar-mobile" id="nav-mobile" style="display: none">
-     <div class="container">
-        <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href="https://mfachrulrazy.github.io/">MFR Official Blog</a></div>
-            <div class="menu-toggle">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-     
-          <div class="menu" id="mobile-menu">
-                
-                
-                <a class="menu-item" href="/categories/" title="">Categories</a>
-                
-                <a class="menu-item" href="/tags/" title="">Tags</a>
-                
-                <a class="menu-item" href="/about" title="">About</a>
-                
-                <a class="menu-item" href="/ref" title="">References</a>
-                
-        </div>
-    </div>
-</nav>
-
-    	 <main class="main">
-          <div class="container">
-      		
-<article class="post-warp">
-    <header class="post-header">
-        <h1 class="post-title">SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04</h1>
-        <div class="post-meta">
-            Written by <a href="https://mfachrulrazy.github.io/" rel="author">MFR</a> with ♥ 
-                <span class="post-time">
-                    on <time datetime=2019-05-30 >30 May 2019</time>
-                </span>
-                in
-                <i class="iconfont icon-folder"></i>
-                <span class="post-category">
-                        <a href="https://mfachrulrazy.github.io/categories/ubuntu/"> ubuntu </a>
-                        <a href="https://mfachrulrazy.github.io/categories/linux/"> linux </a>
-                        <a href="https://mfachrulrazy.github.io/categories/web-server/"> web server </a>
-                        <a href="https://mfachrulrazy.github.io/categories/nginx/"> nginx </a>
-                        
-                </span>
-                <i class="iconfont icon-timer"></i>
-                4 min
-        </div>
-    </header>
-    <div class="post-content">
-        
-
-        
-
-        
-        
-     
-          
-          
-          
-
-          
-          
-          
-
-          
-
-<p><strong>Let&rsquo;s Encrypt</strong> adalah salah satu Otoritas Sertifikasi (<em>CA - Certificate Authority</em>) yang dapat mengeluarkan sertifikat SSL. Pada sisi web host (hosting website) kita menggunakan <strong>ACME protocol</strong> untuk memperbarui sertifikat yang diberikan oleh Let&rsquo;s Encrypt.<br />
-Dalam tutorial ini, kita menggunakan <strong>Wildcard SSL</strong> yang berfungsi untuk mengaktifkan ssl ke domain dan seluruh sub domain yang kita punya. Pada tutorial ini kita menggunakan domain <strong>contoh.com</strong></p>
-
-<h3 id="install-paket-pendukung-let-s-encrypt">Install Paket pendukung Let&rsquo;s Encrypt</h3>
-
-<p>Install paket yang dibutuhkan oleh let&rsquo;s encrypt
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+Install Paket pendukung Let&rsquo;s Encrypt Install paket yang dibutuhkan oleh let&rsquo;s encrypt $ sudo apt-get update $ sudo apt-get install software-properties-common $ sudo add-apt-repository universe $ sudo add-apt-repository ppa:certbot/certbot $ sudo apt-get update"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"SSL Wildcard Let\x27s Encrypt pada Nginx di Ubuntu 18.04","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/mfachrulrazy.github.io\/2019\/ins-ssl-nginx-ubuntu\/"},"image":{"@type":"ImageObject","url":"https:\/\/mfachrulrazy.github.io\/cover.png","width":800,"height":600},"genre":"posts","keywords":"ubuntu, linux, web server, nginx","wordcount":769,"url":"https:\/\/mfachrulrazy.github.io\/2019\/ins-ssl-nginx-ubuntu\/","datePublished":"2019-05-30T00:00:00\x2b00:00","dateModified":"2019-05-30T00:00:00\x2b00:00","publisher":{"@type":"Organization","name":"MFR","logo":{"@type":"ImageObject","url":"https:\/\/mfachrulrazy.github.io\/logo.png","width":127,"height":40}},"author":{"@type":"Person","name":"MFR"},"description":""}</script></head><body><div class=wrapper><nav class=navbar><div class=container><div class="navbar-header header-logo"><a href=https://mfachrulrazy.github.io/>MFR Official Blog</a></div><div class="menu navbar-right"><a class=menu-item href=/categories/>Categories</a>
+<a class=menu-item href=/tags/>Tags</a>
+<a class=menu-item href=/about>About</a>
+<a class=menu-item href=/ref>References</a>
+<a href=javascript:void(0); class=theme-switch><i class="iconfont icon-dribbble"></i></a>&nbsp;</div></div></nav><nav class=navbar-mobile id=nav-mobile style=display:none><div class=container><div class=navbar-header><div><a href=javascript:void(0); class=theme-switch><i class="iconfont icon-dribbble"></i></a>&nbsp;<a href=https://mfachrulrazy.github.io/>MFR Official Blog</a></div><div class=menu-toggle><span></span><span></span><span></span></div></div><div class=menu id=mobile-menu><a class=menu-item href=/categories/>Categories</a>
+<a class=menu-item href=/tags/>Tags</a>
+<a class=menu-item href=/about>About</a>
+<a class=menu-item href=/ref>References</a></div></div></nav><main class=main><div class=container><article class=post-warp><header class=post-header><h1 class=post-title>SSL Wildcard Let&#39;s Encrypt pada Nginx di Ubuntu 18.04</h1><div class=post-meta>Written by <a href=https://mfachrulrazy.github.io/ rel=author>MFR</a> with ♥
+<span class=post-time>on <time datetime=2019-05-30>30 May 2019</time></span>
+in
+<i class="iconfont icon-folder"></i><span class=post-category><a href=https://mfachrulrazy.github.io/categories/ubuntu/>ubuntu</a>
+<a href=https://mfachrulrazy.github.io/categories/linux/>linux</a>
+<a href=https://mfachrulrazy.github.io/categories/web-server/>web server</a>
+<a href=https://mfachrulrazy.github.io/categories/nginx/>nginx</a></span>
+<i class="iconfont icon-timer"></i>4 min</div></header><div class=post-content><p><strong>Let&rsquo;s Encrypt</strong> adalah salah satu Otoritas Sertifikasi (<em>CA - Certificate Authority</em>) yang dapat mengeluarkan sertifikat SSL. Pada sisi web host (hosting website) kita menggunakan <strong>ACME protocol</strong> untuk memperbarui sertifikat yang diberikan oleh Let&rsquo;s Encrypt.<br>Dalam tutorial ini, kita menggunakan <strong>Wildcard SSL</strong> yang berfungsi untuk mengaktifkan ssl ke domain dan seluruh sub domain yang kita punya. Pada tutorial ini kita menggunakan domain <strong>contoh.com</strong></p><h3 id=install-paket-pendukung-let-s-encrypt>Install Paket pendukung Let&rsquo;s Encrypt</h3><p>Install paket yang dibutuhkan oleh let&rsquo;s encrypt<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo apt-get update
 $ sudo apt-get install software-properties-common
 $ sudo add-apt-repository universe
 $ sudo add-apt-repository ppa:certbot/certbot
-$ sudo apt-get update</code></pre></div></p>
-
-<h3 id="install-certbot">Install Certbot</h3>
-
-<p>Install Certbot nginx
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install certbot python-certbot-nginx </code></pre></div></p>
-
-<h3 id="generate-sertifikat-wildcard">Generate Sertifikat Wildcard</h3>
-
-<p>Untuk menghasilkan sertifikat jalankan perintah certbot
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo certbot --server https://acme-v02.api.letsencrypt.org/directory -d *.contoh.com --manual --preferred-challenges dns-01 certonly</code></pre></div>
-Pada saat dijalankan akan muncul beberapa konfirmasi.</p>
-
-<ul>
-<li>Masukkan email yang akan menjadi notifikasi ketika ssl telah habis masa berlakunya.<br /></li>
-<li>Menyetujui syarat dan ketentuan (Accept)<br /></li>
-<li>Izin untuk membagikan email ke EFF<br /></li>
-<li>Informasi mengenai IP Address akan di-logged<br /></li>
-</ul>
-
-<p>Setelah itu, masukkan recrod DNS TXT pada provider dns yang digunakan. Untuk
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Please deploy a DNS TXT record under the name
+$ sudo apt-get update</code></pre></div></p><h3 id=install-certbot>Install Certbot</h3><p>Install Certbot nginx<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo apt-get install certbot python-certbot-nginx </code></pre></div></p><h3 id=generate-sertifikat-wildcard>Generate Sertifikat Wildcard</h3><p>Untuk menghasilkan sertifikat jalankan perintah certbot<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo certbot --server https://acme-v02.api.letsencrypt.org/directory -d *.contoh.com --manual --preferred-challenges dns-01 certonly</code></pre></div>Pada saat dijalankan akan muncul beberapa konfirmasi.</p><ul><li>Masukkan email yang akan menjadi notifikasi ketika ssl telah habis masa berlakunya.<br></li><li>Menyetujui syarat dan ketentuan (Accept)<br></li><li>Izin untuk membagikan email ke EFF<br></li><li>Informasi mengenai IP Address akan di-logged<br></li></ul><p>Setelah itu, masukkan recrod DNS TXT pada provider dns yang digunakan. Untuk<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Please deploy a DNS TXT record under the name
 _acme-challenge.contoh.com with the following value:
 
 jM0Hwzb38cb_3zdb9safweb4J-K8qJtv1A1LUr64EXZ
 
-Before continuing, verify the record is deployed.</code></pre></div>
-Sebelum menekan Enter untuk lanjut, terlebih dahulu buat record DNS TXT dengan value yang diberikan dari Let&rsquo;s Encrypt di atas untuk verifikasi bahwa kita adalah pemilik domain contoh.com yang sah.<br />
-Karena disini kita generate untuk root domain dan subdomain, maka Let&rsquo;s encrypt akan memberikan 2 sertifikat yang harus dimasukkan ke dalam dashboard pengelola domain contoh.com. Oleh karena itu kita harus menmasukkan 2 DNS TXT, contoh salah satu isi DNS TXT.</p>
-
-<ul>
-<li><strong>Host</strong> : _acme-challenge</li>
-<li><strong>Tipe</strong> : TXT</li>
-<li><strong>Alamat/Value</strong> : jM0Hwzb38cb_3zdb9safweb4J-K8qJtv1A1LUr64EXZ<br /></li>
-</ul>
-
-<p>Setelah membuat record DNS TXT, maka sertifikat telah selesai di-download dan biasanya akan disimpan dalam folder <code>/etc/letsencrypt/contoh.com/</code></p>
-
-<h3 id="challenge">Challenge</h3>
-
-<p>Untuk mendapatkan sertifikat dari Let&rsquo;s Encrypt (CA), kita harus melewati <em>challenge</em> untuk membuktikan bahwa domain tersebut benar kita pengelolanya. Berikut challenge yang dilakukan:</p>
-
-<ul>
-<li>Meletakkan file khusus di lokasi khusus pada website (HTTP-01)<br /></li>
-<li>Membuat DNS record khusus di sistem DNS provider (DNS-01)<br /></li>
-</ul>
-
-<p>Penjelasan lebih lengkap mengenai Challenge bisa dilihat pada halaman resmi <a href="https://certbot.eff.org/docs/challenges.html?highlight=challenge" rel="nofollow noreferrer" target="_blank">Certbot</a> dan <a href="https://letsencrypt.org/id/docs/challenge-types/" rel="nofollow noreferrer" target="_blank">Lets Encrypt</a></p>
-
-<h3 id="troubleshoot-sertifikat">Troubleshoot Sertifikat</h3>
-
-<p>Pada saat generate sertifikat terkadang Let&rsquo;s Encrypt tidak langsung membuat beberapa file khusus seperti:</p>
-
-<ul>
-<li>options-ssl-nginx.conf<br /></li>
-<li>ssl-dhparams.pem<br /></li>
-</ul>
-
-<p>Oleh karena itu file tersebut harus dibuat manual. Untuk file options-ssl-nginx.conf
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo vi /etc/letsencrypt/options-ssl-nginx.conf</code></pre></div>
-Isi file
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssl_session_cache shared1m;
+Before continuing, verify the record is deployed.</code></pre></div>Sebelum menekan Enter untuk lanjut, terlebih dahulu buat record DNS TXT dengan value yang diberikan dari Let&rsquo;s Encrypt di atas untuk verifikasi bahwa kita adalah pemilik domain contoh.com yang sah.<br>Karena disini kita generate untuk root domain dan subdomain, maka Let&rsquo;s encrypt akan memberikan 2 sertifikat yang harus dimasukkan ke dalam dashboard pengelola domain contoh.com. Oleh karena itu kita harus menmasukkan 2 DNS TXT, contoh salah satu isi DNS TXT.</p><ul><li><strong>Host</strong> : _acme-challenge</li><li><strong>Tipe</strong> : TXT</li><li><strong>Alamat/Value</strong> : jM0Hwzb38cb_3zdb9safweb4J-K8qJtv1A1LUr64EXZ<br></li></ul><p>Setelah membuat record DNS TXT, maka sertifikat telah selesai di-download dan biasanya akan disimpan dalam folder <code>/etc/letsencrypt/contoh.com/</code></p><h3 id=challenge>Challenge</h3><p>Untuk mendapatkan sertifikat dari Let&rsquo;s Encrypt (CA), kita harus melewati <em>challenge</em> untuk membuktikan bahwa domain tersebut benar kita pengelolanya. Berikut challenge yang dilakukan:</p><ul><li>Meletakkan file khusus di lokasi khusus pada website (HTTP-01)<br></li><li>Membuat DNS record khusus di sistem DNS provider (DNS-01)<br></li></ul><p>Penjelasan lebih lengkap mengenai Challenge bisa dilihat pada halaman resmi <a href="https://certbot.eff.org/docs/challenges.html?highlight=challenge" rel="nofollow noreferrer" target=_blank>Certbot</a> dan <a href=https://letsencrypt.org/id/docs/challenge-types/ rel="nofollow noreferrer" target=_blank>Lets Encrypt</a></p><h3 id=troubleshoot-sertifikat>Troubleshoot Sertifikat</h3><p>Pada saat generate sertifikat terkadang Let&rsquo;s Encrypt tidak langsung membuat beberapa file khusus seperti:</p><ul><li>options-ssl-nginx.conf<br></li><li>ssl-dhparams.pem<br></li></ul><p>Oleh karena itu file tersebut harus dibuat manual. Untuk file options-ssl-nginx.conf<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo vi /etc/letsencrypt/options-ssl-nginx.conf</code></pre></div>Isi file<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ssl_session_cache shared1m;
 ssl_session_timeout 1440m;
 
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;
 
-ssl_ciphers <span style="color:#e6db74">&#34;ECDHE-ECDSA-CHACHA20-POLY1305ECDHE-ECDSA-AES128-GCM-SHA256ECDHE-ECDSA-AES256-GCM-SHA384DHE-RSA-AES128-GCM-SHA256ECDHE-ECDSA-AES128-SHA256ECDHE-ECDSA-AES128-SHAECDHE-RSA-AES128-SHAECDHE-ECDSA-AES256-SHADHE-RSA-AES128-SHA256DHE-RSA-AES256-SHA256ECDHE-ECDSA-DES-CBC3-SHAEDH-RSA-DES-CBC3-SHAAES256-GCM-SHA384AES256-SHA256AES256-SHA!DSS&#34;</span>;</code></pre></div>
-Untuk file kedua di-generate manual dengan perintah berikut
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo openssl dhparam -out /etc/letsencrypt/ssl-dhparams.pem <span style="color:#ae81ff">2048</span></code></pre></div>
-Sesuaikan letak file ssl-dhparams.pem yang akan digunakan dalam konfig nginx.</p>
-
-<h3 id="konfigurasi-nginx-untuk-menggunakan-ssl">Konfigurasi Nginx untuk menggunakan SSL</h3>
-
-<p>Konfigurasi Nginx untuk menggunakan SSL dari Let&rsquo;s Encrypt. Pertama buat file konfigurasi untuk <strong>root domain contoh.com</strong> dalam folder <code>/etc/nginx/sites-available/</code>. Kode berikut akan mengarahkan semua trafik yang ke port 80 otomatis ke port 443.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">server <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$host <span style="color:#f92672">=</span> www.contoh.com<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">301</span> https://$host$request_uri;
-    <span style="color:#f92672">}</span> 
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$host <span style="color:#f92672">=</span> contoh.com<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">301</span> https://$host$request_uri;
-    <span style="color:#f92672">}</span> 
-    listen <span style="color:#ae81ff">80</span>;
+ssl_ciphers <span style=color:#e6db74>&#34;ECDHE-ECDSA-CHACHA20-POLY1305ECDHE-ECDSA-AES128-GCM-SHA256ECDHE-ECDSA-AES256-GCM-SHA384DHE-RSA-AES128-GCM-SHA256ECDHE-ECDSA-AES128-SHA256ECDHE-ECDSA-AES128-SHAECDHE-RSA-AES128-SHAECDHE-ECDSA-AES256-SHADHE-RSA-AES128-SHA256DHE-RSA-AES256-SHA256ECDHE-ECDSA-DES-CBC3-SHAEDH-RSA-DES-CBC3-SHAAES256-GCM-SHA384AES256-SHA256AES256-SHA!DSS&#34;</span>;</code></pre></div>Untuk file kedua di-generate manual dengan perintah berikut<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo openssl dhparam -out /etc/letsencrypt/ssl-dhparams.pem <span style=color:#ae81ff>2048</span></code></pre></div>Sesuaikan letak file ssl-dhparams.pem yang akan digunakan dalam konfig nginx.</p><h3 id=konfigurasi-nginx-untuk-menggunakan-ssl>Konfigurasi Nginx untuk menggunakan SSL</h3><p>Konfigurasi Nginx untuk menggunakan SSL dari Let&rsquo;s Encrypt. Pertama buat file konfigurasi untuk <strong>root domain contoh.com</strong> dalam folder <code>/etc/nginx/sites-available/</code>. Kode berikut akan mengarahkan semua trafik yang ke port 80 otomatis ke port 443.<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>server <span style=color:#f92672>{</span>
+    <span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>$host <span style=color:#f92672>=</span> www.contoh.com<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>301</span> https://$host$request_uri;
+    <span style=color:#f92672>}</span> 
+    <span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>$host <span style=color:#f92672>=</span> contoh.com<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>301</span> https://$host$request_uri;
+    <span style=color:#f92672>}</span> 
+    listen <span style=color:#ae81ff>80</span>;
     server_name contoh.com www.contoh.com;
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">404</span>;
-<span style="color:#f92672">}</span>
-server <span style="color:#f92672">{</span>
-  listen <span style="color:#ae81ff">443</span> ssl;
+    <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>404</span>;
+<span style=color:#f92672>}</span>
+server <span style=color:#f92672>{</span>
+  listen <span style=color:#ae81ff>443</span> ssl;
   server_name contoh.com www. contoh.com;
 
   access_log /var/log/nginx/contohcom.access.log;
@@ -284,22 +55,20 @@ server <span style="color:#f92672">{</span>
   root /var/www/html/webcontoh;
   index index.html index.htm index.nginx-debian.html;
   
-  location / <span style="color:#f92672">{</span>
-    <span style="color:#75715e">#try_files $uri $uri/ =404;</span>
+  location / <span style=color:#f92672>{</span>
+    <span style=color:#75715e>#try_files $uri $uri/ =404;</span>
 	try_files $uri $uri/ /index.html;
-  <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-Kemudian buat file konfigurasi untuk <strong>sub domain tes.contoh.com</strong>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">server <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$host <span style="color:#f92672">=</span> tes.contoh.com<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">301</span> https://$host$request_uri;
-    <span style="color:#f92672">}</span>
-    listen <span style="color:#ae81ff">80</span>;
+  <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span></code></pre></div>Kemudian buat file konfigurasi untuk <strong>sub domain tes.contoh.com</strong><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>server <span style=color:#f92672>{</span>
+    <span style=color:#66d9ef>if</span> <span style=color:#f92672>(</span>$host <span style=color:#f92672>=</span> tes.contoh.com<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>301</span> https://$host$request_uri;
+    <span style=color:#f92672>}</span>
+    listen <span style=color:#ae81ff>80</span>;
     server_name tes.contoh.com;
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">404</span>;
-<span style="color:#f92672">}</span>
-server <span style="color:#f92672">{</span>
-  listen <span style="color:#ae81ff">443</span> ssl;
+    <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>404</span>;
+<span style=color:#f92672>}</span>
+server <span style=color:#f92672>{</span>
+  listen <span style=color:#ae81ff>443</span> ssl;
   server_name tes.contoh.com;
 
   access_log /var/log/nginx/tes.contoh.access.log;
@@ -313,186 +82,22 @@ server <span style="color:#f92672">{</span>
   root /var/www/html/tescontoh;
   index index.html index.htm index.nginx-debian.html;
   
-  location / <span style="color:#f92672">{</span>
-    <span style="color:#75715e">#try_files $uri $uri/ =404;</span>
+  location / <span style=color:#f92672>{</span>
+    <span style=color:#75715e>#try_files $uri $uri/ =404;</span>
 	try_files $uri $uri/ /index.html;
-  <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-Setelah itu lakukan link ke folder <code>/etc/nginx/sites-enabled/</code>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ln -s /etc/nginx/sites-available/contoh.com /etc/nginx/sites-enabled
-$ sudo ln -s /etc/nginx/sites-available/tes.contoh.com /etc/nginx/sites-enabled</code></pre></div></p>
-
-<h3 id="pengujian-ssl">Pengujian SSL</h3>
-
-<p>Lakukan pengujian konfigurasi nginx
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo nginx -t</code></pre></div>
-Jika berhasil restart konfigurasi nginx
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo systemctl restart nginx</code></pre></div>
-Tes website yang telah dipasang ssl di <a href="https://www.ssllabs.com/ssltest/" rel="nofollow noreferrer" target="_blank">SSL Labs</a></p>
-
-<h3 id="pembaruan-ssl">Pembaruan SSL</h3>
-
-<p>Sertifikat dari Let&rsquo;s Encrypt hanya berlaku selama 90 hari dan harus diperbarui. Untuk memperbarui sertifikat secara otomatis bisa menggunakan cron.<br />
-Tetapi sertifikat wildcard yang di-generate dengan cara manual (karena DNS Provider belum mendukung plugin dari Let&rsquo;s Encrypt) maka untuk memperbarui sertifikat tersebut harus menjalankan kembali perintah generate sertifikat secara manual.<br />
-Jika dijalankan secara otomatis, meskipun sudah ditambahkan opsi <code>--manual</code> maka akan muncul pesan error seperti berikut.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo certbot renew --dry-run --manual
+  <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span></code></pre></div>Setelah itu lakukan link ke folder <code>/etc/nginx/sites-enabled/</code><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo ln -s /etc/nginx/sites-available/contoh.com /etc/nginx/sites-enabled
+$ sudo ln -s /etc/nginx/sites-available/tes.contoh.com /etc/nginx/sites-enabled</code></pre></div></p><h3 id=pengujian-ssl>Pengujian SSL</h3><p>Lakukan pengujian konfigurasi nginx<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo nginx -t</code></pre></div>Jika berhasil restart konfigurasi nginx<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo systemctl restart nginx</code></pre></div>Tes website yang telah dipasang ssl di <a href=https://www.ssllabs.com/ssltest/ rel="nofollow noreferrer" target=_blank>SSL Labs</a></p><h3 id=pembaruan-ssl>Pembaruan SSL</h3><p>Sertifikat dari Let&rsquo;s Encrypt hanya berlaku selama 90 hari dan harus diperbarui. Untuk memperbarui sertifikat secara otomatis bisa menggunakan cron.<br>Tetapi sertifikat wildcard yang di-generate dengan cara manual (karena DNS Provider belum mendukung plugin dari Let&rsquo;s Encrypt) maka untuk memperbarui sertifikat tersebut harus menjalankan kembali perintah generate sertifikat secara manual.<br>Jika dijalankan secara otomatis, meskipun sudah ditambahkan opsi <code>--manual</code> maka akan muncul pesan error seperti berikut.<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo certbot renew --dry-run --manual
 ...
-The error was: PluginError<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;An authentication script must be provided with --manual-auth-hook when using the manual plugin non-interactively.&#39;</span>,<span style="color:#f92672">)</span>
-...</code></pre></div>
-Untuk mengotomatisasikan pembaruan sertifikat DNS provider dan ACME client harus mendukung plugin dari Let&rsquo;s Encrypt. Oleh karena itu pembaruan ssl di sini hanya dapat dilakukan secara manual dengan perintah.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo certbot certonly --manual -d contoh.com -d *.contoh.com</code></pre></div></p>
-
-    </div>
-
-    <div class="post-copyright">
-             
-            <p class="copyright-item">
-                <span>Author:</span>
-                <span>MFR </span>
-                </p>
-            
-           
-           
-            
-            <p class="copyright-item">
-                
-                <span>Share:</span>
-                <span>
-
-      
-        <a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2f2019%2fins-ssl-nginx-ubuntu%2f&amp;text=SSL%20Wildcard%20Let%27s%20Encrypt%20pada%20Nginx%20di%20Ubuntu%2018.04&amp;via=muhfachrulrazy" target="_blank" title="Share on Twitter">
-          <i class="iconfont icon-twitter"></i>
-        </a>
-        
-      
-      
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2f2019%2fins-ssl-nginx-ubuntu%2f" target="_blank" title="Share on Facebook">
-          <i class="iconfont icon-facebook"></i>
-        </a>
-        
-      
-      
-      
-      
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2f2019%2fins-ssl-nginx-ubuntu%2f&amp;title=SSL%20Wildcard%20Let%27s%20Encrypt%20pada%20Nginx%20di%20Ubuntu%2018.04" target="_blank" title="Share on LinkedIn">
-          <i class="iconfont icon-linkedin"></i>
-        </a>
-        
-      
-      
-        
-      
-        
-      
-
-          
-
-          
-
-          
-
-          
-</span>
-                
-            </p>
-
-           
-    </div>
-
-  
-    <div class="post-tags">
-        
-            <section>
-            <i class="iconfont icon-icon-tag"></i>Tag: 
-            
-            <span class="tag"><a href="https://mfachrulrazy.github.io/tags/ubuntu/">
-                    #ubuntu</a></span>
-            
-            <span class="tag"><a href="https://mfachrulrazy.github.io/tags/linux/">
-                    #linux</a></span>
-            
-            <span class="tag"><a href="https://mfachrulrazy.github.io/tags/web-server/">
-                    #web server</a></span>
-            
-            <span class="tag"><a href="https://mfachrulrazy.github.io/tags/nginx/">
-                    #nginx</a></span>
-            
-            </section>
-        
-        <section>
-                <a href="javascript:window.history.back();">Back</a></span> · 
-                <span><a href="https://mfachrulrazy.github.io/">Home</a></span>
-        </section>
-    </div>
-
-    <div class="post-nav">
-        
-        <a href="https://mfachrulrazy.github.io/2019/script-run-vbox/" class="prev" rel="prev" title="Menjalankan VM Vbox melalui File"><i class="iconfont icon-dajiantou"></i>&nbsp;Menjalankan VM Vbox melalui File</a>
-         
-        
-    </div>
-
-    <div class="post-comment">
-          
-          
-  
-
- 
-
-
-          
-    </div>
-</article>
-          </div>
-		   </main>
-      <footer class="footer">
-    <div class="copyright">
-        &copy;
-        
-        <span itemprop="copyrightYear">2015 - 2019</span>
-        
-         
-            <span class="author" itemprop="copyrightHolder"><a href="https://mfachrulrazy.github.io/">MFR</a> | </span>
-         
-
-		  <span>Crafted with ❤️ by Us </span>
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
-    
-  
-
-
-
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-148178248-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-
-     </div>
-  </body>
-</html>
+The error was: PluginError<span style=color:#f92672>(</span><span style=color:#e6db74>&#39;An authentication script must be provided with --manual-auth-hook when using the manual plugin non-interactively.&#39;</span>,<span style=color:#f92672>)</span>
+...</code></pre></div>Untuk mengotomatisasikan pembaruan sertifikat DNS provider dan ACME client harus mendukung plugin dari Let&rsquo;s Encrypt. Oleh karena itu pembaruan ssl di sini hanya dapat dilakukan secara manual dengan perintah.<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo certbot certonly --manual -d contoh.com -d *.contoh.com</code></pre></div></p></div><div class=post-copyright><p class=copyright-item><span>Author:</span>
+<span>MFR</span></p><p class=copyright-item><span>Share:</span>
+<span><a href="//twitter.com/share?url=https%3a%2f%2fmfachrulrazy.github.io%2f2019%2fins-ssl-nginx-ubuntu%2f&amp;text=SSL%20Wildcard%20Let%27s%20Encrypt%20pada%20Nginx%20di%20Ubuntu%2018.04&amp;via=muhfachrulrazy" target=_blank title="Share on Twitter"><i class="iconfont icon-twitter"></i></a><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmfachrulrazy.github.io%2f2019%2fins-ssl-nginx-ubuntu%2f" target=_blank title="Share on Facebook"><i class="iconfont icon-facebook"></i></a><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmfachrulrazy.github.io%2f2019%2fins-ssl-nginx-ubuntu%2f&amp;title=SSL%20Wildcard%20Let%27s%20Encrypt%20pada%20Nginx%20di%20Ubuntu%2018.04" target=_blank title="Share on LinkedIn"><i class="iconfont icon-linkedin"></i></a></span></p></div><div class=post-tags><section><i class="iconfont icon-icon-tag"></i>Tag:
+<span class=tag><a href=https://mfachrulrazy.github.io/tags/ubuntu/>#ubuntu</a></span>
+<span class=tag><a href=https://mfachrulrazy.github.io/tags/linux/>#linux</a></span>
+<span class=tag><a href=https://mfachrulrazy.github.io/tags/web-server/>#web server</a></span>
+<span class=tag><a href=https://mfachrulrazy.github.io/tags/nginx/>#nginx</a></span></section><section><a href=javascript:window.history.back();>Back</a></span> ·
+<span><a href=https://mfachrulrazy.github.io/>Home</a></span></section></div><div class=post-nav><a href=https://mfachrulrazy.github.io/2019/script-run-vbox/ class=prev rel=prev title="Menjalankan VM Vbox melalui File"><i class="iconfont icon-dajiantou"></i>&nbsp;Menjalankan VM Vbox melalui File</a></div><div class=post-comment></div></article></div></main><footer class=footer><div class=copyright>&copy;
+<span itemprop=copyrightYear>2015 - 2019</span>
+<span class=author itemprop=copyrightHolder><a href=https://mfachrulrazy.github.io/>MFR</a> |</span>
+<span>Crafted with ❤️ by Us</span></div></footer><script src=/js/vendor_no_gallery.min.js async></script><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-148178248-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></div></body></html>

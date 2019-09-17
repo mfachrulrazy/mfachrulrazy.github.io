@@ -1,69 +1,24 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>MFR Official Blog on MFR Official Blog</title>
-    <link>https://mfachrulrazy.github.io/</link>
-    <description>Recent content in MFR Official Blog on MFR Official Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mfachrulrazy.github.io/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Posts</title>
-      <link>https://mfachrulrazy.github.io/posts/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mfachrulrazy.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/about/</guid>
-      <description>
-
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MFR Official Blog on MFR Official Blog</title><link>https://mfachrulrazy.github.io/</link><description>Recent content in MFR Official Blog on MFR Official Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://mfachrulrazy.github.io/" rel="self" type="application/rss+xml"/><item><title>Posts</title><link>https://mfachrulrazy.github.io/posts/</link><pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/posts/</guid><description/></item><item><title/><link>https://mfachrulrazy.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/about/</guid><description>
 &lt;p&gt;&lt;strong&gt;Assalamualaikum&lt;/strong&gt;,&lt;br /&gt;
 Halo All.. Perkenalkan saya &lt;a href=&#34;https://www.linkedin.com/in/mfachrulrazy/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Oji&lt;/a&gt; dari Makassar.&lt;br /&gt;
 Keseharian saya bergelut dalam dunia IT itu bisa dibilang hanya tukang install dan konfig server, biasa juga buat script2 dan aplikasi sederhana :)&lt;br /&gt;
 Saya juga masih aktif dalam beberapa organisasi dan komunitas IT dan open source.&lt;br /&gt;
 Lanjut, jadi halaman ini saya buat untuk menjelaskan beberapa hal mengenai blog ini. Berikut sedikit FAQ-nya&lt;/p&gt;
-
 &lt;h3 id=&#34;arti-dari-logo-blog-ini&#34;&gt;Arti dari Logo Blog ini?&lt;/h3&gt;
-
 &lt;p&gt;&lt;img src=&#34;https://mfachrulrazy.github.io/apple-touch-icon.png&#34; alt=&#34;&#34; /&gt;&lt;br /&gt;
 Logo blog di atas terinspirasi dari bentuk di dalam angka 0, mungkin angka 0 yang berbentuk sedikit kotak :)&lt;br /&gt;
 Filosofinya begini, ketika kita terlahir di dunia ini kita itu terlahir suci, fitrah, atau kalau direpresentasikan dengan angka yang paling cocok adalah 0 (menurut saya pribadi).&lt;/p&gt;
-
 &lt;h3 id=&#34;kenapa-buat-blog-ini&#34;&gt;Kenapa buat Blog ini?&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Tujuannya sederhana saja, yaitu untuk &lt;em&gt;sharing&lt;/em&gt; segala hal yang telah saya lakukan dan alami sendiri dalam dunia IT (mungkin lebih banyak dalam bidang jaringan dan sys admin) :)&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;Selain itu blog ini juga sebagai wadah saya dalam menuangkan ide-ide saya dalam tulisan.&lt;/li&gt;
 &lt;li&gt;Blog ini sengajar tidak dibuat seo-friendly, alasannya karena blog ini sebenarnya lebih ke arah catatan pribadi saja.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;ingin-berkolaborasi&#34;&gt;Ingin berkolaborasi?&lt;/h3&gt;
-
 &lt;p&gt;Ingin berkolaborasi demi memajukan dunia IT di Indonesia bersama-sama? Atau hanya ingin ngobrol2 ringan tentang apapun itu..&lt;br /&gt;
-Just Email Me on &lt;strong&gt;mfachrulrazy[at]gmail[dot]com&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mfachrulrazy.github.io/ref/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/ref/</guid>
-      <description>
-
+Just Email Me on &lt;strong&gt;mfachrulrazy[at]gmail[dot]com&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://mfachrulrazy.github.io/ref/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/ref/</guid><description>
 &lt;p&gt;Berikut daftar Situs yang menjadi referensi saya dalam seluruh postingan di Blog ini.&lt;/p&gt;
-
 &lt;h3 id=&#34;internasional&#34;&gt;Internasional&lt;/h3&gt;
-
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linode.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Linode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.digitalocean.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Digital Ocean&lt;/a&gt;&lt;/li&gt;
@@ -91,17 +46,10 @@ Just Email Me on &lt;strong&gt;mfachrulrazy[at]gmail[dot]com&lt;/strong&gt;&lt;/
 &lt;li&gt;&lt;a href=&#34;https://linuxhostsupport.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Linux Host Support&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://linux.die.net&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Linux die&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;h3 id=&#34;indonesia&#34;&gt;Indonesia&lt;/h3&gt;
-
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://linuxkesehatan.wordpress.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;linux kesehatan&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.kangerik.id&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;kang erik&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://thinkxfree.wordpress.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;thinkxfree&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.mikrotik.co.id&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Mikrotik&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/ol&gt;</description></item></channel></rss>

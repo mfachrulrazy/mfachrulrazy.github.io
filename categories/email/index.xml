@@ -1,28 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>email on MFR Official Blog</title>
-    <link>https://mfachrulrazy.github.io/categories/email/</link>
-    <description>Recent content in email on MFR Official Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 27 Dec 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://mfachrulrazy.github.io/categories/email/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Email Phising Youtube</title>
-      <link>https://mfachrulrazy.github.io/2017/spam-youtube/</link>
-      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/spam-youtube/</guid>
-      <description>Akhir tahun 2017, saya mendapatkan email dari youtube bahwa saya beruntung mendapatkan iPhone dan terdapat sebuah link (yang telah disingkat) mengatakan bahwa akun youtube saya telah dibuat menjadi admin. Berikut tampilannya
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>email on MFR Official Blog</title><link>https://mfachrulrazy.github.io/categories/email/</link><description>Recent content in email on MFR Official Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://mfachrulrazy.github.io/categories/email/index.xml" rel="self" type="application/rss+xml"/><item><title>Email Phising Youtube</title><link>https://mfachrulrazy.github.io/2017/spam-youtube/</link><pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate><guid>https://mfachrulrazy.github.io/2017/spam-youtube/</guid><description>Akhir tahun 2017, saya mendapatkan email dari youtube bahwa saya beruntung mendapatkan iPhone dan terdapat sebuah link (yang telah disingkat) mengatakan bahwa akun youtube saya telah dibuat menjadi admin. Berikut tampilannya
 Dari isi email sudah curiga dengan bentuk kata-katanya dan link yang disingkat
 Hal pertama yang dilakukan adalah periksa pengirim email dari sini dapat dilihat sumbernya sepertinya valid (noreply@youtube.com)
 Kemudian lihat kode aslinya (show original)
-Sebelum melihat lebih detail isi header, saya melihat-lihat di forum untuk keterangan youtube tersebut.</description>
-    </item>
-    
-  </channel>
-</rss>
+Sebelum melihat lebih detail isi header, saya melihat-lihat di forum untuk keterangan youtube tersebut.</description></item></channel></rss>
