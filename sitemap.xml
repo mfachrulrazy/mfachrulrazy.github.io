@@ -112,7 +112,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/web-server/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/web-server/</loc>
       
       <lastmod>2019-05-30T00:00:00+00:00</lastmod>
       
@@ -122,7 +122,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/web-server/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/web-server/</loc>
       
       <lastmod>2019-05-30T00:00:00+00:00</lastmod>
       
@@ -222,16 +222,6 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/blog/</loc>
-      
-      <lastmod>2019-04-06T09:45:17+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://mfachrulrazy.github.io/categories/blog/</loc>
       
       <lastmod>2019-04-06T09:45:17+08:00</lastmod>
@@ -242,7 +232,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/hugo/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/blog/</loc>
       
       <lastmod>2019-04-06T09:45:17+08:00</lastmod>
       
@@ -262,7 +252,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/2019/upg-hugo-win/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/hugo/</loc>
       
       <lastmod>2019-04-06T09:45:17+08:00</lastmod>
       
@@ -272,7 +262,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/windows/</loc>
+      <loc>https://mfachrulrazy.github.io/2019/upg-hugo-win/</loc>
       
       <lastmod>2019-04-06T09:45:17+08:00</lastmod>
       
@@ -292,7 +282,17 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/database/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/windows/</loc>
+      
+      <lastmod>2019-04-06T09:45:17+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://mfachrulrazy.github.io/tags/database/</loc>
       
       <lastmod>2019-04-03T00:00:00+00:00</lastmod>
       
@@ -302,7 +302,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/database/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/database/</loc>
       
       <lastmod>2019-04-03T00:00:00+00:00</lastmod>
       
@@ -352,7 +352,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/excel/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/excel/</loc>
       
       <lastmod>2019-02-20T00:00:00+00:00</lastmod>
       
@@ -362,7 +362,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/excel/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/excel/</loc>
       
       <lastmod>2019-02-20T00:00:00+00:00</lastmod>
       
@@ -422,7 +422,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/devops/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/devops/</loc>
       
       <lastmod>2019-01-12T08:32:46+08:00</lastmod>
       
@@ -432,7 +432,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/devops/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/devops/</loc>
       
       <lastmod>2019-01-12T08:32:46+08:00</lastmod>
       
@@ -462,9 +462,29 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/networking/</loc>
+      <loc>https://mfachrulrazy.github.io/2019/set-time-psgsql/</loc>
       
-      <lastmod>2018-12-09T00:00:00+00:00</lastmod>
+      <lastmod>2019-01-07T20:04:48+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://mfachrulrazy.github.io/tags/postgresql/</loc>
+      
+      <lastmod>2019-01-07T20:04:48+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://mfachrulrazy.github.io/categories/postgresql/</loc>
+      
+      <lastmod>2019-01-07T20:04:48+08:00</lastmod>
       
       
       
@@ -482,7 +502,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/remote/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/networking/</loc>
       
       <lastmod>2018-12-09T00:00:00+00:00</lastmod>
       
@@ -502,7 +522,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/ssh/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/remote/</loc>
       
       <lastmod>2018-12-09T00:00:00+00:00</lastmod>
       
@@ -513,6 +533,16 @@
   
     <url>
       <loc>https://mfachrulrazy.github.io/categories/ssh/</loc>
+      
+      <lastmod>2018-12-09T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://mfachrulrazy.github.io/tags/ssh/</loc>
       
       <lastmod>2018-12-09T00:00:00+00:00</lastmod>
       
@@ -552,7 +582,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/server/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/server/</loc>
       
       <lastmod>2018-11-17T00:00:00+00:00</lastmod>
       
@@ -562,7 +592,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/server/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/server/</loc>
       
       <lastmod>2018-11-17T00:00:00+00:00</lastmod>
       
@@ -612,7 +642,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/varnish/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/varnish/</loc>
       
       <lastmod>2018-10-26T00:00:00+00:00</lastmod>
       
@@ -622,7 +652,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/varnish/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/varnish/</loc>
       
       <lastmod>2018-10-26T00:00:00+00:00</lastmod>
       
@@ -712,7 +742,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/git/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/git/</loc>
       
       <lastmod>2018-09-04T00:00:00+00:00</lastmod>
       
@@ -722,7 +752,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/git/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/git/</loc>
       
       <lastmod>2018-09-04T00:00:00+00:00</lastmod>
       
@@ -972,7 +1002,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/security/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/security/</loc>
       
       <lastmod>2018-01-25T00:00:00+00:00</lastmod>
       
@@ -982,7 +1012,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/security/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/security/</loc>
       
       <lastmod>2018-01-25T00:00:00+00:00</lastmod>
       
@@ -1052,7 +1082,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/mikrotik/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/mikrotik/</loc>
       
       <lastmod>2017-12-23T00:00:00+00:00</lastmod>
       
@@ -1062,7 +1092,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/mikrotik/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/mikrotik/</loc>
       
       <lastmod>2017-12-23T00:00:00+00:00</lastmod>
       
@@ -1412,7 +1442,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/proxmox/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/proxmox/</loc>
       
       <lastmod>2017-07-12T00:00:00+00:00</lastmod>
       
@@ -1422,7 +1452,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/proxmox/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/proxmox/</loc>
       
       <lastmod>2017-07-12T00:00:00+00:00</lastmod>
       
@@ -1572,7 +1602,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/wireless/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/wireless/</loc>
       
       <lastmod>2017-03-12T00:00:00+00:00</lastmod>
       
@@ -1582,7 +1612,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/wireless/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/wireless/</loc>
       
       <lastmod>2017-03-12T00:00:00+00:00</lastmod>
       
@@ -1672,7 +1702,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/categories/code-editor/</loc>
+      <loc>https://mfachrulrazy.github.io/tags/code-editor/</loc>
       
       <lastmod>2016-08-10T00:00:00+00:00</lastmod>
       
@@ -1682,7 +1712,7 @@
     </url>
   
     <url>
-      <loc>https://mfachrulrazy.github.io/tags/code-editor/</loc>
+      <loc>https://mfachrulrazy.github.io/categories/code-editor/</loc>
       
       <lastmod>2016-08-10T00:00:00+00:00</lastmod>
       

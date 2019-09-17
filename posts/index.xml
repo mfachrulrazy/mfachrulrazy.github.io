@@ -151,6 +151,16 @@ Gzip dan Gunzip Compress file dengan menggunakan gzip # gzip namafile.</descript
     </item>
     
     <item>
+      <title>Mengatur Waktu pada Postgresql</title>
+      <link>https://mfachrulrazy.github.io/2019/set-time-psgsql/</link>
+      <pubDate>Mon, 07 Jan 2019 20:04:48 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/set-time-psgsql/</guid>
+      <description>Pengaturan waktu pada postgresql dapat dilakukan dengan cara berikut.
+Melihat daftar time zone select * from pg_timezone_names; Atur waktu sesuai dengan zona set timezone = &amp;#39;Asia/Makassar&amp;#39;; Cek perubahan select now();</description>
+    </item>
+    
+    <item>
       <title>Troubleshoot IP SSH berubah</title>
       <link>https://mfachrulrazy.github.io/2018/tb-ssh-key/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>

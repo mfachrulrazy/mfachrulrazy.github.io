@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postgresql on MFR Official Blog</title>
+    <link>https://mfachrulrazy.github.io/categories/postgresql/</link>
+    <description>Recent content in postgresql on MFR Official Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Jan 2019 20:04:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://mfachrulrazy.github.io/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mengatur Waktu pada Postgresql</title>
+      <link>https://mfachrulrazy.github.io/2019/set-time-psgsql/</link>
+      <pubDate>Mon, 07 Jan 2019 20:04:48 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/set-time-psgsql/</guid>
+      <description>Pengaturan waktu pada postgresql dapat dilakukan dengan cara berikut.
+Melihat daftar time zone select * from pg_timezone_names; Atur waktu sesuai dengan zona set timezone = &amp;#39;Asia/Makassar&amp;#39;; Cek perubahan select now();</description>
+    </item>
+    
+  </channel>
+</rss>
