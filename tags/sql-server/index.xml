@@ -6,10 +6,31 @@
     <description>Recent content in sql server on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/sql-server/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Restore Database SQL Server</title>
+      <link>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/restoredb-sqlsrv/</guid>
+      <description>Proses restore database berhenti dan tidak berubah status. Solusi Gunakan t-sql dan masukkan kueri untuk restore database dengan menggunakan opsi with recovery RESTORE DATABASE NamaDB FROM DISK = &amp;#39;Path\to\file.bak&amp;#39; WITH RECOVERY GO</description>
+    </item>
+    
+    <item>
+      <title>SQL Server Database Suspect</title>
+      <link>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</link>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/suspectdb-sqlsrv/</guid>
+      <description>Terkadang Microsoft SQL Server mengalami error, salah satunya adalah Suspect Database. Salah satu penyebabnya adalah server langsung mati (karena listrik mati atau power failure).
+Salah satu solusinya adalah memperbaiki database secara manual. Contoh dalam hal ini nama database adalah DBTes.
+1. Buka aplikasi query sql seperti Management Studio
+2. Dalam query tersebut ubah database menjadi mode emergency USE master GO ALTER DATABASE DBTes SET EMERGENCY GO 3. Eksekusi perintah dbcc checkdb DBCC CHECKDB (DBTes) GO 4.</description>
+    </item>
     
     <item>
       <title>Install PHP 7.0 dan Modul SQL Server pada Centos</title>

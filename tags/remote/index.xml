@@ -6,10 +6,33 @@
     <description>Recent content in remote on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/remote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Troubleshoot IP SSH berubah</title>
+      <link>https://mfachrulrazy.github.io/2018/tb-ssh-key/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/tb-ssh-key/</guid>
+      <description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
+ Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
+ Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description>
+    </item>
+    
+    <item>
+      <title>Membuat SSH Key Pair di Putty</title>
+      <link>https://mfachrulrazy.github.io/2018/ssh-key-putty/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/ssh-key-putty/</guid>
+      <description>Konfigurasi putty untuk autentikasi dengan menggunakan key (key based auth) beberapa aplikasi bawaan putty. Berikut langkahnya.
+Client Windows  Buka program Puttygen kemudian klik Generate dan arahkan mouse ke sembarang arah pada area kosong di bawah bar progress (hijau) untuk membuat key sampai selesai.  Masukkan passphrase untuk keamanan key.
+ Kemudian simpan public dan private key dari putty di tempat yang aman.
+ Salin public key dari putty ke file authorized_keys di server linux, selanjutnya kembali ke aplikasi putty, masuk pada bagian session masukkan alamat server  Kemudian pada bagian Connection &amp;gt; Data masukkan username sehingga tidak perlu meminta untuk masukkan username  Kemudian cek pada bagian SSH &amp;gt; Auth pastikan Pageant tercentang  Kemudian kembali ke menu session dan klik save.</description>
+    </item>
     
     <item>
       <title>Error Remote Desktop Connection</title>
@@ -21,6 +44,18 @@
     </item>
     
     <item>
+      <title>Remote Mikrotik Gns3 via Winbox</title>
+      <link>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</guid>
+      <description>Untuk terhubung dengan mikrotik di GNS3 dapat menggunakan interface loopback.
+Gunakan cloud untuk menghubungkan interface jaringan komputer ke winbox gns 3 &amp;gt; klik kanan Configure
+Kemudian perhatikan bagian Ethernet Interfaces terdapat Npcap Loopback Adapter
+Perhatikan bagian interface di sistem operasi (windows)</description>
+    </item>
+    
+    <item>
       <title>Backspace pada Virtual Box</title>
       <link>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</link>
       <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
@@ -28,6 +63,15 @@
       <guid>https://mfachrulrazy.github.io/2017/err-backspace-vbox/</guid>
       <description>Kali ini masalah yang dihadapi adalah tombol keyboard backspace tidak dapat berfungsi di mesin virtual pada Virtual Box.
 Penyebabnya adalah karena aplikasi remote yang digunakan (tight-vnc) terdapat bug yang memang tidak dapat menekan tombol backspace. Solusi Gunakan aplikasi remote lain</description>
+    </item>
+    
+    <item>
+      <title>Install Remote Desktop Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/2017/remote-des-ubuntu/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/remote-des-ubuntu/</guid>
+      <description> Update paket Ubuntu, kemudian install paket xrdp $ sudo apt-get install xrdp Install paket xfce4 $ sudo apt-get install xfce4 Modifikasi xrdp berjalan startup file di ~/.xsession $ echo xfce4-session &amp;gt;~/.xsession Edit startup file xrdp untuk mengeksekusi xfce4 service pada saat startup $ sudo nano /etc/xrdp/startwm.sh Tambahkan: ... startxfce4 . /etc/X11/Xsession Sampai di sini, xrdp sudah bisa berjalan tetapi belum bisa login karena port 3350 belum “LISTENING” $ sudo systemctl enable xrdp Kemudian reboot sistem   </description>
     </item>
     
     <item>

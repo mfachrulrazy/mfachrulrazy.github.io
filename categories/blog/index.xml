@@ -18,7 +18,8 @@
       
       <guid>https://mfachrulrazy.github.io/2019/upg-hugo-win/</guid>
       <description>Upgrade Hugo dapat dilakukan dengan paket manager choco yang telah diinstall pada windows.
-&amp;gt; choco upgrade hugo Kemudian Ketik Y untuk menjalankan script upgrade hugo.</description>
+&amp;gt; choco upgrade hugo Kemudian Ketik Y untuk menjalankan script upgrade hugo.
+Install Hugo-extended Hugo extended dapat bekerja dengan native Sass/Scss. Instalasi hugo extended pada windows dapat menggunakan choco &amp;gt; choco install hugo-extended Kemudian Ketik Y untuk menjalankan script install hugo-extended.</description>
     </item>
     
     <item>

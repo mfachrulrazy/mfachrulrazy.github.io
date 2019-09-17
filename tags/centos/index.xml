@@ -36,6 +36,18 @@ Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-c
     </item>
     
     <item>
+      <title>Kompress dan Ekstrak File di Centos</title>
+      <link>https://mfachrulrazy.github.io/2019/zip-unzip-cent/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/zip-unzip-cent/</guid>
+      <description>Kompress File dengan Zip Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
+Ekstrak File dengan Unzip Ekstrak file bisa menggunakan unzip.
+Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr
+Gzip dan Gunzip Compress file dengan menggunakan gzip # gzip namafile.</description>
+    </item>
+    
+    <item>
       <title>Install PHP 7.0 dan Modul SQL Server pada Centos</title>
       <link>https://mfachrulrazy.github.io/2018/install-php7/</link>
       <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
@@ -84,6 +96,37 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
     </item>
     
     <item>
+      <title>SE Linux pada Centos</title>
+      <link>https://mfachrulrazy.github.io/2018/selinux-centos/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/selinux-centos/</guid>
+      <description>SE Linux atau Security Enhanced Linux adalah salah satu fitur keamanan baru dari linux. SE Linux mencakup pada penggunaan proses, user linux, dan juga file. Secara default SE linux berjalan dengan mode Enforcing (default).
+Untuk melihat konteks SE Linux dapat menggunakan perintah
+$ ls -Z  SE Linux ada tiga mode, yaitu:
+ Enforcing : Mode ini akan menahan semua proses yang berlawanan dengan apa yang telah didefinisikan pada kebijakan (policy).</description>
+    </item>
+    
+    <item>
+      <title>Troubleshoot Update Repo Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-update-cent/</link>
+      <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-update-cent/</guid>
+      <description>Jadi ceritanya, pada saat update muncul error karena tidak dapat diupdate (delta rpm disabled) Untuk mengatasi masalah tersebut kita hanya butuh untuk menginstall paket delta rpm # yum -y install deltarpm</description>
+    </item>
+    
+    <item>
+      <title>Uninstall Paket Linux</title>
+      <link>https://mfachrulrazy.github.io/2017/uninst-paket-centos7/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/uninst-paket-centos7/</guid>
+      <description>Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
+Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.</description>
+    </item>
+    
+    <item>
       <title>Install Mysql Centos 7</title>
       <link>https://mfachrulrazy.github.io/2017/install-mysql-cent/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
@@ -114,6 +157,41 @@ Tapi masalahnya yaitu file network di config tidak muncul. Hal tersebut dapat di
     </item>
     
     <item>
+      <title>Repository Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/repo-cent-7/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/repo-cent-7/</guid>
+      <description>Melihat repository yang aktif pada centos
+# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
+# yum repolist enable # yum repolist disable # yum repolist all Melihat repository dengan nama ‘repoA-id’
+# yum --disablerepo=&amp;#34;*&amp;#34; --enablerepo=&amp;#34;repoA-id&amp;#34; list available Cek epel repository
+# yum repolist | grep &amp;#34;^epel\|repo id&amp;#34; Hapus repository
+# yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository</description>
+    </item>
+    
+    <item>
+      <title>Troubleshoot Script Email PHP</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-php-email/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-php-email/</guid>
+      <description>Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
+Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
+Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshoot Web Server I</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-web-server1/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-web-server1/</guid>
+      <description>Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
+Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.</description>
+    </item>
+    
+    <item>
       <title>Linux Shell Shortcut</title>
       <link>https://mfachrulrazy.github.io/2017/linux-shell-sc/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
@@ -130,6 +208,17 @@ Berpindah ke akhir baris Ctrl + E Berpindah ke awal baris Ctrl + A Maju satu kat
       
       <guid>https://mfachrulrazy.github.io/2017/install-php5-cent/</guid>
       <description> Download paket repositori epel secara manual menggunakan wget # wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm # wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm Install menggunakan rpm # rpm -Uvh remi-release-7*.rpm epel-release-7*.rpm Install yum-utils untuk mengatur repositori # yum install yum-utils Kemudian enable php 5.4 dan install paket php # #yum-config-manager --enable remi-php54 # yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo Setelah itu cek versi php-nya # php -v  </description>
+    </item>
+    
+    <item>
+      <title>Reset Password Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/reset-pass-centos7/</link>
+      <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/reset-pass-centos7/</guid>
+      <description>Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
+:/# chroot /sysroot  kemudian reset password
+:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.</description>
     </item>
     
     <item>

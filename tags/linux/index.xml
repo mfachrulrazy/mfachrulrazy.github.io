@@ -35,6 +35,19 @@ Cek versi python # python3.7 -V Python 3.</description>
     </item>
     
     <item>
+      <title>Transfer File pada Ubuntu</title>
+      <link>https://mfachrulrazy.github.io/2019/transfer-file-linux/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/transfer-file-linux/</guid>
+      <description>Transfer file antar mesin linux bisa menggunakan tools scp.
+Jika ingin mengirim file dari serverB dengan port ssh 22123 ke serverA dan login dari serverA.
+# scp -P 22123 -v user@serverB:/folder/file /folder_serverA Opsi -P untuk port dan -v untuk verbose.
+Jika kita menggunakan scp dan ingin menutup session ssh, maka scp juga akan terputus. Oleh karena itu scp akan kita jalankan di background proses dengan menggunakan nohup.
+Ketika scp dijalankan biasanya akan meminta password (jika belum bertukar ssh key) oleh karena itu gunakan perintah di bawah jika ingin menampilkan permintaan password.</description>
+    </item>
+    
+    <item>
       <title>Install Docker di Centos 7</title>
       <link>https://mfachrulrazy.github.io/2019/ins-docker-cent7/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
@@ -44,6 +57,18 @@ Cek versi python # python3.7 -V Python 3.</description>
 Persiapan Repository Install terlebih dahulu tools yang dibutuhkan seperti yum-utils yang menyediakan yum-config-manager, dan device-mapper-persistent-data serta lvm2 yang dibutuhkan oleh devicemapper $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2 Gunakan repository stable $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 Install Docker Engine Install tools docker $ sudo yum install docker-ce docker-ce-cli containerd.io Kemudian prompt key GPG-nya untuk memastikan sesuai dengan fingerprint berikut:
 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35</description>
+    </item>
+    
+    <item>
+      <title>Kompress dan Ekstrak File di Centos</title>
+      <link>https://mfachrulrazy.github.io/2019/zip-unzip-cent/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/zip-unzip-cent/</guid>
+      <description>Kompress File dengan Zip Kompress file dengan menggunakan zip # zip -r namafile.zip nama_file Penggunaan opsi -r berarti dilakukan rekursif di dalam folder dan subfolder
+Ekstrak File dengan Unzip Ekstrak file bisa menggunakan unzip.
+Untuk melihat isi dari file zip tanpa meng-ekstrak terlebih dahulu # unzip -l namafile.zip Ekstark file zip # unzip namafile.zip Ekstrak dengan tujuan direktori tertentu # unzip namafile.zip -d /var/usr
+Gzip dan Gunzip Compress file dengan menggunakan gzip # gzip namafile.</description>
     </item>
     
     <item>
@@ -68,6 +93,18 @@ Perintah netstat Perintah netstat adalah perintah yang terdapat pada beberapa ve
     </item>
     
     <item>
+      <title>Membuat SSH Key Pair di Putty</title>
+      <link>https://mfachrulrazy.github.io/2018/ssh-key-putty/</link>
+      <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/ssh-key-putty/</guid>
+      <description>Konfigurasi putty untuk autentikasi dengan menggunakan key (key based auth) beberapa aplikasi bawaan putty. Berikut langkahnya.
+Client Windows  Buka program Puttygen kemudian klik Generate dan arahkan mouse ke sembarang arah pada area kosong di bawah bar progress (hijau) untuk membuat key sampai selesai.  Masukkan passphrase untuk keamanan key.
+ Kemudian simpan public dan private key dari putty di tempat yang aman.
+ Salin public key dari putty ke file authorized_keys di server linux, selanjutnya kembali ke aplikasi putty, masuk pada bagian session masukkan alamat server  Kemudian pada bagian Connection &amp;gt; Data masukkan username sehingga tidak perlu meminta untuk masukkan username  Kemudian cek pada bagian SSH &amp;gt; Auth pastikan Pageant tercentang  Kemudian kembali ke menu session dan klik save.</description>
+    </item>
+    
+    <item>
       <title>Install SNMP Linux</title>
       <link>https://mfachrulrazy.github.io/2018/install-snmp-linux/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
@@ -86,6 +123,17 @@ Perintah netstat Perintah netstat adalah perintah yang terdapat pada beberapa ve
     </item>
     
     <item>
+      <title>Mengenal Ubuntu Server 18.04</title>
+      <link>https://mfachrulrazy.github.io/2018/ubuntu-srv-1804/</link>
+      <pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/ubuntu-srv-1804/</guid>
+      <description>Ubuntu mengeluarkan rilis LTS terbaru nya, yaitu Ubuntu 18.04 dengan codename Bionic Beaver. Banyak perubahan yang terjadi pada versi ini, berikut beberapa hal yang berbeda dari ubuntu 18.04.
+Pengaturan Networking Pengaturan IP Address Pengaturan networking sudah tidak menggunakan tools ifupdown, tetapi menggunakan netplan. Netplan menggunakan format .yaml dengan menggunakan indentasi (seperti python).
+Dalam folder /etc/netplan terdapat file 50-cloud-init.yaml di mana dalam file tersebut adalah file konfigurasi default dari ubuntu 18.</description>
+    </item>
+    
+    <item>
       <title>Install Linux dari Windows Store</title>
       <link>https://mfachrulrazy.github.io/2018/linux-win-store/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
@@ -94,6 +142,18 @@ Perintah netstat Perintah netstat adalah perintah yang terdapat pada beberapa ve
       <description> Pertama harus mengaktifkan WSL atau Windows Subsystem for Linux
  Caranya, buka powershell sebagai Administrator dan jalankan perintah berikut:
 &amp;gt; Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux Restart PC Kemudian install Linux dari Windows Store  </description>
+    </item>
+    
+    <item>
+      <title>SE Linux pada Centos</title>
+      <link>https://mfachrulrazy.github.io/2018/selinux-centos/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/selinux-centos/</guid>
+      <description>SE Linux atau Security Enhanced Linux adalah salah satu fitur keamanan baru dari linux. SE Linux mencakup pada penggunaan proses, user linux, dan juga file. Secara default SE linux berjalan dengan mode Enforcing (default).
+Untuk melihat konteks SE Linux dapat menggunakan perintah
+$ ls -Z  SE Linux ada tiga mode, yaitu:
+ Enforcing : Mode ini akan menahan semua proses yang berlawanan dengan apa yang telah didefinisikan pada kebijakan (policy).</description>
     </item>
     
     <item>
@@ -114,6 +174,16 @@ Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut
     </item>
     
     <item>
+      <title>Uninstall Paket Linux</title>
+      <link>https://mfachrulrazy.github.io/2017/uninst-paket-centos7/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/uninst-paket-centos7/</guid>
+      <description>Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
+Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.</description>
+    </item>
+    
+    <item>
       <title>Install Nodejs Centos 7</title>
       <link>https://mfachrulrazy.github.io/2017/install-nodejs-cent/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
@@ -121,6 +191,20 @@ Konfigurasi rsync yang digunakan pada server menggunakan parameter berikut
       <guid>https://mfachrulrazy.github.io/2017/install-nodejs-cent/</guid>
       <description>Nodejs adalah salah satu framework javascript yang berjalan pada sisi server (server side). Kali ini nodejs akan diinstall pada Centos 7.
 1. Download node js melalui situs resminya # wget http://nodejs.org/dist/v0.10.30/node-v0.10.30.tar.gz 2. Ekstrak file yang telah didownload dan masuk ke direktori hasil ekstrak # tar xzvf node-v* &amp;amp;&amp;amp; cd node-v* 3. Install gcc dan c++ untuk melakukan compile # yum install gcc gcc-c++ 4. Konfigurasi dan lakukan compile # ./configure # make # make install 5.</description>
+    </item>
+    
+    <item>
+      <title>Repository Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/repo-cent-7/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/repo-cent-7/</guid>
+      <description>Melihat repository yang aktif pada centos
+# yum –v repolist # yum –v repolist | less # yum repolist Melihat repository yang enable/disable
+# yum repolist enable # yum repolist disable # yum repolist all Melihat repository dengan nama ‘repoA-id’
+# yum --disablerepo=&amp;#34;*&amp;#34; --enablerepo=&amp;#34;repoA-id&amp;#34; list available Cek epel repository
+# yum repolist | grep &amp;#34;^epel\|repo id&amp;#34; Hapus repository
+# yum remove epel-release Hapus cache repository # yum clean all # yum clean cache Hapus cache repo manual # rm –rf /var/cache/yum Install dan aktifkan EPEL dan Remi repository</description>
     </item>
     
     <item>
@@ -154,6 +238,17 @@ Menghapus pesan No Valid Subscription Sejak versi proxmox 4.x ke atas biasanya p
       <guid>https://mfachrulrazy.github.io/2017/linux-shell-sc/</guid>
       <description>Berikut beberapa shortcut yang sering digunakan dalam shell linux.
 Berpindah ke akhir baris Ctrl + E Berpindah ke awal baris Ctrl + A Maju satu kata Esc + F Mundur satu kata Esc + B Keluar secara paksa dari aplikasi Ctrl + C Suspend aplikasi Ctrl + Z Menjalankan aplikasi di foreground # fg Menjalankan aplikasi di background # bg Untuk lebih lengkapnya bisa cek manual dari bash # man bash</description>
+    </item>
+    
+    <item>
+      <title>Reset Password Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/reset-pass-centos7/</link>
+      <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/reset-pass-centos7/</guid>
+      <description>Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
+:/# chroot /sysroot  kemudian reset password
+:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.</description>
     </item>
     
     <item>

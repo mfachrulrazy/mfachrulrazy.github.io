@@ -34,6 +34,17 @@ Powershell Untuk powershell ada step tambahan karena terdapat tambahan lapisan k
     </item>
     
     <item>
+      <title>Reset Password Centos 7</title>
+      <link>https://mfachrulrazy.github.io/2017/reset-pass-centos7/</link>
+      <pubDate>Wed, 10 May 2017 13:40:23 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/reset-pass-centos7/</guid>
+      <description>Pada saat booting pertama kali dan muncul GRUB menu, tekan e Kemudian ubah pada bagian ro menjadi rw dan tambahkan init=/sysroot/bin/sh  Setelah itu tekan ctrl + x untuk masuk ke single user mode. Tunggu sebentar untuk booting, kemudian akses sitem dengan ketikkan perintah berikut:
+:/# chroot /sysroot  kemudian reset password
+:/# passwd root  Peringatan “the password fails the dictionary check” disebabkan karena password terlalu lemah, namun password tetap bisa diterapkan.</description>
+    </item>
+    
+    <item>
       <title>Belajar Vi dan Vim</title>
       <link>https://mfachrulrazy.github.io/2016/belajar-vim/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>

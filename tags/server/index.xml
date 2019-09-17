@@ -107,6 +107,16 @@ Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi 
     </item>
     
     <item>
+      <title>Uninstall Paket Linux</title>
+      <link>https://mfachrulrazy.github.io/2017/uninst-paket-centos7/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/uninst-paket-centos7/</guid>
+      <description>Untuk menghapus seluruh paket bisa menggunakan perintah yum remove pada centos atau apt-get remove pada ubuntu. Berikut contoh untuk menghapus paket secara keseluruhan (completely remove package)
+Menghapus paket Apache/Httpd  Lihat paket yang terinstall # yum list installed *httpd*  Lihat paket mod_ yang terinstall dan lihat paket php # yum list installed *mod_* # yum list installed php* Jika paket tidak didapat  Jika ada paket yang terinstall  Tanda bintang di awal dan di akhir dapat disesuaikan.</description>
+    </item>
+    
+    <item>
       <title>Install Nodejs Centos 7</title>
       <link>https://mfachrulrazy.github.io/2017/install-nodejs-cent/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
@@ -123,6 +133,27 @@ Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi 
       
       <guid>https://mfachrulrazy.github.io/2017/install-mariadb-cent/</guid>
       <description>Tambahkan paket software properties $ sudo apt-get -y install software-properties-common Tambahkan key $ sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 Tambahkan repository $ sudo add-apt-repository &amp;#39;deb [arch=amd64,i386,ppc64el] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.2/ubuntu xenial main&amp;#39; Update dan install mariadb $ sudo apt-get update $ sudo apt-get install mariadb-server mariadb-client</description>
+    </item>
+    
+    <item>
+      <title>Troubleshoot Script Email PHP</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-php-email/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-php-email/</guid>
+      <description>Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
+Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
+Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshoot Web Server I</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-web-server1/</link>
+      <pubDate>Wed, 13 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-web-server1/</guid>
+      <description>Waktu itu salah satu website di kantor bermasalah. Webnya tidak bisa diakses, tetapi servis database dan web server-nya berjalan dengan normal. Cek di firewall dalam hal ini menggunakan iptables karena os Centos 5.11 (end-of-life).
+Izinkan traffic mysql dan http dengan menambahkan rule di iptables pada file /etc/sysconfig/iptables -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j / ACCEPT -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j / ACCEPT Kemudian restart iptables-nya # /etc/init.</description>
     </item>
     
     <item>

@@ -6,10 +6,21 @@
     <description>Recent content in blog on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2019 09:45:17 +0800</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrade Hugo di Windows</title>
+      <link>https://mfachrulrazy.github.io/2019/upg-hugo-win/</link>
+      <pubDate>Sat, 06 Apr 2019 09:45:17 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/upg-hugo-win/</guid>
+      <description>Upgrade Hugo dapat dilakukan dengan paket manager choco yang telah diinstall pada windows.
+&amp;gt; choco upgrade hugo Kemudian Ketik Y untuk menjalankan script upgrade hugo.
+Install Hugo-extended Hugo extended dapat bekerja dengan native Sass/Scss. Instalasi hugo extended pada windows dapat menggunakan choco &amp;gt; choco install hugo-extended Kemudian Ketik Y untuk menjalankan script install hugo-extended.</description>
+    </item>
     
     <item>
       <title>Install dan konfigurasi Hugo</title>

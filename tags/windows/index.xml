@@ -6,10 +6,21 @@
     <description>Recent content in windows on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2019 09:45:17 +0800</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrade Hugo di Windows</title>
+      <link>https://mfachrulrazy.github.io/2019/upg-hugo-win/</link>
+      <pubDate>Sat, 06 Apr 2019 09:45:17 +0800</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2019/upg-hugo-win/</guid>
+      <description>Upgrade Hugo dapat dilakukan dengan paket manager choco yang telah diinstall pada windows.
+&amp;gt; choco upgrade hugo Kemudian Ketik Y untuk menjalankan script upgrade hugo.
+Install Hugo-extended Hugo extended dapat bekerja dengan native Sass/Scss. Instalasi hugo extended pada windows dapat menggunakan choco &amp;gt; choco install hugo-extended Kemudian Ketik Y untuk menjalankan script install hugo-extended.</description>
+    </item>
     
     <item>
       <title>Formula Concat dan Vlookup pada Excel</title>
@@ -46,6 +57,15 @@ Stderr Standard Error ketika input yang diberikan menghasilkan error.</descripti
       <guid>https://mfachrulrazy.github.io/2018/install-wins-2003/</guid>
       <description>Dikutip dari Wikipedia
  WINS adalah singkatan dari Windows Internet Name Services sebuah layanan dalam sistem operasi Windows NT, Windows 2000 atau Windows Server 2003 yang secara dinamis melakukan registrasi terhadap nama NetBIOS yang dimiliki oleh komputer-komputer yang berada di dalam jaringan. WINS juga memungkinkan untuk melakukan sentralisasi terhadap proses resolusi nama NetBIOS ke dalam alamat IP. Dalam Windows NT, manajemen WINS lebih mudah dilakukan daripada DNS, karena bersifat dinamis. Tapi dalam Windows 2000 ke atas WINS telah ditinggalkan dan versi Windows tersebut menggunakan DNS sebagai metode resolusi nama host ke alamat IP, meski WINS juga tersedia sebagai perangkat opsional untuk mendukung sistem operasi yang lama (Windows 95, Windows 98, Windows NT, atau Windows for Workgroups).</description>
+    </item>
+    
+    <item>
+      <title>VM Virtual Box Error</title>
+      <link>https://mfachrulrazy.github.io/2018/vbox-error/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/vbox-error/</guid>
+      <description>Waktu itu, ingin menjalankan salah satu vm di virtualbox tetapi vm tidak dapat dijalankan dan terdapat error seperti berikut ini  setelah searching di internet ternyata ada konflik dengan Hyper-V Jadi solusinya, matikan fitur hypervisorlaunchtype &amp;gt; bcdedit /set hypervisorlaunchtype off  Jika ingin mengembalikan nilai hypervisorlaunchtype &amp;gt; bcdedit /set {current} hypervisorlaunchtype auto  Penyebab  Penyebabnya adalah karena pada mesin host (utama) terinstall Hyper-V. Karena kemarin sempat install docker for windows yang membutuhkan Hyper-V.</description>
     </item>
     
     <item>
@@ -167,6 +187,30 @@ File &amp;gt; Host Network Manager &amp;gt; Create Untuk mengedit interface yang
 2. Setelah login pada windows, buka Regedit
 3. Masuk ke Folder HKEY_LOCAL_MACHINE &amp;gt;&amp;gt; SOFTWARE &amp;gt;&amp;gt; Microsoft &amp;gt;&amp;gt; Windows NT &amp;gt;&amp;gt; CurrentVersion &amp;gt;&amp;gt; ProfileList
 4. Dalam folder tersebut terdapat 2 folder dengan awalan S-1-5-21 diikuti dengan nomor yang panjang dan sama persis di belakangnya.</description>
+    </item>
+    
+    <item>
+      <title>Servis Wireless tidak berjalan pada Windows 7</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</guid>
+      <description>Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
+Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
+Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
+HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio  Pastikan, keys untuk Start bernilai 3</description>
+    </item>
+    
+    <item>
+      <title>Menampilkan Saved Password Wifi Windows 10</title>
+      <link>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</link>
+      <pubDate>Sun, 18 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</guid>
+      <description>Menemukan password wifi yang sudah tersimpan (saved password) melalui command prompt dapat menggunakan tools netsh.
+&amp;gt; netsh wlan show profiles &amp;#34;nama_wifi&amp;#34; key=clear
+Hasilnya, dapat dilihat pada bagian Security Settings terdapat parameter Key Content dan isinya adalah password wifi tersebut.
+Security settings ----------------- Authentication : WPA2-Personal Cipher : CCMP Authentication : WPA2-Personal Cipher : GCMP Security key : Present Key Content : PASSWORD_WIFI</description>
     </item>
     
   </channel>

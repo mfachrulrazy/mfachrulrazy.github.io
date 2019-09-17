@@ -6,10 +6,21 @@
     <description>Recent content in networking on My Free Resources</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mfachrulrazy.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Troubleshoot IP SSH berubah</title>
+      <link>https://mfachrulrazy.github.io/2018/tb-ssh-key/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2018/tb-ssh-key/</guid>
+      <description>Ketika kita pernah me-remote server yang berbeda tetapi dengan IP yang sama menggunakan putty (ssh), maka akan muncul peringatan Hal tersebut terjadi karena identitas server berubah (server yang berbeda).
+ Jika memilih Yes maka putty akan menggantikan identitas key ssh (fingerprint) dan menyimpan pada registri Windows.
+ Jika memilih No maka putty akan tetap melanjutkan koneksi ke server, tetapi tidak menyimpan identitas key ssh (fingerprint) di registri Windows. Cancel jika tidak ingin melanjutkan koneksi.</description>
+    </item>
     
     <item>
       <title>Konfigurasi Nmtui Centos 7</title>
@@ -33,6 +44,18 @@ Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setel
     </item>
     
     <item>
+      <title>Remote Mikrotik Gns3 via Winbox</title>
+      <link>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/remote-mkrtk-gns3/</guid>
+      <description>Untuk terhubung dengan mikrotik di GNS3 dapat menggunakan interface loopback.
+Gunakan cloud untuk menghubungkan interface jaringan komputer ke winbox gns 3 &amp;gt; klik kanan Configure
+Kemudian perhatikan bagian Ethernet Interfaces terdapat Npcap Loopback Adapter
+Perhatikan bagian interface di sistem operasi (windows)</description>
+    </item>
+    
+    <item>
       <title>Networking pada Centos 7</title>
       <link>https://mfachrulrazy.github.io/2017/net-centos7/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
@@ -50,6 +73,16 @@ Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setel
       <guid>https://mfachrulrazy.github.io/2017/dns-flood/</guid>
       <description>Waktu itu salah satu mikrotik di cabang terkena DNS Flooding. Dampaknya terkena di-traffic upload ether2 yang menggunakan IP public dari provider L.
 Hasil Analisa yang terkena dampaknya hanya traffic upload, sedangkan beban cpu load tidak terkena. Penyebabnya karena ada ip public dan dns-nya di setting allow remote requests yang menyebabkan jaringan luar dapat menggunakan ip public sebagai dns. Cara mengatasinya adalah dengan membuatkan address list untuk mengizinkan alamat dns apa saja yang diinginkan.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshoot DNS WIndows bermasalah</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-dns-client/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-dns-client/</guid>
+      <description> Waktu itu ada salah satu laptop klien yang bermasalah dan tidak bisa terkoneksi ke internet.
+Penyebab DNS yang tidak sesuai dengan jaringan yang disediakan oleh router (dns palsu) Solusi  Cek pada pengaturan ip &amp;gt; advanced &amp;gt; pilih tab DNS Perhatikan jika ada dns yang tercantum di dalam &amp;gt; klik remove Kemudian pada bagian internet options &amp;gt; pilih connections &amp;gt; LAN Settings &amp;gt; hilangkan semua centang  Biasanya jika pc sudah direstart, dns palsu akan muncul kembali Cek program yang mencurigakan, dan periksa pada startup  </description>
     </item>
     
     <item>
@@ -122,12 +155,36 @@ C:\Program Files\GNS3\qemu-2.4.0&amp;gt;qemu-img.exe create -f qcow2 D:/mikrotik
     </item>
     
     <item>
+      <title>Servis Wireless tidak berjalan pada Windows 7</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</link>
+      <pubDate>Sun, 12 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-wireless-win7/</guid>
+      <description>Kemarin dapat masalah dari salah satu client yaitu servis wireless-nya tidak berjalan di windows 7 32bit.
+Setelah dilakukan troubleshooting Ada beberapa solusi untuk mengatasi hal ini: * Repair windows 7 * Install ulang * Cek services WLAN Auto Config berjalan apa tidak Jika tidak berjalan, pastikan services yang ada di dependencies berjalan.
+Sebelumnya pastikan terlebih dahulu pada regedit bagian berikut:
+HKEY_LOCAL_MACHINE/System/ControlSet001/Services/Ndisuio HKEY_LOCAL_MACHINE/System/ControlSet002/Services/Ndisuio HKEY_LOCAL_MACHINE/CurrentControlSet/Services/Ndisuio  Pastikan, keys untuk Start bernilai 3</description>
+    </item>
+    
+    <item>
       <title>Error Gateway Time Out</title>
       <link>https://mfachrulrazy.github.io/2017/err-gateway-to/</link>
       <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mfachrulrazy.github.io/2017/err-gateway-to/</guid>
       <description>Ketika membuka situs yang di-port forwarding dari Mikrotik, ada beberapa user yang tidak dapat membukanya dari luar dan mendapat pesan error seperti gambar di bawah ini. Lihat pengaturan User Profile di hotspot, yang menjadi penyebab adalah aktifnya Transparent Proxy Hilangkan tanda centangnya dan login kembali.</description>
+    </item>
+    
+    <item>
+      <title>Menampilkan Saved Password Wifi Windows 10</title>
+      <link>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</link>
+      <pubDate>Sun, 18 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2016/wifi-pass-win10/</guid>
+      <description>Menemukan password wifi yang sudah tersimpan (saved password) melalui command prompt dapat menggunakan tools netsh.
+&amp;gt; netsh wlan show profiles &amp;#34;nama_wifi&amp;#34; key=clear
+Hasilnya, dapat dilihat pada bagian Security Settings terdapat parameter Key Content dan isinya adalah password wifi tersebut.
+Security settings ----------------- Authentication : WPA2-Personal Cipher : CCMP Authentication : WPA2-Personal Cipher : GCMP Security key : Present Key Content : PASSWORD_WIFI</description>
     </item>
     
   </channel>

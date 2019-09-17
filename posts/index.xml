@@ -64,7 +64,8 @@ Ketika scp dijalankan biasanya akan meminta password (jika belum bertukar ssh ke
       
       <guid>https://mfachrulrazy.github.io/2019/upg-hugo-win/</guid>
       <description>Upgrade Hugo dapat dilakukan dengan paket manager choco yang telah diinstall pada windows.
-&amp;gt; choco upgrade hugo Kemudian Ketik Y untuk menjalankan script upgrade hugo.</description>
+&amp;gt; choco upgrade hugo Kemudian Ketik Y untuk menjalankan script upgrade hugo.
+Install Hugo-extended Hugo extended dapat bekerja dengan native Sass/Scss. Instalasi hugo extended pada windows dapat menggunakan choco &amp;gt; choco install hugo-extended Kemudian Ketik Y untuk menjalankan script install hugo-extended.</description>
     </item>
     
     <item>
@@ -468,19 +469,9 @@ $ ls -Z  SE Linux ada tiga mode, yaitu:
     </item>
     
     <item>
-      <title>Error Loopback Mikrotik</title>
-      <link>https://mfachrulrazy.github.io/2017/err-loopback/</link>
-      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mfachrulrazy.github.io/2017/err-loopback/</guid>
-      <description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
-Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description>
-    </item>
-    
-    <item>
       <title>Email Phising Youtube</title>
       <link>https://mfachrulrazy.github.io/2017/spam-youtube/</link>
-      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mfachrulrazy.github.io/2017/spam-youtube/</guid>
       <description>Akhir tahun 2017, saya mendapatkan email dari youtube bahwa saya beruntung mendapatkan iPhone dan terdapat sebuah link (yang telah disingkat) mengatakan bahwa akun youtube saya telah dibuat menjadi admin. Berikut tampilannya
@@ -488,6 +479,16 @@ Dari isi email sudah curiga dengan bentuk kata-katanya dan link yang disingkat
 Hal pertama yang dilakukan adalah periksa pengirim email dari sini dapat dilihat sumbernya sepertinya valid (noreply@youtube.com)
 Kemudian lihat kode aslinya (show original)
 Sebelum melihat lebih detail isi header, saya melihat-lihat di forum untuk keterangan youtube tersebut.</description>
+    </item>
+    
+    <item>
+      <title>Error Loopback Mikrotik</title>
+      <link>https://mfachrulrazy.github.io/2017/err-loopback/</link>
+      <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/err-loopback/</guid>
+      <description>Ada masalah terjadi di salah satu kantor cabang waktu itu. Masalahnya adalah seluruh jaringan kabel tidak dapat terkoneksi. Topologi kantor kurang lebih seperti berikut Troubleshooting Pertama dicek adalah konfigurasi hotspot mikrotik.
+Setelah dicek, tidak ada perubahan yang terjadi pada konfigurasi. Kemudian setelah melihat dari Log mikrotik, ternyata terdapat error pada interface yang terpasang ke mikrotik dari jaringan lokal. Solusi  Ketika kabel yang menuju switch lokal dicabut, jaringan menjadi bagus.</description>
     </item>
     
     <item>

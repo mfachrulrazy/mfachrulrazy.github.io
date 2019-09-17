@@ -32,6 +32,17 @@ Menampilkan captcha Biasanya developer website membuat captcha pada autentikasi 
     </item>
     
     <item>
+      <title>Troubleshoot Script Email PHP</title>
+      <link>https://mfachrulrazy.github.io/2017/tb-php-email/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfachrulrazy.github.io/2017/tb-php-email/</guid>
+      <description>Waktu itu ada di salah aplikasi di kantor ada yang ingin mengirim email. Setelah diidentifikasi ternyata ada pesan error pada log yang tidak mengizinkan script php mengirim email smtp dengan port 465.
+Pesan error seperti ini ERROR: Failed to connect to server: Permission denied (13), hal ini dikarenakan SELinux sedang berjalan dan menghalangi php atau web server mengirim email.
+Getsebool dapat mengecek apakah http daemon diizinkan untuk membuat koneksi ke jaringan dan mengirim email.</description>
+    </item>
+    
+    <item>
       <title>Menambahkan ukuran File Upload</title>
       <link>https://mfachrulrazy.github.io/2017/max-file-up/</link>
       <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
