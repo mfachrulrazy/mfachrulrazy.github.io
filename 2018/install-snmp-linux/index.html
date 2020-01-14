@@ -22,9 +22,9 @@ com2sec AllUser         default         komunitas
 group   ConfigGroup     v2c             ConfigUser
 group   AllGroup        v2c             AllUser
 <span style=color:#75715e># Define &#39;SystemView&#39;, which includes everything under .1.3.6.1.2.1.1 (or .1.3.6.1.2.1.25.1)</span>
+view    SystemView      included        .1.3.6.1.2.1.1
 <span style=color:#75715e># Define &#39;AllView&#39;, which includes everything under .1</span>
 <span style=color:#75715e>#                       incl/excl       subtree</span>
-view    SystemView      included        .1.3.6.1.2.1.1
 view    SystemView      included        .1.3.6.1.2.1.25.1.1
 view    AllView         included        .1
 <span style=color:#75715e># Give &#39;ConfigGroup&#39; read access to objects in the view &#39;SystemView&#39;</span>
